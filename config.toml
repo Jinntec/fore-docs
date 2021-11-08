@@ -1,6 +1,6 @@
 baseURL = "https://jinntec.github.io/fore-docs/"
 languageCode = "en-us"
-title = "Tuttle Documentation"
+title = "Fore Documentation"
 theme = "learn"
 canonifyURLs = true
 
