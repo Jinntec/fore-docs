@@ -1,0 +1,2 @@
+# fore-docs
+Fore Documentation
