@@ -5,9 +5,9 @@ theme = "learn"
 canonifyURLs = true
 
 [params]
-    themeVariant = "tuttle"
+    themeVariant = "fore"
     siteLandingPage = "https://jinntec.github.io/fore-docs"
-    landingPageName = "<i class='fas fa-home'></i> Tuttle Documentation"
+    landingPageName = "<i class='fas fa-home'></i> Fore Documentation"
     editURL = "https://github.com/jinntec/fore-docs/edit/main/content/"
 
 [[menu.shortcuts]]
