@@ -1,4 +1,4 @@
-baseURL = "https://eeditiones.github.io/tuttle-doc/"
+baseURL = "https://jinntec.github.io/fore-docs/"
 languageCode = "en-us"
 title = "Tuttle Documentation"
 theme = "learn"
@@ -6,9 +6,9 @@ canonifyURLs = true
 
 [params]
     themeVariant = "tuttle"
-    siteLandingPage = "https://eeditiones.github.io/tuttle-doc"
+    siteLandingPage = "https://jinntec.github.io/fore-docs"
     landingPageName = "<i class='fas fa-home'></i> Tuttle Documentation"
-    editURL = "https://github.com/eeditiones/tuttle-doc/edit/main/content/"
+    editURL = "https://github.com/jinntec/fore-docs/edit/main/content/"
 
 [[menu.shortcuts]]
     name = "<i class='fas fa-tags'></i> Tags"

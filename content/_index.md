@@ -6,13 +6,8 @@ weight = 2
 isHome = true
 +++
 
-# Tuttle Documentation
+# Fore Documentation
 
-This is the documentation site for 'Tuttle - a eXist-db Git integration'
-
-This website contains: 
-* Get started
-* Frequently Asked Questions
 
 ## How to contribute to this FAQ
 
