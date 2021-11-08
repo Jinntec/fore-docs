@@ -1,0 +1,19 @@
+baseURL = "https://eeditiones.github.io/tuttle-doc/"
+languageCode = "en-us"
+title = "Tuttle Documentation"
+theme = "learn"
+canonifyURLs = true
+
+[params]
+    themeVariant = "tuttle"
+    siteLandingPage = "https://eeditiones.github.io/tuttle-doc"
+    landingPageName = "<i class='fas fa-home'></i> Tuttle Documentation"
+    editURL = "https://github.com/eeditiones/tuttle-doc/edit/main/content/"
+
+[[menu.shortcuts]]
+    name = "<i class='fas fa-tags'></i> Tags"
+    url = "/tags"
+    weight = 30
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
