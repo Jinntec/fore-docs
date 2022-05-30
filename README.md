@@ -1,8 +1,8 @@
-# Tuttle Documentation
+# Fore Documentation
 
-This repository is used to generate the documentation for Tuttle - an OpenAPI Git interface for eXist-db.
+This repository is used to generate the documentation for Fore - a declarative way to build user interfaces without scripting.
 
-The ***[documenation website](https://eeditiones.github.io/tuttle-doc/)*** is generated with Hugo and automatically deployed to github pages on each 
+The ***[documenation website]https://jinntec.github.io/fore-docs/)*** is generated with Hugo and automatically deployed to github pages on each 
 change.
 
 ## Proposing new entries
