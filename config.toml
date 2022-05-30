@@ -8,7 +8,7 @@ canonifyURLs = true
     themeVariant = "fore"
     siteLandingPage = "https://jinntec.github.io/fore-docs"
     landingPageName = "Fore Documentation"
-    editURL = "https://github.com/jinntec/fore-docs/edit/main/content/"
+    editURL = "https://jinntec.github.io/fore-docs/edit/main/content/"
     disableLandingPageButton = true
     demoUrl = "https://jinntec.github.io/Fore/demo/"
 
@@ -17,12 +17,6 @@ canonifyURLs = true
     name = "<i class='fas fa-tags'></i> Tags"
     url = "/fore-docs/tags"
     weight = 30
-
-[[menu.shortcuts]]
-name = "Fore Element Reference"
-identifier = "reference"
-url = ""
-weight = 2
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
