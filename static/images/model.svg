@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="420px" height="336px" viewBox="0 0 420 336" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="210" cy="70" r="69.5" id="gradient-0" gradientTransform="matrix(0.955863, 0, 0, 0.955863, 7.016071, 3.522068)">
+      <stop offset="0" style="stop-color: rgb(129, 199, 132);"/>
+      <stop offset="1" style="stop-color: rgb(56, 142, 60);"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="70" cy="266" r="69.5" id="gradient-1" gradientTransform="matrix(0.955863, 0, 0, 0.955863, 7.016071, 3.522068)">
+      <stop offset="0" style="stop-color: rgb(238, 238, 238);"/>
+      <stop offset="1" style="stop-color: rgb(158, 158, 158);"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="350" cy="266" r="69.5" id="gradient-2" gradientTransform="matrix(0.955863, 0, 0, 0.955863, 7.016071, 3.522068)">
+      <stop offset="0" style="stop-color: rgb(238, 238, 238);"/>
+      <stop offset="1" style="stop-color: rgb(158, 158, 158);"/>
+    </radialGradient>
+    <filter id="drop-shadow-filter-0" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="drop-shadow 1 5 3 5 0.5 rgba(0,0,0,0.3)">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+      <feOffset dx="5" dy="3"/>
+      <feComponentTransfer result="offsetblur">
+        <feFuncA id="spread-ctrl" type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.3)"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="drop-shadow-filter-1" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="drop-shadow 1 3 3 3 0.5 rgba(0,0,0,0.3)">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="3" dy="3"/>
+      <feComponentTransfer result="offsetblur">
+        <feFuncA id="spread-ctrl" type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.3)"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <title>mvc</title>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <circle id="Oval" stroke="#979797" cx="207.747" cy="70.432" r="66.432" style="fill: url(#gradient-0); fill-rule: evenodd; paint-order: fill; stroke-linecap: round; filter: url(#drop-shadow-filter-0);"/>
+    <circle id="Oval" stroke="#979797" cx="341.568" cy="257.782" r="66.432" style="fill: url(#gradient-2); fill-rule: evenodd; paint-order: fill; filter: url(#drop-shadow-filter-0);"/>
+    <circle id="Oval" stroke="#979797" cx="73.926" cy="257.782" r="66.432" style="fill: url(#gradient-1); fill-rule: evenodd; paint-order: fill; filter: url(#drop-shadow-filter-0);"/>
+    <path id="Line" d="M 260.755 136.457 L 261.634 137.59 L 290.578 174.895 L 296.619 170.208 L 300.578 190.123 L 282.27 181.34 L 288.312 176.653 L 259.368 139.348 L 258.489 138.215 L 260.755 136.457 Z" fill-rule="nonzero" style="fill: rgb(56, 142, 60); filter: url(#drop-shadow-filter-1);"/>
+    <path id="Line" d="M 166.757 139.047 L 162.799 158.963 L 156.757 154.274 L 127.813 191.58 L 126.934 192.713 L 124.669 190.955 L 125.547 189.822 L 154.491 152.516 L 148.449 147.83 L 166.757 139.047 Z" fill-rule="nonzero" style="fill: rgb(211, 47, 47); filter: url(#drop-shadow-filter-1);"/>
+    <path id="Line" d="M 192.95 250.663 L 192.975 258.309 L 240.192 258.15 L 241.626 258.145 L 241.636 261.013 L 240.202 261.018 L 192.985 261.177 L 193.011 268.824 L 174.82 259.805 L 192.95 250.663 Z" fill-rule="nonzero" style="fill: rgb(42, 79, 174); filter: url(#drop-shadow-filter-1);"/>
+    <text style="fill: rgb(254, 254, 254); font-family: Arial, sans-serif; font-size: 17.2px; white-space: pre;" x="183.424" y="77.646">Model</text>
+    <text style="fill: rgb(254, 254, 254); font-family: Arial, sans-serif; font-size: 17.2px; white-space: pre;" x="287.105" y="265.052">User Interface</text>
+    <text style="fill: rgb(254, 254, 254); font-family: Arial, sans-serif; font-size: 17.2px; white-space: pre;" x="44.73" y="266.17">Actions</text>
+    <text style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13.4px; white-space: pre;" x="287.608" y="154.331">refreshes</text>
+    <text style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13.4px; white-space: pre;" x="189.69" y="237.992">triggers</text>
+    <text style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13.4px; white-space: pre;" x="80.058" y="154.331">mutates</text>
+  </g>
+</svg>

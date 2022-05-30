@@ -1,5 +1,6 @@
 {{ partial "header.html" . }}
 
+
 {{ .Content }}
 
 
@@ -17,7 +18,9 @@
             </div>
             {{end}}
         </header>
-        {{ .Summary }}
+          <h1>{{ .Site.Data.elements.version }}</h1>
+
+<!--          {{ .Summary }}-->
       </div>
       {{ if .Truncated }}
       <!-- This <div> includes a read more link, but only if the summary is truncated... -->
@@ -29,7 +32,8 @@
 {{ end }}
 
 <footer class="footline">
-	{{with .Params.LastModifierDisplayName}}
+
+    {{with .Params.LastModifierDisplayName}}
 	    <i class='fas fa-user'></i> <a href="mailto:{{ $.Params.LastModifierEmail }}">{{ . }}</a> {{with $.Date}} <i class='fas fa-calendar'></i> {{ .Format "02/01/2006" }}{{end}}
 	    </div>
 	{{end}}

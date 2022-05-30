@@ -1,3 +1,4 @@
+@import "fore.css";
 :root {
     --MAIN-TEXT-color: #323232;
     /* Color of text by default */
@@ -9,7 +10,8 @@
     /* Color of hovered links */
     --MAIN-ANCHOR-color: #1C90F3;
     /* color of anchors on titles */
-    --MENU-HEADER-BG-color: #2196f3;
+    /*--MENU-HEADER-BG-color:rgba(248, 248, 255,0.76);*/
+    --MENU-HEADER-BG-color:#dfebf5;
     /* Background color of menu header */
     --MENU-HEADER-BORDER-color: #1976d2;
     /*Color of menu header border */
@@ -39,22 +41,43 @@
     --status-up-to-date: #689f38;
     --status-behind: #0288d1;
     --status-error: #d32f2f;
+    --CODE-COLOR: var(--paper-blue-900);
+    --CODE-TEXT-COLOR:var(--paper-orange-700);
 }
 
 body {
     color: var(--MAIN-TEXT-color) !important;
     font-size: 1.2rem !important;
 }
-
+#footer p{
+    display: none;
+}
+fx-fore{
+    background: ghostwhite;
+    border-radius: 1rem;
+}
 textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus {
     border-color: none;
     box-shadow: none;
 }
 
+
 h2, h3, h4, h5 {
     color: var(--MAIN-TITLES-TEXT-color) !important;
 }
-
+.hljs{
+    background: #efefef;
+    color:var(--CODE-TEXT-COLOR);
+}
+.hljs-section, .hljs-name, .hljs-selector-tag, .hljs-deletion, .hljs-subst{
+    color:var(--CODE-COLOR);
+}
+.hljs-keyword, .hljs-selector-tag, .hljs-bullet, .hljs-tag{
+    color:var(--CODE-COLOR);
+}
+.hljs .hljs-keyword,.hljs .hljs-operator{
+    color:var(--CODE-COLOR);
+}
 a {
     color: var(--MAIN-LINK-color);
 }
@@ -84,18 +107,25 @@ a:hover {
 }
 
 p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+}
+pre{
+    background: #efefef;
+    border-radius: 1rem;
 }
 
-.logo{
-    border-radius: 50%;
-}
 #sidebar {
     background-color: var(--MENU-SECTIONS-BG-color);
 }
 
 #sidebar #header-wrapper {
-    background: var(--MENU-HEADER-BG-color);
+    /*background: var(--MENU-HEADER-BG-color);*/
+    /*
+    background: rgb(245,127,23);
+    background: linear-gradient(270deg, rgba(245,127,23,1) 0%, rgba(251,192,45,1) 100%);
+    */
+    background: rgb(250,250,250);
+    background: linear-gradient(130deg, rgba(250,250,250,1) 0%, rgba(189,189,189,1) 100%);
     color: var(--MENU-SEARCH-BOX-color);
     border-color: var(--MENU-HEADER-BORDER-color);
 }
@@ -137,6 +167,7 @@ p{
 
 .summary {
     margin-bottom: 1em;
+    display: none;
 }
 
 .summary header {
@@ -147,9 +178,29 @@ p{
 .summary header h4 {
     margin-top: 0;
 }
+
+#todo button{
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+/*
+#sidebar ul li a{
+    display: none;
+}
+*/
+.topics > li > ul > li > ul > li{
+    display: none;
+}
+
+.topics > li > ul > li.active > ul > li{
+    display: block;
+}
+
 [data-url$="/getstarted/tuttle/"] [alt="Tuttle logo"]{
     border-radius:50%;
 }
+
+
 
 th:nth-child(1){
     width: 20%;
@@ -195,3 +246,27 @@ ul,ol{
     display: none;
 }
 */
+
+[data-url$="/architecture/"] #body-inner p{
+    background: blue;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+
+fx-output label{
+    display: inline-block;
+}
+/*
+.required:after{
+    display: none;
+}
+*/
+/*
+[required]:after{
+    position: absolute;
+}
+*/
+

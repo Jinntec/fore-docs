@@ -1,4 +1,4 @@
-baseURL = "https://jinntec.github.io/fore-docs/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Fore Documentation"
 theme = "learn"
@@ -7,13 +7,33 @@ canonifyURLs = true
 [params]
     themeVariant = "fore"
     siteLandingPage = "https://jinntec.github.io/fore-docs"
-    landingPageName = "<i class='fas fa-home'></i> Fore Documentation"
+    landingPageName = "Fore Documentation"
     editURL = "https://github.com/jinntec/fore-docs/edit/main/content/"
+    disableLandingPageButton = true
+    demoUrl = "https://jinntec.github.io/Fore/demo/"
+
 
 [[menu.shortcuts]]
     name = "<i class='fas fa-tags'></i> Tags"
-    url = "/tags"
+    url = "/fore-docs/tags"
     weight = 30
+
+[[menu.shortcuts]]
+name = "Fore Element Reference"
+identifier = "reference"
+url = ""
+weight = 2
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-github'></i> Github repo"
+identifier = "ds"
+url = "https://github.com/jinntec/Fore"
+weight = 10

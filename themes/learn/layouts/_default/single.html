@@ -1,6 +1,7 @@
 {{ partial "header.html" . }}
+<h1>{{ .Site.Data.elements.version }}</h1>
 
-{{ .Content }}
+hello{{ .Content }}
 
 <footer class="footline">
 	{{with .Params.LastModifierDisplayName}}

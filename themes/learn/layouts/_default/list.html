@@ -4,6 +4,9 @@
 	{{ .Content }}
 {{end}}
 
+<h1>hello{{ .Site.Data.elements.version }}</h1>
+
+
 {{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}
 <ul>
 	{{ range .Pages }}
