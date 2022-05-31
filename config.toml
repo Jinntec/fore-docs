@@ -1,4 +1,4 @@
-baseURL = "https://jinntec/github.io/fore-docs/"
+baseURL = "https://jinntec.github.io/fore-docs/"
 languageCode = "en-us"
 title = "Fore Documentation"
 theme = "learn"
