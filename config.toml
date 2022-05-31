@@ -8,7 +8,6 @@ canonifyURLs = true
     themeVariant = "fore"
     siteLandingPage = "https://jinntec.github.io/fore-docs"
     landingPageName = "Fore Documentation"
-    editURL = "https://jinntec.github.io/fore-docs/edit/main/content/"
     disableLandingPageButton = true
     demoUrl = "https://jinntec.github.io/Fore/demo/"
 
