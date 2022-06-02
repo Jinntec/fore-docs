@@ -4,7 +4,8 @@ fx-fore is the root element containing all other elements.
 Fore uses a classical Model-View-Controller (MVC) architecture.
 There are 3 basic things to remember:
 The model (&amp;lt;fx-model&amp;gt;) holds the data and refreshes the User Interface (UI) according to the state of the model.
-When the user interacts with a page the UI will trigger Actions to change the data in the model.</description></item><item><title>Hello World</title><link>https://jinntec.github.io/fore-docs/getstarted/hello/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/hello/</guid><description>What can be learned here:
+When the user interacts with a page the UI will trigger Actions to change the data in the model.
+Actions will do the actual mutation of the data like setting a value, replacing, inserting or deleting a data node.</description></item><item><title>Hello World</title><link>https://jinntec.github.io/fore-docs/getstarted/hello/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/hello/</guid><description>What can be learned here:
 the basic structure of Fore &amp;lt;fx-model&amp;gt; and &amp;lt;fx-instance&amp;gt; elements using a Template Expression Hello World - Step by Step Each &amp;lt;fx-fore&amp;gt; element has a single model.
 1. Add the model First step to create a data-bound &amp;lsquo;Hello World&amp;rsquo; example is to add a model.
 &amp;lt;fx-fore&amp;gt; &amp;lt;fx-model&amp;gt;&amp;lt;/fx-model&amp;gt; &amp;lt;/fx-fore&amp;gt; The &amp;lt;fx-model&amp;gt; is a direct child of the &amp;lt;fx-fore&amp;gt; element.
