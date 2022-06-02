@@ -1,4 +1,4 @@
 <div style="display: flex;justify-items: center;align-items: center;">
-    <a class="padding" href='{{ (cond (and (ne .Site.Params.landingPageURL nil) (.Site.IsMultiLingual)) .Site.Params.landingPageURL "/") }}'><img src="{{ .Site.BaseURL }}images/light-blue1.png" width="240" class="logo"></a>
+    <a href='{{ (cond (and (ne .Site.Params.landingPageURL nil) (.Site.IsMultiLingual)) .Site.Params.landingPageURL "/") }}'><img src="{{ .Site.BaseURL }}images/light-blue1.png" width="120" class="logo"></a>
 <!--    <img src="{{ .Site.BaseURL }}images/light7.png" width="240" class="logo">-->
 </div>

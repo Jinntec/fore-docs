@@ -14,9 +14,13 @@ Action to display a `fx-dialog`.
 |------|-------------|
 | dialog | idref of an `fx-dialog` element. |
 
+## Events
+
+none
+
 ### Examples
 
-* [fx-dialog](../demo/controls/fx-dialog.html)
+* [fx-dialog]({{% siteparam "demoUrl" %}}controls/fx-dialog.html)
 
 
 

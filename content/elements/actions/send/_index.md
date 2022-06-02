@@ -25,17 +25,20 @@ error is thrown.
 | target | id reference to element this action attaches to |
 | while | boolean XPath expression. Action is only executed if `ìf` and `while` return true. |
 
+## Events
+
+none
 
 ### Examples
 
-* [auth](../demo/auth.html)
-* [Submission Relevance Processing](../demo/submission-relevance.html)
-* [Submission serialization](../demo/submission-serialize.html)
-* [Submission Demo](../demo/submission1.html)
-* [Submission Demo 2](../demo/submission2.html)
-* [Submission serialization](../demo/submission3.html)
-* [Submission Chaining](../demo/submission4.html)
-* [submit with ref](../demo/targetref.html)
+* [auth]({{% siteparam "demoUrl" %}}auth.html)
+* [Submission Relevance Processing]({{% siteparam "demoUrl" %}}submission-relevance.html)
+* [Submission serialization]({{% siteparam "demoUrl" %}}submission-serialize.html)
+* [Submission Demo]({{% siteparam "demoUrl" %}}submission1.html)
+* [Submission Demo 2]({{% siteparam "demoUrl" %}}submission2.html)
+* [Submission serialization]({{% siteparam "demoUrl" %}}submission3.html)
+* [Submission Chaining]({{% siteparam "demoUrl" %}}submission4.html)
+* [submit with ref]({{% siteparam "demoUrl" %}}targetref.html)
 
 
 

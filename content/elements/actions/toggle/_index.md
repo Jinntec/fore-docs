@@ -14,11 +14,15 @@ Action to toggle a `fx-switch` element.
 |------|-------------|
 | case | id of `fx-case` element to show |
 
+## Events
+
+none
+
 ### Examples
-* [auth](../demo/auth.html)
-* [repeat in switch](../demo/repeat-in-switch.html)
-* [Simple TEI Header](../demo/simple-tei-header.html)
-* [switch](../demo/switch.html)
+* [auth]({{% siteparam "demoUrl" %}}auth.html)
+* [repeat in switch]({{% siteparam "demoUrl" %}}repeat-in-switch.html)
+* [Simple TEI Header]({{% siteparam "demoUrl" %}}simple-tei-header.html)
+* [switch]({{% siteparam "demoUrl" %}}switch.html)
 
 
 

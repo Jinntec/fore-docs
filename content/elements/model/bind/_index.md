@@ -10,24 +10,28 @@ tags: [elements, model]
 
 ## Attributes
 
-| Name | Description |
-|------|-------------|
-|ref | XPath pointing to node(s) the bind is attaching to |
-| calculate | XPath expression to be calculated. Result will become value of node(s) referenced by `ref` |
-| constraint | boolean XPath expression to determine validity of node(s) |
-| readonly | boolean XPath expression to determine readonly/readwrite state |
-| relevant | boolean XPath expression to determine relevant/non-relevant state |
-| required | boolean XPath expression to determine required/optional state |
-| type | datatype |
+| Name | Description | Default |
+|------|-------------| --- |
+|ref | XPath pointing to node(s) the bind is attaching to | - |
+| calculate | XPath expression to be calculated. Result will become value of node(s) referenced by `ref` | - |
+| constraint | boolean XPath expression to determine validity of node(s) | true |
+| readonly | boolean XPath expression to determine readonly/readwrite state | false |
+| relevant | boolean XPath expression to determine relevant/non-relevant state | true |
+| required | boolean XPath expression to determine required/optional state | false |
+| type | datatype - reserved for future versions | string |
+
+## Events
+
+none
 
 ## Examples
 
-* [nested Binding](../demo/binding-nested.html)
-* [Binding](../demo/binding.html)
-* [Hello](../demo/body.html)
-* [Simple Calculate](../demo/calc-order.html)
-* [todo](../demo/nested-todo.html)
-* [Recalculate](../demo/recalculate.html)
-* [Revalidation](../demo/revalidate.html)
-* [Submission Relevance Processing](../demo/submission-relevance.html)
+* [nested Binding]({{% siteparam "demoUrl" %}}binding-nested.html)
+* [Binding]({{% siteparam "demoUrl" %}}binding.html)
+* [Hello]({{% siteparam "demoUrl" %}}body.html)
+* [Simple Calculate]({{% siteparam "demoUrl" %}}calc-order.html)
+* [todo]({{% siteparam "demoUrl" %}}nested-todo.html)
+* [Recalculate]({{% siteparam "demoUrl" %}}recalculate.html)
+* [Revalidation]({{% siteparam "demoUrl" %}}revalidate.html)
+* [Submission Relevance Processing]({{% siteparam "demoUrl" %}}submission-relevance.html)
 

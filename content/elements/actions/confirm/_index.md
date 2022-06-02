@@ -4,16 +4,16 @@ date: 2021-12-14T17:41:11+01:00
 tags: [elements actions]
 ---
 
-### Description
+## Description
 
 Displays simple confirmation dialog. Action will only execute if confirmation returns true.
-### Attributes
+## Attributes
 
 | Name | Description |
 |------|-------------|
 | message | Message to display for confirmation. |
 
-### Action Attributes
+## Action Attributes
 
 | Name | Description |
 |------|-------------|
@@ -23,10 +23,13 @@ Displays simple confirmation dialog. Action will only execute if confirmation re
 | target | id reference to element this action attaches to |
 | while | boolean XPath expression. Action is only executed if `ìf` and `while` return true. |
 
+## Events
 
-### Examples
+none
 
-* [Project Task planner](../demo/project.html)
+## Examples
+
+* [Project Task planner]({{% siteparam "demoUrl" %}}project.html)
 
 
 

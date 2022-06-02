@@ -18,11 +18,11 @@ Replaces a node with another.
 
 ### Action Attributes
 
-see [Action](../demo/actions.html)
+see [Action]({{% siteparam "demoUrl" %}}actions.html)
 
 ### Examples
 
-* [Replace Action](../demo/fx-replace.html)
+* [Replace Action]({{% siteparam "demoUrl" %}}fx-replace.html)
 
 
 

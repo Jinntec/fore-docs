@@ -10,7 +10,7 @@ canonifyURLs = true
     landingPageName = "Fore Documentation"
     disableLandingPageButton = true
     demoUrl = "https://jinntec.github.io/Fore/demo/"
-
+    disableInlineCopyToClipBoard = true
 
 [[menu.shortcuts]]
     name = "<i class='fas fa-tags'></i> Tags"

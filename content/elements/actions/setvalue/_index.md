@@ -26,14 +26,18 @@ Sets a value to a bound node.
 | target | id reference to element this action attaches to |
 | while | boolean XPath expression. Action is only executed if `ìf` and `while` return true. |
 
+## Events
+
+none
+
 ### Examples
 
-* [Action](../demo/actions.html)
-* [auth](../demo/auth.html)
-* [binding](../demo/binding.html)
-* [the delay attribute](../demo/delay.html)
-* [events](../demo/events.html)
-* [events 2](../demo/events2.html)
-* [hello](../demo/fun-with-actions.html)
+* [Action]({{% siteparam "demoUrl" %}}actions.html)
+* [auth]({{% siteparam "demoUrl" %}}auth.html)
+* [binding]({{% siteparam "demoUrl" %}}binding.html)
+* [the delay attribute]({{% siteparam "demoUrl" %}}delay.html)
+* [events]({{% siteparam "demoUrl" %}}events.html)
+* [events 2]({{% siteparam "demoUrl" %}}events2.html)
+* [hello]({{% siteparam "demoUrl" %}}fun-with-actions.html)
 
 

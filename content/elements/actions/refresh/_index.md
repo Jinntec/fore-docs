@@ -1,18 +1,18 @@
 ---
 title: "<fx-refresh>"
 date: 2021-12-14T17:41:11+01:00
-tags: [elements actions]
+tags: [elements actions, refresh]
 ---
 
-### Description
+## Description
 
 Triggers immediate refresh.
 
-### Attributes
+## Attributes
 
 No Attributes
 
-### Action Attributes
+## Action Attributes
 
 | Name | Description |
 |------|-------------|
@@ -22,11 +22,15 @@ No Attributes
 | target | id reference to element this action attaches to |
 | while | boolean XPath expression. Action is only executed if `ìf` and `while` return true. |
 
-### Examples
+## Events
 
-* [the delay attribute](../demo/delay.html)
-* [Randomizer](../demo/randomizer.html)
-* [the while attribute](../demo/while.html)
+none
+
+## Examples
+
+* [the delay attribute]({{% siteparam "demoUrl" %}}delay.html)
+* [Randomizer]({{% siteparam "demoUrl" %}}randomizer.html)
+* [the while attribute]({{% siteparam "demoUrl" %}}while.html)
 
 
 

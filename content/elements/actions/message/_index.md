@@ -1,14 +1,14 @@
 ---
 title: "<fx-message>"
 date: 2021-12-14T17:41:11+01:00
-tags: [elements actions]
+tags: [elements actions, message]
 ---
 
-### Description
+## Description
 
 Display a message to the user.
 
-### Attributes
+## Attributes
 
 | Name | Description | default |
 |------|-------------| ------ |
@@ -18,7 +18,7 @@ Display a message to the user.
 | | 'ephemeral' - auto-closing popup message  | default |
 | value | XPath expression which resolves to message | |
 
-### Action Attributes
+## Action Attributes
 
 | Name | Description |
 |------|-------------|
@@ -28,19 +28,22 @@ Display a message to the user.
 | target | id reference to element this action attaches to |
 | while | boolean XPath expression. Action is only executed if `ìf` and `while` return true. |
 
+## Events
 
-### Examples
+none
 
-* [fx-message](../demo/fx-message.html)
-* [actions](../demo/actions.html)
-* [Binding](../demo/binding.html)
-* [the delay attribute](../demo/delay.html)
-* [fx-control](../demo/fx-control.html)
-* [Hello World](../demo/hello-fonto.html)
-* [the if attribute](../demo/if.html)
-* [instances](../demo/instances.html)
-* [lazy modelItem creation during UI init](../demo/lazy.html)
-* [the while attribute](../demo/while.html)
+## Examples
+
+* [fx-message]({{% siteparam "demoUrl" %}}fx-message.html)
+* [actions]({{% siteparam "demoUrl" %}}actions.html)
+* [Binding]({{% siteparam "demoUrl" %}}binding.html)
+* [the delay attribute]({{% siteparam "demoUrl" %}}delay.html)
+* [fx-control]({{% siteparam "demoUrl" %}}fx-control.html)
+* [Hello World]({{% siteparam "demoUrl" %}}hello-fonto.html)
+* [the if attribute]({{% siteparam "demoUrl" %}}if.html)
+* [instances]({{% siteparam "demoUrl" %}}instances.html)
+* [lazy modelItem creation during UI init]({{% siteparam "demoUrl" %}}lazy.html)
+* [the while attribute]({{% siteparam "demoUrl" %}}while.html)
 
 
 
