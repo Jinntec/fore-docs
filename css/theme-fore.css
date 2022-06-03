@@ -72,6 +72,7 @@ fx-fore::before{
     border-top-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
 }
+
 textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus {
     border-color: none;
     box-shadow: none;
@@ -208,10 +209,46 @@ pre{
     animation: text-focus-in 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
+/*
 #todo button{
     padding: 1rem;
     font-size: 1.2rem;
 }
+*/
+
+/* specific for styling todo example */
+
+#todo h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#task fx-repeatitem > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#task fx-control{
+    margin: 0;
+    height: auto;
+    margin-right:0.5rem;
+}
+#task fx-control input{
+    padding: 0.3rem;
+    margin: 0 0.2rem;
+}
+fx-trigger.btn button{
+    height: auto;
+    font-size:1.2rem;
+    font-family: Roboto, Verdana, SansSerif;
+
+}
+#task fx-trigger.delete button{
+    background: var(--paper-red-500);
+    color:white;
+}
+
+
 /*
 #sidebar ul li a{
     display: none;
