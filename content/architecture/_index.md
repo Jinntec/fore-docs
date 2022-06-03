@@ -9,6 +9,7 @@ tags: ["Version 1.0.0", MVC]
 # Architecture
 
 This chapter gives some insights into the inner workings of Fore.
+An understanding of the principles certainly helps to get the most out of Fore.
 
 ![MVC](/images/mvc.svg)
 

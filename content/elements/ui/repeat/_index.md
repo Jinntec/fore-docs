@@ -1,12 +1,15 @@
 ---
 title: "<fx-repeat>"
 date: 2021-12-14T17:41:11+01:00
-tags: [elements, ui, repeat]
+tags: [elements, ui, fx-repeat, repeat]
 ---
 
 ## Description
 
 Repeats template for each node of the referenced nodeset.
+
+For each data node in the referenced nodeset one `<fx-repeatitem>` element
+will be created that will contain the evaluated template as content.
 
 
 ## Attributes

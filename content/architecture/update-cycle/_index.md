@@ -7,6 +7,8 @@ tags: [architecture, lifecycle, update]
 The update cycle is triggered whenever a user interacts with a control
 e.g. by changing its value.
 
+Likewise this can be triggered by Actions being triggered by some state event like e.g. `value-changed` event.
+
 {{<mermaid align="left">}}
 sequenceDiagram
     autonumber
@@ -23,7 +25,7 @@ sequenceDiagram
     
     activate Action
         Action->>Action: mutate ModelItem
-        Action->>Model: add to changed
+        Action->>Model: add to changed list
         activate Action
             Action->>Action: actionPerformed()
             Action->>Model: rebuild()
@@ -44,10 +46,11 @@ to propagate that change to the model.
 its value
 1. The action mutates the ModelItem state object that is associated to the control.
 1. The changed ModelItem is added to a `changed` array in the Model
-1. When the action has done its job it will call the model to update.
-1. Only actions that mutate the structure of the data will call `rebuild()`
+1. When the action has done its job it will call the model to update while executing `actionPerformed()`.
+1. Only actions that mutate the structure of the data will call `rebuild()` as the Main Dependency Graph needs
+to be reconstructed.
 1. Instead of using MDG (see Initialization) `recalculate` will re-compute all calculations for 
-the changed nodes.
+the changed nodes by creating a subgraph of the MDG that will only contain the affected ModelItems.
 1. The array of changed ModelItems will be cloned and passed as `toRefresh[]` to the Fore object.
 1. All ModelItems will be revalidated. 
 1. `refresh()` is called on Fore object that will use the `toRefresh` array of changed ModelItems to selectively update
