@@ -181,7 +181,7 @@ overview when things get more complex.
         <fx-bind ref="task" constraint="string-length(.) > 0" alert="what's your todo?"></fx-bind>
     </fx-model>
     <h1>Todo
-        <fx-trigger>
+        <fx-trigger class="btn add">
             <button>add</button>
             <fx-insert ref="task" at="1" position="before" origin="template/task"></fx-insert>
             <fx-refresh></fx-refresh>
