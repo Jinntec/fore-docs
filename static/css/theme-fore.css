@@ -58,6 +58,8 @@ fx-fore{
     border-radius: 0.5rem;
     border: thin solid var(--paper-blue-500);;
     position: relative;
+    -webkit-box-shadow: 3px 3px 6px 0px #e3f2fd;
+    box-shadow: 3px 3px 6px 0px #e3f2fd;
 }
 fx-fore::before{
     content: 'live demo';
@@ -66,11 +68,13 @@ fx-fore::before{
     top:0;
     font-size: 0.9rem;
     font-style: italic;
-    color:var(--paper-blue-500);
+    color:var(--paper-blue-700);
     background: var(--paper-blue-100);
     padding: 0 0.5rem;
     border-top-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
+    border-left:#64b5f6 thin solid;
+    border-bottom: #64b5f6 thin solid;
 }
 
 textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus {
@@ -241,7 +245,10 @@ fx-trigger.btn button{
     height: auto;
     font-size:1.2rem;
     font-family: Roboto, Verdana, SansSerif;
-
+    border-radius: 5px;
+}
+fx-trigger.btn button:hover {
+    filter: brightness(1.2);
 }
 #task fx-trigger.delete button{
     background: var(--paper-red-500);
