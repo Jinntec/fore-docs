@@ -76,6 +76,14 @@ fx-fore::before{
     border-left:#64b5f6 thin solid;
     border-bottom: #64b5f6 thin solid;
 }
+fx-inspector{
+    position: absolute;
+    height: 100%;
+    font-size: 0.8rem;
+}
+fx-inspector[open]{
+    width: 50%;
+}
 
 textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus {
     border-color: none;
@@ -254,13 +262,20 @@ fx-trigger.btn button:hover {
     background: var(--paper-red-500);
     color:white;
 }
-
-
-/*
-#sidebar ul li a{
-    display: none;
+.save button{
+    background: green;
+    color:white;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.6rem;
+    margin: 1rem 0;
 }
-*/
+
+
+    /*
+    #sidebar ul li a{
+        display: none;
+    }
+    */
 /*
 .topics > li > ul > li > ul > li{
     display: none;
