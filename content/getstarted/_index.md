@@ -22,8 +22,11 @@ To use Fore you have to add one CSS stylesheet and the Fore module to your page.
 
 Add these tags to the head of your HTML file.
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@jinntec/fore@latest/resources/fore.css">
-<script type="module" src="https://cdn.jsdelivr.net/npm/@jinntec/fore@latest/dist/fore-all.js"></script>
+<link rel="stylesheet" 
+      href="https://cdn.jsdelivr.net/npm/@jinntec/fore@latest/resources/fore.css">
+
+<script type="module" 
+        src="https://cdn.jsdelivr.net/npm/@jinntec/fore@latest/dist/fore-all.js">
 ```
 
 You are good to go!
