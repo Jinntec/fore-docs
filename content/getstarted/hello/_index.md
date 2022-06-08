@@ -70,10 +70,11 @@ The final step is to add some UI to bind to our data.
 ```
 
 Here we use a simple **Template Expression** to output the
-data of the node 'greeting'.
+data of the node 'greeting'. In a later step we'll use controls
+to edit the data.
 
 A Template Expression is enclosed in curly brackets and binds to some data
-node in an instance. You can put them everywhere within the UI of a `<fx-fore>` element
+node in an instance. You can put them everywhere __within the UI__ of a `<fx-fore>` element
 either within text nodes or attributes nodes.
 
 

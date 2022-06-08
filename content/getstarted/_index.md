@@ -46,11 +46,35 @@ Setup a basic HTML page like this:
     <link href="[path-to-fore]/fore.css" rel="stylesheet">
 </head>
 <body>
-<script type="module" src="[path-to-fore]/fore-all.js"></script>
+<script type="module" src="[path-to-fore]/fore.js"></script>
 </body>
 </html>
 ```
 
 '[path-to-fore]' has to be the relative path to the Fore location on your disk.
+
+## Using the dev version
+
+During development it can be helpful to get console messages that give some feedback about
+what is happening behind the scenes.
+
+With dev version of Fore there's logging of:
+
+* loading of instances
+* creation of dependency graph
+* recalculation and revalidation of ModelItems
+* refreshing the UI
+* firing of events and action execution
+* submissions
+
+To get those message on developers tools console just use:
+```
+<script type="module" src="[path-to-fore]/fore-dev.js"></script>
+```
+
+Once in production you can simply switch back. There's no difference between these versions beyond 
+logging.
+
+
 
 
