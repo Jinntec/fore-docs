@@ -36,6 +36,19 @@ instead wraps such a control and binds it to a data node in the model with the h
 | relevant | dispatched during refresh when node has become relevant |
 | nonrelevant | dispatched during refresh when node has become non-relevant |
 
+## Special features
+
+### passing referenced node as node instead of value
+
+With the ´as´ attribute the referenced node will be directly
+passed to the widget. This can be useful with control that manipulate 
+nodes like e.g. text editors.
+
+### creating selects with an empty option
+
+Sometimes values can and should be empty initially. With `selection="open"` on
+the select element it will create such en empty option.
+
 ## Examples
 * [the fx-control element]({{% siteparam "demoUrl" %}}fx-control.html)
 * [Actions]({{% siteparam "demoUrl" %}}actions.html)
