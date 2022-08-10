@@ -29,7 +29,7 @@ Add these tags to the head of your HTML file.
         src="https://cdn.jsdelivr.net/npm/@jinntec/fore@latest/dist/fore-all.js">
 ```
 
-You are good to go!
+You are good to go and may skip to next section!
 
 ### Using local copy
 

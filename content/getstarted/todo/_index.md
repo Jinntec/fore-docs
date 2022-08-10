@@ -66,6 +66,7 @@ We add the repeat alongside the model in our markup.
             </data>
         </fx-instance>
     </fx-model>
+    <h1>My Todos</h1>
     <fx-repeat id="task" ref="task">
         <template>
             <div>{.}</div>
@@ -92,6 +93,7 @@ in our data.
             </data>
         </fx-instance>
     </fx-model>
+    <h1>My Todos</h1>
     <fx-repeat id="task" ref="task">
         <template>
             <div>{.}</div>
@@ -111,6 +113,7 @@ Result so far
             </data>
         </fx-instance>
     </fx-model>
+    <h1>My Todos</h1>
     <fx-repeat id="task" ref="task">
         <template>
             <div>{.}</div>
@@ -153,6 +156,7 @@ In this example simple native browser input controls are used.
             </data>
         </fx-instance>
     </fx-model>
+    <h1>My Todos</h1>
     <fx-repeat id="task" ref="task">
         <template>
             <div>
@@ -201,7 +205,7 @@ will result in the binding expression 'task[1]/@complete' for the first todo.
             </data>
         </fx-instance>
     </fx-model>
-    <h1>Todo
+    <h1>My Todos
         <fx-trigger class="btn add">
             <button>add</button>
             <fx-insert ref="task" at="1" position="before"></fx-insert>
@@ -244,7 +248,7 @@ with the `<fx-delete>` action.
             </data>
         </fx-instance>
     </fx-model>
-    <h1>Todo
+    <h1>My Todos
         <fx-trigger class="btn add">
             <button>add</button>
             <fx-insert ref="task" at="1" position="before"></fx-insert>

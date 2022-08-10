@@ -27,7 +27,7 @@ home = [ "HTML", "RSS", "JSON"]
       unsafe = true
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-github'></i> Github repo"
+name = "<i class='fab fa-github'></i> Github"
 identifier = "ds"
 url = "https://github.com/jinntec/Fore"
 weight = 10

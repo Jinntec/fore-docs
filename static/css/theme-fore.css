@@ -249,6 +249,10 @@ pre{
     padding: 0.3rem;
     margin: 0 0.2rem;
 }
+tspan{
+    font-family: 'Novacento Sans Wide';
+    font-size: 1.2rem;
+}
 fx-trigger.btn button{
     height: auto;
     font-size:1.2rem;

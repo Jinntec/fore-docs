@@ -23,7 +23,7 @@ In this chapter we'd like to make some improvements:
 
 ### Extending our data model
 
-Let's add a couple of nodes to our data model to cover our objectives.
+Let's add a couple of nodes to our data model to cover our objectives. We'll use them later on.
 
 ```
 <data>
@@ -36,26 +36,70 @@ Let's add a couple of nodes to our data model to cover our objectives.
 </data>
 ```
 
-### Adding the counter
+### Adding a counter
 
-Starting with the counter we added this above the repeat 
+We add a counter simply above our repeat.
 
 ```
     <div class="info">
-        You have {count(task)} completed tasks
+        You have {count(task[@complete='false'])} open tasks
     </div>
 ```
 
-The Template Expression will output the number of task nodes in the data.
+The Template Expression will output the number of open task nodes in the data.
 
 {{% notice note %}}
 `count()` is an built-in [XPath 3.1](https://www.w3.org/TR/xpath-31/) function we're using to get the number of todos. XPath
 offers a big library of functions. 
 {{% /notice %}}
 
+<fx-fore id="todo">
+    <fx-model id="record">
+        <fx-instance>
+            <data>
+                <task complete="false" due="2022-06-05">Make tutorial part 1</task>
+                <task complete="false" due="2022-06-15">Pick up Milk</task>
+                <template>
+                    <task complete="false" due="">new task</task>
+                </template>
+                <showclosed>false</showclosed>
+            </data>
+        </fx-instance>
+    </fx-model>
+    <h1>Todo
+        <fx-trigger class="btn add">
+            <button>add</button>
+            <fx-insert ref="task" at="1" position="before"></fx-insert>
+            <fx-refresh></fx-refresh>
+        </fx-trigger>
+    </h1>
+    <div class="info">
+        You have {count(instance()/task[@complete='false'])} open tasks
+    </div>
+    <fx-repeat id="task" ref="task">
+        <template>
+            <div>
+                <fx-control ref="@complete" value-prop="checked" update-event="input">
+                    <input class="widget" type="checkbox">
+                </fx-control>
+                <fx-control class="{@complete}" id="task" ref="."></fx-control>
+                <fx-control ref="@due">
+                    <input type="date">
+                </fx-control>
+                <fx-trigger class="btn delete">
+                    <button>delete</button>
+                    <fx-delete ref="."></fx-delete>
+                </fx-trigger>
+            </div>
+        </template>
+    </fx-repeat>
+</fx-fore>
+
+Of course you can add further counters for closed and all tasks. I'll leave that as an excercise.
+
 ### Fixing our repeat
 
-If you've played with the example from last chapter and have deleted all 
+If you've played with the last example and have deleted all 
 todos and trying to re-add one you have run into problems. It simply refuses
 to create a new repeat entry.
 
@@ -63,8 +107,10 @@ This is due to the default behavior of `<fx-insert>`. It tries to use
 the last item in the list as a template for insertion. If there's none left,
 the nodeset is empty and the `<fx-insert>` will do nothing.
 
-The `origin` attribute handles this sitution and allows us to bind to a template
+The `origin` attribute handles this situation and allows us to bind to a template
 node to use for the insert.
+
+
 
 By changing the trigger from 
 
@@ -88,7 +134,50 @@ Now the insert will evaluate the `origin` attribute and take that node
 to insert into the list.
 
 By using this technique you can also apply some defaults for new entries e.g. 
-a todo will now be `complete="false"` by default.
+a todo will now be `complete="false"` and 'new task' as task by default.
+
+<fx-fore id="todo">
+    <fx-model id="record">
+        <fx-instance>
+            <data>
+                <task complete="false" due="2022-06-05">Make tutorial part 1</task>
+                <task complete="false" due="2022-06-15">Pick up Milk</task>
+                <template>
+                    <task complete="false" due="">new task</task>
+                </template>
+                <showclosed>false</showclosed>
+            </data>
+        </fx-instance>
+    </fx-model>
+    <h1>Todo
+        <fx-trigger class="btn add">
+            <button>add</button>
+            <fx-insert ref="task" at="1" position="before" origin="template/task"></fx-insert>
+            <fx-refresh></fx-refresh>
+        </fx-trigger>
+    </h1>
+    <div class="info">
+        You have {count(instance()/task[@complete='false'])} open tasks
+    </div>
+    <fx-repeat id="task" ref="task">
+        <template>
+            <div>
+                <fx-control ref="@complete" value-prop="checked" update-event="input">
+                    <input class="widget" type="checkbox">
+                </fx-control>
+                <fx-control class="{@complete}" id="task" ref="."></fx-control>
+                <fx-control ref="@due">
+                    <input type="date">
+                </fx-control>
+                <fx-trigger class="btn delete">
+                    <button>delete</button>
+                    <fx-delete ref="."></fx-delete>
+                </fx-trigger>
+            </div>
+        </template>
+    </fx-repeat>
+</fx-fore>
+
 
 ### Adding constraints
 
@@ -97,11 +186,12 @@ sense to have a todo without a text.
 
 Let's create a constraint for that by introducing a bind element:
 ```
-<fx-bind ref="task" required="true()"></fx-bind>
+<fx-bind ref="task" constraint="string-length(.) > 0" alert="what's your todo?"></fx-bind>
 ```
 
-The `required` attribute takes an boolean XPath expression which will 
-automatically be applied by the model and re-evaluated whenever this is required.
+The `constraint` attribute takes an boolean XPath expression which will 
+automatically be applied by the model and re-evaluated whenever this is required e.g. when
+data are submitted.
 
 {{% notice note %}}
 Fore uses XPath to bind nodes or make calculations. To learn more about XPath and play with it, have a look
@@ -165,6 +255,9 @@ overview when things get more complex.
 ```
 
 ## Result
+
+Empty a task field to trigger the alert - once you leave the field the alert is shown.
+
 <fx-fore id="todo">
     <fx-model id="record">
         <fx-instance>

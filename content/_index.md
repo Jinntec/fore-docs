@@ -13,6 +13,6 @@ fore - 'situated in front of something else' - Merriam Webster
 
 ---
 
-### Descriptive user interfaces in pure HTML. 
+### Declarative user interfaces in pure HTML. 
 
 <img id="home-logo" src="/images/light-blue1.png"></div>

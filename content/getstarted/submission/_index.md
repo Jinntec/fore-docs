@@ -3,8 +3,15 @@ title: "Submissions"
 menuTitle: "loading and sending data"
 date: 2021-12-14T17:41:11+01:00
 tags: [getstarted, submission]
+weight: 10
 chapter: false
 ---
+
+What can be learned here:
+* defining a basic `<fx-submission>`
+* triggering a submission by using `<fx-send>` action
+* replacing data with submission 
+* sending a message to the user with `<fx-message>` action
 
 Ok, nice - we have a todo list that will be gone when we reload the browser 
 of leave the page.
@@ -190,16 +197,6 @@ With the `event` attribute the message action attaches to its parent element and
 This technique is used all over Fore to attach event handlers that in turn will run an action.
 {{% /notice %}}
 
-## Where to go from here?
-
-This tutorial only touched the surface of the possibilities. To further learn about Fore the following 
-resources are recommended:
-
-* The <a href="https://jinntec.github.io/Fore/doc/demos.html" target="_blank">Demos</a>. Fore evolves along the demos and they will show the latest in live running examples along 
-with the source code. Running through them will give you an impression of what can be done and how.
-* The [Element Reference](../../elements/) describes all Fore elements in more detail and also links to 
-the live demos.
-* For those interested in the inner workings of Fore the [Architecture](../../architecture/) section should have some answers.
 
 
 

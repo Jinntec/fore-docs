@@ -13,3 +13,8 @@ chapter: true
 This chapter describes all elements belonging to the Fore Model.
 
 ![Fore Model](/images/model.svg)
+
+{{% notice note %}}
+Model elements have no visual representation and are always hidden
+from view.
+{{% /notice %}}
