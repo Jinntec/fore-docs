@@ -2,4 +2,4 @@
 Not 100% of the XPath 3.1 functions are available in fontoXPath. In doubt please refer to their github page.</description></item><item><title>Architecture</title><link>https://jinntec.github.io/fore-docs/architecture/</link><pubDate>Fri, 11 Dec 2020 10:42:31 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/architecture/</guid><description>Architecture This chapter gives some insights into the inner workings of Fore. An understanding of the principles certainly helps to get the most out of Fore.
 Fore is build as a classical MVC architecture.
 Model -&amp;gt; &amp;lt;fx-model&amp;gt; Element View -&amp;gt; Fore UI Elements Controller -&amp;gt; Fore Action Elements</description></item><item><title>Fore</title><link>https://jinntec.github.io/fore-docs/</link><pubDate>Fri, 11 Dec 2020 10:42:31 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/</guid><description>Documentation fore - &amp;lsquo;situated in front of something else&amp;rsquo; - Merriam Webster
-Descriptive user interfaces in pure HTML.</description></item></channel></rss>
+Declarative user interfaces in pure HTML.</description></item></channel></rss>
