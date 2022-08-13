@@ -11,7 +11,7 @@ Sets the focus to a control with given id. If the id
 is within an repeat it will look for the active repeatitem
 and search that for the control. 
 
-Since: 08.2022
+Since: Version 2.0.0
 
 ### Attributes
 
