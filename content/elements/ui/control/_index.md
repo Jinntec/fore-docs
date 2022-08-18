@@ -12,16 +12,26 @@ instead wraps such a control and binds it to a data node in the model with the h
 
 ## Attributes
 
-| Name | Description | Default |
-|------|-------------| -------- |
-| context | XPath reference pointing to parent context | incopeContext |
-| debounce | optional numeric value in milliseconds to delay input events | - |
-| label | optional label | - |
-| ***ref*** | XPath reference pointing to the bound node | - |
-| updateEvent | optional event name when to trigger updating of bound node. | blur |
-| | 'enter' can be used to catch enter key |
-| valueProp | optional property name used to set the value of the widget (default:'value') | value |
+| Name         | Description | Default |
+|--------------|-------------| -------- |
+| context      | XPath reference pointing to parent context | incopeContext |
+| debounce     | optional numeric value in milliseconds to delay input events | - |
+| label        | optional label | - |
+| ***ref***    | XPath reference pointing to the bound node | - |
+| update-event | optional event name when to trigger updating of bound node. | blur |
+|              | 'enter' can be used to catch enter key |
+| value-prop   | optional property name used to set the value of the widget (default:'value') | value |
 
+## Attributes on widgets
+
+A widget is an element contained within a `<fx-control>` and must be marked
+with a `class="widget"`.
+
+Some attributes might occur on a widget to further control its behavior.
+
+| Name | Description |
+| ---- | --- |
+| selection | applies to `<select>` elements. If `selection="open"` is given an additional empty `<option>` will be added to allow the empty value.
 ## Events
 
 | Name | Description |
