@@ -11,7 +11,11 @@ Triggers immediate refresh.
 
 ## Attributes
 
-No Attributes
+| Name | Description                                                    |
+|------|----------------------------------------------------------------|
+| control | id of an control to be refreshed explicitly                    |
+| force | marker attribute to force a full refresh - overrules `control` |
+| self | searches upwards for `fx-control` and refreshes it |
 
 ## Action Attributes
 
