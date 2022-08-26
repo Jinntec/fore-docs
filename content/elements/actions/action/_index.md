@@ -31,9 +31,10 @@ see [script actions](../demo/script-actions.html) or the source of this file (do
 
 ## Events
 
-| Name | Description |
-|------|-------------|
-| action-performed | dispatched after execution of an action |
+| Name             | Description                                |
+|------------------|--------------------------------------------|
+| action-performed | dispatched after execution of an action    |
+| while-performed  | dispatched after execution of a while loop |
 
 
 ### Examples
