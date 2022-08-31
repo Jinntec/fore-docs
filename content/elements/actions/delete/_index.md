@@ -21,9 +21,9 @@ Deletes a node from a nodeset.
 
 ## fx-delete Attributes
 
-| Name | Description |
-|------|-------------|
-| repeatId | id reference to `fx-repeat` to delete from. If not present `fx-delete` will use next repeatitem in ancestor tree. |
+| Name | Description                                   |
+|------|-----------------------------------------------|
+| ref  | XPath reference to instance node(s) to delete |
 
 
 ## Examples
