@@ -15,9 +15,10 @@ and provide the following facilities:
 
 ## Attributes
 
-| Name | Description | default |
-|------|-------------|------- |
-| src | url to load a `<fx-fore>` element from another HTML file | - |
+| Name | Description                                                              | default |
+|------|--------------------------------------------------------------------------|---------|
+| src | url to load a `<fx-fore>` element from another HTML file                 | -       |
+| show-confirmation | boolean XPath - if true showing page exit confirmation before navigating |  -      |
 
 ## Events
 
@@ -31,5 +32,5 @@ and provide the following facilities:
 
 ## Examples
 
-All <a href="{{% siteparam "demoUrl" %}}" target="_blank">Demo</a> files
-
+* All <a href="{{% siteparam "demoUrl" %}}" target="_blank">Demo</a> files
+* [page exit confirmation]({{% siteparam "demoUrl" %}}beforeunload.html)
