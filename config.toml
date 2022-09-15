@@ -31,3 +31,8 @@ name = "<i class='fab fa-github'></i> Github"
 identifier = "ds"
 url = "https://github.com/jinntec/Fore"
 weight = 10
+
+name = "<i class='fa fa-link'></i> Links"
+identifier = "ds"
+url = "links"
+weight = 10
