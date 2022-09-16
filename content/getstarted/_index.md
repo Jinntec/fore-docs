@@ -26,7 +26,7 @@ Add these tags to the head of your HTML file.
       href="https://cdn.jsdelivr.net/npm/@jinntec/fore@latest/resources/fore.css">
 
 <script type="module" 
-        src="https://cdn.jsdelivr.net/npm/@jinntec/fore@latest/dist/fore-all.js">
+        src="https://cdn.jsdelivr.net/npm/@jinntec/fore@latest/dist/fore.js">
 ```
 
 You are good to go and may skip to next section!
