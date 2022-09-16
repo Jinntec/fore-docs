@@ -45,7 +45,12 @@
     --CODE-COLOR: var(--paper-blue-900);
     --CODE-TEXT-COLOR:var(--paper-blue-900);
 }
-
+[data-url="http://localhost:1313/fore-docs/links/"] #navigation{
+    display: none;
+}
+#sidebar ul li[data-nav-id="/links/"]{
+    display: none;
+}
 body {
     color: var(--MAIN-TEXT-color) !important;
     font-size: 1.2rem !important;
