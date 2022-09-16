@@ -26,7 +26,8 @@
     /* Background color of the active section and its childs */
     --MENU-SECTIONS-BG-color: #252c31;
     /* Background color of other sections */
-    --MENU-SECTIONS-LINK-color: #ccc;
+    /*--MENU-SECTIONS-LINK-color: #ccc;*/
+    --MENU-SECTIONS-LINK-color: white;
     /* Color of links in menu */
     --MENU-SECTIONS-LINK-HOVER-color: #e6e6e6;
     /* Color of links in menu, when hovered */
@@ -34,7 +35,8 @@
     /* Color of active category text */
     --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #fff;
     /* Color of background for the active category (only) */
-    --MENU-VISITED-color: #33a1ff;
+    /*--MENU-VISITED-color: #33a1ff;*/
+    --MENU-VISITED-color: white;
     /* Color of 'page visited' icons in menu */
     --MENU-SECTION-HR-color: #20272b;
     /* Color of <hr> separator in menu */
@@ -97,7 +99,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 
 
 h2, h3, h4, h5 {
-    color: var(--MAIN-TITLES-TEXT-color) !important;
+    color: var(--MAIN-TITLES-TEXT-color);
 }
 #header a{
     margin:0 auto;
@@ -129,6 +131,7 @@ a:hover {
 
 #sidebar ul li.visited>a .read-icon {
     color: var(--MENU-VISITED-color);
+
 }
 
 #body a.highlight:after {
@@ -152,7 +155,8 @@ pre{
 }
 
 #sidebar {
-    background-color: var(--MENU-SECTIONS-BG-color);
+    /*background-color: var(--MENU-SECTIONS-BG-color);*/
+    background: linear-gradient(to right, rgba(19, 40, 115, 0.8), rgba(19, 80, 200, 0.8));
 }
 
 #sidebar #header-wrapper {
@@ -195,6 +199,9 @@ pre{
 
 #sidebar hr {
     border-color: var(--MENU-SECTION-HR-color);
+}
+#sidebar #shortcuts h3{
+    margin-top:2rem;
 }
 
 #homelinks {
