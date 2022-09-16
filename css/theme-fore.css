@@ -22,7 +22,9 @@
     /* Override search field border color */
     --MENU-SEARCH-BOX-ICONS-color: #35424b;
     /* Override search field icons color */
-    --MENU-SECTIONS-ACTIVE-BG-color: #20272b;
+    /*--MENU-SECTIONS-ACTIVE-BG-color: #20272b;*/
+    /*--MENU-SECTIONS-ACTIVE-BG-color: #20272b;*/
+    --MENU-SECTIONS-ACTIVE-BG-color: rgba(255,255,255,0.09);
     /* Background color of the active section and its childs */
     --MENU-SECTIONS-BG-color: #252c31;
     /* Background color of other sections */
