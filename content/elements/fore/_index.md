@@ -18,7 +18,9 @@ and provide the following facilities:
 | Name | Description                                                              | default |
 |------|--------------------------------------------------------------------------|---------|
 | src | url to load a `<fx-fore>` element from another HTML file                 | -       |
-| show-confirmation | boolean XPath - if true showing page exit confirmation before navigating |  -      |
+| show-confirmation | either just marker attribute or boolean XPath |  -      |
+
+if `show-confirmation` is just used as a marker Fore will check whether data fields have been modified after initial loading. If yes, the confirmation will come up. Likewise when an XPath expression is given as the attribute value it is evaluated to a boolean to decide wether to show the confirmation.
 
 ## Events
 
