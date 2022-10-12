@@ -5,6 +5,7 @@ theme = "learn"
 canonifyURLs = true
 
 [params]
+    editURL = "https://github.com/Jinntec/fore-docs/tree/main/content/"
     themeVariant = "fore"
     siteLandingPage = "https://jinntec.github.io/fore-docs"
     landingPageName = "Fore Documentation"
