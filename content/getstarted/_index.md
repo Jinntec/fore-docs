@@ -43,10 +43,10 @@ Setup a basic HTML page like this:
     <meta charset="utf-8"/>
     <meta content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes" name="viewport"/>
     <title>template</title>
-    <link href="[path-to-fore]/fore.css" rel="stylesheet">
+    <link href="[path-to-fore]/resources/fore.css" rel="stylesheet">
 </head>
 <body>
-<script type="module" src="[path-to-fore]/fore.js"></script>
+<script type="module" src="[path-to-fore]/dist/fore.js"></script>
 </body>
 </html>
 ```
@@ -69,7 +69,7 @@ With dev version of Fore there's logging of:
 
 To get those message on developers tools console just use:
 ```
-<script type="module" src="[path-to-fore]/fore-dev.js"></script>
+<script type="module" src="[path-to-fore]/dist/fore-dev.js"></script>
 ```
 
 Once in production you can simply switch back. There's no difference between these versions beyond 
