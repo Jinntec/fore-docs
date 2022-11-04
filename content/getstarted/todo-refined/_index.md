@@ -10,11 +10,11 @@ tags: [basic, repeat, actions, controls]
 What can be learned here:
 * adding a counter
 * insert from a template node
-* use `<fx-bind>` to require an value
+* use `<fx-bind>` to require a value
 
 ## Todo refined
 
-In last chapter the bare minimum for the todo app were created.
+In the previous chapter the bare minimum for the todo app were created.
 
 In this chapter we'd like to make some improvements:
 * show a counter for our todos
@@ -95,7 +95,7 @@ offers a big library of functions.
     </fx-repeat>
 </fx-fore>
 
-Of course you can add further counters for closed and all tasks. I'll leave that as an excercise.
+Of course you can add further counters, for example, for closed tasks, or for all tasks. I'll leave that as an excercise.
 
 ### Fixing our repeat
 
@@ -125,7 +125,7 @@ into
 
 ```
 <fx-trigger class="btn add">
-    <button>+</button>
+    <button>add</button>
     <fx-insert ref="task" at="1" position="before" origin="template/task"></fx-insert>
 </fx-trigger>
 ```
@@ -225,6 +225,7 @@ overview when things get more complex.
             </data>
         </fx-instance>
         <fx-bind ref="task" required="true()"></fx-bind>
+        <fx-bind ref="task" constraint="string-length(.) > 0" alert="what's your todo?"></fx-bind>
     </fx-model>
     <h1>Todo</h1>
     <fx-trigger class="btn add">
