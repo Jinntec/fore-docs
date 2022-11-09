@@ -14,7 +14,7 @@ What can be learned here:
 * sending a message to the user with `<fx-message>` action
 
 Ok, nice - we have a todo list that will be gone when we reload the browser 
-of leave the page.
+or leave the page.
 
 <fx-fore id="todo">
     <fx-model id="record">
@@ -170,7 +170,7 @@ After hitting the 'Save' button the instance 'todo-list' will be identical to th
 This means that our submission has been executed and has send its data to the '#echo' submission, that gets back the 
 same data and replaced the 'saved-list' instance.
 
-## Messsaging the user
+## Messaging the user
 
 You may have noticed a message in the lower left after hitting 'save'.
 
