@@ -29,7 +29,7 @@ The `<fx-model>` is a direct child of the `<fx-fore>` element.
 
 ### 2. Add some data
 
-Not very existing so far so add some data:
+Not very exciting so far, so add some data:
 
 ```
 <fx-fore>
