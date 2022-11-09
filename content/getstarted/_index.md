@@ -33,7 +33,7 @@ You are good to go and may skip to next section!
 
 ### Using local copy
 
-Download Fore from [https://github.com/Jinntec/Fore/releases](github) and unpack it to a convenient location on your disk.
+Download Fore from [github](https://github.com/Jinntec/Fore/releases) and unpack it to a convenient location on your disk.
 
 Setup a basic HTML page like this:
 ```
