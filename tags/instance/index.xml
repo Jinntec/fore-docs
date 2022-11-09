@@ -2,4 +2,4 @@
 the basic structure of Fore &amp;lt;fx-model&amp;gt; and &amp;lt;fx-instance&amp;gt; elements using a Template Expression Hello World - Step by Step Each &amp;lt;fx-fore&amp;gt; element has a single model.
 1. Add the model First step to create a data-bound &amp;lsquo;Hello World&amp;rsquo; example is to add a model.
 &amp;lt;fx-fore&amp;gt; &amp;lt;fx-model&amp;gt;&amp;lt;/fx-model&amp;gt; &amp;lt;/fx-fore&amp;gt; The &amp;lt;fx-model&amp;gt; is a direct child of the &amp;lt;fx-fore&amp;gt; element.
-2. Add some data Not very existing so far so add some data:</description></item></channel></rss>
+2. Add some data Not very exciting so far, so add some data:</description></item></channel></rss>
