@@ -909,6 +909,9 @@ td {
 .hljs::selection, .hljs span::selection {
     background: #b7b7b7;
 }
+.hljs-string{
+  color: var(--paper-green-600);
+}
 .lightbox-active #body {
     overflow: visible;
 }

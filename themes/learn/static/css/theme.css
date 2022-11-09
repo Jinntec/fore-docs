@@ -906,8 +906,17 @@ td {
     overflow: auto;
     position: relative;
 }
+.hljs-attr{
+  color: var(--paper-orange-500);
+}
+.hljs-meta{
+  color:var(--paper-grey-900);
+}
 .hljs::selection, .hljs span::selection {
     background: #b7b7b7;
+}
+.hljs-string{
+  color: var(--paper-light-blue-700);
 }
 .lightbox-active #body {
     overflow: visible;
