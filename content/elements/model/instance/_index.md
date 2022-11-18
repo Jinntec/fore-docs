@@ -21,10 +21,20 @@ necessary.
 | xpath-default-namespace | namespace to be used with unprefixed XPathes | emtpy |
 
 
+## URI Schemes
+
+In addition to 'http', 'https' further URI schemes are:
+  * '#querystring' will create a XML structure for the URL parameter of the page
+  * 'localStore:[key]' to read some data from browsers' localstorage
+  
+  
 ## Examples
 
 * <a href="{{% siteparam "demoUrl" %}}03-instances.html" target="_blank">Instances</a>
 * <a href="{{% siteparam "demoUrl" %}}04-instances.html" target="_blank">Instance super powers</a>
 * <a href="{{% siteparam "demoUrl" %}}controls/fx-output.html" target="_blank">the fx-output element</a>
+* <a href="{{% siteparam "demoUrl" %}}submission-localStore.html" target="_blank">localStore</a>
+
+  
 
 
