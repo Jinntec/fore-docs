@@ -35,11 +35,17 @@ Send and receive data.
 | submit-done | dispatched when submission was successfully completed |
 
 
+## URI Schemes
+
+Beside http, https Fore supports:
+
+  * 'localStore:[key]' to manage data in the browsers' localstorage (supports 'get', 'post', 'delete' and 'consume' methods
+  * '#echo' to echo back whatever got sent 
+  
 ## Examples
 
 * [auth]({{% siteparam "demoUrl" %}}auth.html)
-* [submission relevance]({{% siteparam "demoUrl" %}}submission-relevance.html)
-* [submission serialization]({{% siteparam "demoUrl" %}}submission-serialize.html)
+* [submission localStore]({{% siteparam "demoUrl" %}}submission-localStore.html)
 * [submission serialization]({{% siteparam "demoUrl" %}}submission-serialize.html)
 * [submission demo]({{% siteparam "demoUrl" %}}submission1.html)
 * [submission demo2]({{% siteparam "demoUrl" %}}submission2.html)
