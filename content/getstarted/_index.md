@@ -31,6 +31,9 @@ Add these tags to the head of your HTML file.
 
 You are good to go and may skip to next section!
 
+> If you are situated within the European Union you should always bundle a Fore distribution with your code to avoid conflict with
+> data privacy protection regulations.
+
 ### Using local copy
 
 Download Fore from [github](https://github.com/Jinntec/Fore/releases) and unpack it to a convenient location on your disk.
