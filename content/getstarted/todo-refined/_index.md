@@ -48,7 +48,16 @@ We add a counter simply above our repeat.
 
 The Template Expression will output the number of open task nodes in the data.
 
+Let's dissect the expression a bit more:
+* count() is a built-in XPath 3 function we are just using here to count the amount of tasks
+* `task[@complete='false']` filters all task by their attribute `complete` and returns only those with a value of `false`
+
+
 {{% notice note %}}
+Fore uses XPath 3.1 as its expression language used in binding expressions but also in many other 
+places like in Template Expressions.  It is beyond the scope of this tutorial to give an introduction 
+to XPath you can find some resources in the link section. 
+
 `count()` is an built-in [XPath 3.1](https://www.w3.org/TR/xpath-31/) function we're using to get the number of todos. XPath
 offers a big library of functions. 
 {{% /notice %}}
