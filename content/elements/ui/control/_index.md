@@ -36,6 +36,7 @@ Some attributes might occur on a widget to further control its behavior.
 
 | Name | Description |
 |------|-------------|
+| init | dispatched once when a control is initialized. Can be used for customization of wrapped widgets. |
 | value-changed | dispatched during refresh after the value of the control has changed |
 | optional | dispatched during refresh when node has become optional |
 | required | dispatched during refresh when node has become required |

@@ -18,6 +18,8 @@ Since: Version 2.0.0
 | Name    | Description                         |
 |---------|-------------------------------------|
 | control | idref that a control                |
+| select | if attribute is given the value of the control will be selected                |
+  
 
 
 ### Action Attributes

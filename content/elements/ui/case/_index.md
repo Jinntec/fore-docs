@@ -17,8 +17,11 @@ Defines one 'page' of a `fx-switch` element.
 
 ## Events
 
-none
-
+| Name | Description |
+|------|-------------|
+| select | dispatched to `fx-case` when a case gets selected |
+| deselect | dispatched to `fx-case` when case gets deselected |
+  
 ## Examples
 
 * [Repeat in Switch]({{% siteparam "demoUrl" %}}repeat-in-switch.html)
