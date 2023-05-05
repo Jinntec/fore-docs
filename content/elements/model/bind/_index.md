@@ -6,8 +6,18 @@ tags: [elements, model, fx-bind]
 
 ## Description
 
-`fx-bind` element attaches constraints and calculations to instance nodes.
+The `fx-bind` element attaches constraints and calculations to instance nodes.
+  
+ By using XPath expressions for the attributes users can build complex calculation and validation rules (business logic) using a declarative syntax.
+  
+ `fx-bind`elements can be nested thereby taking part in scope resolution resolving their `ref` attributes relative to their parent element.
 
+The bindings are used to build the MDG (Main Dependency Graph) which detects dependencies between nodes and builds a graph that connects the dependent nodes to the currently processed one. This directed graph will then be ordered for computation. Circular dependencies are not allowed.
+  
+When nodes are changed by user interaction only affected nodes are recomputed - affected nodes are nodes that have a connection to the changed node in the graph. 
+
+This change detection mechanism also drives efficient updating of the UI by selectively updating only controls that are bound to affected nodes.
+  
 ## Attributes
 
 | Name | Description | Default |
