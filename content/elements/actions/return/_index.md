@@ -1,13 +1,15 @@
 ---
-title: "<fx-replace>"
-date: 2021-12-14T17:41:11+01:00
-tags: [elements actions]
-weight: 100
+title: "<fx-return>"
+menuTitle: "<fx-return>"
+date: 2023-05-10T09:03:58+02:00
+tags: [Actions]
+weight: 120
 ---
 
 ### Description
 
-Replaces a node with another.
+The `fx-return` action is exclusively used within the context of bound Fore elements.
+
 
 ### Attributes
 
@@ -24,6 +26,3 @@ see [Action]({{% siteparam "demoUrl" %}}actions.html)
 ### Examples
 
 * [Replace Action]({{% siteparam "demoUrl" %}}fx-replace.html)
-
-
-

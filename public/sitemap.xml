@@ -38,6 +38,9 @@
     <loc>https://jinntec.github.io/fore-docs/elements/ui/</loc>
     <lastmod>2021-12-14T17:41:11+01:00</lastmod>
   </url><url>
+    <loc>https://jinntec.github.io/fore-docs/elements/actions/load/</loc>
+    <lastmod>2023-01-16T12:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://jinntec.github.io/fore-docs/elements/actions/append/</loc>
     <lastmod>2021-12-14T17:41:11+01:00</lastmod>
   </url><url>
@@ -89,22 +92,28 @@
     <loc>https://jinntec.github.io/fore-docs/elements/actions/</loc>
     <lastmod>2021-12-14T17:41:11+01:00</lastmod>
   </url><url>
-    <loc>https://jinntec.github.io/fore-docs/links/</loc>
-    <lastmod>2022-09-15T10:42:31+01:00</lastmod>
+    <loc>https://jinntec.github.io/fore-docs/glossary/</loc>
+    <lastmod>2023-05-09T19:22:22+02:00</lastmod>
   </url><url>
     <loc>https://jinntec.github.io/fore-docs/tags/elements-actions/</loc>
-    <lastmod>2022-08-12T12:00:00+01:00</lastmod>
+    <lastmod>2023-01-16T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://jinntec.github.io/fore-docs/tags/load/</loc>
+    <lastmod>2023-01-16T12:00:00+01:00</lastmod>
   </url><url>
     <loc>https://jinntec.github.io/fore-docs/tags/</loc>
-    <lastmod>2022-08-12T12:00:00+01:00</lastmod>
+    <lastmod>2023-01-16T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://jinntec.github.io/fore-docs/links/</loc>
+    <lastmod>2022-09-15T10:42:31+01:00</lastmod>
   </url><url>
     <loc>https://jinntec.github.io/fore-docs/tags/tutorial/</loc>
     <lastmod>2022-06-10T12:48:37+02:00</lastmod>
   </url><url>
-    <loc>https://jinntec.github.io/fore-docs/functions/</loc>
+    <loc>https://jinntec.github.io/fore-docs/tags/functions/</loc>
     <lastmod>2022-06-03T10:42:31+01:00</lastmod>
   </url><url>
-    <loc>https://jinntec.github.io/fore-docs/tags/functions/</loc>
+    <loc>https://jinntec.github.io/fore-docs/functions/</loc>
     <lastmod>2022-06-03T10:42:31+01:00</lastmod>
   </url><url>
     <loc>https://jinntec.github.io/fore-docs/tags/version-1.0.0/</loc>
@@ -248,10 +257,10 @@
     <loc>https://jinntec.github.io/fore-docs/tags/getstarted/</loc>
     <lastmod>2021-12-14T17:41:11+01:00</lastmod>
   </url><url>
-    <loc>https://jinntec.github.io/fore-docs/architecture/initialization/</loc>
+    <loc>https://jinntec.github.io/fore-docs/tags/initialization/</loc>
     <lastmod>2021-12-14T17:41:11+01:00</lastmod>
   </url><url>
-    <loc>https://jinntec.github.io/fore-docs/tags/initialization/</loc>
+    <loc>https://jinntec.github.io/fore-docs/architecture/initialization/</loc>
     <lastmod>2021-12-14T17:41:11+01:00</lastmod>
   </url><url>
     <loc>https://jinntec.github.io/fore-docs/tags/inspector/</loc>

@@ -30,6 +30,7 @@ canonifyURLs = true
     url = "links"
     weight = 11
 
+
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 

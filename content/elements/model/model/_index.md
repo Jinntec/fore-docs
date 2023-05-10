@@ -7,10 +7,12 @@ weight: 1
 ## Description
 
 The model is responsible for:
-* creating and maintaining the Main Dependency Graph (MDG)
+* creating and maintaining the Main Dependency Graph (MDG). 
 * creating ModelItems for bound data nodes
 * calculation 
 * validation
+
+This is done with the help of <a href="/elements/model/bind" >bind</a> elements.
 
 The `<fx-model>` element is a direct child of `<fx-fore>` and is itself a container for:
 * one or more `<fx-instance>` elements

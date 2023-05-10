@@ -9,5 +9,5 @@ chapter: false
 
 
 This chapter describes all user interface elements.
-![Fore Model](/images/ui.svg)
+![Fore UI](/images/ui.svg)
 

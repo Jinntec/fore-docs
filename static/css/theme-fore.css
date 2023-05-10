@@ -380,3 +380,19 @@ fx-output label{
 }
 */
 
+#sidebar .ps-container ul.topics li.parent li.dd-item[data-nav-id] ul{
+    display: none;
+}
+
+#sidebar .ps-container ul.topics li.parent li.dd-item.active ul{
+    display: block;
+}
+
+[alt="Fore Model"],
+[alt="Fore UI"],
+[alt="Fore Actions"]
+{
+    width:20rem !important;
+}
+
+
