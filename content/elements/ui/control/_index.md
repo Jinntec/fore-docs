@@ -14,12 +14,16 @@ instead wraps such a control and binds it to a data node in the model with the h
 
 | Name         | Description | Default |
 |--------------|-------------| -------- |
+| as           | 'text' or 'node'. When using 'node' a whole dom tree can be passed to a widget | text |  
 | context      | XPath reference pointing to parent context | incopeContext |
 | debounce     | optional numeric value in milliseconds to delay input events | - |
+| initial      | XPath binding expression referring to data that get passed to Fore control as default instance. Only effective when `url` is specified. | - |
 | label        | optional label | - |
 | ***ref***    | XPath reference pointing to the bound node | - |
+| shadow       | marker attribute to attach Fore control to shadowDOM instead of lightDOM | - |
 | update-event | optional event name when to trigger updating of bound node. | blur |
 |              | 'enter' can be used to catch enter key |
+| url          | URL pointing to HTML page containing `fx-fore` element that gets imported as widget |
 | value-prop   | optional property name used to set the value of the widget (default:'value') | value |
 
 ## Attributes on widgets
