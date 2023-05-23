@@ -23,7 +23,7 @@ and provides the following facilities:
 if `show-confirmation` is just used as a marker attribute Fore will check whether data fields have been modified after initial loading. Attribute may be
 empty, the empty string, 'true' or 'show-confirmation'.
 
-If yes, the confirmation will come up. Likewise when an XPath expression is given as the attribute value it is evaluated to a boolean to decide wether to show the confirmation.
+Likewise when an XPath expression is given as the attribute value it is evaluated to a boolean to decide wether to show the confirmation.
 
 ## Events
 
