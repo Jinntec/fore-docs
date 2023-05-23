@@ -7,7 +7,7 @@ weight: 1
 
 The `<fx-fore>` element establishes a scope of processing similar
 to a HTML `<form>` element. It is a container for all other Fore elements
-and provide the following facilities:
+and provides the following facilities:
 
 * inits a Fore session
 * refreshes the UI
