@@ -5,6 +5,57 @@ date: 2023-05-09T19:22:22+02:00
 tags: []
 ---
 
+## Id Resolution
+
+As Fore offers repeating sections via `fx-repeat` or `data-ref` there will be the situation that
+`id` attributes present in the template of a repeat get duplicated at runtime.
+
+For example:
+```
+<fx-repeat ref="items">
+  <template>
+     <div id="myDiv">....</div>
+  </template>
+</fx-repeat>
+```
+
+This will result in as many `<div>` elements with id `myDiv` as you got items in your data.
+
+To avoid clashes Fore implements an Ìd Resolution` algorithm to make sure that you can still refer to the right repeated
+element.
+
+Example:
+```
+<fx-repeat ref="items">
+    <template>
+        ...
+        <div id="myId-">
+        ...
+        <!-- dispatch 'hello' event to 'myId' -->
+        <fx-dispatch name="hello" targetid="myId"></fx-dispatch>
+    </template>
+</fx-repeat>
+
+<!-- rolled out at runtime -->
+<fx-repeat ref="items">
+    <fx-repeatitem>
+        <div id="myId">
+        ...
+        <fx-dispatch name="hello" targetid="myId"></fx-dispatch>
+    <fx-repeatitem>
+    <fx-repeatitem>
+        <div id="myId">
+        ...
+        <fx-dispatch name="hello" targetid="myId"></fx-dispatch>
+    <fx-repeatitem>
+    <fx-repeatitem>
+        <div id="myId">
+        ...
+        <fx-dispatch name="hello" targetid="myId"></fx-dispatch>
+    <fx-repeatitem>
+```
+Here the dispatch action refers to an id - Id Resolution will make sure that the id resolves within the context of the enclosing repeat item. This works also for nested repeats.
+
 
 ## Scoped Resolution
 
