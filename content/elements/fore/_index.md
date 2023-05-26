@@ -1,7 +1,7 @@
 ---
 title: "fx-fore"
 date: 2022-05-20T16:08:59+02:00
-tags: [fore, fx-fore]
+tags: [fore, fx-fore, v1.6.x]
 weight: 1
 ---
 
@@ -19,6 +19,7 @@ and provides the following facilities:
 |------|--------------------------------------------------------------------------|---------|
 | src | url to load a `<fx-fore>` element from another HTML file                 | -       |
 | show-confirmation | either just marker attribute or boolean XPath |  -      |
+| [foreign attributes] | Foreign attributes are all other attributes being present. These will be copied to the resulting `fx-fore` element if `src` is used for loading an external page. These can be accessed with the `fore-attr()` function | - | 
 
 if `show-confirmation` is just used as a marker attribute Fore will check whether data fields have been modified after initial loading. Attribute may be
 empty, the empty string, 'true' or 'show-confirmation'.
