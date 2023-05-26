@@ -59,7 +59,7 @@ Here the dispatch action refers to an id - Id Resolution will make sure that the
 
 ## Scoped Resolution
 
-'Scoped Resolution' takes place whenever `ref` attributes are resolved. It allows
+'Scoped Resolution' takes place whenever `ref` or `data-ref` attributes are resolved. It allows
 to use relative binding expressions that are resolved upwards the document tree.
 
 It is a similar concept as with usual relative linking in HTML or navigating a directory-structure.
