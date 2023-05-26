@@ -7,7 +7,10 @@ tags: ["Version 1.0.0", functions]
 
 # Functions
 
-This chapter describes the builtin functions of Fore. As Fore uses
+An overview of all functions available in Fore.
+
+## XPath Functions
+As Fore uses
 <a href="https://www.w3.org/TR/xpath-functions-31/" target="_blank">XPath 3.1</a> as its expression language you also have access to the large
 library of functions that are defined by the standard.  
 
@@ -19,7 +22,8 @@ library of functions that are defined by the standard.
 
 In addition to XPath Fore defines some built-in functions that are essential for building fully event-driven user-interfaces.
 
-## `base64encode(string)`
+## Fore Functions
+### `base64encode(string)`
 
 This is probably the least used function but sometimes you need to base64-encode a string e.g. for sending it
 as a GET param. 
@@ -30,14 +34,14 @@ Param:
 Returns:
 * base64Encoded string
 
-## `context(id)`
+### `context(id)`
 
 The `context()` function is needed in situations where several instance data sources are involved.
 
 Param:
 * optional: 'id' - an id of an element to use as context. If not given returns the parent context of the current context.
 
-## `event(property)`
+### `event(property)`
 
 The `event` function is essential when working with events and params need to be passed. It allows to access properties
 of the event details object which is passed in by the event dispatcher.
@@ -50,7 +54,18 @@ Returns:
 
 > `event` is often used in conjunction with `fx-dispatch` action which allows to set properties of a custom event.
 
-## `index(id)`
+### `fore-attr(attribute-name)`
+
+Returns the value of an attribute on the `fx-fore` element in scope. Can be used to pass values to a Fore page loaded via
+the `src` attribute which in turn can use these values inside of its logic with the help of this function.
+
+Param:
+* required: attribute name - an attribute name present on the Fore element in scope
+
+Returns:
+* the value of the attribute
+
+### `index(id)`
 
 The `index` function is used in combination with `fx-repeat` elements. It returns the current index of a given repeat.
 
@@ -60,7 +75,7 @@ Param:
 Returns:
 * an integer denoting the currently active repeat item
 
-## `instance(id)`
+### `instance(id)`
 
 The `instance` function is the most important function. It allows to address a certain `fx-instance` element for data-binding.
 
@@ -70,7 +85,7 @@ Param:
 Returns:
 * the root context for matching `fx-instance` element. The type of the root context depends on the type of instance which can currently be 'xml' or 'json'. For XML the root node of the instance data is returned. For JSON the outermost map or array will be returned.
 
-## `log(id)`
+### `log(id)`
 
 The `log` function is just for development purposes and can be used to log some instance data to the document.
 
