@@ -59,16 +59,11 @@ Setup a basic HTML page like this:
 ## Using the dev version
 
 During development it can be helpful to get console messages that give some feedback about
-what is happening behind the scenes.
+what is happening behind the scenes. The dev version also includes additional tools to support the developer:
 
-With dev version of Fore there's logging of:
+* `fx-inspector` which is a simple instance data viewer showing all data in a collapsible side-panel on the right. It can display XML and JSON data
+* `fx-devtools` aka 'Fore Glass' which allows you to log all events and actions, inspect the DOM elements and showing a live view of all data. Fore Glass is available from version 2.0.0.  
 
-* loading of instances
-* creation of dependency graph
-* recalculation and revalidation of ModelItems
-* refreshing the UI
-* firing of events and action execution
-* submissions
 
 To get those message on developers tools console just use:
 ```
