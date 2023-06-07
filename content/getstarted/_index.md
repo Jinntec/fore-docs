@@ -56,6 +56,11 @@ Setup a basic HTML page like this:
 
 '[path-to-fore]' has to be the relative path to the Fore location on your disk.
 
+### Using NPM
+
+`npm i --save @jinntec/fore` 
+
+
 ## Using the dev version
 
 During development it can be helpful to get console messages that give some feedback about
