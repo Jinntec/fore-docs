@@ -15,10 +15,16 @@ error is thrown.
 | Name | Description                                                                                       | 
 |------|---------------------------------------------------------------------------------------------------| 
 | ***submission*** | required idref to `fx-submission` element. Also supports '#reload' which just reloads the window. |
+| target | overwrites target attribute of submission - may contain template expressions |
+| url | overwrites url attribute of submission - may contain template expressions |
 
+> Attributes that overwrite submission attributes are set once per execution. Calling the same submission again without such an attribute falls back to the value on `fx-submission` element.  
+  
 ## Events
 
-none
+| Name | Description                                                                                       | 
+|------|---------------------------------------------------------------------------------------------------| 
+| log | log event is dispatched in case submission id cannot be found |
 
 ### Examples
 
@@ -30,6 +36,8 @@ none
 * [Submission serialization]({{% siteparam "demoUrl" %}}submission3.html)
 * [Submission Chaining]({{% siteparam "demoUrl" %}}submission4.html)
 * [submit with ref]({{% siteparam "demoUrl" %}}targetref.html)
+* [overwrite url]({{% siteparam "demoUrl" %}}submission-url-overwrite.html)
+* [overwrite url]({{% siteparam "demoUrl" %}}submission-target-overwrite.html)
 
 
 
