@@ -3,7 +3,6 @@ title: "Get Started"
 menuTitle: "Get Started"
 date: 2021-12-14T17:41:11+01:00
 weight: 1
-tags: [getstarted]
 chapter: false
 ---
 
