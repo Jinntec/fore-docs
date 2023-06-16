@@ -12,9 +12,9 @@ Send and receive data.
 ## Attributes
 | Name | Description | Default |
 |------|-------------| -------- |
-| ***id*** | id of submission for referral |  |
-| ***ref*** | XPath reference pointing to the bound node |  |
-| instance | id of instance when `replace='instance'` |  |
+| ***id*** | required: id of submission for referral | 'default' |
+| ***ref*** | XPath reference pointing to the bound node | root node of default instance |
+| instance | id of instance when `replace='instance'`. Required when replace='instance' |  |
 | into | XPath expr where to insert response nodes into |  |
 | method | http methods GET, POST, PUT, DELETE, url-encoded-post | GET  |
 | nonrelevant | handling of non relevant nodes during serialization. Can be one of 'keep', 'empty' or 'remove' | remove  |
@@ -25,8 +25,11 @@ Send and receive data.
 |  | 'redirect' - use response as redirect url. | |
 |  | 'none' - response will be ignored. | |
 | serialization | 'none' or 'xml' at this point | xml |
+| target | selector in CSS selector syntax. valid only when replace is 'target'.  | |
 | targetref | XPath pointing to target node when `replace="instance" | |
+| validate | Boolean to turn validator mode on/off | true |
 
+ 
 ## Events
 | Name | Description | 
 |------|-------------| 
