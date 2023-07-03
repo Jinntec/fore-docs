@@ -5,6 +5,13 @@ date: 2023-05-09T19:22:22+02:00
 tags: []
 ---
 
+## Binding Expression
+
+A binding expression is represented in markup as a `ref` or `data-ref` attribute. The expression language is XPath 3 which allows for complex
+bindings that include filters with function calls, conditional etc.
+
+Binding Expressions are relative to their parent bindings - see under 'Scoped Resolution'.
+
 ## Id Resolution
 
 As Fore offers repeating sections via `fx-repeat` or `data-ref` there will be the situation that
