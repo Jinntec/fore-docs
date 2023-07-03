@@ -148,6 +148,9 @@ a:hover {
     background-color: var(--MAIN-LINK-HOVER-color);
 }
 
+#chapter h3{
+    text-align: left;
+}
 p{
     font-size: 1.4rem;
 }
