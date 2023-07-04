@@ -28,12 +28,13 @@ Likewise when an XPath expression is given as the attribute value it is evaluate
 
 ## Events
 
-| Name | Description |
-|------|-------------|
+| Name              | Description |
+|-------------------|-------------|
 | compute-exception | dispatched in case the dependency graph is cirular |
-| refresh-done | dispatched after a refresh() run |
-| ready | dispatched after Fore has fully been initialized |
-| error | dispatches error when template expression fails to evaluate |
+| refresh-done      | dispatched after a refresh() run |
+| ready             | dispatched after Fore has fully been initialized |
+| error             | dispatches error when template expression fails to evaluate |
+
 
 
 ## Examples

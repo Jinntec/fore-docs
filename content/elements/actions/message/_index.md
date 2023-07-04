@@ -19,15 +19,6 @@ Display a message to the user.
 | | 'ephemeral' - auto-closing popup message  | default |
 | value | XPath expression which resolves to message | |
 
-## Action Attributes
-
-| Name | Description |
-|------|-------------|
-| delay | delay before action is executed in milliseconds. |
-| event | the event name this action is listening to |
-| if | boolean XPath expression. Action is only executed if this returns true. |
-| target | id reference to element this action attaches to |
-| while | boolean XPath expression. Action is only executed if `ìf` and `while` return true. |
 
 ## Events
 

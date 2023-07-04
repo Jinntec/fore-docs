@@ -22,19 +22,7 @@ see [script actions](../demo/script-actions.html) or the source of this file (do
 
 | Name | Description |
 |------|-------------|
-| delay | delay before action is executed in milliseconds. |
-| event | the event name this action is listening to |
-| if | boolean XPath expression. Action is only executed if this returns true. |
 | src | optional attribute to point to a JavaScript file containing a single function to be called. |
-| target | id reference to element this action attaches to |
-| while | boolean XPath expression. Action is only executed if `ìf` and `while` return true. |
-
-## Events
-
-| Name             | Description                                |
-|------------------|--------------------------------------------|
-| action-performed | dispatched after execution of an action    |
-| while-performed  | dispatched after execution of a while loop |
 
 
 ### Examples

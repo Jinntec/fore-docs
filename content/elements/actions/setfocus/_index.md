@@ -21,17 +21,6 @@ Since: Version 2.0.0
 | select | if attribute is given the value of the control will be selected                |
   
 
-
-### Action Attributes
-
-| Name | Description |
-|------|-------------|
-| delay | delay before action is executed in milliseconds. |
-| event | the event name this action is listening to |
-| if | boolean XPath expression. Action is only executed if this returns true. |
-| target | id reference to element this action attaches to |
-| while | boolean XPath expression. Action is only executed if `ìf` and `while` return true. |
-
 ## Events
 
 none

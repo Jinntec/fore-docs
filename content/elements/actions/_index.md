@@ -13,7 +13,28 @@ This chapter describes all Action elements.
 
 ![Fore Actions](/images/actions.svg)
 
+## Common Attributes
 
+The following attribues can be used on any Fore action element.
+
+| Name          | Description                                                                        |
+|---------------|------------------------------------------------------------------------------------|
+| defaultAction | 'perform' (default) or 'cancel'                                                    |
+| delay         | delay before action is executed in milliseconds.                                   |
+| event         | the event name this action is listening to                                         |
+| if            | boolean XPath expression. Action is only executed if this returns true.            |
+| phase         | 'default' or 'capture'                                                             |
+| propagate     | 'stop' or 'continue' (default)                                                     |
+| target        | id reference to element this action attaches to                                    |
+| while         | boolean XPath expression. Action is only executed if `ìf` and `while` return true. |
+
+
+## Common Events
+
+| Name             | Description                                |
+|------------------|--------------------------------------------|
+| action-performed | dispatched after execution of an action    |
+| while-performed  | dispatched after execution of a while loop |
 
 
 

@@ -17,10 +17,6 @@ Replaces a node with another.
 | with | XPath expression to point to a node for replacement |
 
 
-### Action Attributes
-
-see [Action]({{% siteparam "demoUrl" %}}actions.html)
-
 ### Examples
 
 * [Replace Action]({{% siteparam "demoUrl" %}}fx-replace.html)
