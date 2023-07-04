@@ -36,7 +36,7 @@ A Fore Action can listen to any event. These might the native ones or custom eve
 
 > If events specify a `details` object this can be accessed with the Fore `event('propname')` function. See under Functions.
 
-| Name                 | Description                                           | target |
+| Name                 | Description                                           | Target |
 |----------------------|-------------------------------------------------------|--------|
 | `click`              | just listed here as it might be of frequent interest. | parentNode by default |
 | any native JS event | -                                                    | parentNode by default   |
@@ -52,7 +52,7 @@ it will check for the flag and update the model and UI accordingly by:
 * revalidate changed items
 * refresh controls/containers bound to changed items
 
-| Name              | Description                                                           | target     | details                                    |
+| Name              | Description                                                           | Target     | details                                    |
 |-------------------|-----------------------------------------------------------------------|------------|--------------------------------------------|
 | `rebuild-done`    | fires after a rebuild has taken place                                 | `fx-model` | `maingraph` - the main dependency graph    |
 | `recalulate-done` | fires after a recalculate has taken place                             | `fx-model` | `graph` - the depencency main- or subgraph | 
@@ -62,7 +62,7 @@ it will check for the flag and update the model and UI accordingly by:
 
 State events are dispatched whenever the state of a bound element changes.
 
-| Name            | Description                                  | target | Details |
+| Name            | Description                                  | Target | Details |
 |-----------------|----------------------------------------------|--------|-----|
 | `init`          | fires when a control initializes             | `fx-control` | - |
 | `readonly`      | fires after an fx-control became readonly    | `fx-control` | - |
@@ -77,14 +77,14 @@ State events are dispatched whenever the state of a bound element changes.
 
 ## Instance Events
 
-| Name              | Description                                      | target                            |
+| Name              | Description                                      | Target                            |
 |-------------------|--------------------------------------------------|-----------------------------------|
 | `deleted`         | fires after a delete action has been executed    | `fx-instance` |
 | `insert`          | fires when an fx-insert is executed    | `fx-instance` |
 | `instance-loaded` | fires after an fx-instance has been loaded    | `fx-instance` |
 
 ## Submission Events
-| Name           | Description                                | target         | Details                                     |
+| Name           | Description                                | Target         | Details                                     |
 |----------------|--------------------------------------------|----------------|---------------------------------------------|
 | `submit`       | dispatch before submission is taking place | `fx-submission` | `submission` - the `fx-submission` element |
 | `submit-done`  | fires after a submission has successfully been executed | `fx-submission` | -                                           |
@@ -92,7 +92,7 @@ State events are dispatched whenever the state of a bound element changes.
 
 
 ## Repeat Events
-| Name                | Description                                    | target      |
+| Name                | Description                                    | Target      |
 |---------------------|------------------------------------------------|-------------|
 | `item-created`      | fires when a repeat item was created           | `fx-repeat` | `nodeset`- the repeatitem nodeset, `pos`- the index position |
 | `item-changed`      | fires when a repeat item was changed           | `fx-repeat` | `nodeset' - the nodeset, `pos`- the new index |
@@ -102,20 +102,20 @@ State events are dispatched whenever the state of a bound element changes.
 
 
 ## Switch events
-| Name          | Description                            | target                                      |
+| Name          | Description                            | Target                                      |
 |---------------|----------------------------------------|----------------------------|
 | `deselect` | fires when fx-case is deselected | `fx-case` element that was deselected |
 | `select` | fires when fx-case is deselected | `fx-case` element that was selected |
 
 ## Dialog Events
 
-| Name          | Description                            | target                                      |
+| Name          | Description                            | Target                                      |
 |---------------|----------------------------------------|----------------------------|
 | `dialog-hidden` | fires after fx-dialog has been hidden | `fx-dialog` |
 | `dialog-shown` | fired when a dialog has been shown | `fx-dialog`|
 
 ## Other
-| Name                     | Description                                                    | target             | Details                                                                                           |
+| Name                     | Description                                                    | Target             | Details                                                                                           |
 |--------------------------|----------------------------------------------------------------|--------------------|---------------------------------------------------------------------------------------------------|
 | `error`                  | fires after an error occurred                                  | `fx-fore`          | `message` - the error message                                                                     |
 | `execute-action`         | fires when an action executes. For internal use.               | any action element | `action' - the action element, `event`- the event object                                          |
