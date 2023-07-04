@@ -13,7 +13,7 @@ Allows to define custom inline function in either XPath/XQuery or Javascript.
 | Name | Description |
 |------|-------------|
 |signature| the function signature. Must use 'local' prefix |
-|type| can be 'text/xpath' or 'text/javascript' |
+|type| can be 'text/xpath', 'text/javascript', 'text/xquf' (XQuery Update Facility) |
 
 ## Events
 
