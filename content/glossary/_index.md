@@ -63,6 +63,10 @@ Example:
 ```
 Here the dispatch action refers to an id - Id Resolution will make sure that the id resolves within the context of the enclosing repeat item. This works also for nested repeats.
 
+## ForeBody
+
+A 'ForeBody' means a Fore element including all of its content and it just a naming convention for easier
+referral when talking about Fore. 
 
 ## Scoped Resolution
 
