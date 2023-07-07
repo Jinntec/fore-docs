@@ -12,9 +12,9 @@
     --MAIN-ANCHOR-color: #1C90F3;
     /* color of anchors on titles */
     /*--MENU-HEADER-BG-color:rgba(248, 248, 255,0.76);*/
-    --MENU-HEADER-BG-color:#dfebf5;
+    --MENU-HEADER-BG-color:transparent;
     /* Background color of menu header */
-    --MENU-HEADER-BORDER-color: #1976d2;
+    --MENU-HEADER-BORDER-color: rgba(0,0,0,0.1);
     /*Color of menu header border */
     --MENU-SEARCH-BG-color: #f0f0f0;
     /* Search field background color (by default borders + icons) */
@@ -131,7 +131,7 @@ a:hover {
     color: var(--MAIN-LINK-HOVER-color);
 }
 
-#sidebar ul li.visited>a .read-icon {
+#sidebar ul li.visited > a .read-icon {
     color: var(--MENU-VISITED-color);
 
 }
@@ -171,9 +171,12 @@ pre{
     background: linear-gradient(270deg, rgba(245,127,23,1) 0%, rgba(251,192,45,1) 100%);
     */
     background: rgb(250,250,250);
-    background: linear-gradient(130deg, rgba(250,250,250,1) 0%, rgba(189,189,189,1) 100%);
+    /*background: linear-gradient(130deg, rgba(250,250,250,1) 0%, rgba(189,189,189,1) 100%);*/
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(240, 240, 245, 0.99));
     color: var(--MENU-SEARCH-BOX-color);
-    border-color: var(--MENU-HEADER-BORDER-color);
+    /*border-color: var(--MENU-HEADER-BORDER-color);*/
+    border: none;
+
 }
 
 #sidebar .searchbox {
@@ -292,21 +295,6 @@ fx-trigger.btn button:hover {
 }
 
 
-    /*
-    #sidebar ul li a{
-        display: none;
-    }
-    */
-/*
-.topics > li > ul > li > ul > li{
-    display: none;
-}
-
-.topics > li > ul > li.active > ul > li{
-    display: block;
-}
-*/
-
 [data-url$="/getstarted/tuttle/"] [alt="Tuttle logo"]{
     border-radius:50%;
 }
@@ -383,12 +371,20 @@ fx-output label{
 }
 */
 
+#sidebar{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(240, 240, 245, 0.99));
+}
 #sidebar .ps-container ul.topics li.parent li.dd-item[data-nav-id] ul{
     display: none;
 }
 
 #sidebar .ps-container ul.topics li.parent li.dd-item.active ul{
     display: block;
+}
+#sidebar .ps-container a,
+#sidebar .ps-container a:link,
+#sidebar .ps-container a:visited{
+    color: black;
 }
 
 [alt="Fore Model"],
