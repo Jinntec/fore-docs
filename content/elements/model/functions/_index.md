@@ -13,13 +13,37 @@ Allows to define custom inline function in either XPath/XQuery or Javascript.
 | Name | Description |
 |------|-------------|
 |signature| the function signature. Must use 'local' prefix |
-|type| can be 'text/xpath' or 'text/javascript' |
+|type| can be 'text/xpath', 'text/javascript', 'text/xquf' (XQuery Update Facility) |
 
 ## Events
 
 none
 
 ## Examples
+
+### Xquery Update Facility
+
+```
+<fx-function
+        signature="update($element as element()) as element()*"
+        type="text/xquf">
+    copy $xml := $element modify (
+    for $ref in $xml/element
+    return insert node $ref/@name with $xml/element/name/text()
+    ) return $xml
+</fx-function>
+```
+
+### JavaScript
+
+```
+<fx-function signature="now() as xs:string" type="text/javascript">
+    const now = new Date();
+    return `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}`;
+</fx-function>
+```
+
+
 
 * [Custom inline functions]({{% siteparam "demoUrl" %}}functions.html)
 * [Randomizer]({{% siteparam "demoUrl" %}}randomizer.html)

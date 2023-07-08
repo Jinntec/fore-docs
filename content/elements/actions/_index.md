@@ -25,7 +25,7 @@ The following attribues can be used on any Fore action element.
 | if            | boolean XPath expression. Action is only executed if this returns true.            |
 | phase         | 'default' or 'capture'                                                             |
 | propagate     | 'stop' or 'continue' (default)                                                     |
-| target        | id reference to element this action attaches to                                    |
+| target        | id of element to attach to or special values '#window' and '#document'  |
 | while         | boolean XPath expression. Action is only executed if `ìf` and `while` return true. |
 
 
