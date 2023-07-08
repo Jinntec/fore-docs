@@ -12,6 +12,13 @@ bindings that include filters with function calls, conditional etc.
 
 Binding Expressions are relative to their parent bindings - see under 'Scoped Resolution'.
 
+## Default Instance
+
+The 'default instance' in Fore is always the first in document order within a given `fx-fore` element. It will get an `id="default"` 
+being set if no `id` attribute exists. The default instance can be accessed by the `instance()` function without passing an argument.
+
+The `instance()` function can be omitted in binding expressions if there's no non-default instance in scope. 
+
 ## Id Resolution
 
 As Fore offers repeating sections via `fx-repeat` or `data-ref` there will be the situation that
