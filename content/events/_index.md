@@ -55,7 +55,7 @@ it will check for the flag and update the model and UI accordingly by:
 | Name              | Description                                                           | Target     | details                                    |
 |-------------------|-----------------------------------------------------------------------|------------|--------------------------------------------|
 | `rebuild-done`    | fires after a rebuild has taken place                                 | `fx-model` | `maingraph` - the main dependency graph    |
-| `recalulate-done` | fires after a recalculate has taken place                             | `fx-model` | `graph` - the depencency main- or subgraph | 
+| `recalculate-done` | fires after a recalculate has taken place                             | `fx-model` | `graph` - the depencency main- or subgraph | 
 | `refresh-done`    | fires after a refresh has been done. The UI reflects the model state. | `fx-fore`  | -                                          |
 
 ## Control State Events
