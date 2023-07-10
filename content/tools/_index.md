@@ -36,10 +36,10 @@ There are two ways to use it:
 * include a `<fx-devtools>` element in your page ideally directly as a child of the `body` element. 
 * or even simpler - just append the parameter 'inspect' to the URL of the page, which will inject the element for you.
 
-## Functionality explained
+## What it does
 
-Everything that happens in a Fore page is the result of some events firing. Therefore it is essential to understand, where and when
-certain events fire. These are the hooks that can be used to attach the wanted behavior.
+Everything that happens in a Fore page is the result of some events firing. Therefore, it is essential to understand, where and when
+certain events are fired. These are the hooks that can be used to attach the wanted behavior.
 
 Usually - and by default - the Log panel will only show Actions that got actually triggered by an event. The action
 name occurs on the left and the event name on the right.
