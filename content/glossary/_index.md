@@ -96,7 +96,34 @@ attributes will be pruned.
 
 ### Using the `relevant` facet of `fx-bind`
 
+Besides simple existence of a data item the `fx-bind` element may specify a `relevant` condition for a data item of a set of items.
 
+The expression needs to evaluate to a Boolean and will be taken into account when refreshing the UI or sending data.
+
+Example:
+```
+<fx-fore>
+  <fx-model>
+    <fx-instance>
+      <data>
+        <vehicle type="bicycle">
+        <bicycle>
+          <frame size="28"></frame>
+        <bicycle>
+        <car>
+          <engine>
+        </car>
+      </data>
+    </fx-instance>
+    <fx-bind ref="bicycle" relevant="../vehicle/@type = 'bicycle'></fx-bind>
+    <fx-bind ref="car" relevant="../vehicle/@type = 'car'></fx-bind>
+  </fx-model>
+</fx-fore>
+```
+
+When sending data these bindings will make sure that only the relevant portions of the data are sent by default, depending on the value of `vehicle/@type`.
+
+Likewise when a user makes a selection for `vehicle/@type' the user interface will adapt and show the relevant controls and hide the nonrelevant ones.
 
 
 ## Scoped Resolution
