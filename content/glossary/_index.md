@@ -75,6 +75,30 @@ Here the dispatch action refers to an id - Id Resolution will make sure that the
 A 'ForeBody' means a Fore element including all of its content and it just a naming convention for easier
 referral when talking about Fore. 
 
+## Relevance Selection
+
+Relevance is a powerful features that comes into play in several places:
+### Bound UI Elements
+
+UI Elements can be bound by their `ref` attribute. If a `ref` expresssion does not point to a data item it becomes 'nonrelevant' which means:
+* it's not shown to the User
+* the elements' states (like 'readonly', 'required', 'valid'...) won't be updated unless a data item becomes available
+
+This can be used hide/show complete sections in the UI depending directly on existence of a node. Once a bound node becomes available the
+respective UI container or control will be shown.
+
+### When sending a request
+
+Whenever data are send, the RelevanceSelector will first filter all data items according to the relevance mode for that request.
+
+By default all data items being nonrelevant will be filtered out before sending the data over the wire. During this filtering also empty
+attributes will be pruned. 
+
+### Using the `relevant` facet of `fx-bind`
+
+
+
+
 ## Scoped Resolution
 
 'Scoped Resolution' takes place whenever `ref` or `data-ref` attributes are resolved. It allows
