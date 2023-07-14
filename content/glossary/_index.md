@@ -1,4 +1,4 @@
----
+ ---
 title: "Concepts & Terms"
 menuTitle: "Concepts & Terms"
 date: 2023-05-09T19:22:22+02:00
@@ -74,6 +74,45 @@ Here the dispatch action refers to an id - Id Resolution will make sure that the
 
 A 'ForeBody' means a Fore element including all of its content and it just a naming convention for easier
 referral when talking about Fore. 
+
+## Lazy Mode
+
+In lazy mode the user does not need to specify a `fx-model` explicitly. 
+When no `fx-model` is found at init time, Fore switches to lazy mode and creates a default data structure from the bindings found in the UI.
+
+Example:
+```
+<fx-fore>
+  <fx-control ref="forename">
+    <label>Forename</label>
+  </fx-control>
+  <fx-control ref="lastname">
+    <label>Lastname</label>
+  </fx-control>
+</fx-fore>
+```
+In this case Fore will come up with an auto-generated model and data structure looking like this:
+
+```
+<fx-fore>
+  <fx-model>
+    <fx-instance>
+      <data>
+        <forename></forename>
+      </data>
+    </fx-instance>
+  </fx-model>
+  <fx-control ref="forename">
+    <label>Forename</label>
+  </fx-control>
+  <fx-control ref="lastname">
+    <label>Lastname</label>
+  </fx-control>
+<fx-fore>
+```
+
+Lazy mode is meant to be used for quick prototyping and very simple use cases. They do not allow to use binding facets or explicit submisssions.
+
 
 ## Relevance Selection
 
