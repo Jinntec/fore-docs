@@ -1,6 +1,6 @@
 ---
 title: "<fx-control>"
-date: 2021-12-14T17:41:11+01:00
+date: 2023-07-17T15:00:00+01:00
 tags: [elements, ui, fx-control]
 ---
 ## Description
@@ -16,6 +16,7 @@ instead wraps such a control and binds it to a data node in the model with the h
 |--------------|-------------| -------- |
 | as           | 'text' or 'node'. When using 'node' a whole dom tree can be passed to a widget | text |  
 | context      | XPath reference pointing to parent context | incopeContext |
+| create       | if present on control or anchestor will create non-existing attribute nodes in the data |- | 
 | debounce     | optional numeric value in milliseconds to delay input events | - |
 | initial      | XPath binding expression referring to data that get passed to Fore control as default instance. Only effective when `url` is specified. | - |
 | label        | optional label | - |
