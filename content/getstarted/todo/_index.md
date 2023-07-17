@@ -1,6 +1,6 @@
 ---
 title: "todo"
-menuTitle: "a more complex example"
+menuTitle: "A more complex example"
 date: 2022-05-20T16:08:59+02:00
 weight: 3
 tags: [basic, repeat, actions, controls]

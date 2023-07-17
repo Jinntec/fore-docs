@@ -1,6 +1,8 @@
 ---
 title: "<fx-control>"
+date: 2021-12-14T17:41:11+01:00
 tags: [elements, ui, fx-control]
+weight: 15   
 ---
 ## Description
 
@@ -12,19 +14,19 @@ instead wraps such a control and binds it to a data node in the model with the h
 ## Attributes
 
 | Name         | Description | Default |
-|--------------|-------------| -------- |
+|--------------|-------------|---|
 | as           | 'text' or 'node'. When using 'node' a whole dom tree can be passed to a widget | text |  
 | context      | XPath reference pointing to parent context | incopeContext |
-| create       | if present on control or anchestor will create non-existing attribute nodes in the data |- | 
+| create       | if present on control or anchestor will create non-existing attribute nodes in the data | - | 
 | debounce     | optional numeric value in milliseconds to delay input events | - |
 | initial      | XPath binding expression referring to data that get passed to Fore control as default instance. Only effective when `url` is specified. | - |
 | label        | optional label | - |
-| listen-on    | a CSS selector to attach the update event listener to  | element with 'widget' class |
+| listen-on    | a CSS selector to attach the update event listener to  | element with 'widget' class | - | 
 | ***ref***    | XPath reference pointing to the bound node | - |
 | shadow       | marker attribute to attach Fore control to shadowDOM instead of lightDOM | - |
 | update-event | optional event name when to trigger updating of bound node. | blur |
-|              | 'enter' can be used to catch enter key |
-| url          | URL pointing to HTML page containing `fx-fore` element that gets imported as widget |
+|              | 'enter' can be used to catch enter key | |
+| url          | URL pointing to HTML page containing `fx-fore` element that gets imported as widget | - |
 | value-prop   | optional property name used to set the value of the widget (default:'value') | value |
 
 ## Attributes on widgets
