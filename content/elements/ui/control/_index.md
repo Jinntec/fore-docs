@@ -1,6 +1,5 @@
 ---
 title: "<fx-control>"
-date: 2023-07-17T15:00:00+01:00
 tags: [elements, ui, fx-control]
 ---
 ## Description
