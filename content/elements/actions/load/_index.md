@@ -10,6 +10,8 @@ weight: 70
 Loads some content into a page, open a new tab with content or replaces
 current browser window with content.
 
+Content may be loaded from `url` or be specified inline surrounded with a `template` element.
+
 ## Attributes
 
 | Name      | Description                                  | default |
