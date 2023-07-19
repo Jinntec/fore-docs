@@ -12,6 +12,8 @@ current browser window with content.
 
 Content may be loaded from `url` or be specified inline surrounded with a `template` element.
 
+If the HTML being loaded contains a `fx-fore` element it will be extracted from the page and used as content to be inserted.
+
 ## Attributes
 
 | Name      | Description                                  | default |
@@ -30,5 +32,17 @@ Content may be loaded from `url` or be specified inline surrounded with a `templ
 
 * [load]({{% siteparam "demoUrl" %}}load.html)
 
+
+### 'Unloading' a section
+
+With load you can also delete parts of the DOM and replace them with an empty element.
+
+This is useful to reset a formerly loaded section again when you're done with it.
+
+```
+<fx-load attach-to="#htmlout">
+  <template><div></div></template>
+</fx-load>
+```
 
 
