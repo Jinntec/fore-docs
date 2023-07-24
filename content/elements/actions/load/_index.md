@@ -52,4 +52,7 @@ This is useful to reset a formerly loaded section again when you're done with it
 </fx-load>
 ```
 
+## Examples
+
+* [The load action]({{% siteparam "demoUrl" %}}load.html)
 
