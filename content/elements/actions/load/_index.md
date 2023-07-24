@@ -19,7 +19,14 @@ If the HTML being loaded contains a `fx-fore` element it will be extracted from 
 | Name      | Description                                  | default |
 |-----------|----------------------------------------------|---------|
 | attach-to | '_self', '_blank' or idref prefixed with '#' | _self   |
+| await     | eventname to await from templated content    | -       |
 | url       | URL to load content from                     |         |
+
+### The `await` attribute
+
+Sometimes if you load a component with `fx-load` and the component has some initialization to do, you might want to wait 
+for a certain event dispatched by that component before moving on. `await` will make sure this event fires before the load action
+becomes effective.
 
 ## Events
 
