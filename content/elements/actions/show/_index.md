@@ -17,7 +17,10 @@ Action to display a `fx-dialog`.
 
 ## Events
 
-none
+| Name         | Description                     |
+|--------------|---------------------------------|
+| dialog-shown | dispatched when dialog is shown |
+
 
 ### Examples
 

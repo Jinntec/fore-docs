@@ -15,6 +15,14 @@ Action to hide a `fx-dialog`.
 |------|-------------|
 | dialog | idref of an `fx-dialog` element. |
 
+## Events
+
+| Name          | Description                      |
+|---------------|----------------------------------|
+| dialog-hidden | dispatched when dialog is hidden |
+
+
+
 ## Examples
 
 * [fx-dialog]({{% siteparam "demoUrl" %}}controls/fx-dialog.html)
