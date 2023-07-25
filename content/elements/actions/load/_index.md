@@ -1,7 +1,7 @@
 ---
 title: "<fx-load>"
 date: 2023-01-16T12:00:00+01:00
-tags: [elements actions, load]
+tags: [elements actions, load, 1.6.0]
 weight: 70
 ---
 

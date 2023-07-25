@@ -75,6 +75,12 @@ Here the dispatch action refers to an id - Id Resolution will make sure that the
 A 'ForeBody' means a Fore element including all of its content and it just a naming convention for easier
 referral when talking about Fore. 
 
+## <a id="lazyinstance">Lazy Instance</a>
+
+Lazily created data structure created from bindings in the UI.
+
+See 'Lazy Mode'.
+
 ## Lazy Mode
 
 In lazy mode the user does not need to specify a `fx-model` explicitly. 

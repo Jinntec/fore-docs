@@ -8,9 +8,6 @@ tags: ["Version 1.5.x", tools, glass]
 
 # Tools
 
-> Fore Glass is not yet released but available from 'dev' branch on Github.'
-
-
 With Fore you can build quite complex pages, with other pages acting as 
 controls, dynamically loaded content and data and more. However with power comes 
 responsibility and things can get hard to debug without good tooling.
