@@ -6,11 +6,11 @@
     --MAIN-TITLES-TEXT-color: #5e5e5e;
     /* Color of titles h2-h3-h4-h5 */
     /*--MAIN-LINK-color: #1C90F3;*/
-    --MAIN-LINK-color: #999999;
+    --MAIN-LINK-color: #105d90;
     /* Color of links */
-    --MAIN-LINK-HOVER-color: #167ad0;
+    --MAIN-LINK-HOVER-color: #105d90;
     /* Color of hovered links */
-    --MAIN-ANCHOR-color: #1C90F3;
+    --MAIN-ANCHOR-color: #105d90;
     /* color of anchors on titles */
     /*--MENU-HEADER-BG-color:rgba(248, 248, 255,0.76);*/
     --MENU-HEADER-BG-color:transparent;
@@ -277,7 +277,10 @@ pre{
 */
 
 /* specific for styling todo example */
-
+h1{
+    font-family: "Verdana", "Tahoma", "Geneva", "Arial", sans-serif;
+    text-transform: unset;
+}
 #todo h1 {
     display: flex;
     flex-direction: row;
