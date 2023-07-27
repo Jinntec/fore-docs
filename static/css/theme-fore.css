@@ -67,6 +67,12 @@ body {
 #body .padding{
     padding: 5.5rem 6rem;
 }
+#body img[alt="Modularization"]{
+    width: 10rem !important;
+}
+blockquote p{
+    font-size:1.4rem;
+}
 #footer p{
     display: none;
 }

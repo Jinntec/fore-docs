@@ -72,7 +72,7 @@ Here the dispatch action refers to an id - Id Resolution will make sure that the
 
 ## ForeBody
 
-A 'ForeBody' means a Fore element including all of its content and it just a naming convention for easier
+A 'ForeBody' means a `fx-fore` element including all of its content and it just a name picked for easier
 referral when talking about Fore. 
 
 ## <a id="lazyinstance">Lazy Instance</a>
