@@ -38,7 +38,7 @@ error is thrown.
 * [Submission Chaining]({{% siteparam "demoUrl" %}}submission4.html)
 * [submit with ref]({{% siteparam "demoUrl" %}}targetref.html)
 * [overwrite url]({{% siteparam "demoUrl" %}}submission-url-overwrite.html)
-* [overwrite url]({{% siteparam "demoUrl" %}}submission-target-overwrite.html)
+* [overwrite target]({{% siteparam "demoUrl" %}}submission-target-overwrite.html)
 
 
 
