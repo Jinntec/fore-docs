@@ -103,7 +103,8 @@ At runtime this will be expanded to this:
 There are no restrictions regarding the complexity or size of the embedded [ForeBody](http://localhost:1313/fore-docs/glossary/#forebody).
 
 > for Web Components experts: Fore lives by default in the lightDOM but still restricts its events to the respective
-> scope of a `fx-fore` element. Styling therefore can be applied globally.
+> scope of a `fx-fore` element. Styling therefore can be applied globally. By adding a boolean attribute `shadow` the loaded
+> content will be put into shadowDOM. Usually that is NOT what you want when assembling a larger UI from parts. 
 
 #### Passing data to the Fore widget
 
