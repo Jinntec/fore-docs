@@ -96,7 +96,7 @@ Param:
 Returns:
 * renders instance data to the document. 
 
-Should output it's content to a `<code>` block.
+Outputs it's content to a `<code>` block.
 
 ```
 <code>{log('default')}</code>
