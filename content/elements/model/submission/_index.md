@@ -38,7 +38,7 @@ Send and receive data.
 | submit-done | dispatched when submission was successfully completed |
 
 
-## URI Schemes
+## URL Schemes
 
 Beside http, https Fore supports:
 
