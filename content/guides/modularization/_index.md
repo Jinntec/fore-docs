@@ -56,7 +56,7 @@ For easy access to these attributes from within the loaded page there is the `fo
 <fx-fore src="hello1.html" class="myClass" attr1="world"></fx-fore
 ```
 
-Fore element in html1.html:
+Fore element in hello1.html:
 ```
 <fx-fore>
     Hello {fore-attr('attr1')}
