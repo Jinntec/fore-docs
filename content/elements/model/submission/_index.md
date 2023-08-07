@@ -26,7 +26,7 @@ Send and receive data.
 |  | 'none' - response will be ignored. | |
 | serialization | 'none' or 'xml' at this point | xml |
 | target | selector in CSS selector syntax. valid only when replace is 'target'.  | |
-| targetref | XPath pointing to target node when `replace="instance" | |
+| targetref | XPath pointing to target node when `replace="instance"` | |
 | validate | Boolean to turn validator mode on/off | true |
 
  
