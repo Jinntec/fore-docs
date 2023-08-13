@@ -9,19 +9,17 @@ weight: 60
 
 Action to insert node(s) into instance data.
 
-## General Binding Attributes
-| Name | Description |
-|------|-------------|
-| ***ref*** | XPath pointing to node(s) the bind is attaching to |
-
 ## Attributes
 
 | Name | Description | Default |
 |------|-------------| --------|
 | at | index position in nodeset where to insert new node(s) | 0 |
+| context | optional XPath pointing to parent node of node to insert | |
 | position | with regard to 'at' can be either 'before' or 'after' | after |
-| origin | XPath pointing to nodes to be inserted into referenced nodeset |
-| keepValues | marker attribute. When present will keep text-values of origin nodes |
+| origin | XPath pointing to nodes to be inserted into referenced nodeset | |
+| keepValues | Boolean attribute. When present will keep text-values of origin nodes | false |
+| ref | XPath pointing to node(s) to insert. If `context` is given `ref` is relative to that | |
+
 
 ## Events
 
