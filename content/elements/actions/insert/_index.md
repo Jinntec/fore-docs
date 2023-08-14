@@ -33,7 +33,7 @@ Action to insert node(s) into instance data.
 
 * [Insert into inhomogenious nodeset]({{% siteparam "demoUrl" %}}insert-inhomogenious.html)
 * [insert action]({{% siteparam "demoUrl" %}}insert.html)
-* [insert action 2]({{% siteparam "demoUrl" %}}insert2.html)
+* [insert with context]({{% siteparam "demoUrl" %}}insert2.html)
 * [TEI header editor sample]({{% siteparam "demoUrl" %}}simple-tei-header.html)
 * [todo]({{% siteparam "demoUrl" %}}todo2.html)
 * [the while attribute]({{% siteparam "demoUrl" %}}while.html)
