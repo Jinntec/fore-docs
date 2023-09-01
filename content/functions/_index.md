@@ -2,7 +2,7 @@
 title : "Functions"
 date : 2022-06-03T10:42:31+01:00
 chapter : true
-tags: ["Version 1.0.0", functions]
+tags: [functions]
 weight: 60
 ---
 
