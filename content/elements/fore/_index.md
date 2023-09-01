@@ -1,7 +1,7 @@
 ---
 title: "fx-fore"
 date: 2022-05-20T16:08:59+02:00
-tags: [fore, fx-fore, v1.6.x]
+tags: [fore, fx-fore, v1.7.x]
 weight: 1
 ---
 
