@@ -21,3 +21,4 @@ date : 2022-09-15T10:42:31+01:00
 * <a href="https://www.w3.org/community/xformsusers/wiki/XForms_2.0#Rebuild" target="_blank">XForms 2.0 - source of inspiration</a>
 * <a href="https://html.spec.whatwg.org/multipage/custom-elements.html" target="_blank">HTML Custom Elements Spec.</a>
 * <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components" target="_blank">Web Components at mdn</a>
+* <a href="https://www.xmlmind.com/tutorials/XQueryUpdate/index.html" target="_blank">XQuery Update for the impatient</a>
