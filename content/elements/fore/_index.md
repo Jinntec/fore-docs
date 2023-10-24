@@ -20,6 +20,7 @@ and provides the following facilities:
 | src | url to load a `<fx-fore>` element from another HTML file                 | -       |
 | show-confirmation | either just marker attribute or boolean XPath |  -      |
 | [foreign attributes] | Foreign attributes are all other attributes being present. These will be copied to the resulting `fx-fore` element if `src` is used for loading an external page. These can be accessed with the `fore-attr()` function | - | 
+| ignore-expressions | if given is expected to contain a CSS selector that matches element to excluded from Template Expression handling | - |
 
 if `show-confirmation` is just used as a marker attribute Fore will check whether data fields have been modified after initial loading. Attribute may be
 empty, the empty string, 'true' or 'show-confirmation'.
@@ -41,3 +42,4 @@ Likewise when an XPath expression is given as the attribute value it is evaluate
 
 * All <a href="{{% siteparam "demoUrl" %}}" target="_blank">Demo</a> files
 * [page exit confirmation]({{% siteparam "demoUrl" %}}beforeunload.html)
+* [ignore expressions]({{% siteparam "demoUrl" %}}ignore.html)
