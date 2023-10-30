@@ -105,6 +105,7 @@ In this case Fore will come up with an auto-generated model and data structure l
     <fx-instance>
       <data>
         <forename></forename>
+        <lastname></lastname>
       </data>
     </fx-instance>
   </fx-model>
