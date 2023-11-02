@@ -68,6 +68,11 @@ nodes like e.g. text editors.
 Sometimes values can and should be empty initially. With `selection="open"` on
 the select element it will create such en empty option.
 
+## using Fore as control
+By setting a `url` attribute you can use another [ForeBody](https://jinntec.github.io/fore-docs/glossary/#forebody) as the widget of given control. The `url` is resolved
+and will fetch the first `fx-fore` element it finds within that page and embeds it as widget of the control. You can pass in an `fx-instance`
+for the loaded widget with `initial` and get the return value with the `return` action. 
+
 ## Examples
 * [the fx-control element]({{% siteparam "demoUrl" %}}fx-control.html)
 * [Actions]({{% siteparam "demoUrl" %}}actions.html)
@@ -76,7 +81,7 @@ the select element it will create such en empty option.
 * [Country selector]({{% siteparam "demoUrl" %}}selects.html)
 * [Selects]({{% siteparam "demoUrl" %}}selects2.html)
 * [Trigger]({{% siteparam "demoUrl" %}}trigger.html)
-
+* [handling credentials]({{% siteparam "demoUrl" %}}submission-credentials.html)
 
 
 
