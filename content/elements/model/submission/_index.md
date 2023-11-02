@@ -19,7 +19,7 @@ Send and receive data.
 | into | XPath expr where to insert response nodes into |  |
 | method | http methods GET, POST, PUT, DELETE, url-encoded-post | GET  |
 | nonrelevant | handling of non relevant nodes during serialization. Can be one of 'keep', 'empty' or 'remove' | remove  |
-| replace | one of 'all', 'instance', 'target', 'redirect' or 'none' | all  |
+| replace | one of 'all', 'download', 'instance', 'target', 'redirect' or 'none' | all  |
 |  | 'all' - response replaces the viewport |   |
 |  | 'download' - save dialog is shown for response | |
 |  | 'instance' - response replaces the instance given by the `instance` attribute or if not present the default instance |   |
