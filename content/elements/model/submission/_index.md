@@ -23,7 +23,7 @@ Send and receive data.
 |  | 'all' - response replaces the viewport |   |
 |  | 'download' - save dialog is shown for response | |
 |  | 'instance' - response replaces the instance given by the `instance` attribute or if not present the default instance |   |
-|  | 'target' - response will be attached to element identified by `target`| |
+|  | 'target' - response will be attached to element identified by `target` (CSS Selector syntax e.g. '#mydiv')| |
 |  | 'redirect' - use response as redirect url. | |
 |  | 'none' - response will be ignored. | |
 | serialization | 'none' or 'xml' at this point | xml |
