@@ -12,8 +12,9 @@ Send and receive data.
 ## Attributes
 | Name | Description | Default |
 |------|-------------| -------- |
-| ***id*** | required: id of submission for referral | 'default' |
-| ***ref*** | XPath reference pointing to the bound node | root node of default instance |
+| credentials | sets credentials policy - one of 'omit', 'same-origin' or 'include' | same-origin |
+| id | required: id of submission for referral | 'default' |
+| ref | XPath reference pointing to the bound node | root node of default instance |
 | instance | id of instance when `replace='instance'`. Required when replace='instance' |  |
 | into | XPath expr where to insert response nodes into |  |
 | method | http methods GET, POST, PUT, DELETE, url-encoded-post | GET  |
@@ -55,6 +56,7 @@ Beside http, https Fore supports:
 * [submission chaining]({{% siteparam "demoUrl" %}}submission3.html)
 * [submission chaining]({{% siteparam "demoUrl" %}}submission4.html)
 * [submission with targetref]({{% siteparam "demoUrl" %}}targetref.html)
+* [handling credentials]({{% siteparam "demoUrl" %}}submission-credentials.html)
 
 
 
