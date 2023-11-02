@@ -15,10 +15,12 @@ necessary.
 
 | Name | Description | default |
 |------|-------------|------- |
+| credentials | sets credentials policy - one of 'omit', 'same-origin' or 'include' | same-origin |
 | id | id of the instance for addressing in refs | default |
 | src | url to load instance from via http get | |
 | type | 'xml' or 'json' or 'html' are supported by now | xml |
 | xpath-default-namespace | namespace to be used with unprefixed XPathes | emtpy |
+
 
 
 ## URI Schemes
