@@ -21,6 +21,7 @@ Send and receive data.
 | nonrelevant | handling of non relevant nodes during serialization. Can be one of 'keep', 'empty' or 'remove' | remove  |
 | replace | one of 'all', 'instance', 'target', 'redirect' or 'none' | all  |
 |  | 'all' - response replaces the viewport |   |
+|  | 'download' - save dialog is shown for response | |
 |  | 'instance' - response replaces the instance given by the `instance` attribute or if not present the default instance |   |
 |  | 'target' - response will be attached to element identified by `target`| |
 |  | 'redirect' - use response as redirect url. | |
