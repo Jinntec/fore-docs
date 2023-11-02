@@ -17,6 +17,7 @@ instead wraps such a control and binds it to a data node in the model with the h
 |--------------|-------------|---|
 | as           | 'text' or 'node'. When using 'node' a whole dom tree can be passed to a widget | text |  
 | context      | XPath reference pointing to parent context | incopeContext |
+| credentials | sets credentials policy - one of 'omit', 'same-origin' or 'include' | same-origin |
 | create       | if present on control or anchestor will create non-existing attribute nodes in the data | - | 
 | debounce     | optional numeric value in milliseconds to delay input events | - |
 | initial      | XPath binding expression referring to data that get passed to Fore control as default instance. Only effective when `url` is specified. | - |
@@ -75,6 +76,7 @@ the select element it will create such en empty option.
 * [Country selector]({{% siteparam "demoUrl" %}}selects.html)
 * [Selects]({{% siteparam "demoUrl" %}}selects2.html)
 * [Trigger]({{% siteparam "demoUrl" %}}trigger.html)
+
 
 
 
