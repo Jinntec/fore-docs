@@ -6,6 +6,8 @@ weight: 1
 ---
 ## Description
 
+
+
 The model is responsible for:
 * creating and maintaining the Main Dependency Graph (MDG). 
 * creating ModelItems for bound data nodes
@@ -20,20 +22,26 @@ The `<fx-model>` element is a direct child of `<fx-fore>` and is itself a contai
 * zero, one or more `<fx-submission>` elements
 * zero, one or more `<fx-function>` elements
 
+> Warning: `<fx-model>` must be first child element of `<fx-fore>` due to not fully understood Web Components behaviour.  
+
 ```
-<fx-model>
-    <fx-instance><fx-instance>
-    <fx-instance id="second"><fx-instance>
-    <fx-instance id="third"><fx-instance>
-    
-    <fx-bind></fx-bind>
-    <fx-bind></fx-bind>
-    ...
-    
-    <fx-submission id="load"></fx-submission>
-    <fx-submission id="save"></fx-submission>
-</fx-model>
+<fx-fore>
+    <fx-model>
+        <fx-instance><fx-instance>
+        <fx-instance id="second"><fx-instance>
+        <fx-instance id="third"><fx-instance>
+        
+        <fx-bind></fx-bind>
+        <fx-bind></fx-bind>
+        ...
+        
+        <fx-submission id="load"></fx-submission>
+        <fx-submission id="save"></fx-submission>
+    </fx-model>
+    <!-- UI here -->
+</fx-fore>
 ```
+
 
 If there's more than one `<fx-instance>` or `<fx-submission>` you need
 to add an `id` attribute for identification.
