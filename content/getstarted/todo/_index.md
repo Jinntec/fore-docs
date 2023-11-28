@@ -1,6 +1,6 @@
 ---
-title: "todo"
-menuTitle: "A more complex example"
+title: "Todo App"
+menuTitle: "Todo App"
 date: 2022-05-20T16:08:59+02:00
 weight: 3
 tags: [basic, repeat, actions, controls]
@@ -15,7 +15,7 @@ What can be learned here:
 
 ## Todo Application
 
-Let's go for a bit more fancy example and learn about some new elements.
+Let's go for a bit more fancy example - a simple todo app - and learn about some new elements. 
 
 In this tutorial we add some real interaction, give some feedback
 messages to the user and actually change our data.

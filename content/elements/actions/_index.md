@@ -13,6 +13,11 @@ This chapter describes all Action elements.
 
 ![Fore Actions](/images/actions.svg)
 
+{{% notice note %}}
+Action elements have no visual representation and are always hidden
+from view.
+{{% /notice %}}
+
 ## Common Attributes
 
 The following attribues can be used on any Fore action element.

@@ -1,5 +1,5 @@
 ---
-title: "fx-fore"
+title: "<fx-fore>"
 date: 2022-05-20T16:08:59+02:00
 tags: [fore, fx-fore]
 weight: 1
