@@ -451,5 +451,21 @@ fx-output label{
 {
     width:20rem !important;
 }
+#sidebar .ps-container ul.topics li.parent li.dd-item[data-nav-id] ul {
+    display: block;
+}
+#sidebar ul.topics ul {
+    display: block;
+    /*padding-bottom: 1rem;*/
+}
+#sidebar .ps-container a,
+#sidebar .ps-container a:link,
+#sidebar .ps-container a:visited {
+    color: black;
+    /*font-size:2rem;*/
+}
+#sidebar .ps-container > ul.topics > li > a {
+    font-size:1.4rem;
+    font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
 
-
+}
