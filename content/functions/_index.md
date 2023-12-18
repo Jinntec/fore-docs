@@ -86,6 +86,18 @@ Param:
 Returns:
 * the root context for matching `fx-instance` element. The type of the root context depends on the type of instance which can currently be 'xml' or 'json'. For XML the root node of the instance data is returned. For JSON the outermost map or array will be returned.
 
+### `local-date()`
+
+Returns local date
+
+Example output: `18/12)2023`
+
+### `local-dateTime()`
+
+Returns local dateTime
+
+Example output: `18/12/2023, 17:01:56`
+
 ### `log(id)`
 
 The `log` function is just for development purposes and can be used to log some instance data to the document.
@@ -101,3 +113,56 @@ Outputs it's content to a `<code>` block.
 ```
 <code>{log('default')}</code>
 ```
+
+### `uri()`
+
+Returns the full URI from the browser
+
+Example output: `http://localhost:8090/demo/uri.html?param1=value1&param2=value2#hash`
+
+### `uri-fragment()`
+
+Returns the fragment of the current URI
+
+Example output: `#hash`
+
+
+### `uri-query()`
+
+Returns the query part of the URI
+
+Example output: `?param1=value1&param2=value2`
+
+### `uri-param(param-name)`
+
+Returns the value for URI param given by argument
+
+Example output: `value1`
+
+### `uri-path()`
+
+Returns the path part of the current URI
+
+Example output: `/demo/uri.html`
+
+### `uri-port()`
+
+Returns the port of the current URI
+
+Example output: `8090`
+
+### `uri-scheme()`
+
+Returns the URI scheme of the current page
+
+Example output: `http:`
+
+### `uri-scheme-specific-part()`
+
+Returns the URI without the scheme-specific part
+
+Example output: `//localhost:8090/demo/uri.html?param1=value1&param2=value2#hash`
+
+
+
+
