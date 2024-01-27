@@ -17,10 +17,19 @@ necessary.
 |------|-------------|------- |
 | credentials | sets credentials policy - one of 'omit', 'same-origin' or 'include' | same-origin |
 | id | id of the instance for addressing in refs | default |
+| shared | boolean attribute to signal that the instance is shared with nested Fore elements | |
 | src | url to load instance from via http get | |
 | type | 'xml' or 'json' or 'html' are supported by now | xml |
 | xpath-default-namespace | namespace to be used with unprefixed XPathes | emtpy |
 
+
+## Shared instances
+
+By adding an `shared` attribute to an `<fx-instance>` that instance is shared with nested `<fx-fore>` elements and can be accessed and mutated as usual. 
+
+This can be used if multiple nested Fore elements represent different views but you want to share some common data.
+
+Another possible use case is to separate the model from the UI part and put them in different files for dynamic assembly at runtime (see documentation under 'modularization').
 
 
 ## URI Schemes
