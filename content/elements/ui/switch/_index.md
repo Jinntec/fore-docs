@@ -15,7 +15,9 @@ Can be unbound and toggled via an action or bound and react to data value.
 
 ## Attributes
 
-No Attributes
+| Name | Description | default |
+|------|-------------|------- |
+| ref | (optional) binds switch to data node and toggles cases depending on value | |
 
 ## Events
 
