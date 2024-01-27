@@ -46,6 +46,7 @@ In addition to 'http', 'https' further URI schemes are:
 * <a href="{{% siteparam "demoUrl" %}}controls/fx-output.html" target="_blank">the fx-output element</a>
 * <a href="{{% siteparam "demoUrl" %}}submission-localStore.html" target="_blank">localStore</a>
 * <a href="{{% siteparam "demoUrl" %}}submission-credentials.html" target="_blank">Handling credentials</a>
+* <a href="{{% siteparam "demoUrl" %}}shared-instances.html" target="_blank">Shared instances</a>
   
 
 
