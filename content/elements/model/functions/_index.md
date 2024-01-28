@@ -13,7 +13,7 @@ Allows to define custom inline function in either XPath/XQuery or Javascript.
 | Name | Description |
 |------|-------------|
 |signature| the function signature. Must use 'local' prefix |
-|type| can be 'text/xpath', 'text/javascript', 'text/xquf' (XQuery Update Facility) |
+|type| can be 'text/javascript', 'text/xpath', 'text/xquery' or 'text/xquf' (XQuery Update Facility) |
 
 ## Events
 
@@ -42,7 +42,6 @@ none
     return `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}`;
 </fx-function>
 ```
-
 
 
 * [Custom inline functions]({{% siteparam "demoUrl" %}}functions.html)
