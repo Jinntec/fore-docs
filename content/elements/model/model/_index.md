@@ -21,7 +21,7 @@ The `<fx-model>` element is a direct child of `<fx-fore>` and is itself a contai
 * zero, one or more `<fx-submission>` elements
 * zero, one or more `<fx-function>` elements
 
-> Warning: `<fx-model>` must be first child element of `<fx-fore>` due to not fully understood Web Components behaviour.  
+> Warning: `<fx-model>` must be in front of Fore UI elements due to not fully understood Web Components behaviour.  
 
 ```
 <fx-fore>
