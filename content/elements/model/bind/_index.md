@@ -10,7 +10,7 @@ The `fx-bind` element attaches constraints and calculations to instance nodes.
   
  By using XPath expressions for the attributes users can build complex calculation and validation rules (business logic) using a declarative syntax.
   
- `fx-bind`elements can be nested thereby taking part in inscope resolution resolving their `ref` attributes relative to their parent element.
+ `fx-bind` elements can be nested thereby taking part in [scoped resolution](https://jinntec.github.io/fore-docs/glossary/#scoped-resolution) resolving their `ref` attributes relative to their parent element.
 
 The bindings are used to build the MDG (Main Dependency Graph) which detects dependencies between nodes and builds a graph that connects the dependent nodes to the currently processed one. This directed graph will then be ordered for computation. Circular dependencies are not allowed.
   
