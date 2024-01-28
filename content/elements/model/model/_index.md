@@ -1,11 +1,11 @@
 ---
+title: "<fx-model>"
 date: 2022-05-20T16:08:59+02:00
 tags: [model, fx-model]
 weight: 1
 ---
+
 ## Description
-
-
 
 The model is responsible for:
 * creating and maintaining the Main Dependency Graph (MDG). 
