@@ -17,10 +17,11 @@ and provides the following facilities:
 
 | Name | Description                                                              | default |
 |------|--------------------------------------------------------------------------|---------|
-| src | url to load a `<fx-fore>` element from another HTML file                 | -       |
-| show-confirmation | either just marker attribute or boolean XPath |  -      |
-| [foreign attributes] | Foreign attributes are all other attributes being present. These will be copied to the resulting `fx-fore` element if `src` is used for loading an external page. These can be accessed with the `fore-attr()` function | - | 
 | ignore-expressions | if given is expected to contain a CSS selector that matches element to excluded from Template Expression handling | - |
+| [foreign attributes] | Foreign attributes are all other attributes being present. These will be copied to the resulting `fx-fore` element if `src` is used for loading an external page. These can be accessed with the `fore-attr()` function | - | 
+| show-confirmation | either just marker attribute or boolean XPath |  -      |
+| src | url to load a `<fx-fore>` element from another HTML file                 | -       |
+| strict | boolean attribute - if present error messages will be displayed additionally as toast messages | false |
 
 if `show-confirmation` is just used as a marker attribute Fore will check whether data fields have been modified after initial loading. Attribute may be
 empty, the empty string, 'true' or 'show-confirmation'.
