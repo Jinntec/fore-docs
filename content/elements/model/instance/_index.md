@@ -18,10 +18,16 @@ necessary.
 | credentials | sets credentials policy - one of 'omit', 'same-origin' or 'include' | same-origin |
 | id | id of the instance for addressing in refs | default |
 | shared | boolean attribute to signal that the instance is shared with nested Fore elements | |
-| src | url to load instance from via http get | |
+| src | url to load instance from via http get. This may have static params but cannot use dynamic parameters. See fx-submission for if required. | |
 | type | 'xml' or 'json' or 'html' are supported by now | xml |
 | xpath-default-namespace | namespace to be used with unprefixed XPathes | emtpy |
 
+## The `src` attribute
+
+When static data files shall be loaded you can use the `src` attribute which may also have some static attributes. However, as instance data can
+be accessed not before all have been loaded you cannot have dynamic parameters that refer to other nodes.
+
+If that is required you have to use the `fx-submission` element and use a 'get' request with `replace="instance"` to load the data. The submission is then usually fired on `model-construct-done`. Examples can be found in the demos.
 
 ## Shared instances
 
