@@ -28,6 +28,7 @@ The following attribues can be used on any Fore action element.
 | delay         | delay before action is executed in milliseconds.                                   |
 | event         | the event name this action is listening to                                         |
 | if            | boolean XPath expression. Action is only executed if this returns true.            |
+| iterate       | XPath expression selecting a set of nodes to iterate over                          |
 | phase         | 'default' or 'capture'                                                             |
 | propagate     | 'stop' or 'continue' (default)                                                     |
 | target        | id of element to attach to or special values '#window' and '#document'  |
@@ -40,6 +41,7 @@ The following attribues can be used on any Fore action element.
 |------------------|--------------------------------------------|
 | action-performed | dispatched after execution of an action    |
 | while-performed  | dispatched after execution of a while loop |
+
 
 
 
