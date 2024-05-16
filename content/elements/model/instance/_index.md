@@ -22,6 +22,15 @@ necessary.
 | type | 'xml' or 'json' or 'html' are supported by now | xml |
 | xpath-default-namespace | namespace to be used with unprefixed XPathes | emtpy |
 
+## Inline versus external data
+
+A data structure can be given inline or be loaded via the `src` attribute. However there are important limitations of inline instances to be mentioned:
+* tagnames are not context-sensitive
+* There are no self-closing elements as in XML
+
+If your require these features you have to create an external XML file and load it with the `src` attribute. This gives you a proper XML document.
+
+
 ## The `src` attribute
 
 When static data files shall be loaded you can use the `src` attribute which may also have some static attributes. However, as instance data can
