@@ -38,3 +38,7 @@ You may then start a local hugo server with
 ```sh
 hugo server
 ```
+
+### Hugo commands
+
+* `hugo create elements/ui/`
