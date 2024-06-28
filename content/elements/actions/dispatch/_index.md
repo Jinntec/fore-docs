@@ -18,7 +18,7 @@ the id in scope of current occurence.
 | Name | Description |
 |------|-------------|
 | name | name of event to dispatch |
-| targetid | id reference of element to dispatch to |
+| targetid | id reference of element to dispatch to. If omitted the event will be dispatched to document |
 
 
 ## Events
