@@ -2,7 +2,6 @@
 Attributes No Attributes
 Events none
 Examples Binding Revalidation</description></item><item><title>The anatomy of Fore</title><link>https://jinntec.github.io/fore-docs/getstarted/mvc/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/mvc/</guid><description>Before stepping deeper a basic understanding of the main parts of Fore is helpful.
-Fore uses a classical Model-View-Controller (MVC) architecture.
 There are 3 basic things to remember:
 The model (&amp;lt;fx-model&amp;gt;) holds the data and their state. This state will be used during refresh to apply changes to the UI.
 When the user interacts with a page the UI will trigger Actions to change the data in the model.
