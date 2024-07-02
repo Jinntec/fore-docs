@@ -7,9 +7,6 @@ tags: [basic, mvc, model, ui, actions]
 
 Before stepping deeper a basic understanding of the main parts of Fore is helpful.
 
-Fore uses a classical Model-View-Controller (MVC) architecture.
-
-![MVC](/images/mvc.svg)
 
 There are 3 basic things to remember:
 1. The **model** (`<fx-model>`) holds the data and their state. This state
