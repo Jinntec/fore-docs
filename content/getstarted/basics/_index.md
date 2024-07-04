@@ -6,7 +6,8 @@ tags: [basic]
 ---
 
 Fore is a set of [Web Components](https://www.webcomponents.org/) sharing the prefix 'fx-' that together implement
-a complete engine to build highly dynamic, full-featured user interfaces without any script coding.
+a complete engine to build highly dynamic, full-featured user interfaces significantly reducing or even eliminating script coding.
+
 
 `<fx-fore>` is the root element containing all other elements.
 
