@@ -7,20 +7,15 @@ tags: [basic, mvc, model, ui, actions]
 
 Before stepping deeper a basic understanding of the main parts of Fore is helpful.
 
+Fore elements fall into 3 categories:
 
-There are 3 basic things to remember:
-1. The **model** (`<fx-model>`) holds the data and their state. This state
-will be used during refresh to apply changes to the UI.
+1. The model elements: the **model** (`<fx-model>`) and its children hold the data and their state, calculate, validate and submit the data. The state
+will be reflected in the UI after a refresh.
 
-1. When the user interacts with a page the **UI** will trigger Actions to change
-the data in the model. 
+1. The UI elements: establish a two-way binding between a data value and a control. When the user interacts with a UI element it will trigger ***Actions*** to change
+the data in the model or otherwise interact with the UI.
 
-1. **Actions** will do the actual mutation of the data like setting a value, replacing, inserting or
-deleting a data node. But not all actions mutate the model - there are also actions
-for messaging the user, showing a dialog or switching a view.
+1. The Action elements: **Actions** allow all kinds of interaction with the model or the UI. Examples are setting a value, replacing, inserting or
+deleting data , messaging the user, handling keyboard shortcuts, showing a dialog or switching a view. Actions are triggered by events.
 
-{{% notice note %}}
-The term 'data node' does not mean it needs to be a DOM node. It can also point 
-to a JSON property or some other data item.
-{{% /notice %}}
 
