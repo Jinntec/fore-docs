@@ -22,6 +22,10 @@ necessary.
 | type | 'xml' or 'json' or 'html' are supported by now | xml |
 | xpath-default-namespace | namespace to be used with unprefixed XPathes | emtpy |
 
+## Using multiple instances
+
+When using multiple instances you need to add an `id` attribute to each instance that is NOT the first in document order. The first is known as the default instance and doesn't need an explicit id but can be accessed with `instance()` or `instance('default'). See [Default instance](https://jinntec.github.io/fore-docs/glossary/#default-instance).
+
 ## Inline versus external data
 
 A data structure can be given inline or be loaded via the `src` attribute. However there are important limitations of inline instances to be mentioned:
