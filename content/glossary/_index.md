@@ -15,9 +15,11 @@ Binding Expressions are relative to their parent bindings - see under 'Scoped Re
 ## Default Instance
 
 The 'default instance' in Fore is always the first in document order within a given `fx-fore` element. It will get an `id="default"` 
-being set if no `id` attribute exists. The default instance can be accessed by the `instance()` function without passing an argument.
+being set if no `id` attribute exists. The default instance can be either accessed by the `instance()` function without passing an argument or by `instance('default').
 
 The `instance()` function can be omitted in binding expressions if there's no non-default instance in scope. 
+
+The concept of a default instance allows to write binding expressions without explicitly naming the instance like e.g. `mypath/child` which will be equivalent to write `instance()/mypath/child` or `instance('default')/mypath/child`. As such it is mainly a convenience to reduce typing when accessing the first instance in document order.
 
 ## Id Resolution
 
