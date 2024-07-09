@@ -41,4 +41,4 @@ hugo server
 
 ### Hugo commands
 
-* `hugo create elements/ui/`
+* `hugo new elements/ui/`
