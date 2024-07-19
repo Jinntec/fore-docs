@@ -11,10 +11,13 @@ Defines one 'page' of a `fx-switch` element.
 
 ## Attributes
 
-| Name | Description |
-|------|-------------|
-| label | optional label |
-| name | a unique name to be used with `fx-toggle` |
+| Name | Description                                                  |
+|------|--------------------------------------------------------------|
+| label | optional label                                               |
+| name | a unique name to be used with `fx-toggle`                    |
+| selector | a CSS selector to select a certain element from external src |
+| src | a URL being used for fetching the content of a case          | 
+
 
 ## Events
 
