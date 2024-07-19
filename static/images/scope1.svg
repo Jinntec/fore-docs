@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="28.901 81.822 293.724 195.072" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <rect x="28.901" y="81.822" width="293.724" height="195.072" style="stroke: rgb(0, 0, 0); fill: rgb(71, 174, 224);"/>
+  <g>
+    <rect x="36.758" y="96.698" width="210.305" height="148.208" style="fill-opacity: 0.75; stroke: rgb(2, 2, 2); fill: rgb(255, 255, 255);"/>
+    <text style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 14px; stroke-miterlimit: 1; stroke-opacity: 0; stroke-width: 0px; white-space: pre;" transform="matrix(1.000032, 0, 0, 1.000047, -53.032867, 31.448887)" x="89.788" y="77.974">&lt;fx-fore&gt;</text>
+    <text style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 14px; white-space: pre;" x="36.758" y="241.969">&lt;/fx-fore&gt;</text>
+  </g>
+  <rect x="89.074" y="124.21" width="128.514" height="92.156" style="stroke: rgb(0, 0, 0); fill: rgb(255, 254, 254);"/>
+  <text style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 14px; stroke-miterlimit: 1; stroke-opacity: 0; stroke-width: 0px; white-space: pre;" transform="matrix(1.0000319480895996, 0, 0, 1.000046968460083, 5.8232421875, 58.9609260559082)" x="89.788" y="77.974">&lt;fx-fore&gt;</text>
+  <text style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 14px; white-space: pre;" x="95.614" y="213.429">&lt;/fx-fore&gt;</text>
+  <path d="M -282.485 -124.86 H -220.99 L -220.99 -126.21 L -216.005 -124.71 L -220.99 -123.21 L -220.99 -124.56 H -282.485 V -124.86 Z" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" transform="matrix(-0.9999989867210388, -0.0015979999443516135, 0, -1.0000009536743164, 3.0706260204315186, -0.38997602462768555)" bx:shape="arrow -282.485 -126.21 66.48 3 0.3 4.985 0 1@51b74d35"/>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 8.2px;" x="287.555" y="125.485">scope</text>
+  <path d="M -159.314 -124.86 H -124.632 L -124.632 -126.21 L -121.821 -124.71 L -124.632 -123.21 L -124.632 -124.56 H -159.314 V -124.86 Z" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" transform="matrix(-0.9999989867210388, -0.0015979999443516135, 0, -1.0000009536743164, 126.24173736572266, -28.703256607055668)" bx:shape="arrow -159.314 -126.21 37.493 3 0.3 2.811 0 1@1cf92c6e"/>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 8.2px;" x="287.555" y="96.931">scope</text>
+</svg>
