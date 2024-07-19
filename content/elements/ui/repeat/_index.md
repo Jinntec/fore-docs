@@ -24,10 +24,9 @@ will be created that will contain the evaluated template as content.
 
 | Name | Description | Details
 |------|-------------|--- |
+| item-created | dispatched when a new repeat entry is created | 'path' - a canonical xpath <br> 'index' - the index of the new item |
 | path-mutated | dispatched when repeat nodeset changes | 'path' - the mutation path <br> 'index' - the index of the changed repeat item.
-| refresh-done | dispatched after a refresh() run | - |
-| ready | dispatched after Fore has fully been initialized | - |
-| error | dispatches error when template expression fails to evaluate | 'message' - the error message |
+| no-template-error | dispatched when there's no template defined | 'id' - the repeat id |
 
 
 ## Examples
