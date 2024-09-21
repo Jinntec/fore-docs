@@ -1,6 +1,74 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.0.0 on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/1.0.0/</link><description>Recent content in 1.0.0 on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/1.0.0/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-action></title><link>https://jinntec.github.io/fore-docs/elements/actions/action/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/action/</guid><description>Description &amp;lt;fx-action&amp;gt; is a container action element that can take other actions as children and defer their update cycle to the end of the action block.
-This is useful when you e.g. want to set several values at once without the cost of each action to be recalculated, revalidated and refreshed.
-Script Actions It is possible to call JavaScript from an &amp;lt;fx-action&amp;gt; by using the src attribute. For an example see script actions or the source of this file (doc/reference.</description></item><item><title>&lt;fx-append></title><link>https://jinntec.github.io/fore-docs/elements/actions/append/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/append/</guid><description>Description Appends an entry to an fx-repeat.
-Note: this is deprecated. Please use fx-insert.
-Attributes Name Description ref the XPath ref to append to repeat the fx-repeat to append to Events Name Description index-changed dispatched after entry has been added to a repeat Examples todo nested todo TEI header editor sample</description></item><item><title>&lt;fx-delete></title><link>https://jinntec.github.io/fore-docs/elements/actions/delete/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/delete/</guid><description>Description Deletes a node from a nodeset.
-fx-delete Attributes Name Description ref XPath reference to instance node(s) to delete Examples todo nested todo TEI header editor sample</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.0.0 on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/1.0.0/</link><description>Recent content in 1.0.0 on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/1.0.0/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-action></title><link>https://jinntec.github.io/fore-docs/elements/actions/action/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/action/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>&lt;code>&amp;lt;fx-action&amp;gt;&lt;/code> is a container action element that can take other actions
+as children and defer their update cycle to the end of the action block.&lt;/p>
+&lt;p>This is useful when you e.g. want to set several values at once without the cost of
+each action to be recalculated, revalidated and refreshed.&lt;/p>
+&lt;h3 id="script-actions">Script Actions&lt;/h3>
+&lt;p>It is possible to call JavaScript from an &lt;code>&amp;lt;fx-action&amp;gt;&lt;/code> by using the &lt;code>src&lt;/code> attribute. For an example
+see &lt;a href="../demo/script-actions.html">script actions&lt;/a> or the source of this file (doc/reference.html).&lt;/p></description></item><item><title>&lt;fx-append></title><link>https://jinntec.github.io/fore-docs/elements/actions/append/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/append/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Appends an entry to an &lt;code>fx-repeat&lt;/code>.&lt;/p>
+&lt;blockquote>
+&lt;p>Note: this is deprecated. Please use &lt;code>fx-insert&lt;/code>.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">ref&lt;/td>
+ &lt;td style="text-align: left">the XPath ref to append to&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">repeat&lt;/td>
+ &lt;td style="text-align: left">the &lt;code>fx-repeat&lt;/code> to append to&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">index-changed&lt;/td>
+ &lt;td style="text-align: left">dispatched after entry has been added to a repeat&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/todo.html">todo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/nested-todo.html">nested todo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/simple-tei-header.html">TEI header editor sample&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-delete></title><link>https://jinntec.github.io/fore-docs/elements/actions/delete/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/delete/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Deletes a node from a nodeset.&lt;/p>
+&lt;h2 id="fx-delete-attributes">fx-delete Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">ref&lt;/td>
+ &lt;td style="text-align: left">XPath reference to instance node(s) to delete&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/todo.html">todo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/nested-todo.html">nested todo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/simple-tei-header.html">TEI header editor sample&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -1,3 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Update on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/update/</link><description>Recent content in Update on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/update/index.xml" rel="self" type="application/rss+xml"/><item><title>Update Cycle</title><link>https://jinntec.github.io/fore-docs/architecture/update-cycle/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/architecture/update-cycle/</guid><description>The update cycle is triggered whenever a user interacts with a control e.g. by changing its value.
-Likewise this can be triggered by Actions being triggered by some state event like e.g. value-changed event.
-sequenceDiagram autonumber participant User participant Control participant Action participant Model participant Fore User->>Control: interact Control->>Action: execute activate Action Action->>Action: mutate ModelItem Action->>Model: add to changed list activate Action Action->>Action: actionPerformed() Action->>Model: rebuild() Action->>Model: recalculate() Action->>Fore: changed[] -> toRefresh[] Action->>Model: revalidate() Action->>Fore: refresh() Fore-->>Fore: refresh-done deactivate Action Action-->>Action: action-performed deactivate Action When the value of a UI control changes, it will use an action to propagate that change to the model.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Update on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/update/</link><description>Recent content in Update on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/update/index.xml" rel="self" type="application/rss+xml"/><item><title>Update Cycle</title><link>https://jinntec.github.io/fore-docs/architecture/update-cycle/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/architecture/update-cycle/</guid><description>&lt;p>The update cycle is triggered whenever a user interacts with a control
+e.g. by changing its value.&lt;/p>
+&lt;p>Likewise this can be triggered by Actions being triggered by some state event like e.g. &lt;code>value-changed&lt;/code> event.&lt;/p>
+
+&lt;div class="mermaid" align="left">
+sequenceDiagram
+ autonumber
+ 
+ participant User
+ participant Control
+ participant Action
+ participant Model
+ participant Fore
+ 
+ User->>Control: interact
+ 
+ Control->>Action: execute
+ 
+ activate Action
+ Action->>Action: mutate ModelItem
+ Action->>Model: add to changed list
+ activate Action
+ Action->>Action: actionPerformed()
+ Action->>Model: rebuild()
+ Action->>Model: recalculate()
+ Action->>Fore: changed[] -> toRefresh[]
+ Action->>Model: revalidate()
+ Action->>Fore: refresh()
+ Fore-->>Fore: refresh-done
+ deactivate Action
+ Action-->>Action: action-performed
+ deactivate Action
+
+&lt;/div>
+
+&lt;ol>
+&lt;li>When the value of a UI control changes, it will use an action
+to propagate that change to the model.&lt;/li>
+&lt;li>Usually a control will execute a &lt;code>&amp;lt;fx-setvalue&amp;gt;&lt;/code> action to change
+its value&lt;/li>
+&lt;li>The action mutates the ModelItem state object that is associated to the control.&lt;/li>
+&lt;li>The changed ModelItem is added to a &lt;code>changed&lt;/code> array in the Model&lt;/li>
+&lt;li>When the action has done its job it will call the model to update while executing &lt;code>actionPerformed()&lt;/code>.&lt;/li>
+&lt;li>Only actions that mutate the structure of the data will call &lt;code>rebuild()&lt;/code> as the Main Dependency Graph needs
+to be reconstructed.&lt;/li>
+&lt;li>Instead of using MDG (see Initialization) &lt;code>recalculate&lt;/code> will re-compute all calculations for
+the changed nodes by creating a subgraph of the MDG that will only contain the affected ModelItems.&lt;/li>
+&lt;li>The array of changed ModelItems will be cloned and passed as &lt;code>toRefresh[]&lt;/code> to the Fore object.&lt;/li>
+&lt;li>All ModelItems will be revalidated.&lt;/li>
+&lt;li>&lt;code>refresh()&lt;/code> is called on Fore object that will use the &lt;code>toRefresh&lt;/code> array of changed ModelItems to selectively update
+only affected controls. This will also incorporate controls that are dependent on the changed one by using the MDG.&lt;/li>
+&lt;li>A &lt;code>refresh-done&lt;/code> event is emitted&lt;/li>
+&lt;li>A &lt;code>action-performed&lt;/code> event is emitted&lt;/li>
+&lt;/ol></description></item></channel></rss>

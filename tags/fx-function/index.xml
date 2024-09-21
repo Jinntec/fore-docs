@@ -1,3 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Function on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-function/</link><description>Recent content in Fx-Function on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-function/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-function></title><link>https://jinntec.github.io/fore-docs/elements/model/functions/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/functions/</guid><description>Description Allows to define custom inline function in either XPath/XQuery or Javascript.
-Attributes Name Description signature the function signature. Must use &amp;rsquo;local&amp;rsquo; prefix type can be &amp;rsquo;text/javascript&amp;rsquo;, &amp;rsquo;text/xpath&amp;rsquo;, &amp;rsquo;text/xquery&amp;rsquo; or &amp;rsquo;text/xquf&amp;rsquo; (XQuery Update Facility) Events none
-Examples Xquery Update Facility &amp;lt;fx-function signature=&amp;#34;update($element as element()) as element()*&amp;#34; type=&amp;#34;text/xquf&amp;#34;&amp;gt; copy $xml := $element modify ( for $ref in $xml/element return insert node $ref/@name with $xml/element/name/text() ) return $xml &amp;lt;/fx-function&amp;gt; JavaScript &amp;lt;fx-function signature=&amp;#34;now() as xs:string&amp;#34; type=&amp;#34;text/javascript&amp;#34;&amp;gt; const now = new Date(); return `${String(now.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Function on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-function/</link><description>Recent content in Fx-Function on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-function/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-function></title><link>https://jinntec.github.io/fore-docs/elements/model/functions/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/functions/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Allows to define custom inline function in either XPath/XQuery or Javascript.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">signature&lt;/td>
+ &lt;td style="text-align: left">the function signature. Must use &amp;rsquo;local&amp;rsquo; prefix&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">type&lt;/td>
+ &lt;td style="text-align: left">can be &amp;rsquo;text/javascript&amp;rsquo;, &amp;rsquo;text/xpath&amp;rsquo;, &amp;rsquo;text/xquery&amp;rsquo; or &amp;rsquo;text/xquf&amp;rsquo; (XQuery Update Facility)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;h3 id="xquery-update-facility">Xquery Update Facility&lt;/h3>
+&lt;pre tabindex="0">&lt;code>&amp;lt;fx-function
+ signature=&amp;#34;update($element as element()) as element()*&amp;#34;
+ type=&amp;#34;text/xquf&amp;#34;&amp;gt;
+ copy $xml := $element modify (
+ for $ref in $xml/element
+ return insert node $ref/@name with $xml/element/name/text()
+ ) return $xml
+&amp;lt;/fx-function&amp;gt;
+&lt;/code>&lt;/pre>&lt;h3 id="javascript">JavaScript&lt;/h3>
+&lt;pre tabindex="0">&lt;code>&amp;lt;fx-function signature=&amp;#34;now() as xs:string&amp;#34; type=&amp;#34;text/javascript&amp;#34;&amp;gt;
+ const now = new Date();
+ return `${String(now.getHours()).padStart(2, &amp;#39;0&amp;#39;)}:${String(now.getMinutes()).padStart(2, &amp;#39;0&amp;#39;)}:${String(now.getSeconds()).padStart(2, &amp;#39;0&amp;#39;)}`;
+&amp;lt;/fx-function&amp;gt;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/functions.html">Custom inline functions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/randomizer.html">Randomizer&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

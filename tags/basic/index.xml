@@ -1,16 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Basic on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/basic/</link><description>Recent content in Basic on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 20 May 2022 16:08:59 +0200</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/basic/index.xml" rel="self" type="application/rss+xml"/><item><title>Basics</title><link>https://jinntec.github.io/fore-docs/getstarted/basics/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/basics/</guid><description>Fore is a set of Web Components sharing the prefix &amp;lsquo;fx-&amp;rsquo; that together implement a complete engine to build highly dynamic, full-featured user interfaces significantly reducing or even eliminating script coding.
-&amp;lt;fx-fore&amp;gt; is the root element containing all other elements.
-&amp;lt;fx-fore&amp;gt; ... put other Fore elements or HTML here ... &amp;lt;/fx-fore&amp;gt; In this tutorial we will subsequently add elements to this template to explore the features of Fore.</description></item><item><title>The anatomy of Fore</title><link>https://jinntec.github.io/fore-docs/getstarted/mvc/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/mvc/</guid><description>Before stepping deeper a basic understanding of the main parts of Fore is helpful.
-Fore elements fall into 3 categories:
-The model elements: the model (&amp;lt;fx-model&amp;gt;) and its children hold the data and their state, calculate, validate and submit the data. The state will be reflected in the UI after a refresh.
-The UI elements: establish a two-way binding between a data value and a control. When the user interacts with a UI element it will trigger Actions to change the data in the model or otherwise interact with the UI.</description></item><item><title>Hello World</title><link>https://jinntec.github.io/fore-docs/getstarted/hello/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/hello/</guid><description>What can be learned here:
-the basic structure of Fore &amp;lt;fx-model&amp;gt; and &amp;lt;fx-instance&amp;gt; elements using a Template Expression Hello World - Step by Step Each &amp;lt;fx-fore&amp;gt; element has a single model.
-1. Add the model First step to create a data-bound &amp;lsquo;Hello World&amp;rsquo; example is to add a model.
-&amp;lt;fx-fore&amp;gt; &amp;lt;fx-model&amp;gt;&amp;lt;/fx-model&amp;gt; &amp;lt;/fx-fore&amp;gt; The &amp;lt;fx-model&amp;gt; is a direct child of the &amp;lt;fx-fore&amp;gt; element.
-2. Add some data Not very exciting so far, so add some data:</description></item><item><title>Todo App</title><link>https://jinntec.github.io/fore-docs/getstarted/todo/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/todo/</guid><description>What can be learned here:
-the use of &amp;lt;fx-repeat&amp;gt; element data binding and resolution using a constraint using controls using insert and delete action Todo Application Let&amp;rsquo;s go for a bit more fancy example - a simple todo app - and learn about some new elements.
-In this tutorial we add some real interaction, give some feedback messages to the user and actually change our data.
-It will introduce you to &amp;lt;fx-repeat&amp;gt; element that is one of the container elements available in Fore.</description></item><item><title>Todo App refined</title><link>https://jinntec.github.io/fore-docs/getstarted/todo-refined/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/todo-refined/</guid><description>What can be learned here:
-adding a counter insert from a template node use &amp;lt;fx-bind&amp;gt; to require a value Todo refined In the previous chapter the bare minimum for the todo app were created.
-In this chapter we&amp;rsquo;d like to make some improvements:
-show a counter for our todos hide or show completed todos make sure we can handle an empty list Extending our data model Let&amp;rsquo;s add a couple of nodes to our data model to cover our objectives.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Basic on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/basic/</link><description>Recent content in Basic on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 20 May 2022 16:08:59 +0200</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/basic/index.xml" rel="self" type="application/rss+xml"/><item><title>Basics</title><link>https://jinntec.github.io/fore-docs/getstarted/basics/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/basics/</guid><description>&lt;p>Fore is a set of &lt;a href="https://www.webcomponents.org/">Web Components&lt;/a> sharing the prefix &amp;lsquo;fx-&amp;rsquo; that together implement
+a complete engine to build highly dynamic, full-featured user interfaces significantly reducing or even eliminating script coding.&lt;/p>
+&lt;p>&lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> is the root element containing all other elements.&lt;/p>
+&lt;pre tabindex="0">&lt;code>&amp;lt;fx-fore&amp;gt;
+ ... put other Fore elements or HTML here ...
+&amp;lt;/fx-fore&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>In this tutorial we will subsequently add elements to this template
+to explore the features of Fore.&lt;/p></description></item><item><title>The anatomy of Fore</title><link>https://jinntec.github.io/fore-docs/getstarted/mvc/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/mvc/</guid><description>&lt;p>Before stepping deeper a basic understanding of the main parts of Fore is helpful.&lt;/p>
+&lt;p>Fore elements fall into 3 categories:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>The model elements&lt;/strong>: the model (&lt;code>&amp;lt;fx-model&amp;gt;&lt;/code>) and its children hold the data and their state, calculate, validate and submit the data. The state
+will be reflected in the UI after a refresh.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>The UI elements&lt;/strong>: establish a two-way binding between a data value and a control. When the user interacts with a UI element it will trigger Actions to change
+the data in the model or otherwise interact with the UI.&lt;/p></description></item><item><title>Hello World</title><link>https://jinntec.github.io/fore-docs/getstarted/hello/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/hello/</guid><description>&lt;p>What can be learned here:&lt;/p>
+&lt;ul>
+&lt;li>the basic structure of Fore&lt;/li>
+&lt;li>&lt;code>&amp;lt;fx-model&amp;gt;&lt;/code> and &lt;code>&amp;lt;fx-instance&amp;gt;&lt;/code> elements&lt;/li>
+&lt;li>using a Template Expression&lt;/li>
+&lt;/ul>
+&lt;h2 id="hello-world---step-by-step">Hello World - Step by Step&lt;/h2>
+&lt;p>Each &lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> element has a single model.&lt;/p>
+&lt;h3 id="1-add-the-model">1. Add the model&lt;/h3>
+&lt;p>First step to create a data-bound &amp;lsquo;Hello World&amp;rsquo; example is to add a model.&lt;/p>
+&lt;pre tabindex="0">&lt;code>&amp;lt;fx-fore&amp;gt;
+ &amp;lt;fx-model&amp;gt;&amp;lt;/fx-model&amp;gt;
+&amp;lt;/fx-fore&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;div class="notices note" >&lt;p>The &lt;code>&amp;lt;fx-model&amp;gt;&lt;/code> is a direct child of the &lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> element.&lt;/p>
+&lt;/div>
+
+&lt;h3 id="2-add-some-data">2. Add some data&lt;/h3>
+&lt;p>Not very exciting so far, so add some data:&lt;/p></description></item><item><title>Todo App</title><link>https://jinntec.github.io/fore-docs/getstarted/todo/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/todo/</guid><description>&lt;p>What can be learned here:&lt;/p>
+&lt;ul>
+&lt;li>the use of &lt;code>&amp;lt;fx-repeat&amp;gt;&lt;/code> element&lt;/li>
+&lt;li>data binding and resolution&lt;/li>
+&lt;li>using a constraint&lt;/li>
+&lt;li>using controls&lt;/li>
+&lt;li>using insert and delete action&lt;/li>
+&lt;/ul>
+&lt;h2 id="todo-application">Todo Application&lt;/h2>
+&lt;p>Let&amp;rsquo;s go for a bit more fancy example - a simple todo app - and learn about some new elements.&lt;/p>
+&lt;p>In this tutorial we add some real interaction, give some feedback
+messages to the user and actually change our data.&lt;/p>
+&lt;p>It will introduce you to &lt;code>&amp;lt;fx-repeat&amp;gt;&lt;/code> element that is one of the container
+elements available in Fore.&lt;/p></description></item><item><title>Todo App refined</title><link>https://jinntec.github.io/fore-docs/getstarted/todo-refined/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/todo-refined/</guid><description>&lt;p>What can be learned here:&lt;/p>
+&lt;ul>
+&lt;li>adding a counter&lt;/li>
+&lt;li>insert from a template node&lt;/li>
+&lt;li>use &lt;code>&amp;lt;fx-bind&amp;gt;&lt;/code> to require a value&lt;/li>
+&lt;/ul>
+&lt;h2 id="todo-refined">Todo refined&lt;/h2>
+&lt;p>In the previous chapter the bare minimum for the todo app were created.&lt;/p>
+&lt;p>In this chapter we&amp;rsquo;d like to make some improvements:&lt;/p>
+&lt;ul>
+&lt;li>show a counter for our todos&lt;/li>
+&lt;li>hide or show completed todos&lt;/li>
+&lt;li>make sure we can handle an empty list&lt;/li>
+&lt;/ul>
+&lt;h3 id="extending-our-data-model">Extending our data model&lt;/h3>
+&lt;p>Let&amp;rsquo;s add a couple of nodes to our data model to cover our objectives. We&amp;rsquo;ll use them later on.&lt;/p></description></item></channel></rss>

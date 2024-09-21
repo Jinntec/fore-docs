@@ -1,17 +1,321 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Model on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/model/</link><description>Recent content in Model on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 20 May 2022 16:08:59 +0200</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/model/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-model></title><link>https://jinntec.github.io/fore-docs/elements/model/model/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/model/</guid><description>Description The model is responsible for:
-creating and maintaining the Main Dependency Graph (MDG). creating ModelItems for bound data nodes calculation validation This is done with the help of bind elements.
-The &amp;lt;fx-model&amp;gt; element is a direct child of &amp;lt;fx-fore&amp;gt; and is itself a container for:
-one or more &amp;lt;fx-instance&amp;gt; elements zero, one or more &amp;lt;fx-bind&amp;gt; elements zero, one or more &amp;lt;fx-submission&amp;gt; elements zero, one or more &amp;lt;fx-function&amp;gt; elements Warning: &amp;lt;fx-model&amp;gt; must be in front of Fore UI elements due to not fully understood Web Components behaviour.</description></item><item><title>The anatomy of Fore</title><link>https://jinntec.github.io/fore-docs/getstarted/mvc/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/mvc/</guid><description>Before stepping deeper a basic understanding of the main parts of Fore is helpful.
-Fore elements fall into 3 categories:
-The model elements: the model (&amp;lt;fx-model&amp;gt;) and its children hold the data and their state, calculate, validate and submit the data. The state will be reflected in the UI after a refresh.
-The UI elements: establish a two-way binding between a data value and a control. When the user interacts with a UI element it will trigger Actions to change the data in the model or otherwise interact with the UI.</description></item><item><title>Hello World</title><link>https://jinntec.github.io/fore-docs/getstarted/hello/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/hello/</guid><description>What can be learned here:
-the basic structure of Fore &amp;lt;fx-model&amp;gt; and &amp;lt;fx-instance&amp;gt; elements using a Template Expression Hello World - Step by Step Each &amp;lt;fx-fore&amp;gt; element has a single model.
-1. Add the model First step to create a data-bound &amp;lsquo;Hello World&amp;rsquo; example is to add a model.
-&amp;lt;fx-fore&amp;gt; &amp;lt;fx-model&amp;gt;&amp;lt;/fx-model&amp;gt; &amp;lt;/fx-fore&amp;gt; The &amp;lt;fx-model&amp;gt; is a direct child of the &amp;lt;fx-fore&amp;gt; element.
-2. Add some data Not very exciting so far, so add some data:</description></item><item><title>Model</title><link>https://jinntec.github.io/fore-docs/elements/model/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/</guid><description>Model Elements This chapter describes all elements belonging to the Fore Model.
-Model elements have no visual representation and are always hidden from view.</description></item><item><title>&lt;fx-bind></title><link>https://jinntec.github.io/fore-docs/elements/model/bind/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/bind/</guid><description>Description The fx-bind element attaches constraints and calculations to instance nodes.
-Attributes Name Description Default alert used to specify a message to be displayed when constraints fail - ref XPath pointing to node(s) the bind is attaching to - calculate XPath expression to be calculated. Result will become value of node(s) referenced by ref - constraint boolean XPath expression to determine validity of node(s) true readonly boolean XPath expression to determine readonly/readwrite state false relevant boolean XPath expression to determine relevant/non-relevant state true required boolean XPath expression to determine required/optional state false type datatype - reserved for future versions string Events none</description></item><item><title>&lt;fx-function></title><link>https://jinntec.github.io/fore-docs/elements/model/functions/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/functions/</guid><description>Description Allows to define custom inline function in either XPath/XQuery or Javascript.
-Attributes Name Description signature the function signature. Must use &amp;rsquo;local&amp;rsquo; prefix type can be &amp;rsquo;text/javascript&amp;rsquo;, &amp;rsquo;text/xpath&amp;rsquo;, &amp;rsquo;text/xquery&amp;rsquo; or &amp;rsquo;text/xquf&amp;rsquo; (XQuery Update Facility) Events none
-Examples Xquery Update Facility &amp;lt;fx-function signature=&amp;#34;update($element as element()) as element()*&amp;#34; type=&amp;#34;text/xquf&amp;#34;&amp;gt; copy $xml := $element modify ( for $ref in $xml/element return insert node $ref/@name with $xml/element/name/text() ) return $xml &amp;lt;/fx-function&amp;gt; JavaScript &amp;lt;fx-function signature=&amp;#34;now() as xs:string&amp;#34; type=&amp;#34;text/javascript&amp;#34;&amp;gt; const now = new Date(); return `${String(now.</description></item><item><title>&lt;fx-instance></title><link>https://jinntec.github.io/fore-docs/elements/model/instance/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/instance/</guid><description>Description Holds the data of the model. A fx-model may have as many fx-instance elements as necessary.
-Attributes Name Description default credentials sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo; same-origin id id of the instance for addressing in refs default shared boolean attribute to signal that the instance is shared with nested Fore elements src url to load instance from via http get. This may have static params but cannot use dynamic parameters.</description></item><item><title>&lt;fx-submission></title><link>https://jinntec.github.io/fore-docs/elements/model/submission/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/submission/</guid><description>Description Send and receive data.
-Attributes Name Description Default credentials sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo; same-origin id required: id of submission for referral &amp;lsquo;default&amp;rsquo; ref XPath reference pointing to the bound node root node of default instance instance id of instance when replace='instance'. Required when replace=&amp;lsquo;instance&amp;rsquo; into XPath expr where to insert response nodes into method http methods GET, POST, PUT, DELETE, url-encoded-post GET nonrelevant handling of non relevant nodes during serialization.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Model on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/model/</link><description>Recent content in Model on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 20 May 2022 16:08:59 +0200</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/model/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-model></title><link>https://jinntec.github.io/fore-docs/elements/model/model/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/model/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>The model is responsible for:&lt;/p>
+&lt;ul>
+&lt;li>creating and maintaining the Main Dependency Graph (MDG).&lt;/li>
+&lt;li>creating ModelItems for bound data nodes&lt;/li>
+&lt;li>calculation&lt;/li>
+&lt;li>validation&lt;/li>
+&lt;/ul>
+&lt;p>This is done with the help of &lt;a href="https://jinntec.github.io/fore-docs/elements/model/bind" >bind&lt;/a> elements.&lt;/p>
+&lt;p>The &lt;code>&amp;lt;fx-model&amp;gt;&lt;/code> element is a direct child of &lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> and is itself a container for:&lt;/p>
+&lt;ul>
+&lt;li>one or more &lt;code>&amp;lt;fx-instance&amp;gt;&lt;/code> elements&lt;/li>
+&lt;li>zero, one or more &lt;code>&amp;lt;fx-bind&amp;gt;&lt;/code> elements&lt;/li>
+&lt;li>zero, one or more &lt;code>&amp;lt;fx-submission&amp;gt;&lt;/code> elements&lt;/li>
+&lt;li>zero, one or more &lt;code>&amp;lt;fx-function&amp;gt;&lt;/code> elements&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Warning: &lt;code>&amp;lt;fx-model&amp;gt;&lt;/code> must be in front of Fore UI elements due to not fully understood Web Components behaviour.&lt;/p></description></item><item><title>The anatomy of Fore</title><link>https://jinntec.github.io/fore-docs/getstarted/mvc/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/mvc/</guid><description>&lt;p>Before stepping deeper a basic understanding of the main parts of Fore is helpful.&lt;/p>
+&lt;p>Fore elements fall into 3 categories:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>The model elements&lt;/strong>: the model (&lt;code>&amp;lt;fx-model&amp;gt;&lt;/code>) and its children hold the data and their state, calculate, validate and submit the data. The state
+will be reflected in the UI after a refresh.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>The UI elements&lt;/strong>: establish a two-way binding between a data value and a control. When the user interacts with a UI element it will trigger Actions to change
+the data in the model or otherwise interact with the UI.&lt;/p></description></item><item><title>Hello World</title><link>https://jinntec.github.io/fore-docs/getstarted/hello/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/hello/</guid><description>&lt;p>What can be learned here:&lt;/p>
+&lt;ul>
+&lt;li>the basic structure of Fore&lt;/li>
+&lt;li>&lt;code>&amp;lt;fx-model&amp;gt;&lt;/code> and &lt;code>&amp;lt;fx-instance&amp;gt;&lt;/code> elements&lt;/li>
+&lt;li>using a Template Expression&lt;/li>
+&lt;/ul>
+&lt;h2 id="hello-world---step-by-step">Hello World - Step by Step&lt;/h2>
+&lt;p>Each &lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> element has a single model.&lt;/p>
+&lt;h3 id="1-add-the-model">1. Add the model&lt;/h3>
+&lt;p>First step to create a data-bound &amp;lsquo;Hello World&amp;rsquo; example is to add a model.&lt;/p>
+&lt;pre tabindex="0">&lt;code>&amp;lt;fx-fore&amp;gt;
+ &amp;lt;fx-model&amp;gt;&amp;lt;/fx-model&amp;gt;
+&amp;lt;/fx-fore&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;div class="notices note" >&lt;p>The &lt;code>&amp;lt;fx-model&amp;gt;&lt;/code> is a direct child of the &lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> element.&lt;/p>
+&lt;/div>
+
+&lt;h3 id="2-add-some-data">2. Add some data&lt;/h3>
+&lt;p>Not very exciting so far, so add some data:&lt;/p></description></item><item><title>Model</title><link>https://jinntec.github.io/fore-docs/elements/model/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/</guid><description>&lt;h1 id="model-elements">Model Elements&lt;/h1>
+&lt;p>This chapter describes all elements belonging to the Fore Model.&lt;/p>
+&lt;p>&lt;img src="https://jinntec.github.io/fore-docs/images/model.svg" alt="Fore Model">&lt;/p>
+
+&lt;div class="notices note" >&lt;p>Model elements have no visual representation and are always hidden
+from view.&lt;/p>
+&lt;/div></description></item><item><title>&lt;fx-bind></title><link>https://jinntec.github.io/fore-docs/elements/model/bind/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/bind/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>The &lt;code>fx-bind&lt;/code> element attaches constraints and calculations to instance nodes.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th style="text-align: left">Default&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">alert&lt;/td>
+ &lt;td style="text-align: left">used to specify a message to be displayed when constraints fail&lt;/td>
+ &lt;td style="text-align: left">-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">ref&lt;/td>
+ &lt;td style="text-align: left">XPath pointing to node(s) the bind is attaching to&lt;/td>
+ &lt;td style="text-align: left">-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">calculate&lt;/td>
+ &lt;td style="text-align: left">XPath expression to be calculated. Result will become value of node(s) referenced by &lt;code>ref&lt;/code>&lt;/td>
+ &lt;td style="text-align: left">-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">constraint&lt;/td>
+ &lt;td style="text-align: left">boolean XPath expression to determine validity of node(s)&lt;/td>
+ &lt;td style="text-align: left">true&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">readonly&lt;/td>
+ &lt;td style="text-align: left">boolean XPath expression to determine readonly/readwrite state&lt;/td>
+ &lt;td style="text-align: left">false&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">relevant&lt;/td>
+ &lt;td style="text-align: left">boolean XPath expression to determine relevant/non-relevant state&lt;/td>
+ &lt;td style="text-align: left">true&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">required&lt;/td>
+ &lt;td style="text-align: left">boolean XPath expression to determine required/optional state&lt;/td>
+ &lt;td style="text-align: left">false&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">type&lt;/td>
+ &lt;td style="text-align: left">datatype - reserved for future versions&lt;/td>
+ &lt;td style="text-align: left">string&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p></description></item><item><title>&lt;fx-function></title><link>https://jinntec.github.io/fore-docs/elements/model/functions/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/functions/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Allows to define custom inline function in either XPath/XQuery or Javascript.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">signature&lt;/td>
+ &lt;td style="text-align: left">the function signature. Must use &amp;rsquo;local&amp;rsquo; prefix&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">type&lt;/td>
+ &lt;td style="text-align: left">can be &amp;rsquo;text/javascript&amp;rsquo;, &amp;rsquo;text/xpath&amp;rsquo;, &amp;rsquo;text/xquery&amp;rsquo; or &amp;rsquo;text/xquf&amp;rsquo; (XQuery Update Facility)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;h3 id="xquery-update-facility">Xquery Update Facility&lt;/h3>
+&lt;pre tabindex="0">&lt;code>&amp;lt;fx-function
+ signature=&amp;#34;update($element as element()) as element()*&amp;#34;
+ type=&amp;#34;text/xquf&amp;#34;&amp;gt;
+ copy $xml := $element modify (
+ for $ref in $xml/element
+ return insert node $ref/@name with $xml/element/name/text()
+ ) return $xml
+&amp;lt;/fx-function&amp;gt;
+&lt;/code>&lt;/pre>&lt;h3 id="javascript">JavaScript&lt;/h3>
+&lt;pre tabindex="0">&lt;code>&amp;lt;fx-function signature=&amp;#34;now() as xs:string&amp;#34; type=&amp;#34;text/javascript&amp;#34;&amp;gt;
+ const now = new Date();
+ return `${String(now.getHours()).padStart(2, &amp;#39;0&amp;#39;)}:${String(now.getMinutes()).padStart(2, &amp;#39;0&amp;#39;)}:${String(now.getSeconds()).padStart(2, &amp;#39;0&amp;#39;)}`;
+&amp;lt;/fx-function&amp;gt;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/functions.html">Custom inline functions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/randomizer.html">Randomizer&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-instance></title><link>https://jinntec.github.io/fore-docs/elements/model/instance/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/instance/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Holds the data of the model. A &lt;code>fx-model&lt;/code> may have as many &lt;code>fx-instance&lt;/code> elements as
+necessary.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th style="text-align: left">default&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">credentials&lt;/td>
+ &lt;td style="text-align: left">sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo;&lt;/td>
+ &lt;td style="text-align: left">same-origin&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">id&lt;/td>
+ &lt;td style="text-align: left">id of the instance for addressing in refs&lt;/td>
+ &lt;td style="text-align: left">default&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">shared&lt;/td>
+ &lt;td style="text-align: left">boolean attribute to signal that the instance is shared with nested Fore elements&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">src&lt;/td>
+ &lt;td style="text-align: left">url to load instance from via http get. This may have static params but cannot use dynamic parameters. See fx-submission for if required.&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">type&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;xml&amp;rsquo; or &amp;lsquo;json&amp;rsquo; or &amp;lsquo;html&amp;rsquo; are supported by now&lt;/td>
+ &lt;td style="text-align: left">xml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">xpath-default-namespace&lt;/td>
+ &lt;td style="text-align: left">namespace to be used with unprefixed XPathes&lt;/td>
+ &lt;td style="text-align: left">emtpy&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="using-multiple-instances">Using multiple instances&lt;/h2>
+&lt;p>When using multiple instances you must add an &lt;code>id&lt;/code> attribute to each instance that is NOT the first in document order. The first is known as the &lt;a href="https://jinntec.github.io/fore-docs/glossary/#default-instance">default instance&lt;/a> and doesn&amp;rsquo;t need an explicit id but can be accessed with &lt;code>instance()&lt;/code> or `instance(&amp;lsquo;default&amp;rsquo;).&lt;/p></description></item><item><title>&lt;fx-submission></title><link>https://jinntec.github.io/fore-docs/elements/model/submission/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/submission/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Send and receive data.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th style="text-align: left">Default&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">credentials&lt;/td>
+ &lt;td style="text-align: left">sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo;&lt;/td>
+ &lt;td style="text-align: left">same-origin&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">id&lt;/td>
+ &lt;td style="text-align: left">required: id of submission for referral&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;default&amp;rsquo;&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">ref&lt;/td>
+ &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
+ &lt;td style="text-align: left">root node of default instance&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">instance&lt;/td>
+ &lt;td style="text-align: left">id of instance when &lt;code>replace='instance'&lt;/code>. Required when replace=&amp;lsquo;instance&amp;rsquo;&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">into&lt;/td>
+ &lt;td style="text-align: left">XPath expr where to insert response nodes into&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">method&lt;/td>
+ &lt;td style="text-align: left">http methods GET, POST, PUT, DELETE, url-encoded-post&lt;/td>
+ &lt;td style="text-align: left">GET&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">nonrelevant&lt;/td>
+ &lt;td style="text-align: left">handling of non relevant nodes during serialization. Can be one of &amp;lsquo;keep&amp;rsquo;, &amp;rsquo;empty&amp;rsquo; or &amp;lsquo;remove&amp;rsquo;&lt;/td>
+ &lt;td style="text-align: left">remove&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">replace&lt;/td>
+ &lt;td style="text-align: left">one of &amp;lsquo;all&amp;rsquo;, &amp;lsquo;download&amp;rsquo;, &amp;lsquo;instance&amp;rsquo;, &amp;rsquo;target&amp;rsquo;, &amp;lsquo;redirect&amp;rsquo; or &amp;rsquo;none&amp;rsquo;&lt;/td>
+ &lt;td style="text-align: left">all&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;all&amp;rsquo; - response replaces the viewport&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;download&amp;rsquo; - save dialog is shown for response&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;instance&amp;rsquo; - response replaces the instance given by the &lt;code>instance&lt;/code> attribute or if not present the default instance&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&amp;rsquo;target&amp;rsquo; - response will be attached to element identified by &lt;code>target&lt;/code> (CSS Selector syntax e.g. &amp;lsquo;#mydiv&amp;rsquo;)&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;redirect&amp;rsquo; - use response as redirect url.&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&amp;rsquo;none&amp;rsquo; - response will be ignored.&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">serialization&lt;/td>
+ &lt;td style="text-align: left">&amp;rsquo;none&amp;rsquo; or &amp;lsquo;xml&amp;rsquo; at this point&lt;/td>
+ &lt;td style="text-align: left">xml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">target&lt;/td>
+ &lt;td style="text-align: left">selector in CSS selector syntax. valid only when replace is &amp;rsquo;target&amp;rsquo;.&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">targetref&lt;/td>
+ &lt;td style="text-align: left">XPath pointing to target node when &lt;code>replace=&amp;quot;instance&amp;quot;&lt;/code>&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">validate&lt;/td>
+ &lt;td style="text-align: left">Boolean to turn validator mode on/off&lt;/td>
+ &lt;td style="text-align: left">true&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">submit&lt;/td>
+ &lt;td style="text-align: left">dispatch before submission takes place&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">submit-error&lt;/td>
+ &lt;td style="text-align: left">dispatched if the request returned an error&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">submit-done&lt;/td>
+ &lt;td style="text-align: left">dispatched when submission was successfully completed&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="url-schemes">URL Schemes&lt;/h2>
+&lt;p>Beside http, https Fore supports:&lt;/p></description></item></channel></rss>

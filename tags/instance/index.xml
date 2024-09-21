@@ -1,5 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Instance on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/instance/</link><description>Recent content in Instance on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 20 May 2022 16:08:59 +0200</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/instance/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello World</title><link>https://jinntec.github.io/fore-docs/getstarted/hello/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/hello/</guid><description>What can be learned here:
-the basic structure of Fore &amp;lt;fx-model&amp;gt; and &amp;lt;fx-instance&amp;gt; elements using a Template Expression Hello World - Step by Step Each &amp;lt;fx-fore&amp;gt; element has a single model.
-1. Add the model First step to create a data-bound &amp;lsquo;Hello World&amp;rsquo; example is to add a model.
-&amp;lt;fx-fore&amp;gt; &amp;lt;fx-model&amp;gt;&amp;lt;/fx-model&amp;gt; &amp;lt;/fx-fore&amp;gt; The &amp;lt;fx-model&amp;gt; is a direct child of the &amp;lt;fx-fore&amp;gt; element.
-2. Add some data Not very exciting so far, so add some data:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Instance on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/instance/</link><description>Recent content in Instance on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 20 May 2022 16:08:59 +0200</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/instance/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello World</title><link>https://jinntec.github.io/fore-docs/getstarted/hello/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/hello/</guid><description>&lt;p>What can be learned here:&lt;/p>
+&lt;ul>
+&lt;li>the basic structure of Fore&lt;/li>
+&lt;li>&lt;code>&amp;lt;fx-model&amp;gt;&lt;/code> and &lt;code>&amp;lt;fx-instance&amp;gt;&lt;/code> elements&lt;/li>
+&lt;li>using a Template Expression&lt;/li>
+&lt;/ul>
+&lt;h2 id="hello-world---step-by-step">Hello World - Step by Step&lt;/h2>
+&lt;p>Each &lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> element has a single model.&lt;/p>
+&lt;h3 id="1-add-the-model">1. Add the model&lt;/h3>
+&lt;p>First step to create a data-bound &amp;lsquo;Hello World&amp;rsquo; example is to add a model.&lt;/p>
+&lt;pre tabindex="0">&lt;code>&amp;lt;fx-fore&amp;gt;
+ &amp;lt;fx-model&amp;gt;&amp;lt;/fx-model&amp;gt;
+&amp;lt;/fx-fore&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;div class="notices note" >&lt;p>The &lt;code>&amp;lt;fx-model&amp;gt;&lt;/code> is a direct child of the &lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> element.&lt;/p>
+&lt;/div>
+
+&lt;h3 id="2-add-some-data">2. Add some data&lt;/h3>
+&lt;p>Not very exciting so far, so add some data:&lt;/p></description></item></channel></rss>

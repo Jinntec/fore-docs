@@ -1,3 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Getstarted on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/getstarted/</link><description>Recent content in Getstarted on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/getstarted/index.xml" rel="self" type="application/rss+xml"/><item><title>Submissions</title><link>https://jinntec.github.io/fore-docs/getstarted/submission/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/submission/</guid><description>What can be learned here:
-defining a basic &amp;lt;fx-submission&amp;gt; triggering a submission by using &amp;lt;fx-send&amp;gt; action replacing data with submission sending a message to the user with &amp;lt;fx-message&amp;gt; action Ok, nice - we have a todo list that will be gone when we reload the browser or leave the page.
-Make tutorial part 1 Pick up Milk new task Todo add You have {count(instance()/task[@complete='true'])} completed tasks delete Adding a submission We need a way to store our data.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Getstarted on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/getstarted/</link><description>Recent content in Getstarted on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/getstarted/index.xml" rel="self" type="application/rss+xml"/><item><title>Submissions</title><link>https://jinntec.github.io/fore-docs/getstarted/submission/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/submission/</guid><description>&lt;p>What can be learned here:&lt;/p>
+&lt;ul>
+&lt;li>defining a basic &lt;code>&amp;lt;fx-submission&amp;gt;&lt;/code>&lt;/li>
+&lt;li>triggering a submission by using &lt;code>&amp;lt;fx-send&amp;gt;&lt;/code> action&lt;/li>
+&lt;li>replacing data with submission&lt;/li>
+&lt;li>sending a message to the user with &lt;code>&amp;lt;fx-message&amp;gt;&lt;/code> action&lt;/li>
+&lt;/ul>
+&lt;p>Ok, nice - we have a todo list that will be gone when we reload the browser
+or leave the page.&lt;/p>
+&lt;fx-fore id="todo">
+ &lt;fx-model id="record">
+ &lt;fx-instance>
+ &lt;data>
+ &lt;task complete="false" due="2022-06-05">Make tutorial part 1&lt;/task>
+ &lt;task complete="false" due="2022-06-15">Pick up Milk&lt;/task>
+ &lt;template>
+ &lt;task complete="false" due="">new task&lt;/task>
+ &lt;/template>
+ &lt;/data>
+ &lt;/fx-instance>
+ &lt;fx-bind ref="task" constraint="string-length(.) > 0" alert="what's your todo?">&lt;/fx-bind>
+ &lt;/fx-model>
+ &lt;h1>Todo
+ &lt;fx-trigger class="btn add">
+ &lt;button>add&lt;/button>
+ &lt;fx-insert ref="task" at="1" position="before" origin="template/task">&lt;/fx-insert>
+ &lt;fx-refresh>&lt;/fx-refresh>
+ &lt;/fx-trigger>
+ &lt;/h1>
+ &lt;div class="info">
+ You have {count(instance()/task[@complete='true'])} completed tasks
+ &lt;/div>
+ &lt;fx-repeat id="task" ref="task">
+ &lt;template>
+ &lt;div>
+ &lt;fx-control ref="@complete" value-prop="checked" update-event="input">
+ &lt;input class="widget" type="checkbox">
+ &lt;/fx-control>
+ &lt;fx-control class="{@complete}" id="task" ref=".">&lt;/fx-control>
+ &lt;fx-control ref="@due">
+ &lt;input type="date">
+ &lt;/fx-control>
+ &lt;fx-trigger class="btn delete">
+ &lt;button>delete&lt;/button>
+ &lt;fx-delete ref=".">&lt;/fx-delete>
+ &lt;/fx-trigger>
+ &lt;/div>
+ &lt;/template>
+ &lt;/fx-repeat>
+&lt;/fx-fore>
+&lt;h2 id="adding-a-submission">Adding a submission&lt;/h2>
+&lt;p>We need a way to store our data. Let&amp;rsquo;s add a submission which
+will go into our model&lt;/p></description></item></channel></rss>

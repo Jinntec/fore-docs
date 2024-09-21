@@ -1,3 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Refresh on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/refresh/</link><description>Recent content in Refresh on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/refresh/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-refresh></title><link>https://jinntec.github.io/fore-docs/elements/actions/refresh/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/refresh/</guid><description>Description Triggers immediate refresh.
-Attributes Name Description control id of an control to be refreshed explicitly force marker attribute to force a full refresh - overrules control self searches upwards for fx-control and refreshes it Events none
-Examples the delay attribute Randomizer the while attribute</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Refresh on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/refresh/</link><description>Recent content in Refresh on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/refresh/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-refresh></title><link>https://jinntec.github.io/fore-docs/elements/actions/refresh/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/refresh/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Triggers immediate refresh.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">control&lt;/td>
+ &lt;td style="text-align: left">id of an control to be refreshed explicitly&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">force&lt;/td>
+ &lt;td style="text-align: left">marker attribute to force a full refresh - overrules &lt;code>control&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">self&lt;/td>
+ &lt;td style="text-align: left">searches upwards for &lt;code>fx-control&lt;/code> and refreshes it&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/delay.html">the delay attribute&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/randomizer.html">Randomizer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/while.html">the while attribute&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

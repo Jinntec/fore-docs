@@ -1,3 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Functions on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/functions/</link><description>Recent content in Functions on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 03 Jun 2022 10:42:31 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/functions/index.xml" rel="self" type="application/rss+xml"/><item><title>Functions</title><link>https://jinntec.github.io/fore-docs/functions/</link><pubDate>Fri, 03 Jun 2022 10:42:31 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/functions/</guid><description>Functions An overview of all functions available in Fore.
-XPath Functions As Fore uses XPath 3.1 as its expression language you also have access to the large library of functions that are defined by the standard.
-XPath 3 function reference Not 100% of the XPath 3.1 functions are available in fontoXPath. There are a few that might not be (fully) implemented. In doubt please refer to their github page or test in their wonderful fontoXPath playground.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Functions on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/functions/</link><description>Recent content in Functions on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 03 Jun 2022 10:42:31 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/functions/index.xml" rel="self" type="application/rss+xml"/><item><title>Functions</title><link>https://jinntec.github.io/fore-docs/functions/</link><pubDate>Fri, 03 Jun 2022 10:42:31 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/functions/</guid><description>&lt;h1 id="functions">Functions&lt;/h1>
+&lt;p>An overview of all functions available in Fore.&lt;/p>
+&lt;h2 id="xpath-functions">XPath Functions&lt;/h2>
+&lt;p>As Fore uses
+&lt;a href="https://www.w3.org/TR/xpath-functions-31/" target="_blank">XPath 3.1&lt;/a> as its expression language you also have access to the large
+library of functions that are defined by the standard.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://maxtoroq.github.io/xpath-ref/" target="_blank">XPath 3 function reference&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Not 100% of the XPath 3.1 functions are available in fontoXPath. There are a few that might not be (fully)
+implemented. In doubt please refer to their &lt;a href="https://github.com/FontoXML/fontoxpath" target="_blank">github page&lt;/a> or
+test in their wonderful &lt;a href="https://xpath.playground.fontoxml.com/" target="_blank">fontoXPath playground&lt;/a>.&lt;/p></description></item></channel></rss>

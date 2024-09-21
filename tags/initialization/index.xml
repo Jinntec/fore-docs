@@ -1,3 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Initialization on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/initialization/</link><description>Recent content in Initialization on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/initialization/index.xml" rel="self" type="application/rss+xml"/><item><title>Initialization</title><link>https://jinntec.github.io/fore-docs/architecture/initialization/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/architecture/initialization/</guid><description>A defined lifecycle is essential for consistent and efficient processing of state changes during the lifetime of a &amp;lt;fx-fore&amp;gt; element.
-The diagram below might read a bit complex at first sight but pretty much touches all important areas of Fore and might be a useful read for the interested developer.
-Initialization of Fore sequenceDiagram autonumber participant Fore participant Model participant Instances participant Bindings participant UI Note over Fore: find or generate Model activate Model Fore->>Model: modelConstruct() loop Model->>Instances: init() end Instances-->>Model: instance-loaded activate Model Model->>Model: rebuild() loop Model->>Bindings: init() activate Bindings Bindings->>Model: ModelItems deactivate Bindings end deactivate Model Model->>Model: recalculate() Model->>Model: revalidate() Model-->>Fore: modelConstructDone activate Fore Fore->>Fore: initUI() loop Fore->>UI: refresh() activate UI UI->>UI: updateState deactivate UI end Fore-->>Fore: refresh-done Fore-->>Fore: ready deactivate Fore deactivate Model When a &amp;lt;fx-fore&amp;gt; element gets connected, it will wait for all children to be connected and then call modelConstruct() on the &amp;lt;fx-model&amp;gt; element to kick off the initialization process.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Initialization on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/initialization/</link><description>Recent content in Initialization on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/initialization/index.xml" rel="self" type="application/rss+xml"/><item><title>Initialization</title><link>https://jinntec.github.io/fore-docs/architecture/initialization/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/architecture/initialization/</guid><description>&lt;p>A defined lifecycle is essential for consistent and efficient processing of state changes during the lifetime
+of a &lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> element.&lt;/p>
+&lt;p>The diagram below might read a bit complex at first sight but pretty much touches all important areas of Fore
+and might be a useful read for the interested developer.&lt;/p>
+&lt;h2 id="initialization-of-fore">Initialization of Fore&lt;/h2>
+
+&lt;div class="mermaid" align="left">
+sequenceDiagram
+ autonumber
+ participant Fore
+ participant Model
+ participant Instances
+ participant Bindings
+ participant UI
+ Note over Fore: find or generate Model
+ activate Model
+ Fore->>Model: modelConstruct()
+ 
+ loop
+ Model->>Instances: init()
+ end
+ Instances-->>Model: instance-loaded
+ 
+ activate Model
+ Model->>Model: rebuild()
+ loop
+ Model->>Bindings: init()
+ activate Bindings
+ Bindings->>Model: ModelItems
+ deactivate Bindings
+ end
+ deactivate Model
+ 
+ Model->>Model: recalculate()
+ 
+ Model->>Model: revalidate()
+
+ Model-->>Fore: modelConstructDone
+ activate Fore
+ Fore->>Fore: initUI()
+ loop
+ Fore->>UI: refresh()
+ activate UI
+ UI->>UI: updateState
+ deactivate UI
+ end
+ Fore-->>Fore: refresh-done
+ Fore-->>Fore: ready
+ deactivate Fore
+ deactivate Model
+
+&lt;/div>
+
+&lt;ol>
+&lt;li>When a &lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> element gets connected, it will wait for all children to be connected and then call &lt;code>modelConstruct()&lt;/code>
+on the &lt;code>&amp;lt;fx-model&amp;gt;&lt;/code> element to kick off the initialization process. If no &lt;code>&amp;lt;fx-model&amp;gt;&lt;/code> is present one will be created. A &lt;code>model-construct&lt;/code>
+event will be emitted.&lt;/li>
+&lt;li>The model will look for all &lt;code>&amp;lt;fx-instance&amp;gt;&lt;/code> elements within its child elements and call &lt;code>init()&lt;/code> for each of them. This
+might involve loading data from an URL.&lt;/li>
+&lt;li>A &lt;code>instance-loaded&lt;/code> event will be dispatched for each instance once it&amp;rsquo;s loaded.&lt;/li>
+&lt;li>During &lt;code>rebuild()&lt;/code> the model will build its dependency graph by inspecting all &lt;code>&amp;lt;fx-bind&amp;gt;&lt;/code> elements within the model.&lt;/li>
+&lt;li>For each data node a &lt;code>ref&lt;/code> attribute is pointing to a &lt;code>ModelItem&lt;/code> object is created that holds the state of the
+data node. By inspecting the &lt;code>calculate&lt;/code>, &lt;code>constraint&lt;/code>, &lt;code>readonly&lt;/code>, &lt;code>relevant&lt;/code> and &lt;code>required&lt;/code> attributes of a Bind the dependencies between
+data nodes are detected and added to the Main Dependency Graph (MDG).&lt;/li>
+&lt;li>ModelItems will be registered in a map object in the Model. The data node itself will be the key to the ModelItem state object.&lt;/li>
+&lt;li>&lt;code>recalculate()&lt;/code> evaluates all &lt;code>calculate&lt;/code> attributes in the order given by the MDG.&lt;/li>
+&lt;li>&lt;code>revalidate()&lt;/code> evaluates all &lt;code>constraint&lt;/code>, &lt;code>readonly&lt;/code>, &lt;code>relevant&lt;/code> and &lt;code>required&lt;/code> attributes to determine the validity of a ModelItem.&lt;/li>
+&lt;li>&lt;code>model-construct-done&lt;/code> event is emitted and catched by &lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> element.&lt;/li>
+&lt;li>Fore executes &lt;code>initUI&lt;/code> which will find all bound elements within the scope of the &lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> element.&lt;/li>
+&lt;li>Call &lt;code>refresh()&lt;/code> for each of them.&lt;/li>
+&lt;li>Synchronize UI element state with ModelItem state by evaluating binding expression, fetching ModelItem object from Model
+and applying the relevant changes to a control.&lt;/li>
+&lt;li>Fore dispatches a &lt;code>refresh-done&lt;/code> event once all UI elements have been refreshed&lt;/li>
+&lt;li>Fore dispatches a &amp;lsquo;ready&amp;rsquo; event&lt;/li>
+&lt;/ol></description></item></channel></rss>

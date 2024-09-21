@@ -1,2 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.8.0 on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/1.8.0/</link><description>Recent content in 1.8.0 on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 07 Oct 2023 16:15:51 +0200</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/1.8.0/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-call></title><link>https://jinntec.github.io/fore-docs/elements/actions/call/</link><pubDate>Sat, 07 Oct 2023 16:15:51 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/call/</guid><description>Description Calls an action block or a function.
-Attributes Name Description action id of an action to call function function name with arguments</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.8.0 on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/1.8.0/</link><description>Recent content in 1.8.0 on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 07 Oct 2023 16:15:51 +0200</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/1.8.0/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-call></title><link>https://jinntec.github.io/fore-docs/elements/actions/call/</link><pubDate>Sat, 07 Oct 2023 16:15:51 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/call/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Calls an action block or a function.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">action&lt;/td>
+ &lt;td style="text-align: left">id of an action to call&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">function&lt;/td>
+ &lt;td style="text-align: left">function name with arguments&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item></channel></rss>

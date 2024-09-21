@@ -1,2 +1,129 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Submission on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-submission/</link><description>Recent content in Fx-Submission on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-submission/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-submission></title><link>https://jinntec.github.io/fore-docs/elements/model/submission/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/submission/</guid><description>Description Send and receive data.
-Attributes Name Description Default credentials sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo; same-origin id required: id of submission for referral &amp;lsquo;default&amp;rsquo; ref XPath reference pointing to the bound node root node of default instance instance id of instance when replace='instance'. Required when replace=&amp;lsquo;instance&amp;rsquo; into XPath expr where to insert response nodes into method http methods GET, POST, PUT, DELETE, url-encoded-post GET nonrelevant handling of non relevant nodes during serialization.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Submission on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-submission/</link><description>Recent content in Fx-Submission on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-submission/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-submission></title><link>https://jinntec.github.io/fore-docs/elements/model/submission/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/submission/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Send and receive data.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th style="text-align: left">Default&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">credentials&lt;/td>
+ &lt;td style="text-align: left">sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo;&lt;/td>
+ &lt;td style="text-align: left">same-origin&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">id&lt;/td>
+ &lt;td style="text-align: left">required: id of submission for referral&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;default&amp;rsquo;&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">ref&lt;/td>
+ &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
+ &lt;td style="text-align: left">root node of default instance&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">instance&lt;/td>
+ &lt;td style="text-align: left">id of instance when &lt;code>replace='instance'&lt;/code>. Required when replace=&amp;lsquo;instance&amp;rsquo;&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">into&lt;/td>
+ &lt;td style="text-align: left">XPath expr where to insert response nodes into&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">method&lt;/td>
+ &lt;td style="text-align: left">http methods GET, POST, PUT, DELETE, url-encoded-post&lt;/td>
+ &lt;td style="text-align: left">GET&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">nonrelevant&lt;/td>
+ &lt;td style="text-align: left">handling of non relevant nodes during serialization. Can be one of &amp;lsquo;keep&amp;rsquo;, &amp;rsquo;empty&amp;rsquo; or &amp;lsquo;remove&amp;rsquo;&lt;/td>
+ &lt;td style="text-align: left">remove&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">replace&lt;/td>
+ &lt;td style="text-align: left">one of &amp;lsquo;all&amp;rsquo;, &amp;lsquo;download&amp;rsquo;, &amp;lsquo;instance&amp;rsquo;, &amp;rsquo;target&amp;rsquo;, &amp;lsquo;redirect&amp;rsquo; or &amp;rsquo;none&amp;rsquo;&lt;/td>
+ &lt;td style="text-align: left">all&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;all&amp;rsquo; - response replaces the viewport&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;download&amp;rsquo; - save dialog is shown for response&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;instance&amp;rsquo; - response replaces the instance given by the &lt;code>instance&lt;/code> attribute or if not present the default instance&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&amp;rsquo;target&amp;rsquo; - response will be attached to element identified by &lt;code>target&lt;/code> (CSS Selector syntax e.g. &amp;lsquo;#mydiv&amp;rsquo;)&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;redirect&amp;rsquo; - use response as redirect url.&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&amp;rsquo;none&amp;rsquo; - response will be ignored.&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">serialization&lt;/td>
+ &lt;td style="text-align: left">&amp;rsquo;none&amp;rsquo; or &amp;lsquo;xml&amp;rsquo; at this point&lt;/td>
+ &lt;td style="text-align: left">xml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">target&lt;/td>
+ &lt;td style="text-align: left">selector in CSS selector syntax. valid only when replace is &amp;rsquo;target&amp;rsquo;.&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">targetref&lt;/td>
+ &lt;td style="text-align: left">XPath pointing to target node when &lt;code>replace=&amp;quot;instance&amp;quot;&lt;/code>&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">validate&lt;/td>
+ &lt;td style="text-align: left">Boolean to turn validator mode on/off&lt;/td>
+ &lt;td style="text-align: left">true&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">submit&lt;/td>
+ &lt;td style="text-align: left">dispatch before submission takes place&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">submit-error&lt;/td>
+ &lt;td style="text-align: left">dispatched if the request returned an error&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">submit-done&lt;/td>
+ &lt;td style="text-align: left">dispatched when submission was successfully completed&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="url-schemes">URL Schemes&lt;/h2>
+&lt;p>Beside http, https Fore supports:&lt;/p></description></item></channel></rss>

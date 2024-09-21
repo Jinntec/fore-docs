@@ -1,3 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.7.0 on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/1.7.0/</link><description>Recent content in 1.7.0 on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/1.7.0/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-toggleboolean></title><link>https://jinntec.github.io/fore-docs/elements/actions/toggleboolean/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/toggleboolean/</guid><description>Description Action to toggle a Boolean value in the data.
-Attributes Name Description ref required: XPath reference to toggle Events none
-Examples Toggle a Boolean value</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.7.0 on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/1.7.0/</link><description>Recent content in 1.7.0 on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/1.7.0/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-toggleboolean></title><link>https://jinntec.github.io/fore-docs/elements/actions/toggleboolean/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/toggleboolean/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>Action to toggle a Boolean value in the data.&lt;/p>
+&lt;h3 id="attributes">Attributes&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">ref&lt;/td>
+ &lt;td style="text-align: left">required: XPath reference to toggle&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h3 id="examples">Examples&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/actions/toggleboolean.html">Toggle a Boolean value&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

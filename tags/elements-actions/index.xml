@@ -1,38 +1,663 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Elements Actions on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/elements-actions/</link><description>Recent content in Elements Actions on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 16 Jan 2023 12:00:00 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/elements-actions/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-append></title><link>https://jinntec.github.io/fore-docs/elements/actions/append/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/append/</guid><description>Description Appends an entry to an fx-repeat.
-Note: this is deprecated. Please use fx-insert.
-Attributes Name Description ref the XPath ref to append to repeat the fx-repeat to append to Events Name Description index-changed dispatched after entry has been added to a repeat Examples todo nested todo TEI header editor sample</description></item><item><title>&lt;fx-confirm></title><link>https://jinntec.github.io/fore-docs/elements/actions/confirm/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/confirm/</guid><description>Description Displays simple confirmation dialog. Action will only execute if confirmation returns true.
-Attributes Name Description message Message to display for confirmation. Action Attributes Name Description target id reference to element this action attaches to Events none
-Examples Project Task planner</description></item><item><title>&lt;fx-delete></title><link>https://jinntec.github.io/fore-docs/elements/actions/delete/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/delete/</guid><description>Description Deletes a node from a nodeset.
-fx-delete Attributes Name Description ref XPath reference to instance node(s) to delete Examples todo nested todo TEI header editor sample</description></item><item><title>&lt;fx-dispatch></title><link>https://jinntec.github.io/fore-docs/elements/actions/dispatch/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/dispatch/</guid><description>Description Action to dispatch an event with optional parameters to specific targets.
-To specify event properties the fx-property element is used.
-fx-dispatch will use id resolution within fx-repeat elements to resolve the id in scope of current occurence.
-Attributes Name Description name name of event to dispatch targetid id reference of element to dispatch to. If omitted the event will be dispatched to document Events none
-Examples dispatch with properties fx-dispatch action</description></item><item><title>&lt;fx-hide></title><link>https://jinntec.github.io/fore-docs/elements/actions/hide/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/hide/</guid><description>Description Action to hide a fx-dialog.
-Attributes Name Description dialog idref of an fx-dialog element. Events Name Description dialog-hidden dispatched when dialog is hidden Examples fx-dialog</description></item><item><title>&lt;fx-insert></title><link>https://jinntec.github.io/fore-docs/elements/actions/insert/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/insert/</guid><description>Description Action to insert node(s) into instance data.
-Attributes Name Description Default at index position in nodeset where to insert new node(s) 0 context optional XPath pointing to parent node of node to insert position with regard to &amp;lsquo;at&amp;rsquo; can be either &amp;lsquo;before&amp;rsquo; or &amp;lsquo;after&amp;rsquo; after origin XPath pointing to nodes to be inserted into referenced nodeset keepValues Boolean attribute. When present will keep text-values of origin nodes false ref XPath pointing to node(s) to insert.</description></item><item><title>&lt;fx-load></title><link>https://jinntec.github.io/fore-docs/elements/actions/load/</link><pubDate>Mon, 16 Jan 2023 12:00:00 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/load/</guid><description>Description Loads some content into a page, open a new tab with content or replaces current browser window with content.
-Content may be loaded from url or be specified inline surrounded with a template element.
-If the HTML being loaded contains a fx-fore element it will be extracted from the page and used as content to be inserted.
-Attributes Name Description default attach-to &amp;lsquo;_self&amp;rsquo;, &amp;lsquo;_blank&amp;rsquo; or idref prefixed with &amp;lsquo;#&amp;rsquo; _self await eventname to await from templated content - url URL to load content from The await attribute Sometimes if you load a component with fx-load and the component has some initialization to do, you might want to wait for a certain event dispatched by that component before moving on.</description></item><item><title>&lt;fx-message></title><link>https://jinntec.github.io/fore-docs/elements/actions/message/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/message/</guid><description>Description Display a message to the user.
-Attributes Name Description default level &amp;lsquo;modal&amp;rsquo;, &amp;lsquo;modeless&amp;rsquo; or &amp;rsquo;ephemeral&amp;rsquo; ephemeral &amp;lsquo;modal&amp;rsquo; - modal dialog window &amp;lsquo;sticky&amp;rsquo; - sticky popup message &amp;rsquo;ephemeral&amp;rsquo; - auto-closing popup message default value XPath expression which resolves to message Events none
-Examples fx-message actions Binding the delay attribute fx-control Hello World the if attribute instances lazy modelItem creation during UI init the while attribute</description></item><item><title>&lt;fx-refresh></title><link>https://jinntec.github.io/fore-docs/elements/actions/refresh/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/refresh/</guid><description>Description Triggers immediate refresh.
-Attributes Name Description control id of an control to be refreshed explicitly force marker attribute to force a full refresh - overrules control self searches upwards for fx-control and refreshes it Events none
-Examples the delay attribute Randomizer the while attribute</description></item><item><title>&lt;fx-replace></title><link>https://jinntec.github.io/fore-docs/elements/actions/replace/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/replace/</guid><description>Description Replaces a node with another.
-Attributes Name Description ref XPath reference pointing to the bound node with XPath expression to point to a node for replacement Examples Replace Action</description></item><item><title>&lt;fx-reset></title><link>https://jinntec.github.io/fore-docs/elements/actions/reset/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/reset/</guid><description>Description Replaces a node with another.
-Attributes Name Description instance the id of the instance to reset to its initial state Examples Reset Action</description></item><item><title>&lt;fx-send></title><link>https://jinntec.github.io/fore-docs/elements/actions/send/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/send/</guid><description>Description Triggers a submission. Submission with given id must exist otherwise error is thrown.
-Attributes Name Description submission required idref to fx-submission element. Also supports &amp;lsquo;#reload&amp;rsquo; which just reloads the window. target overwrites target attribute of submission - may contain template expressions url overwrites url attribute of submission - may contain template expressions Attributes that overwrite submission attributes are set once per execution. Calling the same submission again without such an attribute falls back to the value on fx-submission element.</description></item><item><title>&lt;fx-setfocus></title><link>https://jinntec.github.io/fore-docs/elements/actions/setfocus/</link><pubDate>Fri, 12 Aug 2022 12:00:00 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/setfocus/</guid><description>Description Sets the focus to a control with given id. If the id is within an repeat it will look for the active repeatitem and search that for the control.
-Since: Version 2.0.0
-Attributes Name Description control idref that a control select if attribute is given the value of the control will be selected Events none
-Examples todo</description></item><item><title>&lt;fx-setvalue></title><link>https://jinntec.github.io/fore-docs/elements/actions/setvalue/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/setvalue/</guid><description>Description Sets a value to a bound node.
-Attributes Name Description ref XPath reference pointing to the bound node value XPath expression to be set as value Events none
-Examples Action auth binding the delay attribute events events 2 hello</description></item><item><title>&lt;fx-show></title><link>https://jinntec.github.io/fore-docs/elements/actions/show/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/show/</guid><description>Description Action to display a fx-dialog.
-Attributes Name Description dialog idref of an fx-dialog element. Events Name Description dialog-shown dispatched when dialog is shown Examples fx-dialog</description></item><item><title>&lt;fx-toggle></title><link>https://jinntec.github.io/fore-docs/elements/actions/toggle/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/toggle/</guid><description>Description Action to toggle a fx-switch element.
-Attributes Name Description case id of fx-case element to show Events none
-Examples auth repeat in switch Simple TEI Header switch</description></item><item><title>&lt;fx-toggleboolean></title><link>https://jinntec.github.io/fore-docs/elements/actions/toggleboolean/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/toggleboolean/</guid><description>Description Action to toggle a Boolean value in the data.
-Attributes Name Description ref required: XPath reference to toggle Events none
-Examples Toggle a Boolean value</description></item><item><title>Actions</title><link>https://jinntec.github.io/fore-docs/elements/actions/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/</guid><description>Action Elements This chapter describes all Action elements.
-Action elements have no visual representation and are always hidden from view.
-Common Attributes The following attribues can be used on any Fore action element.
-Name Description defaultAction &amp;lsquo;perform&amp;rsquo; (default) or &amp;lsquo;cancel&amp;rsquo; delay delay before action is executed in milliseconds. event the event name this action is listening to if boolean XPath expression. Action is only executed if this returns true. iterate XPath expression selecting a set of nodes to iterate over phase &amp;lsquo;default&amp;rsquo; or &amp;lsquo;capture&amp;rsquo; propagate &amp;lsquo;stop&amp;rsquo; or &amp;lsquo;continue&amp;rsquo; (default) target id of element to attach to or special values &amp;lsquo;#window&amp;rsquo; and &amp;lsquo;#document&amp;rsquo; while boolean XPath expression.</description></item><item><title>&lt;fx-update></title><link>https://jinntec.github.io/fore-docs/elements/actions/update/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/update/</guid><description>Description Triggers an explicit update of the model
-Attributes No Attributes
-Events none
-Examples delay randomizer while</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Elements Actions on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/elements-actions/</link><description>Recent content in Elements Actions on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 16 Jan 2023 12:00:00 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/elements-actions/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-append></title><link>https://jinntec.github.io/fore-docs/elements/actions/append/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/append/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Appends an entry to an &lt;code>fx-repeat&lt;/code>.&lt;/p>
+&lt;blockquote>
+&lt;p>Note: this is deprecated. Please use &lt;code>fx-insert&lt;/code>.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">ref&lt;/td>
+ &lt;td style="text-align: left">the XPath ref to append to&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">repeat&lt;/td>
+ &lt;td style="text-align: left">the &lt;code>fx-repeat&lt;/code> to append to&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">index-changed&lt;/td>
+ &lt;td style="text-align: left">dispatched after entry has been added to a repeat&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/todo.html">todo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/nested-todo.html">nested todo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/simple-tei-header.html">TEI header editor sample&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-confirm></title><link>https://jinntec.github.io/fore-docs/elements/actions/confirm/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/confirm/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Displays simple confirmation dialog. Action will only execute if confirmation returns true.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">message&lt;/td>
+ &lt;td style="text-align: left">Message to display for confirmation.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="action-attributes">Action Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">target&lt;/td>
+ &lt;td style="text-align: left">id reference to element this action attaches to&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/project.html">Project Task planner&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-delete></title><link>https://jinntec.github.io/fore-docs/elements/actions/delete/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/delete/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Deletes a node from a nodeset.&lt;/p>
+&lt;h2 id="fx-delete-attributes">fx-delete Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">ref&lt;/td>
+ &lt;td style="text-align: left">XPath reference to instance node(s) to delete&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/todo.html">todo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/nested-todo.html">nested todo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/simple-tei-header.html">TEI header editor sample&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-dispatch></title><link>https://jinntec.github.io/fore-docs/elements/actions/dispatch/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/dispatch/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Action to dispatch an event with optional parameters to specific targets.&lt;/p>
+&lt;p>To specify event properties the &lt;code>fx-property&lt;/code> element is used.&lt;/p>
+&lt;p>&lt;code>fx-dispatch&lt;/code> will use id resolution within &lt;code>fx-repeat&lt;/code> elements to resolve
+the id in scope of current occurence.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">name&lt;/td>
+ &lt;td style="text-align: left">name of event to dispatch&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">targetid&lt;/td>
+ &lt;td style="text-align: left">id reference of element to dispatch to. If omitted the event will be dispatched to document&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/event-test.html">dispatch with properties&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fx-dispatch.html">fx-dispatch action&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-hide></title><link>https://jinntec.github.io/fore-docs/elements/actions/hide/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/hide/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Action to hide a &lt;code>fx-dialog&lt;/code>.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">dialog&lt;/td>
+ &lt;td style="text-align: left">idref of an &lt;code>fx-dialog&lt;/code> element.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">dialog-hidden&lt;/td>
+ &lt;td style="text-align: left">dispatched when dialog is hidden&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/controls/fx-dialog.html">fx-dialog&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-insert></title><link>https://jinntec.github.io/fore-docs/elements/actions/insert/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/insert/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Action to insert node(s) into instance data.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th style="text-align: left">Default&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">at&lt;/td>
+ &lt;td style="text-align: left">index position in nodeset where to insert new node(s)&lt;/td>
+ &lt;td style="text-align: left">0&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">context&lt;/td>
+ &lt;td style="text-align: left">optional XPath pointing to parent node of node to insert&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">position&lt;/td>
+ &lt;td style="text-align: left">with regard to &amp;lsquo;at&amp;rsquo; can be either &amp;lsquo;before&amp;rsquo; or &amp;lsquo;after&amp;rsquo;&lt;/td>
+ &lt;td style="text-align: left">after&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">origin&lt;/td>
+ &lt;td style="text-align: left">XPath pointing to nodes to be inserted into referenced nodeset&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">keepValues&lt;/td>
+ &lt;td style="text-align: left">Boolean attribute. When present will keep text-values of origin nodes&lt;/td>
+ &lt;td style="text-align: left">false&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">ref&lt;/td>
+ &lt;td style="text-align: left">XPath pointing to node(s) to insert. If &lt;code>context&lt;/code> is given &lt;code>ref&lt;/code> is relative to that&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">insert&lt;/td>
+ &lt;td style="text-align: left">dispatched when nodes have been inserted&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">detail[insertedNodes] - the inserted nodes&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">detail[position] - the position of the insert in the nodeset&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/insert-inhomogenious.html">Insert into inhomogenious nodeset&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/insert.html">insert action&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/insert2.html">insert with context&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/simple-tei-header.html">TEI header editor sample&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/todo2.html">todo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/while.html">the while attribute&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-load></title><link>https://jinntec.github.io/fore-docs/elements/actions/load/</link><pubDate>Mon, 16 Jan 2023 12:00:00 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/load/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Loads some content into a page, open a new tab with content or replaces
+current browser window with content.&lt;/p>
+&lt;p>Content may be loaded from &lt;code>url&lt;/code> or be specified inline surrounded with a &lt;code>template&lt;/code> element.&lt;/p>
+&lt;p>If the HTML being loaded contains a &lt;code>fx-fore&lt;/code> element it will be extracted from the page and used as content to be inserted.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th style="text-align: left">default&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">attach-to&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;_self&amp;rsquo;, &amp;lsquo;_blank&amp;rsquo; or idref prefixed with &amp;lsquo;#&amp;rsquo;&lt;/td>
+ &lt;td style="text-align: left">_self&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">await&lt;/td>
+ &lt;td style="text-align: left">eventname to await from templated content&lt;/td>
+ &lt;td style="text-align: left">-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">url&lt;/td>
+ &lt;td style="text-align: left">URL to load content from&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="the-await-attribute">The &lt;code>await&lt;/code> attribute&lt;/h3>
+&lt;p>Sometimes if you load a component with &lt;code>fx-load&lt;/code> and the component has some initialization to do, you might want to wait
+for a certain event dispatched by that component before moving on. &lt;code>await&lt;/code> will make sure this event fires before the load action
+becomes effective.&lt;/p></description></item><item><title>&lt;fx-message></title><link>https://jinntec.github.io/fore-docs/elements/actions/message/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/message/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Display a message to the user.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th style="text-align: left">default&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">level&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;modal&amp;rsquo;, &amp;lsquo;modeless&amp;rsquo; or &amp;rsquo;ephemeral&amp;rsquo;&lt;/td>
+ &lt;td style="text-align: left">ephemeral&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;modal&amp;rsquo; - modal dialog window&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;sticky&amp;rsquo; - sticky popup message&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&amp;rsquo;ephemeral&amp;rsquo; - auto-closing popup message&lt;/td>
+ &lt;td style="text-align: left">default&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">value&lt;/td>
+ &lt;td style="text-align: left">XPath expression which resolves to message&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fx-message.html">fx-message&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/actions.html">actions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/binding.html">Binding&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/delay.html">the delay attribute&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fx-control.html">fx-control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/hello-fonto.html">Hello World&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/if.html">the if attribute&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/instances.html">instances&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/lazy.html">lazy modelItem creation during UI init&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/while.html">the while attribute&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-refresh></title><link>https://jinntec.github.io/fore-docs/elements/actions/refresh/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/refresh/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Triggers immediate refresh.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">control&lt;/td>
+ &lt;td style="text-align: left">id of an control to be refreshed explicitly&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">force&lt;/td>
+ &lt;td style="text-align: left">marker attribute to force a full refresh - overrules &lt;code>control&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">self&lt;/td>
+ &lt;td style="text-align: left">searches upwards for &lt;code>fx-control&lt;/code> and refreshes it&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/delay.html">the delay attribute&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/randomizer.html">Randomizer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/while.html">the while attribute&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-replace></title><link>https://jinntec.github.io/fore-docs/elements/actions/replace/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/replace/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>Replaces a node with another.&lt;/p>
+&lt;h3 id="attributes">Attributes&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">with&lt;/td>
+ &lt;td style="text-align: left">XPath expression to point to a node for replacement&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="examples">Examples&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fx-replace.html">Replace Action&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-reset></title><link>https://jinntec.github.io/fore-docs/elements/actions/reset/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/reset/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>Replaces a node with another.&lt;/p>
+&lt;h3 id="attributes">Attributes&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">instance&lt;/td>
+ &lt;td style="text-align: left">the id of the instance to reset to its initial state&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="examples">Examples&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/reset.html">Reset Action&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-send></title><link>https://jinntec.github.io/fore-docs/elements/actions/send/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/send/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>Triggers a submission. Submission with given id must exist otherwise
+error is thrown.&lt;/p>
+&lt;h3 id="attributes">Attributes&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;em>&lt;strong>submission&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td style="text-align: left">required idref to &lt;code>fx-submission&lt;/code> element. Also supports &amp;lsquo;#reload&amp;rsquo; which just reloads the window.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">target&lt;/td>
+ &lt;td style="text-align: left">overwrites target attribute of submission - may contain template expressions&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">url&lt;/td>
+ &lt;td style="text-align: left">overwrites url attribute of submission - may contain template expressions&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;blockquote>
+&lt;p>Attributes that overwrite submission attributes are set once per execution. Calling the same submission again without such an attribute falls back to the value on &lt;code>fx-submission&lt;/code> element.&lt;/p></description></item><item><title>&lt;fx-setfocus></title><link>https://jinntec.github.io/fore-docs/elements/actions/setfocus/</link><pubDate>Fri, 12 Aug 2022 12:00:00 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/setfocus/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>Sets the focus to a control with given id. If the id
+is within an repeat it will look for the active repeatitem
+and search that for the control.&lt;/p>
+&lt;p>Since: Version 2.0.0&lt;/p>
+&lt;h3 id="attributes">Attributes&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">control&lt;/td>
+ &lt;td style="text-align: left">idref that a control&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">select&lt;/td>
+ &lt;td style="text-align: left">if attribute is given the value of the control will be selected&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h3 id="examples">Examples&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/todo2.html">todo&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-setvalue></title><link>https://jinntec.github.io/fore-docs/elements/actions/setvalue/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/setvalue/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>Sets a value to a bound node.&lt;/p>
+&lt;h3 id="attributes">Attributes&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">value&lt;/td>
+ &lt;td style="text-align: left">XPath expression to be set as value&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h3 id="examples">Examples&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/actions.html">Action&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/auth.html">auth&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/binding.html">binding&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/delay.html">the delay attribute&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/events.html">events&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/events2.html">events 2&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fun-with-actions.html">hello&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-show></title><link>https://jinntec.github.io/fore-docs/elements/actions/show/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/show/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>Action to display a &lt;code>fx-dialog&lt;/code>.&lt;/p>
+&lt;h3 id="attributes">Attributes&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">dialog&lt;/td>
+ &lt;td style="text-align: left">idref of an &lt;code>fx-dialog&lt;/code> element.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">dialog-shown&lt;/td>
+ &lt;td style="text-align: left">dispatched when dialog is shown&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="examples">Examples&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/controls/fx-dialog.html">fx-dialog&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-toggle></title><link>https://jinntec.github.io/fore-docs/elements/actions/toggle/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/toggle/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>Action to toggle a &lt;code>fx-switch&lt;/code> element.&lt;/p>
+&lt;h3 id="attributes">Attributes&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">case&lt;/td>
+ &lt;td style="text-align: left">id of &lt;code>fx-case&lt;/code> element to show&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h3 id="examples">Examples&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/auth.html">auth&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/repeat-in-switch.html">repeat in switch&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/simple-tei-header.html">Simple TEI Header&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/switch.html">switch&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-toggleboolean></title><link>https://jinntec.github.io/fore-docs/elements/actions/toggleboolean/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/toggleboolean/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>Action to toggle a Boolean value in the data.&lt;/p>
+&lt;h3 id="attributes">Attributes&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">ref&lt;/td>
+ &lt;td style="text-align: left">required: XPath reference to toggle&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h3 id="examples">Examples&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/actions/toggleboolean.html">Toggle a Boolean value&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Actions</title><link>https://jinntec.github.io/fore-docs/elements/actions/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/</guid><description>&lt;h1 id="action-elements">Action Elements&lt;/h1>
+&lt;p>This chapter describes all Action elements.&lt;/p>
+&lt;p>&lt;img src="https://jinntec.github.io/fore-docs/images/actions.svg" alt="Fore Actions">&lt;/p>
+
+&lt;div class="notices note" >&lt;p>Action elements have no visual representation and are always hidden
+from view.&lt;/p>
+&lt;/div>
+
+&lt;h2 id="common-attributes">Common Attributes&lt;/h2>
+&lt;p>The following attribues can be used on any Fore action element.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">defaultAction&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;perform&amp;rsquo; (default) or &amp;lsquo;cancel&amp;rsquo;&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">delay&lt;/td>
+ &lt;td style="text-align: left">delay before action is executed in milliseconds.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">event&lt;/td>
+ &lt;td style="text-align: left">the event name this action is listening to&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">if&lt;/td>
+ &lt;td style="text-align: left">boolean XPath expression. Action is only executed if this returns true.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">iterate&lt;/td>
+ &lt;td style="text-align: left">XPath expression selecting a set of nodes to iterate over&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">phase&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;default&amp;rsquo; or &amp;lsquo;capture&amp;rsquo;&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">propagate&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;stop&amp;rsquo; or &amp;lsquo;continue&amp;rsquo; (default)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">target&lt;/td>
+ &lt;td style="text-align: left">id of element to attach to or special values &amp;lsquo;#window&amp;rsquo; and &amp;lsquo;#document&amp;rsquo;&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">while&lt;/td>
+ &lt;td style="text-align: left">boolean XPath expression. Action is only executed if &lt;code>ìf&lt;/code> and &lt;code>while&lt;/code> return true.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="common-events">Common Events&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">action-performed&lt;/td>
+ &lt;td style="text-align: left">dispatched after execution of an action&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">while-performed&lt;/td>
+ &lt;td style="text-align: left">dispatched after execution of a while loop&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>&lt;fx-update></title><link>https://jinntec.github.io/fore-docs/elements/actions/update/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/update/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Triggers an explicit update of the model&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;p>No Attributes&lt;/p>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/delay.html">delay&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/randomizer.html">randomizer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/while.html">while&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

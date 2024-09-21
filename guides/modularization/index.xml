@@ -1,1 +1,90 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Modularization on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/guides/modularization/</link><description>Recent content in Modularization on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/guides/modularization/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://jinntec.github.io/fore-docs/guides/modularization/hello/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jinntec.github.io/fore-docs/guides/modularization/hello/</guid><description>&lt;!doctype html> A simple output Scripting is disabled - Sorry, can't process this page. A simple output Hello Universe</description></item><item><title/><link>https://jinntec.github.io/fore-docs/guides/modularization/hello1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jinntec.github.io/fore-docs/guides/modularization/hello1/</guid><description>&lt;!doctype html> A simple output Scripting is disabled - Sorry, can't process this page. A simple output Hello {fore-attr('attr1')}</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Modularization on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/guides/modularization/</link><description>Recent content in Modularization on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/guides/modularization/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://jinntec.github.io/fore-docs/guides/modularization/hello/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jinntec.github.io/fore-docs/guides/modularization/hello/</guid><description>&lt;!doctype html>
+&lt;html lang="en">
+&lt;head>
+ &lt;meta charset="utf-8"/>
+ &lt;meta content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes" name="viewport"/>
+
+ &lt;title>A simple output&lt;/title>
+
+ &lt;!-- &lt;script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js">&lt;/script>-->
+ &lt;link href="../resources/demo.css" rel="stylesheet">
+
+ &lt;style>
+ .dynamic {
+ background: #76ff03;
+ }
+
+ /*
+ fx-model{
+ display: none;
+ }
+ */
+ noscript {
+ padding: 1rem;
+ background: orange;
+ font-size: 2rem;
+ }
+ &lt;/style>
+&lt;/head>
+&lt;body>
+&lt;div class="wrapper">
+ &lt;noscript>Scripting is disabled - Sorry, can't process this page.&lt;/noscript>
+ &lt;h1>A simple output&lt;/h1>
+
+ &lt;fx-fore>
+ &lt;fx-model>
+ &lt;fx-instance>
+ &lt;data>
+ &lt;greeting>Hello Universe&lt;/greeting>
+ &lt;/data>
+ &lt;/fx-instance>
+ &lt;/fx-model>
+ &lt;fx-output ref="greeting">&lt;/fx-output>
+ &lt;/fx-fore>
+&lt;/div>
+
+
+&lt;script type="module" src="./demo.js">&lt;/script>
+&lt;/body>
+&lt;/html></description></item><item><title/><link>https://jinntec.github.io/fore-docs/guides/modularization/hello1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jinntec.github.io/fore-docs/guides/modularization/hello1/</guid><description>&lt;!doctype html>
+&lt;html lang="en">
+&lt;head>
+ &lt;meta charset="utf-8"/>
+ &lt;meta content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes" name="viewport"/>
+
+ &lt;title>A simple output&lt;/title>
+
+ &lt;!-- &lt;script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js">&lt;/script>-->
+ &lt;link href="../resources/demo.css" rel="stylesheet">
+
+ &lt;style>
+ .dynamic {
+ background: #76ff03;
+ }
+
+ /*
+ fx-model{
+ display: none;
+ }
+ */
+ noscript {
+ padding: 1rem;
+ background: orange;
+ font-size: 2rem;
+ }
+ &lt;/style>
+&lt;/head>
+&lt;body>
+&lt;div class="wrapper">
+ &lt;noscript>Scripting is disabled - Sorry, can't process this page.&lt;/noscript>
+ &lt;h1>A simple output&lt;/h1>
+
+ &lt;fx-fore>
+ Hello {fore-attr('attr1')}
+ &lt;/fx-fore>
+&lt;/div>
+
+
+&lt;script type="module" src="./demo.js">&lt;/script>
+&lt;/body>
+&lt;/html></description></item></channel></rss>

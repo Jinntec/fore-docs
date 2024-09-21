@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Inspector on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/inspector/</link><description>Recent content in Inspector on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/inspector/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-inspector></title><link>https://jinntec.github.io/fore-docs/elements/ui/inspector/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/inspector/</guid><description>Description Instance Inspector is a helper element for development which displays all used instances at the bottom of the viewport.
-It uses the log() function under the hood and renders a html details element for each instance.
-Attributes Name Description default open wether or not to be open by default false Events none
-Examples Simple TEI Header editor</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Inspector on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/inspector/</link><description>Recent content in Inspector on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/inspector/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-inspector></title><link>https://jinntec.github.io/fore-docs/elements/ui/inspector/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/inspector/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Instance Inspector is a helper element for development which
+displays all used instances at the bottom of the viewport.&lt;/p>
+&lt;p>It uses the &lt;code>log()&lt;/code> function under the hood and renders
+a html &lt;code>details&lt;/code> element for each instance.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th style="text-align: left">default&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">open&lt;/td>
+ &lt;td style="text-align: left">wether or not to be open by default&lt;/td>
+ &lt;td style="text-align: left">false&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/simple-tei-header.html">Simple TEI Header editor&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

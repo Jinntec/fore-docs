@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Model on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-model/</link><description>Recent content in Fx-Model on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 20 May 2022 16:08:59 +0200</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-model/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-model></title><link>https://jinntec.github.io/fore-docs/elements/model/model/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/model/</guid><description>Description The model is responsible for:
-creating and maintaining the Main Dependency Graph (MDG). creating ModelItems for bound data nodes calculation validation This is done with the help of bind elements.
-The &amp;lt;fx-model&amp;gt; element is a direct child of &amp;lt;fx-fore&amp;gt; and is itself a container for:
-one or more &amp;lt;fx-instance&amp;gt; elements zero, one or more &amp;lt;fx-bind&amp;gt; elements zero, one or more &amp;lt;fx-submission&amp;gt; elements zero, one or more &amp;lt;fx-function&amp;gt; elements Warning: &amp;lt;fx-model&amp;gt; must be in front of Fore UI elements due to not fully understood Web Components behaviour.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Model on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-model/</link><description>Recent content in Fx-Model on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 20 May 2022 16:08:59 +0200</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-model/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-model></title><link>https://jinntec.github.io/fore-docs/elements/model/model/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/model/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>The model is responsible for:&lt;/p>
+&lt;ul>
+&lt;li>creating and maintaining the Main Dependency Graph (MDG).&lt;/li>
+&lt;li>creating ModelItems for bound data nodes&lt;/li>
+&lt;li>calculation&lt;/li>
+&lt;li>validation&lt;/li>
+&lt;/ul>
+&lt;p>This is done with the help of &lt;a href="https://jinntec.github.io/fore-docs/elements/model/bind" >bind&lt;/a> elements.&lt;/p>
+&lt;p>The &lt;code>&amp;lt;fx-model&amp;gt;&lt;/code> element is a direct child of &lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> and is itself a container for:&lt;/p>
+&lt;ul>
+&lt;li>one or more &lt;code>&amp;lt;fx-instance&amp;gt;&lt;/code> elements&lt;/li>
+&lt;li>zero, one or more &lt;code>&amp;lt;fx-bind&amp;gt;&lt;/code> elements&lt;/li>
+&lt;li>zero, one or more &lt;code>&amp;lt;fx-submission&amp;gt;&lt;/code> elements&lt;/li>
+&lt;li>zero, one or more &lt;code>&amp;lt;fx-function&amp;gt;&lt;/code> elements&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Warning: &lt;code>&amp;lt;fx-model&amp;gt;&lt;/code> must be in front of Fore UI elements due to not fully understood Web Components behaviour.&lt;/p></description></item></channel></rss>

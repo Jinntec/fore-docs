@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Output on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-output/</link><description>Recent content in Fx-Output on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-output/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-output></title><link>https://jinntec.github.io/fore-docs/elements/ui/output/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/output/</guid><description>Description Outputs bound or calculated values.
-Also supports mimtypes &amp;lsquo;html&amp;rsquo; and &amp;lsquo;markdown&amp;rsquo; to render bound nodes accordingly.
-Events none
-Attributes Name Description Default ref XPath reference pointing to the bound node - value XPath expression calculating a string value mediatype either &amp;lsquo;html&amp;rsquo; or &amp;lsquo;markdown&amp;rsquo; are accepted by now. Examples The fx-output Element Get started Instances Instance super powers Binding fx-control</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Output on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-output/</link><description>Recent content in Fx-Output on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-output/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-output></title><link>https://jinntec.github.io/fore-docs/elements/ui/output/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/output/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Outputs bound or calculated values.&lt;/p>
+&lt;p>Also supports mimtypes &amp;lsquo;html&amp;rsquo; and &amp;lsquo;markdown&amp;rsquo; to render bound nodes
+accordingly.&lt;/p>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th style="text-align: left">Default&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
+ &lt;td style="text-align: left">-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">value&lt;/td>
+ &lt;td style="text-align: left">XPath expression calculating a string value&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">mediatype&lt;/td>
+ &lt;td style="text-align: left">either &amp;lsquo;html&amp;rsquo; or &amp;lsquo;markdown&amp;rsquo; are accepted by now.&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/controls/fx-output.html">The fx-output Element&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/01-hi.html">Get started&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/03-instances.html">Instances&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/04-instances.html">Instance super powers&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/binding-nested.html">Binding&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fx-control.html">fx-control&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

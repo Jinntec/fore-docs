@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Load on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/load/</link><description>Recent content in Load on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 16 Jan 2023 12:00:00 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/load/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-load></title><link>https://jinntec.github.io/fore-docs/elements/actions/load/</link><pubDate>Mon, 16 Jan 2023 12:00:00 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/load/</guid><description>Description Loads some content into a page, open a new tab with content or replaces current browser window with content.
-Content may be loaded from url or be specified inline surrounded with a template element.
-If the HTML being loaded contains a fx-fore element it will be extracted from the page and used as content to be inserted.
-Attributes Name Description default attach-to &amp;lsquo;_self&amp;rsquo;, &amp;lsquo;_blank&amp;rsquo; or idref prefixed with &amp;lsquo;#&amp;rsquo; _self await eventname to await from templated content - url URL to load content from The await attribute Sometimes if you load a component with fx-load and the component has some initialization to do, you might want to wait for a certain event dispatched by that component before moving on.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Load on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/load/</link><description>Recent content in Load on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 16 Jan 2023 12:00:00 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/load/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-load></title><link>https://jinntec.github.io/fore-docs/elements/actions/load/</link><pubDate>Mon, 16 Jan 2023 12:00:00 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/load/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Loads some content into a page, open a new tab with content or replaces
+current browser window with content.&lt;/p>
+&lt;p>Content may be loaded from &lt;code>url&lt;/code> or be specified inline surrounded with a &lt;code>template&lt;/code> element.&lt;/p>
+&lt;p>If the HTML being loaded contains a &lt;code>fx-fore&lt;/code> element it will be extracted from the page and used as content to be inserted.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th style="text-align: left">default&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">attach-to&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;_self&amp;rsquo;, &amp;lsquo;_blank&amp;rsquo; or idref prefixed with &amp;lsquo;#&amp;rsquo;&lt;/td>
+ &lt;td style="text-align: left">_self&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">await&lt;/td>
+ &lt;td style="text-align: left">eventname to await from templated content&lt;/td>
+ &lt;td style="text-align: left">-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">url&lt;/td>
+ &lt;td style="text-align: left">URL to load content from&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="the-await-attribute">The &lt;code>await&lt;/code> attribute&lt;/h3>
+&lt;p>Sometimes if you load a component with &lt;code>fx-load&lt;/code> and the component has some initialization to do, you might want to wait
+for a certain event dispatched by that component before moving on. &lt;code>await&lt;/code> will make sure this event fires before the load action
+becomes effective.&lt;/p></description></item></channel></rss>

@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Dialog on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-dialog/</link><description>Recent content in Fx-Dialog on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-dialog/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-dialog></title><link>https://jinntec.github.io/fore-docs/elements/ui/dialog/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/dialog/</guid><description>Description Simple modal dialog with arbitrary content.
-To be used with fx-show and fx-hide actions.
-Attributes Name Description id required to be used by fx-show' and fx-hide`actions Events none
-Examples fx-dialog</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Dialog on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-dialog/</link><description>Recent content in Fx-Dialog on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-dialog/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-dialog></title><link>https://jinntec.github.io/fore-docs/elements/ui/dialog/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/dialog/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Simple modal dialog with arbitrary content.&lt;/p>
+&lt;p>To be used with &lt;code>fx-show&lt;/code> and &lt;code>fx-hide&lt;/code> actions.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">id&lt;/td>
+ &lt;td style="text-align: left">required to be used by &lt;code>fx-show' and &lt;/code>fx-hide`actions&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/controls/fx-dialog.html">fx-dialog&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -1,2 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Bind on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-bind/</link><description>Recent content in Fx-Bind on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-bind/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-bind></title><link>https://jinntec.github.io/fore-docs/elements/model/bind/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/bind/</guid><description>Description The fx-bind element attaches constraints and calculations to instance nodes.
-Attributes Name Description Default alert used to specify a message to be displayed when constraints fail - ref XPath pointing to node(s) the bind is attaching to - calculate XPath expression to be calculated. Result will become value of node(s) referenced by ref - constraint boolean XPath expression to determine validity of node(s) true readonly boolean XPath expression to determine readonly/readwrite state false relevant boolean XPath expression to determine relevant/non-relevant state true required boolean XPath expression to determine required/optional state false type datatype - reserved for future versions string Events none</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Bind on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-bind/</link><description>Recent content in Fx-Bind on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-bind/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-bind></title><link>https://jinntec.github.io/fore-docs/elements/model/bind/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/model/bind/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>The &lt;code>fx-bind&lt;/code> element attaches constraints and calculations to instance nodes.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th style="text-align: left">Default&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">alert&lt;/td>
+ &lt;td style="text-align: left">used to specify a message to be displayed when constraints fail&lt;/td>
+ &lt;td style="text-align: left">-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">ref&lt;/td>
+ &lt;td style="text-align: left">XPath pointing to node(s) the bind is attaching to&lt;/td>
+ &lt;td style="text-align: left">-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">calculate&lt;/td>
+ &lt;td style="text-align: left">XPath expression to be calculated. Result will become value of node(s) referenced by &lt;code>ref&lt;/code>&lt;/td>
+ &lt;td style="text-align: left">-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">constraint&lt;/td>
+ &lt;td style="text-align: left">boolean XPath expression to determine validity of node(s)&lt;/td>
+ &lt;td style="text-align: left">true&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">readonly&lt;/td>
+ &lt;td style="text-align: left">boolean XPath expression to determine readonly/readwrite state&lt;/td>
+ &lt;td style="text-align: left">false&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">relevant&lt;/td>
+ &lt;td style="text-align: left">boolean XPath expression to determine relevant/non-relevant state&lt;/td>
+ &lt;td style="text-align: left">true&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">required&lt;/td>
+ &lt;td style="text-align: left">boolean XPath expression to determine required/optional state&lt;/td>
+ &lt;td style="text-align: left">false&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">type&lt;/td>
+ &lt;td style="text-align: left">datatype - reserved for future versions&lt;/td>
+ &lt;td style="text-align: left">string&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p></description></item></channel></rss>

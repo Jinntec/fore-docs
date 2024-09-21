@@ -1,2 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Switch on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-switch/</link><description>Recent content in Fx-Switch on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-switch/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-case></title><link>https://jinntec.github.io/fore-docs/elements/ui/case/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/case/</guid><description>Description Defines one &amp;lsquo;page&amp;rsquo; of a fx-switch element.
-Attributes Name Description label optional label name a unique name to be used with fx-toggle selector a CSS selector to select a certain element from external src src a URL being used for fetching the content of a case Events Name Description select dispatched to fx-case when a case gets selected deselect dispatched to fx-case when case gets deselected Examples Repeat in Switch TEI header editor sample Switch</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Switch on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-switch/</link><description>Recent content in Fx-Switch on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-switch/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-case></title><link>https://jinntec.github.io/fore-docs/elements/ui/case/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/case/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Defines one &amp;lsquo;page&amp;rsquo; of a &lt;code>fx-switch&lt;/code> element.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">label&lt;/td>
+ &lt;td style="text-align: left">optional label&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">name&lt;/td>
+ &lt;td style="text-align: left">a unique name to be used with &lt;code>fx-toggle&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">selector&lt;/td>
+ &lt;td style="text-align: left">a CSS selector to select a certain element from external src&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">src&lt;/td>
+ &lt;td style="text-align: left">a URL being used for fetching the content of a case&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">select&lt;/td>
+ &lt;td style="text-align: left">dispatched to &lt;code>fx-case&lt;/code> when a case gets selected&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">deselect&lt;/td>
+ &lt;td style="text-align: left">dispatched to &lt;code>fx-case&lt;/code> when case gets deselected&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/repeat-in-switch.html">Repeat in Switch&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/simple-tei-header.html">TEI header editor sample&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/switch.html">Switch&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Alert on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-alert/</link><description>Recent content in Fx-Alert on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-alert/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-alert></title><link>https://jinntec.github.io/fore-docs/elements/ui/alert/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/alert/</guid><description>Description fx-alert element is used for messaging validation errors and may be used within fx-bind element or as a child of a UI control like fx-control.
-Attributes No Attributes
-Events none
-Examples Binding Revalidation</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Alert on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-alert/</link><description>Recent content in Fx-Alert on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-alert/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-alert></title><link>https://jinntec.github.io/fore-docs/elements/ui/alert/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/alert/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>&lt;code>fx-alert&lt;/code> element is used for messaging validation errors and may be used
+within &lt;code>fx-bind&lt;/code> element or as a child of a UI control like &lt;code>fx-control&lt;/code>.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;p>No Attributes&lt;/p>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/binding.html">Binding&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/revalidate.html">Revalidation&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

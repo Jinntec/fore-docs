@@ -1,3 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Items on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-items/</link><description>Recent content in Fx-Items on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-items/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-items></title><link>https://jinntec.github.io/fore-docs/elements/ui/items/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/items/</guid><description>Description Helper element to build a list of items by repeating given template for each node in the bound nodeset.
-Attributes Name Description ref XPath reference pointing to nodeset to be repeated Events none
-Examples Select Multiple</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Items on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-items/</link><description>Recent content in Fx-Items on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-items/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-items></title><link>https://jinntec.github.io/fore-docs/elements/ui/items/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/items/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>Helper element to build a list of items by repeating given template for each
+node in the bound nodeset.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Name&lt;/th>
+ &lt;th style="text-align: left">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td style="text-align: left">XPath reference pointing to nodeset to be repeated&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/selects3.html">Select Multiple&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
