@@ -17,6 +17,7 @@ Send and receive data.
 | ref | XPath reference pointing to the bound node | root node of default instance |
 | instance | id of instance when `replace='instance'`. Required when replace='instance' |  |
 | into | XPath expr where to insert response nodes into |  |
+| mediatype | mediatype of request | 'application/xml' |
 | method | http methods GET, POST, PUT, DELETE, url-encoded-post | GET  |
 | nonrelevant | handling of non relevant nodes during serialization. Can be one of 'keep', 'empty' or 'remove' | remove  |
 | replace | one of 'all', 'download', 'instance', 'target', 'redirect' or 'none' | all  |
@@ -26,6 +27,7 @@ Send and receive data.
 |  | 'target' - response will be attached to element identified by `target` (CSS Selector syntax e.g. '#mydiv')| |
 |  | 'redirect' - use response as redirect url. | |
 |  | 'none' - response will be ignored. | |
+| responsemediatype | mediatype of response | mediatype being used for request |
 | serialization | 'none' or 'xml' at this point | xml |
 | target | selector in CSS selector syntax. valid only when replace is 'target'.  | |
 | targetref | XPath pointing to target node when `replace="instance"` | |
