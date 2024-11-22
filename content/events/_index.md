@@ -73,7 +73,7 @@ State events are dispatched whenever the state of a bound element changes.
 | `relevant`      | fires after a fx-control has become relevant | `fx-control` | - |
 | `invalid`       | fires after a fx-control has become invalid  | `fx-control` | - |
 | `valid`         | fires after a fx-control has become valid    | `fx-control` | - |
-| `value-changed` | fires after a fx-control has changed its value  | `fx-control` | `path`- the normalized path of the bound node, `value` - the value of the bound node |
+| `value-changed` | fires after a fx-control has changed its value  | `fx-control` | `path`- the normalized path of the bound node, `value` - the value of the bound node, `instanceId`- the instance of changed node, `foreId` - the id of fx-fore element in scope |
 
 ## Instance Events
 
