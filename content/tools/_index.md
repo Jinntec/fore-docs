@@ -13,6 +13,17 @@ With Fore you can build quite complex pages, with other pages acting as
 controls, dynamically loaded content and data and more. However with power comes 
 responsibility and things can get hard to debug without good tooling.
 
+## Fore Lens
+
+As of 2.5.0 Fore comes with 'Lens' - a new data inspector as a successor of the older tools. Turned out that most of the time you'll want to look at the 
+data. Lens uses a proper display component now and remembers its size, opened panels and width.
+
+Furthermore it will show all data in the page independent of nested `<fx-fore>` elements which makes it much easier to use than the older tools depending on the respective
+context.
+
+Lens can be injected into a page by appending the paramter 'lens' to the URL you want to inspect. If you want to include it statically in the page you should add it at the end of 
+the `<body>` of the page.
+
 ## Fore Glass
 
 ![Fore Glass](/images/fore-glass.png)
