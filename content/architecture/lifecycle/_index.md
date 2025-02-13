@@ -8,6 +8,7 @@ tags: []
 * model-construct
 * rebuild
 * recalculate
+* revalidate
 * model-construct-done
 * init-done
 * refresh-done
@@ -38,43 +39,36 @@ participant NodeBinding
 participant FacetBinding
 
 
-    activate Model
     
         Note over Model: rebuild phase
         Model->>Model: rebuild()
         loop: fx-bind 
-        activate FxBind
         Model->>FxBind: init()
 
         FxBind->>NodeBinding:create NodeBinding for ref
-        activate NodeBinding
         NodeBinding->>NodeBinding:constructor
-        NodeBinding->>DependencyTracker:register(xpath:node,NodeBinding)
-        deactivate NodeBinding
+        NodeBinding-->>DependencyTracker:register(xpath:node,NodeBinding)
 
+        activate NodeBinding
         loop: facets
-            FxBind->>FacetBinding:create FacetBinding for facet
-            activate FacetBinding
-
-                FacetBinding->>DependencyTracker:register(FacetBinding)
-            
-            deactivate FacetBinding
-
-            
+            NodeBinding->>FacetBinding:create FacetBinding for facet
+            FacetBinding-->>DependencyTracker:register(FacetBinding)
         end
+    deactivate NodeBinding
         
         loop: forEach dependency in facet xpath
-            FxBind->>NodeBinding:create NodeBinding for dep
-            activate NodeBinding
-                NodeBinding->>DependencyTracker: register(xpath,NodeBinding)
-            deactivate NodeBinding
+        activate FacetBinding
+            FacetBinding->>NodeBinding:create NodeBinding for dep
+            NodeBinding-->>DependencyTracker:register(xpath:node,NodeBinding)
+
+            FacetBinding-->>DependencyTracker: registerDependency(nodeXPath,facetXPath)
         end
-        deactivate FxBind
+        deactivate FacetBinding
+
             
     end
     
     
-    deactivate Model
 {{< /mermaid >}}
 
 ## Recalculate
@@ -107,10 +101,10 @@ participant DependencyTracker
 
         activate DependencyTracker
         loop
-            DependencyTracker->>DependencyTracker: add to subgraph
+            DependencyTracker->>DependencyTracker: add pending Binding to subgraph
 
             loop: dependencies
-                DependencyTracker->>DependencyTracker: add to subgraph
+                DependencyTracker->>DependencyTracker: add depencency to subgraph
             end
         end
 
