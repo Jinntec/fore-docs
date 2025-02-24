@@ -12,8 +12,4 @@
  &amp;lt;fx-model&amp;gt;&amp;lt;/fx-model&amp;gt;
 &amp;lt;/fx-fore&amp;gt;
 &lt;/code>&lt;/pre>
-&lt;div class="notices note" >&lt;p>The &lt;code>&amp;lt;fx-model&amp;gt;&lt;/code> is a direct child of the &lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> element.&lt;/p>
-&lt;/div>
-
-&lt;h3 id="2-add-some-data">2. Add some data&lt;/h3>
-&lt;p>Not very exciting so far, so add some data:&lt;/p></description></item></channel></rss>
+&lt;div class="notices note" >&lt;p>The &lt;code>&amp;lt;fx-model&amp;gt;&lt;/code> is a direct child of the &lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> element.&lt;/p></description></item></channel></rss>

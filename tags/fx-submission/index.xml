@@ -36,6 +36,11 @@
  &lt;td style="text-align: left">&lt;/td>
  &lt;/tr>
  &lt;tr>
+ &lt;td style="text-align: left">mediatype&lt;/td>
+ &lt;td style="text-align: left">mediatype of request&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;application/xml&amp;rsquo;&lt;/td>
+ &lt;/tr>
+ &lt;tr>
  &lt;td style="text-align: left">method&lt;/td>
  &lt;td style="text-align: left">http methods GET, POST, PUT, DELETE, url-encoded-post&lt;/td>
  &lt;td style="text-align: left">GET&lt;/td>
@@ -79,6 +84,11 @@
  &lt;td style="text-align: left">&lt;/td>
  &lt;td style="text-align: left">&amp;rsquo;none&amp;rsquo; - response will be ignored.&lt;/td>
  &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">responsemediatype&lt;/td>
+ &lt;td style="text-align: left">mediatype of response&lt;/td>
+ &lt;td style="text-align: left">mediatype being used for request&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">serialization&lt;/td>

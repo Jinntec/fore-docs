@@ -17,6 +17,11 @@ and provides the following facilities:&lt;/p>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
+ &lt;td style="text-align: left">create-nodes&lt;/td>
+ &lt;td style="text-align: left">If attribute is present, non-existing XML data nodes will be created from UI Binding expressions&lt;/td>
+ &lt;td style="text-align: left">-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
  &lt;td style="text-align: left">ignore-expressions&lt;/td>
  &lt;td style="text-align: left">if given is expected to contain a CSS selector that matches element to excluded from Template Expression handling&lt;/td>
  &lt;td style="text-align: left">-&lt;/td>

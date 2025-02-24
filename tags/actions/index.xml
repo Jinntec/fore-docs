@@ -25,9 +25,7 @@ the data in the model or otherwise interact with the UI.&lt;/p></description></i
 &lt;h2 id="todo-application">Todo Application&lt;/h2>
 &lt;p>Let&amp;rsquo;s go for a bit more fancy example - a simple todo app - and learn about some new elements.&lt;/p>
 &lt;p>In this tutorial we add some real interaction, give some feedback
-messages to the user and actually change our data.&lt;/p>
-&lt;p>It will introduce you to &lt;code>&amp;lt;fx-repeat&amp;gt;&lt;/code> element that is one of the container
-elements available in Fore.&lt;/p></description></item><item><title>Todo App refined</title><link>https://jinntec.github.io/fore-docs/getstarted/todo-refined/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/todo-refined/</guid><description>&lt;p>What can be learned here:&lt;/p>
+messages to the user and actually change our data.&lt;/p></description></item><item><title>Todo App refined</title><link>https://jinntec.github.io/fore-docs/getstarted/todo-refined/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/todo-refined/</guid><description>&lt;p>What can be learned here:&lt;/p>
 &lt;ul>
 &lt;li>adding a counter&lt;/li>
 &lt;li>insert from a template node&lt;/li>
@@ -64,8 +62,4 @@ elements available in Fore.&lt;/p></description></item><item><title>Todo App ref
  &lt;/tbody>
 &lt;/table>
 &lt;h3 id="action-attributes">Action Attributes&lt;/h3>
-&lt;p>see &lt;a href="https://jinntec.github.io/Fore/demo/actions.html">Action&lt;/a>&lt;/p>
-&lt;h3 id="examples">Examples&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fx-replace.html">Replace Action&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;p>see &lt;a href="https://jinntec.github.io/Fore/demo/actions.html">Action&lt;/a>&lt;/p></description></item></channel></rss>

@@ -75,11 +75,7 @@
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p>
-&lt;h2 id="examples">Examples&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/project.html">Project Task planner&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>&lt;fx-delete></title><link>https://jinntec.github.io/fore-docs/elements/actions/delete/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/delete/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p></description></item><item><title>&lt;fx-delete></title><link>https://jinntec.github.io/fore-docs/elements/actions/delete/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/delete/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Deletes a node from a nodeset.&lt;/p>
 &lt;h2 id="fx-delete-attributes">fx-delete Attributes&lt;/h2>
 &lt;table>
@@ -126,12 +122,7 @@ the id in scope of current occurence.&lt;/p>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p>
-&lt;h2 id="examples">Examples&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/event-test.html">dispatch with properties&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fx-dispatch.html">fx-dispatch action&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>&lt;fx-hide></title><link>https://jinntec.github.io/fore-docs/elements/actions/hide/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/hide/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p></description></item><item><title>&lt;fx-hide></title><link>https://jinntec.github.io/fore-docs/elements/actions/hide/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/hide/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Action to hide a &lt;code>fx-dialog&lt;/code>.&lt;/p>
 &lt;h2 id="attributes">Attributes&lt;/h2>
 &lt;table>
@@ -316,20 +307,7 @@ becomes effective.&lt;/p></description></item><item><title>&lt;fx-message></titl
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p>
-&lt;h2 id="examples">Examples&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fx-message.html">fx-message&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/actions.html">actions&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/binding.html">Binding&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/delay.html">the delay attribute&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fx-control.html">fx-control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/hello-fonto.html">Hello World&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/if.html">the if attribute&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/instances.html">instances&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/lazy.html">lazy modelItem creation during UI init&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/while.html">the while attribute&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>&lt;fx-refresh></title><link>https://jinntec.github.io/fore-docs/elements/actions/refresh/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/refresh/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p></description></item><item><title>&lt;fx-refresh></title><link>https://jinntec.github.io/fore-docs/elements/actions/refresh/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/refresh/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Triggers immediate refresh.&lt;/p>
 &lt;h2 id="attributes">Attributes&lt;/h2>
 &lt;table>
@@ -355,13 +333,7 @@ becomes effective.&lt;/p></description></item><item><title>&lt;fx-message></titl
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p>
-&lt;h2 id="examples">Examples&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/delay.html">the delay attribute&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/randomizer.html">Randomizer&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/while.html">the while attribute&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>&lt;fx-replace></title><link>https://jinntec.github.io/fore-docs/elements/actions/replace/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/replace/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>none&lt;/p></description></item><item><title>&lt;fx-replace></title><link>https://jinntec.github.io/fore-docs/elements/actions/replace/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/replace/</guid><description>&lt;h3 id="description">Description&lt;/h3>
 &lt;p>Replaces a node with another.&lt;/p>
 &lt;h3 id="attributes">Attributes&lt;/h3>
 &lt;table>
@@ -457,11 +429,7 @@ and search that for the control.&lt;/p>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p>
-&lt;h3 id="examples">Examples&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/todo2.html">todo&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>&lt;fx-setvalue></title><link>https://jinntec.github.io/fore-docs/elements/actions/setvalue/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/setvalue/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>none&lt;/p></description></item><item><title>&lt;fx-setvalue></title><link>https://jinntec.github.io/fore-docs/elements/actions/setvalue/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/setvalue/</guid><description>&lt;h3 id="description">Description&lt;/h3>
 &lt;p>Sets a value to a bound node.&lt;/p>
 &lt;h3 id="attributes">Attributes&lt;/h3>
 &lt;table>
@@ -483,17 +451,7 @@ and search that for the control.&lt;/p>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p>
-&lt;h3 id="examples">Examples&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/actions.html">Action&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/auth.html">auth&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/binding.html">binding&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/delay.html">the delay attribute&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/events.html">events&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/events2.html">events 2&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fun-with-actions.html">hello&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>&lt;fx-show></title><link>https://jinntec.github.io/fore-docs/elements/actions/show/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/show/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>none&lt;/p></description></item><item><title>&lt;fx-show></title><link>https://jinntec.github.io/fore-docs/elements/actions/show/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/show/</guid><description>&lt;h3 id="description">Description&lt;/h3>
 &lt;p>Action to display a &lt;code>fx-dialog&lt;/code>.&lt;/p>
 &lt;h3 id="attributes">Attributes&lt;/h3>
 &lt;table>
@@ -546,14 +504,7 @@ and search that for the control.&lt;/p>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p>
-&lt;h3 id="examples">Examples&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/auth.html">auth&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/repeat-in-switch.html">repeat in switch&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/simple-tei-header.html">Simple TEI Header&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/switch.html">switch&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>&lt;fx-toggleboolean></title><link>https://jinntec.github.io/fore-docs/elements/actions/toggleboolean/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/toggleboolean/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>none&lt;/p></description></item><item><title>&lt;fx-toggleboolean></title><link>https://jinntec.github.io/fore-docs/elements/actions/toggleboolean/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/toggleboolean/</guid><description>&lt;h3 id="description">Description&lt;/h3>
 &lt;p>Action to toggle a Boolean value in the data.&lt;/p>
 &lt;h3 id="attributes">Attributes&lt;/h3>
 &lt;table>
@@ -571,11 +522,7 @@ and search that for the control.&lt;/p>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p>
-&lt;h3 id="examples">Examples&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/actions/toggleboolean.html">Toggle a Boolean value&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Actions</title><link>https://jinntec.github.io/fore-docs/elements/actions/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/</guid><description>&lt;h1 id="action-elements">Action Elements&lt;/h1>
+&lt;p>none&lt;/p></description></item><item><title>Actions</title><link>https://jinntec.github.io/fore-docs/elements/actions/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/</guid><description>&lt;h1 id="action-elements">Action Elements&lt;/h1>
 &lt;p>This chapter describes all Action elements.&lt;/p>
 &lt;p>&lt;img src="https://jinntec.github.io/fore-docs/images/actions.svg" alt="Fore Actions">&lt;/p>
 

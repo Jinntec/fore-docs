@@ -2,16 +2,6 @@
 &lt;p>With Fore you can build quite complex pages, with other pages acting as
 controls, dynamically loaded content and data and more. However with power comes
 responsibility and things can get hard to debug without good tooling.&lt;/p>
-&lt;h2 id="fore-glass">Fore Glass&lt;/h2>
-&lt;p>&lt;img src="https://jinntec.github.io/fore-docs/images/fore-glass.png" alt="Fore Glass">&lt;/p>
-&lt;p>&amp;lsquo;Fore Glass&amp;rsquo; allows to:&lt;/p>
-&lt;ul>
-&lt;li>log Action and Event flow - the panel on the left&lt;/li>
-&lt;li>inspect the DOM tree of the page including highlighting for Fore elements - the center panel&lt;/li>
-&lt;li>inspecting the state of all data sources used by the respective Fore element - the right panel&lt;/li>
-&lt;li>inspect a specific control (Ctrl + i) and jump to its source element in the DOM and if bound to the bound data node&lt;/li>
-&lt;li>clear Log with Ctrl+d&lt;/li>
-&lt;li>configure the events you want to log&lt;/li>
-&lt;/ul>
-&lt;h3 id="using-fore-glass">Using Fore Glass&lt;/h3>
-&lt;p>There are two ways to use it:&lt;/p></description></item></channel></rss>
+&lt;h2 id="fore-lens">Fore Lens&lt;/h2>
+&lt;p>As of 2.5.0 Fore comes with &amp;lsquo;Lens&amp;rsquo; - a new data inspector as a successor of the older tools. Turned out that most of the time you&amp;rsquo;ll want to look at the
+data. Lens uses a proper display component now and remembers its size, opened panels and width.&lt;/p></description></item></channel></rss>

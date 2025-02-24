@@ -154,26 +154,7 @@ like &lt;code>&amp;lt;fx-group&amp;gt;&lt;/code> and &lt;code>&amp;lt;fx-switch&
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p>
-&lt;h2 id="examples">Examples&lt;/h2>
-&lt;h3 id="xquery-update-facility">Xquery Update Facility&lt;/h3>
-&lt;pre tabindex="0">&lt;code>&amp;lt;fx-function
- signature=&amp;#34;update($element as element()) as element()*&amp;#34;
- type=&amp;#34;text/xquf&amp;#34;&amp;gt;
- copy $xml := $element modify (
- for $ref in $xml/element
- return insert node $ref/@name with $xml/element/name/text()
- ) return $xml
-&amp;lt;/fx-function&amp;gt;
-&lt;/code>&lt;/pre>&lt;h3 id="javascript">JavaScript&lt;/h3>
-&lt;pre tabindex="0">&lt;code>&amp;lt;fx-function signature=&amp;#34;now() as xs:string&amp;#34; type=&amp;#34;text/javascript&amp;#34;&amp;gt;
- const now = new Date();
- return `${String(now.getHours()).padStart(2, &amp;#39;0&amp;#39;)}:${String(now.getMinutes()).padStart(2, &amp;#39;0&amp;#39;)}:${String(now.getSeconds()).padStart(2, &amp;#39;0&amp;#39;)}`;
-&amp;lt;/fx-function&amp;gt;
-&lt;/code>&lt;/pre>&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/functions.html">Custom inline functions&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/randomizer.html">Randomizer&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>&lt;fx-control></title><link>https://jinntec.github.io/fore-docs/elements/ui/control/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/control/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p></description></item><item><title>&lt;fx-control></title><link>https://jinntec.github.io/fore-docs/elements/ui/control/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/control/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>&lt;code>fx-control&lt;/code> is no concrete control displayed in the browser but
 instead wraps such a control and binds it to a data node in the model with the help of a &lt;code>ref&lt;/code> attribute.&lt;/p>
 &lt;h2 id="attributes">Attributes&lt;/h2>
@@ -279,11 +260,7 @@ with a &lt;code>class=&amp;quot;widget&amp;quot;&lt;/code>.&lt;/p></description>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p>
-&lt;h2 id="examples">Examples&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/controls/fx-dialog.html">fx-dialog&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>&lt;fx-inspector></title><link>https://jinntec.github.io/fore-docs/elements/ui/inspector/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/inspector/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p></description></item><item><title>&lt;fx-inspector></title><link>https://jinntec.github.io/fore-docs/elements/ui/inspector/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/inspector/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Instance Inspector is a helper element for development which
 displays all used instances at the bottom of the viewport.&lt;/p>
 &lt;p>It uses the &lt;code>log()&lt;/code> function under the hood and renders
@@ -306,11 +283,7 @@ a html &lt;code>details&lt;/code> element for each instance.&lt;/p>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p>
-&lt;h2 id="examples">Examples&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/simple-tei-header.html">Simple TEI Header editor&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>&lt;fx-items></title><link>https://jinntec.github.io/fore-docs/elements/ui/items/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/items/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p></description></item><item><title>&lt;fx-items></title><link>https://jinntec.github.io/fore-docs/elements/ui/items/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/items/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Helper element to build a list of items by repeating given template for each
 node in the bound nodeset.&lt;/p>
 &lt;h2 id="attributes">Attributes&lt;/h2>
@@ -329,11 +302,7 @@ node in the bound nodeset.&lt;/p>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p>
-&lt;h2 id="examples">Examples&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/selects3.html">Select Multiple&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>&lt;fx-output></title><link>https://jinntec.github.io/fore-docs/elements/ui/output/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/output/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p></description></item><item><title>&lt;fx-output></title><link>https://jinntec.github.io/fore-docs/elements/ui/output/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/output/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Outputs bound or calculated values.&lt;/p>
 &lt;p>Also supports mimtypes &amp;lsquo;html&amp;rsquo; and &amp;lsquo;markdown&amp;rsquo; to render bound nodes
 accordingly.&lt;/p>
@@ -457,14 +426,7 @@ at a given time.&lt;/p>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p>
-&lt;h2 id="examples">Examples&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/auth.html">auth&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/repeat-in-switch.html">repeat in switch&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/simple-tei-header.html">Simple TEI Header&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/switch.html">switch&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>&lt;fx-trigger></title><link>https://jinntec.github.io/fore-docs/elements/ui/trigger/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/trigger/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p></description></item><item><title>&lt;fx-trigger></title><link>https://jinntec.github.io/fore-docs/elements/ui/trigger/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/trigger/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Generic container for action buttons, links etc. which can execute
 an action when activated.&lt;/p>
 &lt;p>&lt;code>&amp;lt;fx-trigger&amp;gt;&lt;/code> can also be bound and therefore become readonly or non-relevant.&lt;/p>
@@ -578,6 +540,11 @@ necessary.&lt;/p>
  &lt;td style="text-align: left">&lt;/td>
  &lt;/tr>
  &lt;tr>
+ &lt;td style="text-align: left">mediatype&lt;/td>
+ &lt;td style="text-align: left">mediatype of request&lt;/td>
+ &lt;td style="text-align: left">&amp;lsquo;application/xml&amp;rsquo;&lt;/td>
+ &lt;/tr>
+ &lt;tr>
  &lt;td style="text-align: left">method&lt;/td>
  &lt;td style="text-align: left">http methods GET, POST, PUT, DELETE, url-encoded-post&lt;/td>
  &lt;td style="text-align: left">GET&lt;/td>
@@ -621,6 +588,11 @@ necessary.&lt;/p>
  &lt;td style="text-align: left">&lt;/td>
  &lt;td style="text-align: left">&amp;rsquo;none&amp;rsquo; - response will be ignored.&lt;/td>
  &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">responsemediatype&lt;/td>
+ &lt;td style="text-align: left">mediatype of response&lt;/td>
+ &lt;td style="text-align: left">mediatype being used for request&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">serialization&lt;/td>

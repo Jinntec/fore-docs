@@ -53,7 +53,9 @@
     --CODE-TEXT-COLOR:var(--paper-blue-900);
 }
 
-
+[alt='Scopes']{
+    width: 50% !important;
+}
 [data-url="http://localhost:1313/fore-docs/links/"] #navigation{
     display: none;
 }
