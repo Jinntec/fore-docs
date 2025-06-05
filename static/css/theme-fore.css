@@ -85,6 +85,7 @@ fx-fore{
     position: relative;
     -webkit-box-shadow: 3px 3px 6px 0px #e3f2fd;
     box-shadow: 3px 3px 6px 0px #e3f2fd;
+    padding: 0 0 1rem 1rem;
 }
 fx-fore::before{
     content: 'live demo';
@@ -319,6 +320,9 @@ h1{
 tspan{
     font-family: 'Novacento Sans Wide';
     font-size: 1.2rem;
+}
+#classes tspan{
+    font-size: 0.625rem;
 }
 fx-trigger.btn button{
     height: auto;
