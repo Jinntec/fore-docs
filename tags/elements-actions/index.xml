@@ -7,18 +7,18 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">ref&lt;/td>
- &lt;td style="text-align: left">the XPath ref to append to&lt;/td>
+ &lt;td>ref&lt;/td>
+ &lt;td>the XPath ref to append to&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">repeat&lt;/td>
- &lt;td style="text-align: left">the &lt;code>fx-repeat&lt;/code> to append to&lt;/td>
+ &lt;td>repeat&lt;/td>
+ &lt;td>the &lt;code>fx-repeat&lt;/code> to append to&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -26,14 +26,14 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">index-changed&lt;/td>
- &lt;td style="text-align: left">dispatched after entry has been added to a repeat&lt;/td>
+ &lt;td>index-changed&lt;/td>
+ &lt;td>dispatched after entry has been added to a repeat&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -48,14 +48,14 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">message&lt;/td>
- &lt;td style="text-align: left">Message to display for confirmation.&lt;/td>
+ &lt;td>message&lt;/td>
+ &lt;td>Message to display for confirmation.&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -63,32 +63,36 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">target&lt;/td>
- &lt;td style="text-align: left">id reference to element this action attaches to&lt;/td>
+ &lt;td>target&lt;/td>
+ &lt;td>id reference to element this action attaches to&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item><item><title>&lt;fx-delete></title><link>https://jinntec.github.io/fore-docs/elements/actions/delete/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/delete/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/project.html">Project Task planner&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-delete></title><link>https://jinntec.github.io/fore-docs/elements/actions/delete/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/delete/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Deletes a node from a nodeset.&lt;/p>
 &lt;h2 id="fx-delete-attributes">fx-delete Attributes&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">ref&lt;/td>
- &lt;td style="text-align: left">XPath reference to instance node(s) to delete&lt;/td>
+ &lt;td>ref&lt;/td>
+ &lt;td>XPath reference to instance node(s) to delete&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -106,36 +110,41 @@ the id in scope of current occurence.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">name&lt;/td>
- &lt;td style="text-align: left">name of event to dispatch&lt;/td>
+ &lt;td>name&lt;/td>
+ &lt;td>name of event to dispatch&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">targetid&lt;/td>
- &lt;td style="text-align: left">id reference of element to dispatch to. If omitted the event will be dispatched to document&lt;/td>
+ &lt;td>targetid&lt;/td>
+ &lt;td>id reference of element to dispatch to. If omitted the event will be dispatched to document&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item><item><title>&lt;fx-hide></title><link>https://jinntec.github.io/fore-docs/elements/actions/hide/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/hide/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/event-test.html">dispatch with properties&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fx-dispatch.html">fx-dispatch action&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-hide></title><link>https://jinntec.github.io/fore-docs/elements/actions/hide/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/hide/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Action to hide a &lt;code>fx-dialog&lt;/code>.&lt;/p>
 &lt;h2 id="attributes">Attributes&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">dialog&lt;/td>
- &lt;td style="text-align: left">idref of an &lt;code>fx-dialog&lt;/code> element.&lt;/td>
+ &lt;td>dialog&lt;/td>
+ &lt;td>idref of an &lt;code>fx-dialog&lt;/code> element.&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -143,14 +152,14 @@ the id in scope of current occurence.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">dialog-hidden&lt;/td>
- &lt;td style="text-align: left">dispatched when dialog is hidden&lt;/td>
+ &lt;td>dialog-hidden&lt;/td>
+ &lt;td>dispatched when dialog is hidden&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -163,41 +172,41 @@ the id in scope of current occurence.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">Default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">at&lt;/td>
- &lt;td style="text-align: left">index position in nodeset where to insert new node(s)&lt;/td>
- &lt;td style="text-align: left">0&lt;/td>
+ &lt;td>at&lt;/td>
+ &lt;td>index position in nodeset where to insert new node(s)&lt;/td>
+ &lt;td>0&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">context&lt;/td>
- &lt;td style="text-align: left">optional XPath pointing to parent node of node to insert&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>context&lt;/td>
+ &lt;td>optional XPath pointing to parent node of node to insert&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">position&lt;/td>
- &lt;td style="text-align: left">with regard to &amp;lsquo;at&amp;rsquo; can be either &amp;lsquo;before&amp;rsquo; or &amp;lsquo;after&amp;rsquo;&lt;/td>
- &lt;td style="text-align: left">after&lt;/td>
+ &lt;td>position&lt;/td>
+ &lt;td>with regard to &amp;lsquo;at&amp;rsquo; can be either &amp;lsquo;before&amp;rsquo; or &amp;lsquo;after&amp;rsquo;&lt;/td>
+ &lt;td>after&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">origin&lt;/td>
- &lt;td style="text-align: left">XPath pointing to nodes to be inserted into referenced nodeset&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>origin&lt;/td>
+ &lt;td>XPath pointing to nodes to be inserted into referenced nodeset&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">keepValues&lt;/td>
- &lt;td style="text-align: left">Boolean attribute. When present will keep text-values of origin nodes&lt;/td>
- &lt;td style="text-align: left">false&lt;/td>
+ &lt;td>keepValues&lt;/td>
+ &lt;td>Boolean attribute. When present will keep text-values of origin nodes&lt;/td>
+ &lt;td>false&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">ref&lt;/td>
- &lt;td style="text-align: left">XPath pointing to node(s) to insert. If &lt;code>context&lt;/code> is given &lt;code>ref&lt;/code> is relative to that&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>ref&lt;/td>
+ &lt;td>XPath pointing to node(s) to insert. If &lt;code>context&lt;/code> is given &lt;code>ref&lt;/code> is relative to that&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -205,22 +214,22 @@ the id in scope of current occurence.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">insert&lt;/td>
- &lt;td style="text-align: left">dispatched when nodes have been inserted&lt;/td>
+ &lt;td>insert&lt;/td>
+ &lt;td>dispatched when nodes have been inserted&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">detail[insertedNodes] - the inserted nodes&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>detail[insertedNodes] - the inserted nodes&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">detail[position] - the position of the insert in the nodeset&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>detail[position] - the position of the insert in the nodeset&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -241,26 +250,26 @@ current browser window with content.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">attach-to&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;_self&amp;rsquo;, &amp;lsquo;_blank&amp;rsquo; or idref prefixed with &amp;lsquo;#&amp;rsquo;&lt;/td>
- &lt;td style="text-align: left">_self&lt;/td>
+ &lt;td>attach-to&lt;/td>
+ &lt;td>&amp;lsquo;_self&amp;rsquo;, &amp;lsquo;_blank&amp;rsquo; or idref prefixed with &amp;lsquo;#&amp;rsquo;&lt;/td>
+ &lt;td>_self&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">await&lt;/td>
- &lt;td style="text-align: left">eventname to await from templated content&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>await&lt;/td>
+ &lt;td>eventname to await from templated content&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">url&lt;/td>
- &lt;td style="text-align: left">URL to load content from&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>url&lt;/td>
+ &lt;td>URL to load content from&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -273,84 +282,103 @@ becomes effective.&lt;/p></description></item><item><title>&lt;fx-message></titl
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">level&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;modal&amp;rsquo;, &amp;lsquo;modeless&amp;rsquo; or &amp;rsquo;ephemeral&amp;rsquo;&lt;/td>
- &lt;td style="text-align: left">ephemeral&lt;/td>
+ &lt;td>level&lt;/td>
+ &lt;td>&amp;lsquo;modal&amp;rsquo;, &amp;lsquo;modeless&amp;rsquo; or &amp;rsquo;ephemeral&amp;rsquo;&lt;/td>
+ &lt;td>ephemeral&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;modal&amp;rsquo; - modal dialog window&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;lsquo;modal&amp;rsquo; - modal dialog window&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;sticky&amp;rsquo; - sticky popup message&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;lsquo;sticky&amp;rsquo; - sticky popup message&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&amp;rsquo;ephemeral&amp;rsquo; - auto-closing popup message&lt;/td>
- &lt;td style="text-align: left">default&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;rsquo;ephemeral&amp;rsquo; - auto-closing popup message&lt;/td>
+ &lt;td>default&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">value&lt;/td>
- &lt;td style="text-align: left">XPath expression which resolves to message&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>value&lt;/td>
+ &lt;td>XPath expression which resolves to message&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item><item><title>&lt;fx-refresh></title><link>https://jinntec.github.io/fore-docs/elements/actions/refresh/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/refresh/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fx-message.html">fx-message&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/actions.html">actions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/binding.html">Binding&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/delay.html">the delay attribute&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fx-control.html">fx-control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/hello-fonto.html">Hello World&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/if.html">the if attribute&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/instances.html">instances&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/lazy.html">lazy modelItem creation during UI init&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/while.html">the while attribute&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-refresh></title><link>https://jinntec.github.io/fore-docs/elements/actions/refresh/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/refresh/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Triggers immediate refresh.&lt;/p>
 &lt;h2 id="attributes">Attributes&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">control&lt;/td>
- &lt;td style="text-align: left">id of an control to be refreshed explicitly&lt;/td>
+ &lt;td>control&lt;/td>
+ &lt;td>id of an control to be refreshed explicitly&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">force&lt;/td>
- &lt;td style="text-align: left">marker attribute to force a full refresh - overrules &lt;code>control&lt;/code>&lt;/td>
+ &lt;td>force&lt;/td>
+ &lt;td>marker attribute to force a full refresh - overrules &lt;code>control&lt;/code>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">self&lt;/td>
- &lt;td style="text-align: left">searches upwards for &lt;code>fx-control&lt;/code> and refreshes it&lt;/td>
+ &lt;td>self&lt;/td>
+ &lt;td>searches upwards for &lt;code>fx-control&lt;/code> and refreshes it&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item><item><title>&lt;fx-replace></title><link>https://jinntec.github.io/fore-docs/elements/actions/replace/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/replace/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/delay.html">the delay attribute&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/randomizer.html">Randomizer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/while.html">the while attribute&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-replace></title><link>https://jinntec.github.io/fore-docs/elements/actions/replace/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/replace/</guid><description>&lt;h3 id="description">Description&lt;/h3>
 &lt;p>Replaces a node with another.&lt;/p>
 &lt;h3 id="attributes">Attributes&lt;/h3>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
+ &lt;td>&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td>XPath reference pointing to the bound node&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">with&lt;/td>
- &lt;td style="text-align: left">XPath expression to point to a node for replacement&lt;/td>
+ &lt;td>with&lt;/td>
+ &lt;td>XPath expression to point to a node for replacement&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -363,14 +391,14 @@ becomes effective.&lt;/p></description></item><item><title>&lt;fx-message></titl
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">instance&lt;/td>
- &lt;td style="text-align: left">the id of the instance to reset to its initial state&lt;/td>
+ &lt;td>instance&lt;/td>
+ &lt;td>the id of the instance to reset to its initial state&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -384,22 +412,22 @@ error is thrown.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">&lt;em>&lt;strong>submission&lt;/strong>&lt;/em>&lt;/td>
- &lt;td style="text-align: left">required idref to &lt;code>fx-submission&lt;/code> element. Also supports &amp;lsquo;#reload&amp;rsquo; which just reloads the window.&lt;/td>
+ &lt;td>&lt;em>&lt;strong>submission&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td>required idref to &lt;code>fx-submission&lt;/code> element. Also supports &amp;lsquo;#reload&amp;rsquo; which just reloads the window.&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">target&lt;/td>
- &lt;td style="text-align: left">overwrites target attribute of submission - may contain template expressions&lt;/td>
+ &lt;td>target&lt;/td>
+ &lt;td>overwrites target attribute of submission - may contain template expressions&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">url&lt;/td>
- &lt;td style="text-align: left">overwrites url attribute of submission - may contain template expressions&lt;/td>
+ &lt;td>url&lt;/td>
+ &lt;td>overwrites url attribute of submission - may contain template expressions&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -413,58 +441,72 @@ and search that for the control.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">control&lt;/td>
- &lt;td style="text-align: left">idref that a control&lt;/td>
+ &lt;td>control&lt;/td>
+ &lt;td>idref that a control&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">select&lt;/td>
- &lt;td style="text-align: left">if attribute is given the value of the control will be selected&lt;/td>
+ &lt;td>select&lt;/td>
+ &lt;td>if attribute is given the value of the control will be selected&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item><item><title>&lt;fx-setvalue></title><link>https://jinntec.github.io/fore-docs/elements/actions/setvalue/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/setvalue/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>none&lt;/p>
+&lt;h3 id="examples">Examples&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/todo2.html">todo&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-setvalue></title><link>https://jinntec.github.io/fore-docs/elements/actions/setvalue/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/setvalue/</guid><description>&lt;h3 id="description">Description&lt;/h3>
 &lt;p>Sets a value to a bound node.&lt;/p>
 &lt;h3 id="attributes">Attributes&lt;/h3>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
+ &lt;td>&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td>XPath reference pointing to the bound node&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">value&lt;/td>
- &lt;td style="text-align: left">XPath expression to be set as value&lt;/td>
+ &lt;td>value&lt;/td>
+ &lt;td>XPath expression to be set as value&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item><item><title>&lt;fx-show></title><link>https://jinntec.github.io/fore-docs/elements/actions/show/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/show/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>none&lt;/p>
+&lt;h3 id="examples">Examples&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/actions.html">Action&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/auth.html">auth&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/binding.html">binding&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/delay.html">the delay attribute&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/events.html">events&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/events2.html">events 2&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fun-with-actions.html">hello&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-show></title><link>https://jinntec.github.io/fore-docs/elements/actions/show/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/show/</guid><description>&lt;h3 id="description">Description&lt;/h3>
 &lt;p>Action to display a &lt;code>fx-dialog&lt;/code>.&lt;/p>
 &lt;h3 id="attributes">Attributes&lt;/h3>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">dialog&lt;/td>
- &lt;td style="text-align: left">idref of an &lt;code>fx-dialog&lt;/code> element.&lt;/td>
+ &lt;td>dialog&lt;/td>
+ &lt;td>idref of an &lt;code>fx-dialog&lt;/code> element.&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -472,14 +514,14 @@ and search that for the control.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">dialog-shown&lt;/td>
- &lt;td style="text-align: left">dispatched when dialog is shown&lt;/td>
+ &lt;td>dialog-shown&lt;/td>
+ &lt;td>dispatched when dialog is shown&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -492,37 +534,48 @@ and search that for the control.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">case&lt;/td>
- &lt;td style="text-align: left">id of &lt;code>fx-case&lt;/code> element to show&lt;/td>
+ &lt;td>case&lt;/td>
+ &lt;td>id of &lt;code>fx-case&lt;/code> element to show&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item><item><title>&lt;fx-toggleboolean></title><link>https://jinntec.github.io/fore-docs/elements/actions/toggleboolean/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/toggleboolean/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>none&lt;/p>
+&lt;h3 id="examples">Examples&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/auth.html">auth&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/repeat-in-switch.html">repeat in switch&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/simple-tei-header.html">Simple TEI Header&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/switch.html">switch&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-toggleboolean></title><link>https://jinntec.github.io/fore-docs/elements/actions/toggleboolean/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/toggleboolean/</guid><description>&lt;h3 id="description">Description&lt;/h3>
 &lt;p>Action to toggle a Boolean value in the data.&lt;/p>
 &lt;h3 id="attributes">Attributes&lt;/h3>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">ref&lt;/td>
- &lt;td style="text-align: left">required: XPath reference to toggle&lt;/td>
+ &lt;td>ref&lt;/td>
+ &lt;td>required: XPath reference to toggle&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item><item><title>Actions</title><link>https://jinntec.github.io/fore-docs/elements/actions/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/</guid><description>&lt;h1 id="action-elements">Action Elements&lt;/h1>
+&lt;p>none&lt;/p>
+&lt;h3 id="examples">Examples&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/actions/toggleboolean.html">Toggle a Boolean value&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Actions</title><link>https://jinntec.github.io/fore-docs/elements/actions/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/</guid><description>&lt;h1 id="action-elements">Action Elements&lt;/h1>
 &lt;p>This chapter describes all Action elements.&lt;/p>
 &lt;p>&lt;img src="https://jinntec.github.io/fore-docs/images/actions.svg" alt="Fore Actions">&lt;/p>
 
@@ -535,46 +588,46 @@ from view.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">defaultAction&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;perform&amp;rsquo; (default) or &amp;lsquo;cancel&amp;rsquo;&lt;/td>
+ &lt;td>defaultAction&lt;/td>
+ &lt;td>&amp;lsquo;perform&amp;rsquo; (default) or &amp;lsquo;cancel&amp;rsquo;&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">delay&lt;/td>
- &lt;td style="text-align: left">delay before action is executed in milliseconds.&lt;/td>
+ &lt;td>delay&lt;/td>
+ &lt;td>delay before action is executed in milliseconds.&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">event&lt;/td>
- &lt;td style="text-align: left">the event name this action is listening to&lt;/td>
+ &lt;td>event&lt;/td>
+ &lt;td>the event name this action is listening to&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">if&lt;/td>
- &lt;td style="text-align: left">boolean XPath expression. Action is only executed if this returns true.&lt;/td>
+ &lt;td>if&lt;/td>
+ &lt;td>boolean XPath expression. Action is only executed if this returns true.&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">iterate&lt;/td>
- &lt;td style="text-align: left">XPath expression selecting a set of nodes to iterate over&lt;/td>
+ &lt;td>iterate&lt;/td>
+ &lt;td>XPath expression selecting a set of nodes to iterate over&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">phase&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;default&amp;rsquo; or &amp;lsquo;capture&amp;rsquo;&lt;/td>
+ &lt;td>phase&lt;/td>
+ &lt;td>&amp;lsquo;default&amp;rsquo; or &amp;lsquo;capture&amp;rsquo;&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">propagate&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;stop&amp;rsquo; or &amp;lsquo;continue&amp;rsquo; (default)&lt;/td>
+ &lt;td>propagate&lt;/td>
+ &lt;td>&amp;lsquo;stop&amp;rsquo; or &amp;lsquo;continue&amp;rsquo; (default)&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">target&lt;/td>
- &lt;td style="text-align: left">id of element to attach to or special values &amp;lsquo;#window&amp;rsquo; and &amp;lsquo;#document&amp;rsquo;&lt;/td>
+ &lt;td>target&lt;/td>
+ &lt;td>id of element to attach to or special values &amp;lsquo;#window&amp;rsquo; and &amp;lsquo;#document&amp;rsquo;&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">while&lt;/td>
- &lt;td style="text-align: left">boolean XPath expression. Action is only executed if &lt;code>ìf&lt;/code> and &lt;code>while&lt;/code> return true.&lt;/td>
+ &lt;td>while&lt;/td>
+ &lt;td>boolean XPath expression. Action is only executed if &lt;code>ìf&lt;/code> and &lt;code>while&lt;/code> return true.&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -582,18 +635,18 @@ from view.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">action-performed&lt;/td>
- &lt;td style="text-align: left">dispatched after execution of an action&lt;/td>
+ &lt;td>action-performed&lt;/td>
+ &lt;td>dispatched after execution of an action&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">while-performed&lt;/td>
- &lt;td style="text-align: left">dispatched after execution of a while loop&lt;/td>
+ &lt;td>while-performed&lt;/td>
+ &lt;td>dispatched after execution of a while loop&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table></description></item><item><title>&lt;fx-update></title><link>https://jinntec.github.io/fore-docs/elements/actions/update/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/update/</guid><description>&lt;h2 id="description">Description&lt;/h2>

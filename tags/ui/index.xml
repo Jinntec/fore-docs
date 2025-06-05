@@ -25,26 +25,26 @@ the data in the model or otherwise interact with the UI.&lt;/p></description></i
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">label&lt;/td>
- &lt;td style="text-align: left">optional label&lt;/td>
+ &lt;td>label&lt;/td>
+ &lt;td>optional label&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">name&lt;/td>
- &lt;td style="text-align: left">a unique name to be used with &lt;code>fx-toggle&lt;/code>&lt;/td>
+ &lt;td>name&lt;/td>
+ &lt;td>a unique name to be used with &lt;code>fx-toggle&lt;/code>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">selector&lt;/td>
- &lt;td style="text-align: left">a CSS selector to select a certain element from external src&lt;/td>
+ &lt;td>selector&lt;/td>
+ &lt;td>a CSS selector to select a certain element from external src&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">src&lt;/td>
- &lt;td style="text-align: left">a URL being used for fetching the content of a case&lt;/td>
+ &lt;td>src&lt;/td>
+ &lt;td>a URL being used for fetching the content of a case&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -52,18 +52,18 @@ the data in the model or otherwise interact with the UI.&lt;/p></description></i
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">select&lt;/td>
- &lt;td style="text-align: left">dispatched to &lt;code>fx-case&lt;/code> when a case gets selected&lt;/td>
+ &lt;td>select&lt;/td>
+ &lt;td>dispatched to &lt;code>fx-case&lt;/code> when a case gets selected&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">deselect&lt;/td>
- &lt;td style="text-align: left">dispatched to &lt;code>fx-case&lt;/code> when case gets deselected&lt;/td>
+ &lt;td>deselect&lt;/td>
+ &lt;td>dispatched to &lt;code>fx-case&lt;/code> when case gets deselected&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -80,81 +80,81 @@ instead wraps such a control and binds it to a data node in the model with the h
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">Default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">as&lt;/td>
- &lt;td style="text-align: left">&amp;rsquo;text&amp;rsquo; or &amp;rsquo;node&amp;rsquo;. When using &amp;rsquo;node&amp;rsquo; a whole dom tree can be passed to a widget&lt;/td>
- &lt;td style="text-align: left">text&lt;/td>
+ &lt;td>as&lt;/td>
+ &lt;td>&amp;rsquo;text&amp;rsquo; or &amp;rsquo;node&amp;rsquo;. When using &amp;rsquo;node&amp;rsquo; a whole dom tree can be passed to a widget&lt;/td>
+ &lt;td>text&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">context&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to parent context&lt;/td>
- &lt;td style="text-align: left">incopeContext&lt;/td>
+ &lt;td>context&lt;/td>
+ &lt;td>XPath reference pointing to parent context&lt;/td>
+ &lt;td>incopeContext&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">credentials&lt;/td>
- &lt;td style="text-align: left">sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo;&lt;/td>
- &lt;td style="text-align: left">same-origin&lt;/td>
+ &lt;td>credentials&lt;/td>
+ &lt;td>sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo;&lt;/td>
+ &lt;td>same-origin&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">create&lt;/td>
- &lt;td style="text-align: left">if present on control or anchestor will create non-existing attribute nodes in the data&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>create&lt;/td>
+ &lt;td>if present on control or anchestor will create non-existing attribute nodes in the data&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">debounce&lt;/td>
- &lt;td style="text-align: left">optional numeric value in milliseconds to delay input events&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>debounce&lt;/td>
+ &lt;td>optional numeric value in milliseconds to delay input events&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">initial&lt;/td>
- &lt;td style="text-align: left">XPath binding expression referring to data that get passed to Fore control as default instance. Only effective when &lt;code>url&lt;/code> is specified.&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>initial&lt;/td>
+ &lt;td>XPath binding expression referring to data that get passed to Fore control as default instance. Only effective when &lt;code>url&lt;/code> is specified.&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">label&lt;/td>
- &lt;td style="text-align: left">optional label&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>label&lt;/td>
+ &lt;td>optional label&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">listen-on&lt;/td>
- &lt;td style="text-align: left">a CSS selector to attach the update event listener to&lt;/td>
- &lt;td style="text-align: left">element with &amp;lsquo;widget&amp;rsquo; class&lt;/td>
+ &lt;td>listen-on&lt;/td>
+ &lt;td>a CSS selector to attach the update event listener to&lt;/td>
+ &lt;td>element with &amp;lsquo;widget&amp;rsquo; class&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td>XPath reference pointing to the bound node&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">shadow&lt;/td>
- &lt;td style="text-align: left">marker attribute to attach Fore control to shadowDOM instead of lightDOM&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>shadow&lt;/td>
+ &lt;td>marker attribute to attach Fore control to shadowDOM instead of lightDOM&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">update-event&lt;/td>
- &lt;td style="text-align: left">optional event name when to trigger updating of bound node.&lt;/td>
- &lt;td style="text-align: left">blur&lt;/td>
+ &lt;td>update-event&lt;/td>
+ &lt;td>optional event name when to trigger updating of bound node.&lt;/td>
+ &lt;td>blur&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&amp;rsquo;enter&amp;rsquo; can be used to catch enter key&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;rsquo;enter&amp;rsquo; can be used to catch enter key&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">url&lt;/td>
- &lt;td style="text-align: left">URL pointing to HTML page containing &lt;code>fx-fore&lt;/code> element that gets imported as widget&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>url&lt;/td>
+ &lt;td>URL pointing to HTML page containing &lt;code>fx-fore&lt;/code> element that gets imported as widget&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">value-prop&lt;/td>
- &lt;td style="text-align: left">optional property name used to set the value of the widget (default:&amp;lsquo;value&amp;rsquo;)&lt;/td>
- &lt;td style="text-align: left">value&lt;/td>
+ &lt;td>value-prop&lt;/td>
+ &lt;td>optional property name used to set the value of the widget (default:&amp;lsquo;value&amp;rsquo;)&lt;/td>
+ &lt;td>value&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -167,19 +167,23 @@ with a &lt;code>class=&amp;quot;widget&amp;quot;&lt;/code>.&lt;/p></description>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">id&lt;/td>
- &lt;td style="text-align: left">required to be used by &lt;code>fx-show' and &lt;/code>fx-hide`actions&lt;/td>
+ &lt;td>id&lt;/td>
+ &lt;td>required to be used by &lt;code>fx-show' and &lt;/code>fx-hide`actions&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item><item><title>&lt;fx-inspector></title><link>https://jinntec.github.io/fore-docs/elements/ui/inspector/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/inspector/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/controls/fx-dialog.html">fx-dialog&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-inspector></title><link>https://jinntec.github.io/fore-docs/elements/ui/inspector/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/inspector/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Instance Inspector is a helper element for development which
 displays all used instances at the bottom of the viewport.&lt;/p>
 &lt;p>It uses the &lt;code>log()&lt;/code> function under the hood and renders
@@ -188,40 +192,48 @@ a html &lt;code>details&lt;/code> element for each instance.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">open&lt;/td>
- &lt;td style="text-align: left">wether or not to be open by default&lt;/td>
- &lt;td style="text-align: left">false&lt;/td>
+ &lt;td>open&lt;/td>
+ &lt;td>wether or not to be open by default&lt;/td>
+ &lt;td>false&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item><item><title>&lt;fx-items></title><link>https://jinntec.github.io/fore-docs/elements/ui/items/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/items/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/simple-tei-header.html">Simple TEI Header editor&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-items></title><link>https://jinntec.github.io/fore-docs/elements/ui/items/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/items/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Helper element to build a list of items by repeating given template for each
 node in the bound nodeset.&lt;/p>
 &lt;h2 id="attributes">Attributes&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to nodeset to be repeated&lt;/td>
+ &lt;td>&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td>XPath reference pointing to nodeset to be repeated&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item><item><title>&lt;fx-output></title><link>https://jinntec.github.io/fore-docs/elements/ui/output/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/output/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/selects3.html">Select Multiple&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-output></title><link>https://jinntec.github.io/fore-docs/elements/ui/output/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/output/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Outputs bound or calculated values.&lt;/p>
 &lt;p>Also supports mimtypes &amp;lsquo;html&amp;rsquo; and &amp;lsquo;markdown&amp;rsquo; to render bound nodes
 accordingly.&lt;/p>
@@ -231,26 +243,26 @@ accordingly.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">Default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td>XPath reference pointing to the bound node&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">value&lt;/td>
- &lt;td style="text-align: left">XPath expression calculating a string value&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>value&lt;/td>
+ &lt;td>XPath expression calculating a string value&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">mediatype&lt;/td>
- &lt;td style="text-align: left">either &amp;lsquo;html&amp;rsquo; or &amp;lsquo;markdown&amp;rsquo; are accepted by now.&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>mediatype&lt;/td>
+ &lt;td>either &amp;lsquo;html&amp;rsquo; or &amp;lsquo;markdown&amp;rsquo; are accepted by now.&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -270,18 +282,18 @@ will be created that will contain the evaluated template as content.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">id&lt;/td>
- &lt;td style="text-align: left">identifier for repeat&lt;/td>
+ &lt;td>id&lt;/td>
+ &lt;td>identifier for repeat&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
+ &lt;td>&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td>XPath reference pointing to the bound node&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -289,26 +301,26 @@ will be created that will contain the evaluated template as content.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">Details&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Details&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">item-created&lt;/td>
- &lt;td style="text-align: left">dispatched when a new repeat entry is created&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;path&amp;rsquo; - a canonical xpath &lt;br> &amp;lsquo;index&amp;rsquo; - the index of the new item&lt;/td>
+ &lt;td>item-created&lt;/td>
+ &lt;td>dispatched when a new repeat entry is created&lt;/td>
+ &lt;td>&amp;lsquo;path&amp;rsquo; - a canonical xpath &lt;br> &amp;lsquo;index&amp;rsquo; - the index of the new item&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">path-mutated&lt;/td>
- &lt;td style="text-align: left">dispatched when repeat nodeset changes&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;path&amp;rsquo; - the mutation path &lt;br> &amp;lsquo;index&amp;rsquo; - the index of the changed repeat item.&lt;/td>
+ &lt;td>path-mutated&lt;/td>
+ &lt;td>dispatched when repeat nodeset changes&lt;/td>
+ &lt;td>&amp;lsquo;path&amp;rsquo; - the mutation path &lt;br> &amp;lsquo;index&amp;rsquo; - the index of the changed repeat item.&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">no-template-error&lt;/td>
- &lt;td style="text-align: left">dispatched when there&amp;rsquo;s no template defined&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;id&amp;rsquo; - the repeat id&lt;/td>
+ &lt;td>no-template-error&lt;/td>
+ &lt;td>dispatched when there&amp;rsquo;s no template defined&lt;/td>
+ &lt;td>&amp;lsquo;id&amp;rsquo; - the repeat id&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -338,21 +350,28 @@ at a given time.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">ref&lt;/td>
- &lt;td style="text-align: left">(optional) binds switch to data node and toggles cases depending on value&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>ref&lt;/td>
+ &lt;td>(optional) binds switch to data node and toggles cases depending on value&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item><item><title>&lt;fx-trigger></title><link>https://jinntec.github.io/fore-docs/elements/ui/trigger/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/trigger/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/auth.html">auth&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/repeat-in-switch.html">repeat in switch&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/simple-tei-header.html">Simple TEI Header&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/switch.html">switch&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-trigger></title><link>https://jinntec.github.io/fore-docs/elements/ui/trigger/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/trigger/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Generic container for action buttons, links etc. which can execute
 an action when activated.&lt;/p>
 &lt;p>&lt;code>&amp;lt;fx-trigger&amp;gt;&lt;/code> can also be bound and therefore become readonly or non-relevant.&lt;/p>
@@ -360,16 +379,16 @@ an action when activated.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">Default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td>XPath reference pointing to the bound node&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>

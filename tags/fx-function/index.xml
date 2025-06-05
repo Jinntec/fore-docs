@@ -4,20 +4,39 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">signature&lt;/td>
- &lt;td style="text-align: left">the function signature. Must use &amp;rsquo;local&amp;rsquo; prefix&lt;/td>
+ &lt;td>signature&lt;/td>
+ &lt;td>the function signature. Must use &amp;rsquo;local&amp;rsquo; prefix&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">type&lt;/td>
- &lt;td style="text-align: left">can be &amp;rsquo;text/javascript&amp;rsquo;, &amp;rsquo;text/xpath&amp;rsquo;, &amp;rsquo;text/xquery&amp;rsquo; or &amp;rsquo;text/xquf&amp;rsquo; (XQuery Update Facility)&lt;/td>
+ &lt;td>type&lt;/td>
+ &lt;td>can be &amp;rsquo;text/javascript&amp;rsquo;, &amp;rsquo;text/xpath&amp;rsquo;, &amp;rsquo;text/xquery&amp;rsquo; or &amp;rsquo;text/xquf&amp;rsquo; (XQuery Update Facility)&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item></channel></rss>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;h3 id="xquery-update-facility">Xquery Update Facility&lt;/h3>
+&lt;pre tabindex="0">&lt;code>&amp;lt;fx-function
+ signature=&amp;#34;update($element as element()) as element()*&amp;#34;
+ type=&amp;#34;text/xquf&amp;#34;&amp;gt;
+ copy $xml := $element modify (
+ for $ref in $xml/element
+ return insert node $ref/@name with $xml/element/name/text()
+ ) return $xml
+&amp;lt;/fx-function&amp;gt;
+&lt;/code>&lt;/pre>&lt;h3 id="javascript">JavaScript&lt;/h3>
+&lt;pre tabindex="0">&lt;code>&amp;lt;fx-function signature=&amp;#34;now() as xs:string&amp;#34; type=&amp;#34;text/javascript&amp;#34;&amp;gt;
+ const now = new Date();
+ return `${String(now.getHours()).padStart(2, &amp;#39;0&amp;#39;)}:${String(now.getMinutes()).padStart(2, &amp;#39;0&amp;#39;)}:${String(now.getSeconds()).padStart(2, &amp;#39;0&amp;#39;)}`;
+&amp;lt;/fx-function&amp;gt;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/functions.html">Custom inline functions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/randomizer.html">Randomizer&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

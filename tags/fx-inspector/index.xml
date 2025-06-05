@@ -7,18 +7,22 @@ a html &lt;code>details&lt;/code> element for each instance.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">open&lt;/td>
- &lt;td style="text-align: left">wether or not to be open by default&lt;/td>
- &lt;td style="text-align: left">false&lt;/td>
+ &lt;td>open&lt;/td>
+ &lt;td>wether or not to be open by default&lt;/td>
+ &lt;td>false&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item></channel></rss>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/simple-tei-header.html">Simple TEI Header editor&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

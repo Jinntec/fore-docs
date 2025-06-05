@@ -14,18 +14,18 @@ see &lt;a href="../demo/script-actions.html">script actions&lt;/a> or the source
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">ref&lt;/td>
- &lt;td style="text-align: left">the XPath ref to append to&lt;/td>
+ &lt;td>ref&lt;/td>
+ &lt;td>the XPath ref to append to&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">repeat&lt;/td>
- &lt;td style="text-align: left">the &lt;code>fx-repeat&lt;/code> to append to&lt;/td>
+ &lt;td>repeat&lt;/td>
+ &lt;td>the &lt;code>fx-repeat&lt;/code> to append to&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -33,14 +33,14 @@ see &lt;a href="../demo/script-actions.html">script actions&lt;/a> or the source
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">index-changed&lt;/td>
- &lt;td style="text-align: left">dispatched after entry has been added to a repeat&lt;/td>
+ &lt;td>index-changed&lt;/td>
+ &lt;td>dispatched after entry has been added to a repeat&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -55,14 +55,14 @@ see &lt;a href="../demo/script-actions.html">script actions&lt;/a> or the source
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">ref&lt;/td>
- &lt;td style="text-align: left">XPath reference to instance node(s) to delete&lt;/td>
+ &lt;td>ref&lt;/td>
+ &lt;td>XPath reference to instance node(s) to delete&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>

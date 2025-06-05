@@ -10,41 +10,41 @@ and provides the following facilities:&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">create-nodes&lt;/td>
- &lt;td style="text-align: left">If attribute is present, non-existing XML data nodes will be created from UI Binding expressions&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>create-nodes&lt;/td>
+ &lt;td>If attribute is present, non-existing XML data nodes will be created from UI Binding expressions&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">ignore-expressions&lt;/td>
- &lt;td style="text-align: left">if given is expected to contain a CSS selector that matches element to excluded from Template Expression handling&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>ignore-expressions&lt;/td>
+ &lt;td>if given is expected to contain a CSS selector that matches element to excluded from Template Expression handling&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">[foreign attributes]&lt;/td>
- &lt;td style="text-align: left">Foreign attributes are all other attributes being present. These will be copied to the resulting &lt;code>fx-fore&lt;/code> element if &lt;code>src&lt;/code> is used for loading an external page. These can be accessed with the &lt;code>fore-attr()&lt;/code> function&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>[foreign attributes]&lt;/td>
+ &lt;td>Foreign attributes are all other attributes being present. These will be copied to the resulting &lt;code>fx-fore&lt;/code> element if &lt;code>src&lt;/code> is used for loading an external page. These can be accessed with the &lt;code>fore-attr()&lt;/code> function&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">show-confirmation&lt;/td>
- &lt;td style="text-align: left">either just marker attribute or boolean XPath&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>show-confirmation&lt;/td>
+ &lt;td>either just marker attribute or boolean XPath&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">src&lt;/td>
- &lt;td style="text-align: left">url to load a &lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> element from another HTML file&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>src&lt;/td>
+ &lt;td>url to load a &lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> element from another HTML file&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">strict&lt;/td>
- &lt;td style="text-align: left">boolean attribute - if present error messages will be displayed additionally as toast messages&lt;/td>
- &lt;td style="text-align: left">false&lt;/td>
+ &lt;td>strict&lt;/td>
+ &lt;td>boolean attribute - if present error messages will be displayed additionally as toast messages&lt;/td>
+ &lt;td>false&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>

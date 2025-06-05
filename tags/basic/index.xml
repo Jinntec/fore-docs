@@ -28,7 +28,11 @@ the data in the model or otherwise interact with the UI.&lt;/p></description></i
  &amp;lt;fx-model&amp;gt;&amp;lt;/fx-model&amp;gt;
 &amp;lt;/fx-fore&amp;gt;
 &lt;/code>&lt;/pre>
-&lt;div class="notices note" >&lt;p>The &lt;code>&amp;lt;fx-model&amp;gt;&lt;/code> is a direct child of the &lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> element.&lt;/p></description></item><item><title>Todo App</title><link>https://jinntec.github.io/fore-docs/getstarted/todo/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/todo/</guid><description>&lt;p>What can be learned here:&lt;/p>
+&lt;div class="notices note" >&lt;p>The &lt;code>&amp;lt;fx-model&amp;gt;&lt;/code> is a direct child of the &lt;code>&amp;lt;fx-fore&amp;gt;&lt;/code> element.&lt;/p>
+&lt;/div>
+
+&lt;h3 id="2-add-some-data">2. Add some data&lt;/h3>
+&lt;p>Not very exciting so far, so add some data:&lt;/p></description></item><item><title>Todo App</title><link>https://jinntec.github.io/fore-docs/getstarted/todo/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/todo/</guid><description>&lt;p>What can be learned here:&lt;/p>
 &lt;ul>
 &lt;li>the use of &lt;code>&amp;lt;fx-repeat&amp;gt;&lt;/code> element&lt;/li>
 &lt;li>data binding and resolution&lt;/li>
@@ -39,7 +43,9 @@ the data in the model or otherwise interact with the UI.&lt;/p></description></i
 &lt;h2 id="todo-application">Todo Application&lt;/h2>
 &lt;p>Let&amp;rsquo;s go for a bit more fancy example - a simple todo app - and learn about some new elements.&lt;/p>
 &lt;p>In this tutorial we add some real interaction, give some feedback
-messages to the user and actually change our data.&lt;/p></description></item><item><title>Todo App refined</title><link>https://jinntec.github.io/fore-docs/getstarted/todo-refined/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/todo-refined/</guid><description>&lt;p>What can be learned here:&lt;/p>
+messages to the user and actually change our data.&lt;/p>
+&lt;p>It will introduce you to &lt;code>&amp;lt;fx-repeat&amp;gt;&lt;/code> element that is one of the container
+elements available in Fore.&lt;/p></description></item><item><title>Todo App refined</title><link>https://jinntec.github.io/fore-docs/getstarted/todo-refined/</link><pubDate>Fri, 20 May 2022 16:08:59 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/getstarted/todo-refined/</guid><description>&lt;p>What can be learned here:&lt;/p>
 &lt;ul>
 &lt;li>adding a counter&lt;/li>
 &lt;li>insert from a template node&lt;/li>

@@ -4,24 +4,30 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">control&lt;/td>
- &lt;td style="text-align: left">id of an control to be refreshed explicitly&lt;/td>
+ &lt;td>control&lt;/td>
+ &lt;td>id of an control to be refreshed explicitly&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">force&lt;/td>
- &lt;td style="text-align: left">marker attribute to force a full refresh - overrules &lt;code>control&lt;/code>&lt;/td>
+ &lt;td>force&lt;/td>
+ &lt;td>marker attribute to force a full refresh - overrules &lt;code>control&lt;/code>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">self&lt;/td>
- &lt;td style="text-align: left">searches upwards for &lt;code>fx-control&lt;/code> and refreshes it&lt;/td>
+ &lt;td>self&lt;/td>
+ &lt;td>searches upwards for &lt;code>fx-control&lt;/code> and refreshes it&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item></channel></rss>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/delay.html">the delay attribute&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/randomizer.html">Randomizer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/while.html">the while attribute&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

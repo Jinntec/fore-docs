@@ -4,111 +4,111 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">Default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">credentials&lt;/td>
- &lt;td style="text-align: left">sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo;&lt;/td>
- &lt;td style="text-align: left">same-origin&lt;/td>
+ &lt;td>credentials&lt;/td>
+ &lt;td>sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo;&lt;/td>
+ &lt;td>same-origin&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">id&lt;/td>
- &lt;td style="text-align: left">required: id of submission for referral&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;default&amp;rsquo;&lt;/td>
+ &lt;td>id&lt;/td>
+ &lt;td>required: id of submission for referral&lt;/td>
+ &lt;td>&amp;lsquo;default&amp;rsquo;&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">ref&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
- &lt;td style="text-align: left">root node of default instance&lt;/td>
+ &lt;td>ref&lt;/td>
+ &lt;td>XPath reference pointing to the bound node&lt;/td>
+ &lt;td>root node of default instance&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">instance&lt;/td>
- &lt;td style="text-align: left">id of instance when &lt;code>replace='instance'&lt;/code>. Required when replace=&amp;lsquo;instance&amp;rsquo;&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>instance&lt;/td>
+ &lt;td>id of instance when &lt;code>replace='instance'&lt;/code>. Required when replace=&amp;lsquo;instance&amp;rsquo;&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">into&lt;/td>
- &lt;td style="text-align: left">XPath expr where to insert response nodes into&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>into&lt;/td>
+ &lt;td>XPath expr where to insert response nodes into&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">mediatype&lt;/td>
- &lt;td style="text-align: left">mediatype of request&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;application/xml&amp;rsquo;&lt;/td>
+ &lt;td>mediatype&lt;/td>
+ &lt;td>mediatype of request&lt;/td>
+ &lt;td>&amp;lsquo;application/xml&amp;rsquo;&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">method&lt;/td>
- &lt;td style="text-align: left">http methods GET, POST, PUT, DELETE, url-encoded-post&lt;/td>
- &lt;td style="text-align: left">GET&lt;/td>
+ &lt;td>method&lt;/td>
+ &lt;td>http methods GET, POST, PUT, DELETE, url-encoded-post&lt;/td>
+ &lt;td>GET&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">nonrelevant&lt;/td>
- &lt;td style="text-align: left">handling of non relevant nodes during serialization. Can be one of &amp;lsquo;keep&amp;rsquo;, &amp;rsquo;empty&amp;rsquo; or &amp;lsquo;remove&amp;rsquo;&lt;/td>
- &lt;td style="text-align: left">remove&lt;/td>
+ &lt;td>nonrelevant&lt;/td>
+ &lt;td>handling of non relevant nodes during serialization. Can be one of &amp;lsquo;keep&amp;rsquo;, &amp;rsquo;empty&amp;rsquo; or &amp;lsquo;remove&amp;rsquo;&lt;/td>
+ &lt;td>remove&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">replace&lt;/td>
- &lt;td style="text-align: left">one of &amp;lsquo;all&amp;rsquo;, &amp;lsquo;download&amp;rsquo;, &amp;lsquo;instance&amp;rsquo;, &amp;rsquo;target&amp;rsquo;, &amp;lsquo;redirect&amp;rsquo; or &amp;rsquo;none&amp;rsquo;&lt;/td>
- &lt;td style="text-align: left">all&lt;/td>
+ &lt;td>replace&lt;/td>
+ &lt;td>one of &amp;lsquo;all&amp;rsquo;, &amp;lsquo;download&amp;rsquo;, &amp;lsquo;instance&amp;rsquo;, &amp;rsquo;target&amp;rsquo;, &amp;lsquo;redirect&amp;rsquo; or &amp;rsquo;none&amp;rsquo;&lt;/td>
+ &lt;td>all&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;all&amp;rsquo; - response replaces the viewport&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;lsquo;all&amp;rsquo; - response replaces the viewport&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;download&amp;rsquo; - save dialog is shown for response&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;lsquo;download&amp;rsquo; - save dialog is shown for response&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;instance&amp;rsquo; - response replaces the instance given by the &lt;code>instance&lt;/code> attribute or if not present the default instance&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;lsquo;instance&amp;rsquo; - response replaces the instance given by the &lt;code>instance&lt;/code> attribute or if not present the default instance&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&amp;rsquo;target&amp;rsquo; - response will be attached to element identified by &lt;code>target&lt;/code> (CSS Selector syntax e.g. &amp;lsquo;#mydiv&amp;rsquo;)&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;rsquo;target&amp;rsquo; - response will be attached to element identified by &lt;code>target&lt;/code> (CSS Selector syntax e.g. &amp;lsquo;#mydiv&amp;rsquo;)&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;redirect&amp;rsquo; - use response as redirect url.&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;lsquo;redirect&amp;rsquo; - use response as redirect url.&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&amp;rsquo;none&amp;rsquo; - response will be ignored.&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;rsquo;none&amp;rsquo; - response will be ignored.&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">responsemediatype&lt;/td>
- &lt;td style="text-align: left">mediatype of response&lt;/td>
- &lt;td style="text-align: left">mediatype being used for request&lt;/td>
+ &lt;td>responsemediatype&lt;/td>
+ &lt;td>mediatype of response&lt;/td>
+ &lt;td>mediatype being used for request&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">serialization&lt;/td>
- &lt;td style="text-align: left">&amp;rsquo;none&amp;rsquo; or &amp;lsquo;xml&amp;rsquo; at this point&lt;/td>
- &lt;td style="text-align: left">xml&lt;/td>
+ &lt;td>serialization&lt;/td>
+ &lt;td>&amp;rsquo;none&amp;rsquo; or &amp;lsquo;xml&amp;rsquo; at this point&lt;/td>
+ &lt;td>xml&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">target&lt;/td>
- &lt;td style="text-align: left">selector in CSS selector syntax. valid only when replace is &amp;rsquo;target&amp;rsquo;.&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>target&lt;/td>
+ &lt;td>selector in CSS selector syntax. valid only when replace is &amp;rsquo;target&amp;rsquo;.&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">targetref&lt;/td>
- &lt;td style="text-align: left">XPath pointing to target node when &lt;code>replace=&amp;quot;instance&amp;quot;&lt;/code>&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>targetref&lt;/td>
+ &lt;td>XPath pointing to target node when &lt;code>replace=&amp;quot;instance&amp;quot;&lt;/code>&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">validate&lt;/td>
- &lt;td style="text-align: left">Boolean to turn validator mode on/off&lt;/td>
- &lt;td style="text-align: left">true&lt;/td>
+ &lt;td>validate&lt;/td>
+ &lt;td>Boolean to turn validator mode on/off&lt;/td>
+ &lt;td>true&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -116,22 +116,22 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">submit&lt;/td>
- &lt;td style="text-align: left">dispatch before submission takes place&lt;/td>
+ &lt;td>submit&lt;/td>
+ &lt;td>dispatch before submission takes place&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">submit-error&lt;/td>
- &lt;td style="text-align: left">dispatched if the request returned an error&lt;/td>
+ &lt;td>submit-error&lt;/td>
+ &lt;td>dispatched if the request returned an error&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">submit-done&lt;/td>
- &lt;td style="text-align: left">dispatched when submission was successfully completed&lt;/td>
+ &lt;td>submit-done&lt;/td>
+ &lt;td>dispatched when submission was successfully completed&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>

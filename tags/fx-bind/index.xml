@@ -4,51 +4,51 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">Default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">alert&lt;/td>
- &lt;td style="text-align: left">used to specify a message to be displayed when constraints fail&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>alert&lt;/td>
+ &lt;td>used to specify a message to be displayed when constraints fail&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">ref&lt;/td>
- &lt;td style="text-align: left">XPath pointing to node(s) the bind is attaching to&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>ref&lt;/td>
+ &lt;td>XPath pointing to node(s) the bind is attaching to&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">calculate&lt;/td>
- &lt;td style="text-align: left">XPath expression to be calculated. Result will become value of node(s) referenced by &lt;code>ref&lt;/code>&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>calculate&lt;/td>
+ &lt;td>XPath expression to be calculated. Result will become value of node(s) referenced by &lt;code>ref&lt;/code>&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">constraint&lt;/td>
- &lt;td style="text-align: left">boolean XPath expression to determine validity of node(s)&lt;/td>
- &lt;td style="text-align: left">true&lt;/td>
+ &lt;td>constraint&lt;/td>
+ &lt;td>boolean XPath expression to determine validity of node(s)&lt;/td>
+ &lt;td>true&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">readonly&lt;/td>
- &lt;td style="text-align: left">boolean XPath expression to determine readonly/readwrite state&lt;/td>
- &lt;td style="text-align: left">false&lt;/td>
+ &lt;td>readonly&lt;/td>
+ &lt;td>boolean XPath expression to determine readonly/readwrite state&lt;/td>
+ &lt;td>false&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">relevant&lt;/td>
- &lt;td style="text-align: left">boolean XPath expression to determine relevant/non-relevant state&lt;/td>
- &lt;td style="text-align: left">true&lt;/td>
+ &lt;td>relevant&lt;/td>
+ &lt;td>boolean XPath expression to determine relevant/non-relevant state&lt;/td>
+ &lt;td>true&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">required&lt;/td>
- &lt;td style="text-align: left">boolean XPath expression to determine required/optional state&lt;/td>
- &lt;td style="text-align: left">false&lt;/td>
+ &lt;td>required&lt;/td>
+ &lt;td>boolean XPath expression to determine required/optional state&lt;/td>
+ &lt;td>false&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">type&lt;/td>
- &lt;td style="text-align: left">datatype - reserved for future versions&lt;/td>
- &lt;td style="text-align: left">string&lt;/td>
+ &lt;td>type&lt;/td>
+ &lt;td>datatype - reserved for future versions&lt;/td>
+ &lt;td>string&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>

@@ -6,18 +6,18 @@ will be created that will contain the evaluated template as content.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">id&lt;/td>
- &lt;td style="text-align: left">identifier for repeat&lt;/td>
+ &lt;td>id&lt;/td>
+ &lt;td>identifier for repeat&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
+ &lt;td>&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td>XPath reference pointing to the bound node&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -25,26 +25,26 @@ will be created that will contain the evaluated template as content.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">Details&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Details&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">item-created&lt;/td>
- &lt;td style="text-align: left">dispatched when a new repeat entry is created&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;path&amp;rsquo; - a canonical xpath &lt;br> &amp;lsquo;index&amp;rsquo; - the index of the new item&lt;/td>
+ &lt;td>item-created&lt;/td>
+ &lt;td>dispatched when a new repeat entry is created&lt;/td>
+ &lt;td>&amp;lsquo;path&amp;rsquo; - a canonical xpath &lt;br> &amp;lsquo;index&amp;rsquo; - the index of the new item&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">path-mutated&lt;/td>
- &lt;td style="text-align: left">dispatched when repeat nodeset changes&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;path&amp;rsquo; - the mutation path &lt;br> &amp;lsquo;index&amp;rsquo; - the index of the changed repeat item.&lt;/td>
+ &lt;td>path-mutated&lt;/td>
+ &lt;td>dispatched when repeat nodeset changes&lt;/td>
+ &lt;td>&amp;lsquo;path&amp;rsquo; - the mutation path &lt;br> &amp;lsquo;index&amp;rsquo; - the index of the changed repeat item.&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">no-template-error&lt;/td>
- &lt;td style="text-align: left">dispatched when there&amp;rsquo;s no template defined&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;id&amp;rsquo; - the repeat id&lt;/td>
+ &lt;td>no-template-error&lt;/td>
+ &lt;td>dispatched when there&amp;rsquo;s no template defined&lt;/td>
+ &lt;td>&amp;lsquo;id&amp;rsquo; - the repeat id&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>

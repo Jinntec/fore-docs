@@ -4,18 +4,18 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">action&lt;/td>
- &lt;td style="text-align: left">id of an action to call&lt;/td>
+ &lt;td>action&lt;/td>
+ &lt;td>id of an action to call&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">function&lt;/td>
- &lt;td style="text-align: left">function name with arguments&lt;/td>
+ &lt;td>function&lt;/td>
+ &lt;td>function name with arguments&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table></description></item></channel></rss>

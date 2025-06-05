@@ -4,4 +4,53 @@ a sink for HTML draggable elements. &lt;code>fx-droptarget&lt;/code> can and oft
 itself.&lt;/p>
 &lt;p>To enable Drag and Drop operation add the &lt;code>draggable&lt;/code> attribute to the respective elements and add as many
 &lt;code>fx-droptarget&lt;/code> elements as needed.&lt;/p>
-&lt;p>Drag and Drop can be used in a lot of different scenarios. The current implementation offers:&lt;/p></description></item></channel></rss>
+&lt;p>Drag and Drop can be used in a lot of different scenarios. The current implementation offers:&lt;/p>
+&lt;ul>
+&lt;li>re-ordering bound data in a repeated section (see kanban example)&lt;/li>
+&lt;li>moving unbound elements in the UI&lt;/li>
+&lt;li>copying unbound elements to a &lt;code>fx-droptarget&lt;/code>&lt;/li>
+&lt;li>constraining what can be dropped onto a droptarget&lt;/li>
+&lt;/ul>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Default&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>accept&lt;/td>
+ &lt;td>CSS selector matching elements that are accepted&lt;/td>
+ &lt;td>*&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>drop-action&lt;/td>
+ &lt;td>one of &amp;lsquo;copy&amp;rsquo; or &amp;lsquo;move&amp;rsquo;&lt;/td>
+ &lt;td>move&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="css">CSS&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Selector&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>.drag-over&lt;/td>
+ &lt;td>applied whenever a draggable is dragged over the &lt;code>fx-droptarget&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>.no-drop&lt;/td>
+ &lt;td>applied whenever a draggable is dragged over the &lt;code>fx-droptarget&lt;/code> but drop is not allowed&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;p>none&lt;/p></description></item></channel></rss>

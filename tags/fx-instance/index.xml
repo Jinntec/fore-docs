@@ -5,41 +5,41 @@ necessary.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">credentials&lt;/td>
- &lt;td style="text-align: left">sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo;&lt;/td>
- &lt;td style="text-align: left">same-origin&lt;/td>
+ &lt;td>credentials&lt;/td>
+ &lt;td>sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo;&lt;/td>
+ &lt;td>same-origin&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">id&lt;/td>
- &lt;td style="text-align: left">id of the instance for addressing in refs&lt;/td>
- &lt;td style="text-align: left">default&lt;/td>
+ &lt;td>id&lt;/td>
+ &lt;td>id of the instance for addressing in refs&lt;/td>
+ &lt;td>default&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">shared&lt;/td>
- &lt;td style="text-align: left">boolean attribute to signal that the instance is shared with nested Fore elements&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>shared&lt;/td>
+ &lt;td>boolean attribute to signal that the instance is shared with nested Fore elements&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">src&lt;/td>
- &lt;td style="text-align: left">url to load instance from via http get. This may have static params but cannot use dynamic parameters. See fx-submission for if required.&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>src&lt;/td>
+ &lt;td>url to load instance from via http get. This may have static params but cannot use dynamic parameters. See fx-submission for if required.&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">type&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;xml&amp;rsquo; or &amp;lsquo;json&amp;rsquo; or &amp;lsquo;html&amp;rsquo; are supported by now&lt;/td>
- &lt;td style="text-align: left">xml&lt;/td>
+ &lt;td>type&lt;/td>
+ &lt;td>&amp;lsquo;xml&amp;rsquo; or &amp;lsquo;json&amp;rsquo; or &amp;lsquo;html&amp;rsquo; are supported by now&lt;/td>
+ &lt;td>xml&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">xpath-default-namespace&lt;/td>
- &lt;td style="text-align: left">namespace to be used with unprefixed XPathes&lt;/td>
- &lt;td style="text-align: left">emtpy&lt;/td>
+ &lt;td>xpath-default-namespace&lt;/td>
+ &lt;td>namespace to be used with unprefixed XPathes&lt;/td>
+ &lt;td>emtpy&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>

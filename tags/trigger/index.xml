@@ -6,16 +6,16 @@ an action when activated.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">Default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td>XPath reference pointing to the bound node&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>

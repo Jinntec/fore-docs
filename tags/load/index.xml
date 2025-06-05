@@ -7,26 +7,26 @@ current browser window with content.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">attach-to&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;_self&amp;rsquo;, &amp;lsquo;_blank&amp;rsquo; or idref prefixed with &amp;lsquo;#&amp;rsquo;&lt;/td>
- &lt;td style="text-align: left">_self&lt;/td>
+ &lt;td>attach-to&lt;/td>
+ &lt;td>&amp;lsquo;_self&amp;rsquo;, &amp;lsquo;_blank&amp;rsquo; or idref prefixed with &amp;lsquo;#&amp;rsquo;&lt;/td>
+ &lt;td>_self&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">await&lt;/td>
- &lt;td style="text-align: left">eventname to await from templated content&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>await&lt;/td>
+ &lt;td>eventname to await from templated content&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">url&lt;/td>
- &lt;td style="text-align: left">URL to load content from&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>url&lt;/td>
+ &lt;td>URL to load content from&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>

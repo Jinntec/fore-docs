@@ -29,51 +29,51 @@ from view.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">Default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">alert&lt;/td>
- &lt;td style="text-align: left">used to specify a message to be displayed when constraints fail&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>alert&lt;/td>
+ &lt;td>used to specify a message to be displayed when constraints fail&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">ref&lt;/td>
- &lt;td style="text-align: left">XPath pointing to node(s) the bind is attaching to&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>ref&lt;/td>
+ &lt;td>XPath pointing to node(s) the bind is attaching to&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">calculate&lt;/td>
- &lt;td style="text-align: left">XPath expression to be calculated. Result will become value of node(s) referenced by &lt;code>ref&lt;/code>&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>calculate&lt;/td>
+ &lt;td>XPath expression to be calculated. Result will become value of node(s) referenced by &lt;code>ref&lt;/code>&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">constraint&lt;/td>
- &lt;td style="text-align: left">boolean XPath expression to determine validity of node(s)&lt;/td>
- &lt;td style="text-align: left">true&lt;/td>
+ &lt;td>constraint&lt;/td>
+ &lt;td>boolean XPath expression to determine validity of node(s)&lt;/td>
+ &lt;td>true&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">readonly&lt;/td>
- &lt;td style="text-align: left">boolean XPath expression to determine readonly/readwrite state&lt;/td>
- &lt;td style="text-align: left">false&lt;/td>
+ &lt;td>readonly&lt;/td>
+ &lt;td>boolean XPath expression to determine readonly/readwrite state&lt;/td>
+ &lt;td>false&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">relevant&lt;/td>
- &lt;td style="text-align: left">boolean XPath expression to determine relevant/non-relevant state&lt;/td>
- &lt;td style="text-align: left">true&lt;/td>
+ &lt;td>relevant&lt;/td>
+ &lt;td>boolean XPath expression to determine relevant/non-relevant state&lt;/td>
+ &lt;td>true&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">required&lt;/td>
- &lt;td style="text-align: left">boolean XPath expression to determine required/optional state&lt;/td>
- &lt;td style="text-align: left">false&lt;/td>
+ &lt;td>required&lt;/td>
+ &lt;td>boolean XPath expression to determine required/optional state&lt;/td>
+ &lt;td>false&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">type&lt;/td>
- &lt;td style="text-align: left">datatype - reserved for future versions&lt;/td>
- &lt;td style="text-align: left">string&lt;/td>
+ &lt;td>type&lt;/td>
+ &lt;td>datatype - reserved for future versions&lt;/td>
+ &lt;td>string&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -84,26 +84,26 @@ from view.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">label&lt;/td>
- &lt;td style="text-align: left">optional label&lt;/td>
+ &lt;td>label&lt;/td>
+ &lt;td>optional label&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">name&lt;/td>
- &lt;td style="text-align: left">a unique name to be used with &lt;code>fx-toggle&lt;/code>&lt;/td>
+ &lt;td>name&lt;/td>
+ &lt;td>a unique name to be used with &lt;code>fx-toggle&lt;/code>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">selector&lt;/td>
- &lt;td style="text-align: left">a CSS selector to select a certain element from external src&lt;/td>
+ &lt;td>selector&lt;/td>
+ &lt;td>a CSS selector to select a certain element from external src&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">src&lt;/td>
- &lt;td style="text-align: left">a URL being used for fetching the content of a case&lt;/td>
+ &lt;td>src&lt;/td>
+ &lt;td>a URL being used for fetching the content of a case&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -111,18 +111,18 @@ from view.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">select&lt;/td>
- &lt;td style="text-align: left">dispatched to &lt;code>fx-case&lt;/code> when a case gets selected&lt;/td>
+ &lt;td>select&lt;/td>
+ &lt;td>dispatched to &lt;code>fx-case&lt;/code> when a case gets selected&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">deselect&lt;/td>
- &lt;td style="text-align: left">dispatched to &lt;code>fx-case&lt;/code> when case gets deselected&lt;/td>
+ &lt;td>deselect&lt;/td>
+ &lt;td>dispatched to &lt;code>fx-case&lt;/code> when case gets deselected&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -138,104 +138,123 @@ like &lt;code>&amp;lt;fx-group&amp;gt;&lt;/code> and &lt;code>&amp;lt;fx-switch&
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">signature&lt;/td>
- &lt;td style="text-align: left">the function signature. Must use &amp;rsquo;local&amp;rsquo; prefix&lt;/td>
+ &lt;td>signature&lt;/td>
+ &lt;td>the function signature. Must use &amp;rsquo;local&amp;rsquo; prefix&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">type&lt;/td>
- &lt;td style="text-align: left">can be &amp;rsquo;text/javascript&amp;rsquo;, &amp;rsquo;text/xpath&amp;rsquo;, &amp;rsquo;text/xquery&amp;rsquo; or &amp;rsquo;text/xquf&amp;rsquo; (XQuery Update Facility)&lt;/td>
+ &lt;td>type&lt;/td>
+ &lt;td>can be &amp;rsquo;text/javascript&amp;rsquo;, &amp;rsquo;text/xpath&amp;rsquo;, &amp;rsquo;text/xquery&amp;rsquo; or &amp;rsquo;text/xquf&amp;rsquo; (XQuery Update Facility)&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item><item><title>&lt;fx-control></title><link>https://jinntec.github.io/fore-docs/elements/ui/control/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/control/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;h3 id="xquery-update-facility">Xquery Update Facility&lt;/h3>
+&lt;pre tabindex="0">&lt;code>&amp;lt;fx-function
+ signature=&amp;#34;update($element as element()) as element()*&amp;#34;
+ type=&amp;#34;text/xquf&amp;#34;&amp;gt;
+ copy $xml := $element modify (
+ for $ref in $xml/element
+ return insert node $ref/@name with $xml/element/name/text()
+ ) return $xml
+&amp;lt;/fx-function&amp;gt;
+&lt;/code>&lt;/pre>&lt;h3 id="javascript">JavaScript&lt;/h3>
+&lt;pre tabindex="0">&lt;code>&amp;lt;fx-function signature=&amp;#34;now() as xs:string&amp;#34; type=&amp;#34;text/javascript&amp;#34;&amp;gt;
+ const now = new Date();
+ return `${String(now.getHours()).padStart(2, &amp;#39;0&amp;#39;)}:${String(now.getMinutes()).padStart(2, &amp;#39;0&amp;#39;)}:${String(now.getSeconds()).padStart(2, &amp;#39;0&amp;#39;)}`;
+&amp;lt;/fx-function&amp;gt;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/functions.html">Custom inline functions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/randomizer.html">Randomizer&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-control></title><link>https://jinntec.github.io/fore-docs/elements/ui/control/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/control/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>&lt;code>fx-control&lt;/code> is no concrete control displayed in the browser but
 instead wraps such a control and binds it to a data node in the model with the help of a &lt;code>ref&lt;/code> attribute.&lt;/p>
 &lt;h2 id="attributes">Attributes&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">Default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">as&lt;/td>
- &lt;td style="text-align: left">&amp;rsquo;text&amp;rsquo; or &amp;rsquo;node&amp;rsquo;. When using &amp;rsquo;node&amp;rsquo; a whole dom tree can be passed to a widget&lt;/td>
- &lt;td style="text-align: left">text&lt;/td>
+ &lt;td>as&lt;/td>
+ &lt;td>&amp;rsquo;text&amp;rsquo; or &amp;rsquo;node&amp;rsquo;. When using &amp;rsquo;node&amp;rsquo; a whole dom tree can be passed to a widget&lt;/td>
+ &lt;td>text&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">context&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to parent context&lt;/td>
- &lt;td style="text-align: left">incopeContext&lt;/td>
+ &lt;td>context&lt;/td>
+ &lt;td>XPath reference pointing to parent context&lt;/td>
+ &lt;td>incopeContext&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">credentials&lt;/td>
- &lt;td style="text-align: left">sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo;&lt;/td>
- &lt;td style="text-align: left">same-origin&lt;/td>
+ &lt;td>credentials&lt;/td>
+ &lt;td>sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo;&lt;/td>
+ &lt;td>same-origin&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">create&lt;/td>
- &lt;td style="text-align: left">if present on control or anchestor will create non-existing attribute nodes in the data&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>create&lt;/td>
+ &lt;td>if present on control or anchestor will create non-existing attribute nodes in the data&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">debounce&lt;/td>
- &lt;td style="text-align: left">optional numeric value in milliseconds to delay input events&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>debounce&lt;/td>
+ &lt;td>optional numeric value in milliseconds to delay input events&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">initial&lt;/td>
- &lt;td style="text-align: left">XPath binding expression referring to data that get passed to Fore control as default instance. Only effective when &lt;code>url&lt;/code> is specified.&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>initial&lt;/td>
+ &lt;td>XPath binding expression referring to data that get passed to Fore control as default instance. Only effective when &lt;code>url&lt;/code> is specified.&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">label&lt;/td>
- &lt;td style="text-align: left">optional label&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>label&lt;/td>
+ &lt;td>optional label&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">listen-on&lt;/td>
- &lt;td style="text-align: left">a CSS selector to attach the update event listener to&lt;/td>
- &lt;td style="text-align: left">element with &amp;lsquo;widget&amp;rsquo; class&lt;/td>
+ &lt;td>listen-on&lt;/td>
+ &lt;td>a CSS selector to attach the update event listener to&lt;/td>
+ &lt;td>element with &amp;lsquo;widget&amp;rsquo; class&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td>XPath reference pointing to the bound node&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">shadow&lt;/td>
- &lt;td style="text-align: left">marker attribute to attach Fore control to shadowDOM instead of lightDOM&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>shadow&lt;/td>
+ &lt;td>marker attribute to attach Fore control to shadowDOM instead of lightDOM&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">update-event&lt;/td>
- &lt;td style="text-align: left">optional event name when to trigger updating of bound node.&lt;/td>
- &lt;td style="text-align: left">blur&lt;/td>
+ &lt;td>update-event&lt;/td>
+ &lt;td>optional event name when to trigger updating of bound node.&lt;/td>
+ &lt;td>blur&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&amp;rsquo;enter&amp;rsquo; can be used to catch enter key&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;rsquo;enter&amp;rsquo; can be used to catch enter key&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">url&lt;/td>
- &lt;td style="text-align: left">URL pointing to HTML page containing &lt;code>fx-fore&lt;/code> element that gets imported as widget&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>url&lt;/td>
+ &lt;td>URL pointing to HTML page containing &lt;code>fx-fore&lt;/code> element that gets imported as widget&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">value-prop&lt;/td>
- &lt;td style="text-align: left">optional property name used to set the value of the widget (default:&amp;lsquo;value&amp;rsquo;)&lt;/td>
- &lt;td style="text-align: left">value&lt;/td>
+ &lt;td>value-prop&lt;/td>
+ &lt;td>optional property name used to set the value of the widget (default:&amp;lsquo;value&amp;rsquo;)&lt;/td>
+ &lt;td>value&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -248,19 +267,23 @@ with a &lt;code>class=&amp;quot;widget&amp;quot;&lt;/code>.&lt;/p></description>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">id&lt;/td>
- &lt;td style="text-align: left">required to be used by &lt;code>fx-show' and &lt;/code>fx-hide`actions&lt;/td>
+ &lt;td>id&lt;/td>
+ &lt;td>required to be used by &lt;code>fx-show' and &lt;/code>fx-hide`actions&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item><item><title>&lt;fx-inspector></title><link>https://jinntec.github.io/fore-docs/elements/ui/inspector/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/inspector/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/controls/fx-dialog.html">fx-dialog&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-inspector></title><link>https://jinntec.github.io/fore-docs/elements/ui/inspector/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/inspector/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Instance Inspector is a helper element for development which
 displays all used instances at the bottom of the viewport.&lt;/p>
 &lt;p>It uses the &lt;code>log()&lt;/code> function under the hood and renders
@@ -269,40 +292,48 @@ a html &lt;code>details&lt;/code> element for each instance.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">open&lt;/td>
- &lt;td style="text-align: left">wether or not to be open by default&lt;/td>
- &lt;td style="text-align: left">false&lt;/td>
+ &lt;td>open&lt;/td>
+ &lt;td>wether or not to be open by default&lt;/td>
+ &lt;td>false&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item><item><title>&lt;fx-items></title><link>https://jinntec.github.io/fore-docs/elements/ui/items/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/items/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/simple-tei-header.html">Simple TEI Header editor&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-items></title><link>https://jinntec.github.io/fore-docs/elements/ui/items/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/items/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Helper element to build a list of items by repeating given template for each
 node in the bound nodeset.&lt;/p>
 &lt;h2 id="attributes">Attributes&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to nodeset to be repeated&lt;/td>
+ &lt;td>&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td>XPath reference pointing to nodeset to be repeated&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item><item><title>&lt;fx-output></title><link>https://jinntec.github.io/fore-docs/elements/ui/output/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/output/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/selects3.html">Select Multiple&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-output></title><link>https://jinntec.github.io/fore-docs/elements/ui/output/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/output/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Outputs bound or calculated values.&lt;/p>
 &lt;p>Also supports mimtypes &amp;lsquo;html&amp;rsquo; and &amp;lsquo;markdown&amp;rsquo; to render bound nodes
 accordingly.&lt;/p>
@@ -312,26 +343,26 @@ accordingly.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">Default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td>XPath reference pointing to the bound node&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">value&lt;/td>
- &lt;td style="text-align: left">XPath expression calculating a string value&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>value&lt;/td>
+ &lt;td>XPath expression calculating a string value&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">mediatype&lt;/td>
- &lt;td style="text-align: left">either &amp;lsquo;html&amp;rsquo; or &amp;lsquo;markdown&amp;rsquo; are accepted by now.&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>mediatype&lt;/td>
+ &lt;td>either &amp;lsquo;html&amp;rsquo; or &amp;lsquo;markdown&amp;rsquo; are accepted by now.&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -351,18 +382,18 @@ will be created that will contain the evaluated template as content.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">id&lt;/td>
- &lt;td style="text-align: left">identifier for repeat&lt;/td>
+ &lt;td>id&lt;/td>
+ &lt;td>identifier for repeat&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
+ &lt;td>&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td>XPath reference pointing to the bound node&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -370,26 +401,26 @@ will be created that will contain the evaluated template as content.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">Details&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Details&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">item-created&lt;/td>
- &lt;td style="text-align: left">dispatched when a new repeat entry is created&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;path&amp;rsquo; - a canonical xpath &lt;br> &amp;lsquo;index&amp;rsquo; - the index of the new item&lt;/td>
+ &lt;td>item-created&lt;/td>
+ &lt;td>dispatched when a new repeat entry is created&lt;/td>
+ &lt;td>&amp;lsquo;path&amp;rsquo; - a canonical xpath &lt;br> &amp;lsquo;index&amp;rsquo; - the index of the new item&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">path-mutated&lt;/td>
- &lt;td style="text-align: left">dispatched when repeat nodeset changes&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;path&amp;rsquo; - the mutation path &lt;br> &amp;lsquo;index&amp;rsquo; - the index of the changed repeat item.&lt;/td>
+ &lt;td>path-mutated&lt;/td>
+ &lt;td>dispatched when repeat nodeset changes&lt;/td>
+ &lt;td>&amp;lsquo;path&amp;rsquo; - the mutation path &lt;br> &amp;lsquo;index&amp;rsquo; - the index of the changed repeat item.&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">no-template-error&lt;/td>
- &lt;td style="text-align: left">dispatched when there&amp;rsquo;s no template defined&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;id&amp;rsquo; - the repeat id&lt;/td>
+ &lt;td>no-template-error&lt;/td>
+ &lt;td>dispatched when there&amp;rsquo;s no template defined&lt;/td>
+ &lt;td>&amp;lsquo;id&amp;rsquo; - the repeat id&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -412,21 +443,28 @@ at a given time.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">ref&lt;/td>
- &lt;td style="text-align: left">(optional) binds switch to data node and toggles cases depending on value&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>ref&lt;/td>
+ &lt;td>(optional) binds switch to data node and toggles cases depending on value&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item><item><title>&lt;fx-trigger></title><link>https://jinntec.github.io/fore-docs/elements/ui/trigger/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/trigger/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>none&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/auth.html">auth&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/repeat-in-switch.html">repeat in switch&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/simple-tei-header.html">Simple TEI Header&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/switch.html">switch&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>&lt;fx-trigger></title><link>https://jinntec.github.io/fore-docs/elements/ui/trigger/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/trigger/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Generic container for action buttons, links etc. which can execute
 an action when activated.&lt;/p>
 &lt;p>&lt;code>&amp;lt;fx-trigger&amp;gt;&lt;/code> can also be bound and therefore become readonly or non-relevant.&lt;/p>
@@ -434,16 +472,16 @@ an action when activated.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">Default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td>XPath reference pointing to the bound node&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -463,41 +501,41 @@ necessary.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">credentials&lt;/td>
- &lt;td style="text-align: left">sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo;&lt;/td>
- &lt;td style="text-align: left">same-origin&lt;/td>
+ &lt;td>credentials&lt;/td>
+ &lt;td>sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo;&lt;/td>
+ &lt;td>same-origin&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">id&lt;/td>
- &lt;td style="text-align: left">id of the instance for addressing in refs&lt;/td>
- &lt;td style="text-align: left">default&lt;/td>
+ &lt;td>id&lt;/td>
+ &lt;td>id of the instance for addressing in refs&lt;/td>
+ &lt;td>default&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">shared&lt;/td>
- &lt;td style="text-align: left">boolean attribute to signal that the instance is shared with nested Fore elements&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>shared&lt;/td>
+ &lt;td>boolean attribute to signal that the instance is shared with nested Fore elements&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">src&lt;/td>
- &lt;td style="text-align: left">url to load instance from via http get. This may have static params but cannot use dynamic parameters. See fx-submission for if required.&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>src&lt;/td>
+ &lt;td>url to load instance from via http get. This may have static params but cannot use dynamic parameters. See fx-submission for if required.&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">type&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;xml&amp;rsquo; or &amp;lsquo;json&amp;rsquo; or &amp;lsquo;html&amp;rsquo; are supported by now&lt;/td>
- &lt;td style="text-align: left">xml&lt;/td>
+ &lt;td>type&lt;/td>
+ &lt;td>&amp;lsquo;xml&amp;rsquo; or &amp;lsquo;json&amp;rsquo; or &amp;lsquo;html&amp;rsquo; are supported by now&lt;/td>
+ &lt;td>xml&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">xpath-default-namespace&lt;/td>
- &lt;td style="text-align: left">namespace to be used with unprefixed XPathes&lt;/td>
- &lt;td style="text-align: left">emtpy&lt;/td>
+ &lt;td>xpath-default-namespace&lt;/td>
+ &lt;td>namespace to be used with unprefixed XPathes&lt;/td>
+ &lt;td>emtpy&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -508,111 +546,111 @@ necessary.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">Default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">credentials&lt;/td>
- &lt;td style="text-align: left">sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo;&lt;/td>
- &lt;td style="text-align: left">same-origin&lt;/td>
+ &lt;td>credentials&lt;/td>
+ &lt;td>sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo;&lt;/td>
+ &lt;td>same-origin&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">id&lt;/td>
- &lt;td style="text-align: left">required: id of submission for referral&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;default&amp;rsquo;&lt;/td>
+ &lt;td>id&lt;/td>
+ &lt;td>required: id of submission for referral&lt;/td>
+ &lt;td>&amp;lsquo;default&amp;rsquo;&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">ref&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
- &lt;td style="text-align: left">root node of default instance&lt;/td>
+ &lt;td>ref&lt;/td>
+ &lt;td>XPath reference pointing to the bound node&lt;/td>
+ &lt;td>root node of default instance&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">instance&lt;/td>
- &lt;td style="text-align: left">id of instance when &lt;code>replace='instance'&lt;/code>. Required when replace=&amp;lsquo;instance&amp;rsquo;&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>instance&lt;/td>
+ &lt;td>id of instance when &lt;code>replace='instance'&lt;/code>. Required when replace=&amp;lsquo;instance&amp;rsquo;&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">into&lt;/td>
- &lt;td style="text-align: left">XPath expr where to insert response nodes into&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>into&lt;/td>
+ &lt;td>XPath expr where to insert response nodes into&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">mediatype&lt;/td>
- &lt;td style="text-align: left">mediatype of request&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;application/xml&amp;rsquo;&lt;/td>
+ &lt;td>mediatype&lt;/td>
+ &lt;td>mediatype of request&lt;/td>
+ &lt;td>&amp;lsquo;application/xml&amp;rsquo;&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">method&lt;/td>
- &lt;td style="text-align: left">http methods GET, POST, PUT, DELETE, url-encoded-post&lt;/td>
- &lt;td style="text-align: left">GET&lt;/td>
+ &lt;td>method&lt;/td>
+ &lt;td>http methods GET, POST, PUT, DELETE, url-encoded-post&lt;/td>
+ &lt;td>GET&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">nonrelevant&lt;/td>
- &lt;td style="text-align: left">handling of non relevant nodes during serialization. Can be one of &amp;lsquo;keep&amp;rsquo;, &amp;rsquo;empty&amp;rsquo; or &amp;lsquo;remove&amp;rsquo;&lt;/td>
- &lt;td style="text-align: left">remove&lt;/td>
+ &lt;td>nonrelevant&lt;/td>
+ &lt;td>handling of non relevant nodes during serialization. Can be one of &amp;lsquo;keep&amp;rsquo;, &amp;rsquo;empty&amp;rsquo; or &amp;lsquo;remove&amp;rsquo;&lt;/td>
+ &lt;td>remove&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">replace&lt;/td>
- &lt;td style="text-align: left">one of &amp;lsquo;all&amp;rsquo;, &amp;lsquo;download&amp;rsquo;, &amp;lsquo;instance&amp;rsquo;, &amp;rsquo;target&amp;rsquo;, &amp;lsquo;redirect&amp;rsquo; or &amp;rsquo;none&amp;rsquo;&lt;/td>
- &lt;td style="text-align: left">all&lt;/td>
+ &lt;td>replace&lt;/td>
+ &lt;td>one of &amp;lsquo;all&amp;rsquo;, &amp;lsquo;download&amp;rsquo;, &amp;lsquo;instance&amp;rsquo;, &amp;rsquo;target&amp;rsquo;, &amp;lsquo;redirect&amp;rsquo; or &amp;rsquo;none&amp;rsquo;&lt;/td>
+ &lt;td>all&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;all&amp;rsquo; - response replaces the viewport&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;lsquo;all&amp;rsquo; - response replaces the viewport&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;download&amp;rsquo; - save dialog is shown for response&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;lsquo;download&amp;rsquo; - save dialog is shown for response&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;instance&amp;rsquo; - response replaces the instance given by the &lt;code>instance&lt;/code> attribute or if not present the default instance&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;lsquo;instance&amp;rsquo; - response replaces the instance given by the &lt;code>instance&lt;/code> attribute or if not present the default instance&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&amp;rsquo;target&amp;rsquo; - response will be attached to element identified by &lt;code>target&lt;/code> (CSS Selector syntax e.g. &amp;lsquo;#mydiv&amp;rsquo;)&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;rsquo;target&amp;rsquo; - response will be attached to element identified by &lt;code>target&lt;/code> (CSS Selector syntax e.g. &amp;lsquo;#mydiv&amp;rsquo;)&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&amp;lsquo;redirect&amp;rsquo; - use response as redirect url.&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;lsquo;redirect&amp;rsquo; - use response as redirect url.&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&amp;rsquo;none&amp;rsquo; - response will be ignored.&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;rsquo;none&amp;rsquo; - response will be ignored.&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">responsemediatype&lt;/td>
- &lt;td style="text-align: left">mediatype of response&lt;/td>
- &lt;td style="text-align: left">mediatype being used for request&lt;/td>
+ &lt;td>responsemediatype&lt;/td>
+ &lt;td>mediatype of response&lt;/td>
+ &lt;td>mediatype being used for request&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">serialization&lt;/td>
- &lt;td style="text-align: left">&amp;rsquo;none&amp;rsquo; or &amp;lsquo;xml&amp;rsquo; at this point&lt;/td>
- &lt;td style="text-align: left">xml&lt;/td>
+ &lt;td>serialization&lt;/td>
+ &lt;td>&amp;rsquo;none&amp;rsquo; or &amp;lsquo;xml&amp;rsquo; at this point&lt;/td>
+ &lt;td>xml&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">target&lt;/td>
- &lt;td style="text-align: left">selector in CSS selector syntax. valid only when replace is &amp;rsquo;target&amp;rsquo;.&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>target&lt;/td>
+ &lt;td>selector in CSS selector syntax. valid only when replace is &amp;rsquo;target&amp;rsquo;.&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">targetref&lt;/td>
- &lt;td style="text-align: left">XPath pointing to target node when &lt;code>replace=&amp;quot;instance&amp;quot;&lt;/code>&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>targetref&lt;/td>
+ &lt;td>XPath pointing to target node when &lt;code>replace=&amp;quot;instance&amp;quot;&lt;/code>&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">validate&lt;/td>
- &lt;td style="text-align: left">Boolean to turn validator mode on/off&lt;/td>
- &lt;td style="text-align: left">true&lt;/td>
+ &lt;td>validate&lt;/td>
+ &lt;td>Boolean to turn validator mode on/off&lt;/td>
+ &lt;td>true&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -620,22 +658,22 @@ necessary.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">submit&lt;/td>
- &lt;td style="text-align: left">dispatch before submission takes place&lt;/td>
+ &lt;td>submit&lt;/td>
+ &lt;td>dispatch before submission takes place&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">submit-error&lt;/td>
- &lt;td style="text-align: left">dispatched if the request returned an error&lt;/td>
+ &lt;td>submit-error&lt;/td>
+ &lt;td>dispatched if the request returned an error&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">submit-done&lt;/td>
- &lt;td style="text-align: left">dispatched when submission was successfully completed&lt;/td>
+ &lt;td>submit-done&lt;/td>
+ &lt;td>dispatched when submission was successfully completed&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>

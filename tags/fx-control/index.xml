@@ -5,81 +5,81 @@ instead wraps such a control and binds it to a data node in the model with the h
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;th style="text-align: left">Default&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Default&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">as&lt;/td>
- &lt;td style="text-align: left">&amp;rsquo;text&amp;rsquo; or &amp;rsquo;node&amp;rsquo;. When using &amp;rsquo;node&amp;rsquo; a whole dom tree can be passed to a widget&lt;/td>
- &lt;td style="text-align: left">text&lt;/td>
+ &lt;td>as&lt;/td>
+ &lt;td>&amp;rsquo;text&amp;rsquo; or &amp;rsquo;node&amp;rsquo;. When using &amp;rsquo;node&amp;rsquo; a whole dom tree can be passed to a widget&lt;/td>
+ &lt;td>text&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">context&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to parent context&lt;/td>
- &lt;td style="text-align: left">incopeContext&lt;/td>
+ &lt;td>context&lt;/td>
+ &lt;td>XPath reference pointing to parent context&lt;/td>
+ &lt;td>incopeContext&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">credentials&lt;/td>
- &lt;td style="text-align: left">sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo;&lt;/td>
- &lt;td style="text-align: left">same-origin&lt;/td>
+ &lt;td>credentials&lt;/td>
+ &lt;td>sets credentials policy - one of &amp;lsquo;omit&amp;rsquo;, &amp;lsquo;same-origin&amp;rsquo; or &amp;lsquo;include&amp;rsquo;&lt;/td>
+ &lt;td>same-origin&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">create&lt;/td>
- &lt;td style="text-align: left">if present on control or anchestor will create non-existing attribute nodes in the data&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>create&lt;/td>
+ &lt;td>if present on control or anchestor will create non-existing attribute nodes in the data&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">debounce&lt;/td>
- &lt;td style="text-align: left">optional numeric value in milliseconds to delay input events&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>debounce&lt;/td>
+ &lt;td>optional numeric value in milliseconds to delay input events&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">initial&lt;/td>
- &lt;td style="text-align: left">XPath binding expression referring to data that get passed to Fore control as default instance. Only effective when &lt;code>url&lt;/code> is specified.&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>initial&lt;/td>
+ &lt;td>XPath binding expression referring to data that get passed to Fore control as default instance. Only effective when &lt;code>url&lt;/code> is specified.&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">label&lt;/td>
- &lt;td style="text-align: left">optional label&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>label&lt;/td>
+ &lt;td>optional label&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">listen-on&lt;/td>
- &lt;td style="text-align: left">a CSS selector to attach the update event listener to&lt;/td>
- &lt;td style="text-align: left">element with &amp;lsquo;widget&amp;rsquo; class&lt;/td>
+ &lt;td>listen-on&lt;/td>
+ &lt;td>a CSS selector to attach the update event listener to&lt;/td>
+ &lt;td>element with &amp;lsquo;widget&amp;rsquo; class&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
- &lt;td style="text-align: left">XPath reference pointing to the bound node&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
+ &lt;td>XPath reference pointing to the bound node&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">shadow&lt;/td>
- &lt;td style="text-align: left">marker attribute to attach Fore control to shadowDOM instead of lightDOM&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>shadow&lt;/td>
+ &lt;td>marker attribute to attach Fore control to shadowDOM instead of lightDOM&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">update-event&lt;/td>
- &lt;td style="text-align: left">optional event name when to trigger updating of bound node.&lt;/td>
- &lt;td style="text-align: left">blur&lt;/td>
+ &lt;td>update-event&lt;/td>
+ &lt;td>optional event name when to trigger updating of bound node.&lt;/td>
+ &lt;td>blur&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&amp;rsquo;enter&amp;rsquo; can be used to catch enter key&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;rsquo;enter&amp;rsquo; can be used to catch enter key&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">url&lt;/td>
- &lt;td style="text-align: left">URL pointing to HTML page containing &lt;code>fx-fore&lt;/code> element that gets imported as widget&lt;/td>
- &lt;td style="text-align: left">-&lt;/td>
+ &lt;td>url&lt;/td>
+ &lt;td>URL pointing to HTML page containing &lt;code>fx-fore&lt;/code> element that gets imported as widget&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">value-prop&lt;/td>
- &lt;td style="text-align: left">optional property name used to set the value of the widget (default:&amp;lsquo;value&amp;rsquo;)&lt;/td>
- &lt;td style="text-align: left">value&lt;/td>
+ &lt;td>value-prop&lt;/td>
+ &lt;td>optional property name used to set the value of the widget (default:&amp;lsquo;value&amp;rsquo;)&lt;/td>
+ &lt;td>value&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>

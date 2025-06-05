@@ -4,26 +4,26 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">label&lt;/td>
- &lt;td style="text-align: left">optional label&lt;/td>
+ &lt;td>label&lt;/td>
+ &lt;td>optional label&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">name&lt;/td>
- &lt;td style="text-align: left">a unique name to be used with &lt;code>fx-toggle&lt;/code>&lt;/td>
+ &lt;td>name&lt;/td>
+ &lt;td>a unique name to be used with &lt;code>fx-toggle&lt;/code>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">selector&lt;/td>
- &lt;td style="text-align: left">a CSS selector to select a certain element from external src&lt;/td>
+ &lt;td>selector&lt;/td>
+ &lt;td>a CSS selector to select a certain element from external src&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">src&lt;/td>
- &lt;td style="text-align: left">a URL being used for fetching the content of a case&lt;/td>
+ &lt;td>src&lt;/td>
+ &lt;td>a URL being used for fetching the content of a case&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -31,18 +31,18 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Name&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">select&lt;/td>
- &lt;td style="text-align: left">dispatched to &lt;code>fx-case&lt;/code> when a case gets selected&lt;/td>
+ &lt;td>select&lt;/td>
+ &lt;td>dispatched to &lt;code>fx-case&lt;/code> when a case gets selected&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">deselect&lt;/td>
- &lt;td style="text-align: left">dispatched to &lt;code>fx-case&lt;/code> when case gets deselected&lt;/td>
+ &lt;td>deselect&lt;/td>
+ &lt;td>dispatched to &lt;code>fx-case&lt;/code> when case gets deselected&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
