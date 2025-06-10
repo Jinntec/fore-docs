@@ -22,7 +22,8 @@ instead wraps such a control and binds it to a data node in the model with the h
 | debounce     | optional numeric value in milliseconds to delay input events | - |
 | initial      | XPath binding expression referring to data that get passed to Fore control as default instance. Only effective when `url` is specified. | - |
 | label        | optional label | - |
-| listen-on    | a CSS selector to attach the update event listener to  | element with 'widget' class | - | 
+| listen-on    | a CSS selector to attach the update event listener to  | element with 'widget' class | - |
+| on-demand | boolean attribute which hides control from view | - |
 | ***ref***    | XPath reference pointing to the bound node | - |
 | shadow       | marker attribute to attach Fore control to shadowDOM instead of lightDOM | - |
 | update-event | optional event name when to trigger updating of bound node. | blur |
@@ -68,6 +69,15 @@ nodes like e.g. text editors.
 Sometimes values can and should be empty initially. With `selection="open"` on
 the select element it will create such en empty option.
 
+### using on-demand controls
+
+Control may have a boolean `on-demand` attribute which hides them from view unless they
+have a value. This allows to create less cluttered  pages in cases where many optional fields 
+exist.
+
+Hiding a control is just one side of the medal - with `<fx-control-menu>` on-demand control can be made
+visible by the user. See on-demand example
+
 ## using Fore as control
 By setting a `url` attribute you can use another [ForeBody](https://jinntec.github.io/fore-docs/glossary/#forebody) as the widget of given control. The `url` is resolved
 and will fetch the first `fx-fore` element it finds within that page and embeds it as widget of the control. You can pass in an `fx-instance`
@@ -82,6 +92,7 @@ for the loaded widget with `initial` and get the return value with the `return` 
 * [Selects]({{% siteparam "demoUrl" %}}selects2.html)
 * [Trigger]({{% siteparam "demoUrl" %}}trigger.html)
 * [handling credentials]({{% siteparam "demoUrl" %}}submission-credentials.html)
+* [on demand controls]({{% siteparam "demoUrl" %}}lab/on-demand.html)
 
 
 
