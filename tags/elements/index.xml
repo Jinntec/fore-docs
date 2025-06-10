@@ -227,6 +227,11 @@ instead wraps such a control and binds it to a data node in the model with the h
  &lt;td>element with &amp;lsquo;widget&amp;rsquo; class&lt;/td>
  &lt;/tr>
  &lt;tr>
+ &lt;td>on-demand&lt;/td>
+ &lt;td>boolean attribute which hides control from view&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
  &lt;td>&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
  &lt;td>XPath reference pointing to the bound node&lt;/td>
  &lt;td>-&lt;/td>
