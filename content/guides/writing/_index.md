@@ -1,5 +1,5 @@
 ---
-title: "Writing"
+title: "Writing Fore pages"
 menuTitle: ""
 date: 2024-08-01T10:29:09+02:00
 tags: []
