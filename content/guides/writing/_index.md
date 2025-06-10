@@ -19,13 +19,13 @@ authoring tips that hopefully help to keep your pages organized and maintainable
 ## Page structure
 
 The overall structure is like this:
-- fx-fore
--- fx-model
---- fx-instance
---- fx-bind
---- fx-submission
---- fx-function
--- [UI elements] 
+* fx-fore
+  * fx-model
+    * fx-instance
+    * fx-bind
+    * fx-submission
+    * fx-function
+  * [UI elements] 
 
 Though the sequence of model elements (instance, bind etc.) is not defined for authoring purposes it is
 recommended to:
