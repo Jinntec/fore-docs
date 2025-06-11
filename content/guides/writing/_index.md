@@ -44,6 +44,9 @@ Example:
 <!-- onward with next instance, bind and submission elements -->
 ```
 
+This eases to find/navigate constraints as well as
+submissions that belong to certain data.
+
 ### use prefixed ids 
 
 It can help to keep overview by using prefixes for certain elements which makes them easier to memorize
@@ -56,6 +59,20 @@ Example:
 <fx-submission id="s-store">
 ...
 ```
+
+Naming is an art but prefixing can help - often a name like 'person' would
+apply nicely to the data as well as in other places. By just 'adding' an 'i-' (for instance) to
+fx-instance ids helps to get the right context and is easy to remember.
+
+Conventions we use:
+* rather no prefix for instance id (considering those as the entity we deal with)
+* 's-' for submission ids
+* 'r-' for repeat ids
+* 'c-' for case ids
+
+It doesn't matter but choosing a pattern and sticking to it
+helps a lot to avoid problems.
+
 
 ### Put initialization actions to the top
 
@@ -70,4 +87,12 @@ Example:
         <fx-message>our model is constructed - all data are loaded</fx-message>
 ```
 
+When reading the form these will the entry points to the page and
+therefore should be kept near the top.
 
+## Put document-level actions to the top
+
+Likewise with actions that attach to the `document` or `window` object. 
+
+These should be placed as direct childs of `<fx-fore>` due to their 
+global scope. 
