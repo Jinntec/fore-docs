@@ -609,7 +609,7 @@ necessary.&lt;/p>
  &lt;/tr>
  &lt;tr>
  &lt;td>&lt;/td>
- &lt;td>&amp;lsquo;download&amp;rsquo; - save dialog is shown for response&lt;/td>
+ &lt;td>&amp;lsquo;download&amp;rsquo; - save dialog is shown for response. use &lt;code>target&lt;/code> attribute to specify filename&lt;/td>
  &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
