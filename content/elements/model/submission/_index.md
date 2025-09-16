@@ -52,7 +52,7 @@ Example:
 <fx-header name="Authorization" value="'auth'"></fx-header>
 ```
 
-## Special URL Scheme
+## Special URL Schemes
 
 Beside http, https Fore supports:
 
