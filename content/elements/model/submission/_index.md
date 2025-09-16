@@ -41,8 +41,18 @@ Send and receive data.
 | submit-error | dispatched if the request returned an error |
 | submit-done | dispatched when submission was successfully completed |
 
+## Setting headers
 
-## URL Schemes
+To set headers in submissions there's the `<fx-header>` element. It has to be a direct child of the respective submission and 
+has the `name` and `value` attributes to specify the desired header. The `value` attribute can use an XPath to point to the value.
+If a plain string is wanted it has to be enclosed within tickles.
+
+Example:
+```
+<fx-header name="Authorization" value="'auth'"></fx-header>
+```
+
+## Special URL Scheme
 
 Beside http, https Fore supports:
 
