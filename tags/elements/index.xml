@@ -682,5 +682,7 @@ necessary.&lt;/p>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h2 id="url-schemes">URL Schemes&lt;/h2>
-&lt;p>Beside http, https Fore supports:&lt;/p></description></item></channel></rss>
+&lt;h2 id="setting-headers">Setting headers&lt;/h2>
+&lt;p>To set headers in submissions there&amp;rsquo;s the &lt;code>&amp;lt;fx-header&amp;gt;&lt;/code> element. It has to be a direct child of the respective submission and
+has the &lt;code>name&lt;/code> and &lt;code>value&lt;/code> attributes to specify the desired header. The &lt;code>value&lt;/code> attribute can use an XPath to point to the value.
+If a plain string is wanted it has to be enclosed within tickles.&lt;/p></description></item></channel></rss>
