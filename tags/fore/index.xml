@@ -27,6 +27,16 @@ and provides the following facilities:&lt;/p>
  &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
+ &lt;td>init-on&lt;/td>
+ &lt;td>an event name that triggers Fore to initialize&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>init-on-target&lt;/td>
+ &lt;td>list of targets expressed as CSS selectors to listen on&lt;/td>
+ &lt;td>self&lt;/td>
+ &lt;/tr>
+ &lt;tr>
  &lt;td>[foreign attributes]&lt;/td>
  &lt;td>Foreign attributes are all other attributes being present. These will be copied to the resulting &lt;code>fx-fore&lt;/code> element if &lt;code>src&lt;/code> is used for loading an external page. These can be accessed with the &lt;code>fore-attr()&lt;/code> function&lt;/td>
  &lt;td>-&lt;/td>
@@ -45,6 +55,11 @@ and provides the following facilities:&lt;/p>
  &lt;td>strict&lt;/td>
  &lt;td>boolean attribute - if present error messages will be displayed additionally as toast messages&lt;/td>
  &lt;td>false&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wait-for (deprecated)&lt;/td>
+ &lt;td>list of Fore elements (id matcher) to await before initializing itself&lt;/td>
+ &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
