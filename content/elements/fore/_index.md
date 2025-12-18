@@ -19,10 +19,13 @@ and provides the following facilities:
 |------|--------------------------------------------------------------------------|---------|
 | create-nodes | If attribute is present, non-existing XML data nodes will be created from UI Binding expressions | - |
 | ignore-expressions | if given is expected to contain a CSS selector that matches element to excluded from Template Expression handling | - |
+| init-on | an event name that triggers Fore to initialize | - |
+| init-on-target | list of targets expressed as CSS selectors to listen on | self |
 | [foreign attributes] | Foreign attributes are all other attributes being present. These will be copied to the resulting `fx-fore` element if `src` is used for loading an external page. These can be accessed with the `fore-attr()` function | - | 
 | show-confirmation | either just marker attribute or boolean XPath |  -      |
 | src | url to load a `<fx-fore>` element from another HTML file                 | -       |
 | strict | boolean attribute - if present error messages will be displayed additionally as toast messages | false |
+| wait-for (deprecated) | list of Fore elements (id matcher) to await before initializing itself | - |
 
 if `show-confirmation` is just used as a marker attribute Fore will check whether data fields have been modified after initial loading. Attribute may be
 empty, the empty string, 'true' or 'show-confirmation'.
