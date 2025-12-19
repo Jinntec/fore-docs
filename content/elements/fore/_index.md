@@ -89,4 +89,4 @@ This happens even before the UI is created and afterwards processsing will conti
 * [page exit confirmation]({{% siteparam "demoUrl" %}}beforeunload.html)
 * [ignore expressions]({{% siteparam "demoUrl" %}}ignore.html)
 * [init-on]({{% siteparam "demoUrl" %}}on-event.html)
-* [init-on]({{% siteparam "demoUrl" %}}on-event-defer.html)
+* [init-on-defer]({{% siteparam "demoUrl" %}}on-event-defer.html)
