@@ -63,7 +63,7 @@ This will output: 3
 
 Explanation:
 By default the `ref` attribute provides the context node - the one that is bound in a given situation. The `value` attribute gets this as its 
-context node and resolves in this context. If that is not intended the `context()` allows to use context nodes higher up in the tree or even on a different DOM branch.
+context node and resolves in this context. If that is not intended the `context()` allows to use the next inscope context higher up in the tree or even on a different DOM branch when used with an `id` param. Another way around: `context()` says 'do not use the immediate inscope context but skip one level.
 
 Instead of using `a` as context here the output uses `context()/b` to get the root context instead (data) and resolve to '2'.
 
