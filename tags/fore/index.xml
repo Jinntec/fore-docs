@@ -42,6 +42,11 @@ and provides the following facilities:&lt;/p>
  &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
+ &lt;td>no-check&lt;/td>
+ &lt;td>runs syntax checks on Fore page. if present, checks are skipped - should be used only in production&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
  &lt;td>show-confirmation&lt;/td>
  &lt;td>either just marker attribute or boolean XPath&lt;/td>
  &lt;td>-&lt;/td>
