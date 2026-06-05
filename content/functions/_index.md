@@ -37,10 +37,36 @@ Returns:
 
 ### `context(id)`
 
-The `context()` function is needed in situations where several instance data sources are involved.
+The `context()` function is needed in situations where several instance data sources are involved and some other than the 
+inscope context must be used.
+
+It returns the context element of a given element which is usually the parent element.  In case an id param is given the context node
+of the element matching the id is used.
 
 Param:
 * optional: 'id' - an id of an element to use as context. If not given returns the parent context of the current context.
+
+Example:
+
+```
+
+<data>
+    <a><b>1</b></a>
+    <b>2</b>
+</data>
+
+<fx-output ref="a" value="b"></fx-output><!-- outputs 1 -->
+<fx-output ref="a" value="context()/b"></fx-output><!-- outputs 2 -->
+```
+
+This will output: 3
+
+Explanation:
+By default the `ref` attribute provides the context node - the one that is bound in a given situation. The `value` attribute gets this as its 
+context node and resolves in this context. If that is not intended the `context()` allows to use the next inscope context higher up in the tree or even on a different DOM branch when used with an `id` param. Another way around: `context()` says 'do not use the immediate inscope context but skip one level.
+
+Instead of using `a` as context here the output uses `context()/b` to get the root context instead (data) and resolve to '2'.
+
 
 ### `event(property)`
 

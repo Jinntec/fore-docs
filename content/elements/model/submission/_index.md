@@ -22,7 +22,7 @@ Send and receive data.
 | nonrelevant | handling of non relevant nodes during serialization. Can be one of 'keep', 'empty' or 'remove' | remove  |
 | replace | one of 'all', 'download', 'instance', 'target', 'redirect' or 'none' | all  |
 |  | 'all' - response replaces the viewport |   |
-|  | 'download' - save dialog is shown for response | |
+|  | 'download' - save dialog is shown for response. use `target` attribute to specify filename | |
 |  | 'instance' - response replaces the instance given by the `instance` attribute or if not present the default instance |   |
 |  | 'target' - response will be attached to element identified by `target` (CSS Selector syntax e.g. '#mydiv')| |
 |  | 'redirect' - use response as redirect url. | |
@@ -41,8 +41,18 @@ Send and receive data.
 | submit-error | dispatched if the request returned an error |
 | submit-done | dispatched when submission was successfully completed |
 
+## Setting headers
 
-## URL Schemes
+To set headers in submissions there's the `<fx-header>` element. It has to be a direct child of the respective submission and 
+has the `name` and `value` attributes to specify the desired header. The `value` attribute can use an XPath to point to the value.
+If a plain string is wanted it has to be enclosed within tickles.
+
+Example:
+```
+<fx-header name="Authorization" value="'auth'"></fx-header>
+```
+
+## Special URL Schemes
 
 Beside http, https Fore supports:
 
