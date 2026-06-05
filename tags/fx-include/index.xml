@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Include on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-include/</link><description>Recent content in Fx-Include on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-include/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-include></title><link>https://jinntec.github.io/fore-docs/elements/ui/include/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/include/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>&lt;code>&amp;lt;fx-include&amp;gt;&lt;/code> lazily loads markup from a local template or external HTML source into its own light DOM immediately or when a configured event occurs.&lt;/p>
+&lt;p>Inclusion can be immediate or be triggered by an event. It can be &amp;lsquo;one-time&amp;rsquo; or reloadable. Either inline templates and external sources are supported.&lt;/p>
+&lt;p>Motivations to use &lt;code>&amp;lt;fx-include&amp;gt;&lt;/code> are:&lt;/p>
+&lt;ul>
+&lt;li>splitting large pages into pieces for ease of authoring and modular organisation&lt;/li>
+&lt;li>reducing runtime load with large pages by loading on demand&lt;/li>
+&lt;/ul>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Default&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>event&lt;/td>
+ &lt;td>the event to listen for to trigger inclusion&lt;/td>
+ &lt;td>click&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>immediate&lt;/td>
+ &lt;td>when attribute is present the content will be loaded immediately at load time&lt;/td>
+ &lt;td>false&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>reload&lt;/td>
+ &lt;td>when attribute is present inclusion will be retriggered by each event occurrences&lt;/td>
+ &lt;td>false&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>replace&lt;/td>
+ &lt;td>replaces the &lt;code>fx-include&lt;/code> itself with the loaded content - reload will not apply any more&lt;/td>
+ &lt;td>false&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>selector&lt;/td>
+ &lt;td>optional CSS selector to apply to included source&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>src&lt;/td>
+ &lt;td>external html source to be included - if not given a template element must exist&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>target&lt;/td>
+ &lt;td>the target element to listen on for configured event&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>include-done&lt;/td>
+ &lt;td>dispatched when inclusion has happend&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>error&lt;/td>
+ &lt;td>when no source is given, the loading failed or selector couldn&amp;rsquo;t be applied&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="examples">Examples&lt;/h2></description></item></channel></rss>
