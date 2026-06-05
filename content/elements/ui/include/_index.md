@@ -1,6 +1,6 @@
 ---
 title: "<fx-include>"
-date: 2026-06-05T12:01:11+01:00
+menuTitle: ""
 tags: [elements, ui, fx-include]
 weight: 24   
 ---
@@ -35,7 +35,6 @@ Motivations to use `<fx-include>` are:
 | error | when no source is given, the loading failed or selector couldn't be applied |
 
 ## Examples
-* [The fx-include element]({{% siteparam "demoUrl" %}}include.html)
 
 
 
