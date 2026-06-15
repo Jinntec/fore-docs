@@ -41,6 +41,11 @@ Some attributes might occur on a widget to further control its behavior.
 | Name | Description |
 | ---- | --- |
 | selection | applies to `<select>` elements. If `selection="open"` is given an additional empty `<option>` will be added to allow the empty value.
+| data-src | URL of an XML (or JSON) document that is lazily loaded as a lookup-list. The document is loaded into an anonymous `fx-instance` and its root node is bound to the XPath variable `$src` (or `$<data-id>` if `data-id` is given), available to this control's own `ref` and template expressions. |
+| data-id | optional name of the XPath variable the document loaded via `data-src` is bound to. Defaults to `src`. |
+| data-type | optional type of the document loaded via `data-src`, e.g. `json`. Defaults to `xml`. |
+| data-xpath-ns | optional namespace URI used as the XPath default (unprefixed) element namespace when evaluating `ref`/template expressions against `$src`/`$<data-id>`. If omitted, this namespace is derived from the root element of the loaded document. |
+
 ## Events
 
 | Name | Description |
@@ -77,6 +82,52 @@ exist.
 
 Hiding a control is just one side of the medal - with `<fx-control-menu>` on-demand control can be made
 visible by the user. See on-demand example
+
+### loading lookup-lists with `data-src`
+
+A widget can load an additional XML (or JSON) document as a lookup-list without
+having to declare it as a separate `fx-instance` in the model. Adding `data-src` to
+the widget element lazily fetches that document into an anonymous instance and binds
+its root node to the XPath variable `$src`, which can then be used in the widget's
+own `ref` and template expressions:
+
+```html
+<select class="widget" ref="$src//category" data-src="data/decor.xml">
+    <template>
+        <option value="{@corresp}">{catDesc[@xml:lang = 'en']}</option>
+    </template>
+</select>
+```
+
+If a control needs more than one lookup-list, `data-id` gives each one its own
+variable name (`$<data-id>` instead of `$src`):
+
+```html
+<select class="widget" ref="$material//category" data-src="data/material.xml" data-id="material">
+    <template>
+        <option value="{@corresp}">{catDesc[@xml:lang = 'en']}</option>
+    </template>
+</select>
+```
+
+The same `data-src` URL is only ever loaded once and shared between all widgets that
+reference it.
+
+#### namespace resolution for `$src` / `$<data-id>`
+
+Unprefixed element names in expressions like `$src//category` are resolved against
+an XPath default (element) namespace, which is determined as follows:
+
+* if the loaded document's root element declares a default namespace
+  (`xmlns="..."`), that namespace is used automatically - no extra configuration
+  needed;
+* `data-xpath-ns` on the widget overrides this and explicitly sets the namespace to
+  use for `$src`/`$<data-id>`. This is useful when the root element of the loaded
+  document is in a different namespace than the elements you actually want to select
+  (or has no namespace at all).
+
+If neither applies, unprefixed names resolve against the default instance's
+`xpath-default-namespace` as usual.
 
 ## using Fore as control
 By setting a `url` attribute you can use another [ForeBody](https://jinntec.github.io/fore-docs/glossary/#forebody) as the widget of given control. The `url` is resolved

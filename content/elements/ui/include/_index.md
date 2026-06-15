@@ -35,6 +35,7 @@ Motivations to use `<fx-include>` are:
 | error | when no source is given, the loading failed or selector couldn't be applied |
 
 ## Examples
+* [The fx-include element]({{% siteparam "demoUrl" %}}include.html)
 
 
 
