@@ -25,9 +25,16 @@ Action to insert node(s) into instance data.
 
 | Name | Description |
 |------|-------------|
+| execute-action | dispatched when insert executes - mostly for internal debugging purposes |
+| | detail[action] - the action object itself |
+| | detail[event] - current event object |
+| | detail[path] - a DOMNodeIndex | 
 | insert | dispatched when nodes have been inserted |
 | | detail[insertedNodes] - the inserted nodes |
 | | detail[position] - the position of the insert in the nodeset | 
+| index-changed | dispatch right after insertion of new nodes |
+| | detail[insertedNode] - the inserted node(s) |
+| | detail[index] - the new index |
 
 ## Examples
 
