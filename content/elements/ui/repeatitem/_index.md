@@ -29,6 +29,7 @@ is the currently selected item. By default after initialization the repeat index
 |--------------|-------------------------------------------------------|--- |
 | item-changed | dispatched when a repeatitem is clicked or gets focus | 'item' - the repeatitem as node <br> 'index' - the index of the changed repeat item.
 
+Note: `fx-append` and `fx-insert` are dispatching `index-changed` events additionally in the context of mutating a repeated nodeset.
 
 ## Examples
 
