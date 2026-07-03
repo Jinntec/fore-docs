@@ -23,6 +23,7 @@ Appends an entry to an `fx-repeat`.
 | Name | Description |
 |------|-------------|
 | index-changed | dispatched after entry has been added to a repeat |
+|| detail[index] - the new index |
 
 ## Examples
 
