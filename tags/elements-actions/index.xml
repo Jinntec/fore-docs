@@ -220,6 +220,22 @@ the id in scope of current occurence.&lt;/p>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
+ &lt;td>execute-action&lt;/td>
+ &lt;td>dispatched when insert executes - mostly for internal debugging purposes&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;/td>
+ &lt;td>detail[action] - the action object itself&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;/td>
+ &lt;td>detail[event] - current event object&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;/td>
+ &lt;td>detail[path] - a DOMNodeIndex&lt;/td>
+ &lt;/tr>
+ &lt;tr>
  &lt;td>insert&lt;/td>
  &lt;td>dispatched when nodes have been inserted&lt;/td>
  &lt;/tr>
@@ -230,6 +246,18 @@ the id in scope of current occurence.&lt;/p>
  &lt;tr>
  &lt;td>&lt;/td>
  &lt;td>detail[position] - the position of the insert in the nodeset&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>index-changed&lt;/td>
+ &lt;td>dispatch right after insertion of new nodes&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;/td>
+ &lt;td>detail[insertedNode] - the inserted node(s)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;/td>
+ &lt;td>detail[index] - the new index&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
