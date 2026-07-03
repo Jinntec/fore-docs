@@ -42,6 +42,10 @@ see &lt;a href="../demo/script-actions.html">script actions&lt;/a> or the source
  &lt;td>index-changed&lt;/td>
  &lt;td>dispatched after entry has been added to a repeat&lt;/td>
  &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;/td>
+ &lt;td>detail[index] - the new index&lt;/td>
+ &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="examples">Examples&lt;/h2>
