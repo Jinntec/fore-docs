@@ -27,7 +27,7 @@ is the currently selected item. By default after initialization the repeat index
 
 | Name         | Description                                           | Details
 |--------------|-------------------------------------------------------|--- |
-| index-change | dispatched when a repeatitem is clicked or gets focus | 'item' - the repeatitem as node <br> 'index' - the index of the changed repeat item.
+| item-changed | dispatched when a repeatitem is clicked or gets focus | 'item' - the repeatitem as node <br> 'index' - the index of the changed repeat item.
 
 
 ## Examples
