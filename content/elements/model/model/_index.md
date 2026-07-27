@@ -47,7 +47,10 @@ to add an `id` attribute for identification.
 
 ## Attributes
 
-none
+| Name | Description | Default |
+|------|--------------|---------|
+| undo | boolean attribute - if present, enables the model's UndoManager so `<fx-undo>`, `<fx-redo>` and `<fx-commit-history>` actions have something to act on. Leaving it off avoids the bookkeeping cost of cloning instance data for forms that don't need undo/redo. | false |
+| undo-depth | maximum number of history entries the UndoManager retains once `undo` is enabled. Only takes effect when given a valid positive number. | - |
 
 ## Events
 

@@ -96,11 +96,19 @@ having the same parent), independent of `id`:
 ```
 
 `drop-scope="parent"` is opt-in; existing repeats that don't set it keep
-today's `id`-equality behavior unchanged. See the
-[Recursive tree]({{% siteparam "demoUrl" %}}repeat-recursive.html) demo, which
-sets it on a recursive template to block drags between structurally identical
-sibling branches, and the standalone
-[Drop scope]({{% siteparam "demoUrl" %}}repeat-drop-scope.html) demo.
+today's `id`-equality behavior unchanged. See the standalone
+[Drop scope]({{% siteparam "demoUrl" %}}repeat-drop-scope.html) demo, which
+sets it to block drags between two structurally identical sibling groups.
+
+The [Recursive tree]({{% siteparam "demoUrl" %}}repeat-recursive.html) demo
+deliberately does the opposite: it does *not* set `drop-scope="parent"`, since
+a file-browser-style tree wants a file draggable into *any* folder, not just
+reorderable within its own. Because every recursion level is synthesized with
+no `id` of its own, the default `id`-equality check's "nearest ancestor with
+an `id`" walk passes straight through every synthesized level and lands on
+the one real `id` on the outermost `fx-repeat` - so every node in the tree
+resolves to that same scope, making the whole tree one drop target, which is
+exactly the file-browser behavior wanted here.
 
 ## Events
 

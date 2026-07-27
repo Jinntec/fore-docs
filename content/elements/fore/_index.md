@@ -21,6 +21,7 @@ and provides the following facilities:
 | ignore-expressions | if given is expected to contain a CSS selector that matches element to excluded from Template Expression handling | - |
 | init-on | an event name that triggers Fore to initialize | - |
 | init-on-target | list of targets expressed as CSS selectors to listen on | self |
+| keyboard-shortcuts | boolean attribute - if present, wires document-level Ctrl+Z / Ctrl+Y keyboard shortcuts to the model's UndoManager (see `undo` on `<fx-model>`), overriding the browser's native per-field text undo | false |
 | [foreign attributes] | Foreign attributes are all other attributes being present. These will be copied to the resulting `fx-fore` element if `src` is used for loading an external page. These can be accessed with the `fore-attr()` function | - | 
 | no-check | runs syntax checks on Fore page. if present, checks are skipped - should be used only in production | - | 
 | show-confirmation | either just marker attribute or boolean XPath |  -      |
