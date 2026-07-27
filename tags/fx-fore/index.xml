@@ -37,6 +37,11 @@ and provides the following facilities:&lt;/p>
  &lt;td>self&lt;/td>
  &lt;/tr>
  &lt;tr>
+ &lt;td>keyboard-shortcuts&lt;/td>
+ &lt;td>boolean attribute - if present, wires document-level Ctrl+Z / Ctrl+Y keyboard shortcuts to the model&amp;rsquo;s UndoManager (see &lt;code>undo&lt;/code> on &lt;code>&amp;lt;fx-model&amp;gt;&lt;/code>), overriding the browser&amp;rsquo;s native per-field text undo&lt;/td>
+ &lt;td>false&lt;/td>
+ &lt;/tr>
+ &lt;tr>
  &lt;td>[foreign attributes]&lt;/td>
  &lt;td>Foreign attributes are all other attributes being present. These will be copied to the resulting &lt;code>fx-fore&lt;/code> element if &lt;code>src&lt;/code> is used for loading an external page. These can be accessed with the &lt;code>fore-attr()&lt;/code> function&lt;/td>
  &lt;td>-&lt;/td>

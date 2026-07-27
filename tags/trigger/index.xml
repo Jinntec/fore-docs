@@ -17,15 +17,11 @@ an action when activated.&lt;/p>
  &lt;td>XPath reference pointing to the bound node&lt;/td>
  &lt;td>-&lt;/td>
  &lt;/tr>
+ &lt;tr>
+ &lt;td>activate-on-focus&lt;/td>
+ &lt;td>Opt-in: also run the trigger&amp;rsquo;s actions when the slotted element receives focus (e.g. plain Tab-only keyboard navigation), not just on click/Enter/Space. Not the default - every &lt;code>fx-trigger&lt;/code> in an app would otherwise fire its action (an &lt;code>fx-delete&lt;/code>, say) just from being tabbed past. A single mouse click still only performs the actions once (click and the focus it causes are deduplicated internally). Useful for &amp;ldquo;focus follows selection&amp;rdquo; tree/listbox patterns.&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h2 id="examples">Examples&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/trigger.html">trigger&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/actions.html">actions&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/binding.html">binding&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/delay.html">delay&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/delay.html">delay&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fx-dispatch.html">dispatch&lt;/a>&lt;/li>
-&lt;li>&amp;hellip;&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;p>Individual action children can restrict which of the two triggering events they respond to via their own &lt;code>event&lt;/code> attribute (e.g. &lt;code>event=&amp;quot;click&amp;quot;&lt;/code> on one action while others in the same trigger run for either) - see the action elements&amp;rsquo; own docs.&lt;/p></description></item></channel></rss>

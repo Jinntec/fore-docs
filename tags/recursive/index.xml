@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Recursive on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/recursive/</link><description>Recent content in Recursive on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 21 Jul 2026 12:00:00 +0200</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/recursive/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-repeat-ref></title><link>https://jinntec.github.io/fore-docs/elements/ui/repeat-ref/</link><pubDate>Tue, 21 Jul 2026 12:00:00 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/repeat-ref/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>&lt;code>fx-repeat-ref&lt;/code> is a placeholder used inside an &lt;a href="https://jinntec.github.io/fore-docs/elements/ui/repeat/">&lt;code>fx-repeat&lt;/code>&lt;/a>
+template to recurse into a data node&amp;rsquo;s own matching children - the same idea as
+XSLT&amp;rsquo;s &lt;code>apply-templates&lt;/code>. It lets one template render an arbitrary-depth,
+self-similar tree (file/directory trees, org charts, threaded comments, nested
+categories, outline structures) instead of a hand-written, depth-capped chain
+of nested &lt;code>fx-repeat&lt;/code> elements.&lt;/p>
+&lt;p>Place &lt;code>&amp;lt;fx-repeat-ref&amp;gt;&lt;/code> anywhere inside the nearest ancestor &lt;code>fx-repeat&lt;/code>&amp;rsquo;s
+template. On connect, it synthesizes a new &lt;code>fx-repeat&lt;/code> bound to that same
+&lt;code>ref&lt;/code> (or an explicit override, see below), wraps a clone of the ancestor&amp;rsquo;s
+template around it, and replaces itself with that new repeat. The new repeat
+then goes through the same lifecycle as any other: if its own template
+contains another &lt;code>&amp;lt;fx-repeat-ref&amp;gt;&lt;/code>, recursion continues one level deeper,
+scoped to the current item via the usual nested-repeat context resolution.
+Recursion terminates naturally wherever a node has no more matching children -
+no depth check or &lt;code>max-depth&lt;/code> attribute is needed for correctness.&lt;/p></description></item></channel></rss>

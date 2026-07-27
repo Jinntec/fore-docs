@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ui on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/ui/</link><description>Recent content in Ui on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 19 Jul 2024 09:31:39 +0200</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/ui/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-alert></title><link>https://jinntec.github.io/fore-docs/elements/ui/alert/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/alert/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ui on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/ui/</link><description>Recent content in Ui on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 21 Jul 2026 12:00:00 +0200</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/ui/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-alert></title><link>https://jinntec.github.io/fore-docs/elements/ui/alert/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/alert/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>&lt;code>fx-alert&lt;/code> element is used for messaging validation errors and may be used
 within &lt;code>fx-bind&lt;/code> element or as a child of a UI control like &lt;code>fx-control&lt;/code>.&lt;/p>
 &lt;h2 id="attributes">Attributes&lt;/h2>
@@ -73,7 +73,34 @@ the data in the model or otherwise interact with the UI.&lt;/p></description></i
 &lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/simple-tei-header.html">TEI header editor sample&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/switch.html">Switch&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>&lt;fx-container></title><link>https://jinntec.github.io/fore-docs/elements/ui/container/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/container/</guid><description>&lt;p>&lt;code>&amp;lt;fx-container&amp;gt;&lt;/code> is an abstract class used for container controls
-like &lt;code>&amp;lt;fx-group&amp;gt;&lt;/code> and &lt;code>&amp;lt;fx-switch&amp;gt;&lt;/code>.&lt;/p></description></item><item><title>&lt;fx-control></title><link>https://jinntec.github.io/fore-docs/elements/ui/control/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/control/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+like &lt;code>&amp;lt;fx-group&amp;gt;&lt;/code> and &lt;code>&amp;lt;fx-switch&amp;gt;&lt;/code>.&lt;/p>
+&lt;h2 id="attributes">Attributes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Default&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>readonly&lt;/td>
+ &lt;td>boolean attribute - if present, marks the container (and its contents) readonly. Usually calculated via bind.&lt;/td>
+ &lt;td>false&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>refresh-on-view&lt;/td>
+ &lt;td>when used together with &lt;code>src&lt;/code>, (re-)loads the referenced content each time the container becomes visible, instead of only once&lt;/td>
+ &lt;td>false&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>src&lt;/td>
+ &lt;td>url to lazily load content from&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>&lt;fx-control></title><link>https://jinntec.github.io/fore-docs/elements/ui/control/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/control/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>&lt;code>fx-control&lt;/code> is no concrete control displayed in the browser but
 instead wraps such a control and binds it to a data node in the model with the help of a &lt;code>ref&lt;/code> attribute.&lt;/p>
 &lt;h2 id="attributes">Attributes&lt;/h2>
@@ -377,54 +404,40 @@ will be created that will contain the evaluated template as content.&lt;/p>
  &lt;td>&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
  &lt;td>XPath reference pointing to the bound node&lt;/td>
  &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;h2 id="events">Events&lt;/h2>
-&lt;table>
- &lt;thead>
  &lt;tr>
- &lt;th>Name&lt;/th>
- &lt;th>Description&lt;/th>
- &lt;th>Details&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>item-created&lt;/td>
- &lt;td>dispatched when a new repeat entry is created&lt;/td>
- &lt;td>&amp;lsquo;path&amp;rsquo; - a canonical xpath &lt;br> &amp;lsquo;index&amp;rsquo; - the index of the new item&lt;/td>
+ &lt;td>size&lt;/td>
+ &lt;td>Caps how many &lt;code>fx-repeatitem&lt;/code> elements are materialized from the (always-complete) bound nodeset. Without &lt;code>virtual&lt;/code>, this is a growing prefix cap: a trailing sentinel reveals the next &lt;code>size&lt;/code> items via &lt;code>IntersectionObserver&lt;/code> as the user scrolls, and once rendered, rows are never un-rendered. With &lt;code>virtual&lt;/code>, &lt;code>size&lt;/code> instead becomes the size of a sliding window. Omit for full, uncapped rendering (the default).&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>path-mutated&lt;/td>
- &lt;td>dispatched when repeat nodeset changes&lt;/td>
- &lt;td>&amp;lsquo;path&amp;rsquo; - the mutation path &lt;br> &amp;lsquo;index&amp;rsquo; - the index of the changed repeat item.&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>no-template-error&lt;/td>
- &lt;td>dispatched when there&amp;rsquo;s no template defined&lt;/td>
- &lt;td>&amp;lsquo;id&amp;rsquo; - the repeat id&lt;/td>
+ &lt;td>virtual&lt;/td>
+ &lt;td>Opt-in true windowed virtualization, only meaningful together with a finite &lt;code>size&lt;/code>. Instead of an ever-growing prefix, the DOM stays bounded at roughly &lt;code>size&lt;/code> rows regardless of nodeset size: scrolling down appends rows below and evicts rows from the top; scrolling up prepends rows above and evicts from the bottom. &lt;code>virtual&lt;/code> without &lt;code>size&lt;/code> is ignored (behaves as fully uncapped).&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h2 id="examples">Examples&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/api.html">API Demo&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/docbook-bibliography.html">docbook Bibliography&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/insert.html">insert&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/nested-todo.html">todo&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/project.html">Project Task planner&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/repeat-atomic.html">Atomic repeat&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/repeat-in-switch.html">repeat in switch&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/repeat-sequence.html">repeat sequence&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/while.html">the while attribute&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>&lt;fx-repeatitem></title><link>https://jinntec.github.io/fore-docs/elements/ui/repeatitem/</link><pubDate>Fri, 19 Jul 2024 09:31:39 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/repeatitem/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;h2 id="progressive-rendering-and-virtualization">Progressive rendering and virtualization&lt;/h2>
+&lt;p>&lt;code>size&lt;/code> only limits &lt;em>DOM materialization&lt;/em>. The logical nodeset - and therefore &lt;code>index()&lt;/code>, &lt;code>iterate&lt;/code> actions, and explicit &lt;code>fx-bind&lt;/code> model semantics (&lt;code>calculate&lt;/code>, &lt;code>constraint&lt;/code>, &lt;code>required&lt;/code>, &lt;code>readonly&lt;/code>, &lt;code>relevant&lt;/code>) - always covers every item, regardless of how many rows are currently rendered. Programmatic or keyboard navigation to an index beyond the currently rendered window (e.g. via &lt;code>setIndex&lt;/code>, an &lt;code>index('id')&lt;/code>-driven dependent, or an insert/append past the window) materializes rows on demand: without &lt;code>virtual&lt;/code>, it front-fills up through the target row; with &lt;code>virtual&lt;/code>, it performs a hard jump - the current window is discarded and a fresh one is rendered starting at the target index, resetting scroll position to the top of that window.&lt;/p></description></item><item><title>&lt;fx-repeatitem></title><link>https://jinntec.github.io/fore-docs/elements/ui/repeatitem/</link><pubDate>Fri, 19 Jul 2024 09:31:39 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/repeatitem/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;blockquote>
 &lt;p>&lt;code>fx-repeatitem&lt;/code> is auto-created by &lt;code>fx-repeat&lt;/code> and MUST NOT be used by page authors directly.&lt;/p>
 &lt;/blockquote>
 &lt;p>When a &lt;code>fx-repeat&lt;/code> is initialized it creates a &lt;code>fx-repeatitem&lt;/code> for each bound node in the repeat nodeset using the repeat.
 The repeat template is instanciated once for the bound repeated node and stamped out as a &lt;code>fx-repeatitem&lt;/code>.&lt;/p>
 &lt;p>This element acts as a wrapper for repeated items and can receive the boolean attribute &lt;code>repeat-index&lt;/code> when it
-is the currently selected item. By default after initialization the repeat index is always 1.&lt;/p></description></item><item><title>&lt;fx-switch></title><link>https://jinntec.github.io/fore-docs/elements/ui/switch/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/switch/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+is the currently selected item. By default after initialization the repeat index is always 1.&lt;/p></description></item><item><title>&lt;fx-repeat-ref></title><link>https://jinntec.github.io/fore-docs/elements/ui/repeat-ref/</link><pubDate>Tue, 21 Jul 2026 12:00:00 +0200</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/repeat-ref/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>&lt;code>fx-repeat-ref&lt;/code> is a placeholder used inside an &lt;a href="https://jinntec.github.io/fore-docs/elements/ui/repeat/">&lt;code>fx-repeat&lt;/code>&lt;/a>
+template to recurse into a data node&amp;rsquo;s own matching children - the same idea as
+XSLT&amp;rsquo;s &lt;code>apply-templates&lt;/code>. It lets one template render an arbitrary-depth,
+self-similar tree (file/directory trees, org charts, threaded comments, nested
+categories, outline structures) instead of a hand-written, depth-capped chain
+of nested &lt;code>fx-repeat&lt;/code> elements.&lt;/p>
+&lt;p>Place &lt;code>&amp;lt;fx-repeat-ref&amp;gt;&lt;/code> anywhere inside the nearest ancestor &lt;code>fx-repeat&lt;/code>&amp;rsquo;s
+template. On connect, it synthesizes a new &lt;code>fx-repeat&lt;/code> bound to that same
+&lt;code>ref&lt;/code> (or an explicit override, see below), wraps a clone of the ancestor&amp;rsquo;s
+template around it, and replaces itself with that new repeat. The new repeat
+then goes through the same lifecycle as any other: if its own template
+contains another &lt;code>&amp;lt;fx-repeat-ref&amp;gt;&lt;/code>, recursion continues one level deeper,
+scoped to the current item via the usual nested-repeat context resolution.
+Recursion terminates naturally wherever a node has no more matching children -
+no depth check or &lt;code>max-depth&lt;/code> attribute is needed for correctness.&lt;/p></description></item><item><title>&lt;fx-switch></title><link>https://jinntec.github.io/fore-docs/elements/ui/switch/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/switch/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Container that has &lt;code>fx-case&lt;/code> children of which only one is shown
 at a given time.&lt;/p>
 &lt;p>Can be unbound and toggled via an action or bound and react to data value.&lt;/p>
@@ -472,15 +485,11 @@ an action when activated.&lt;/p>
  &lt;td>XPath reference pointing to the bound node&lt;/td>
  &lt;td>-&lt;/td>
  &lt;/tr>
+ &lt;tr>
+ &lt;td>activate-on-focus&lt;/td>
+ &lt;td>Opt-in: also run the trigger&amp;rsquo;s actions when the slotted element receives focus (e.g. plain Tab-only keyboard navigation), not just on click/Enter/Space. Not the default - every &lt;code>fx-trigger&lt;/code> in an app would otherwise fire its action (an &lt;code>fx-delete&lt;/code>, say) just from being tabbed past. A single mouse click still only performs the actions once (click and the focus it causes are deduplicated internally). Useful for &amp;ldquo;focus follows selection&amp;rdquo; tree/listbox patterns.&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h2 id="examples">Examples&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/trigger.html">trigger&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/actions.html">actions&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/binding.html">binding&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/delay.html">delay&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/delay.html">delay&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fx-dispatch.html">dispatch&lt;/a>&lt;/li>
-&lt;li>&amp;hellip;&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;p>Individual action children can restrict which of the two triggering events they respond to via their own &lt;code>event&lt;/code> attribute (e.g. &lt;code>event=&amp;quot;click&amp;quot;&lt;/code> on one action while others in the same trigger run for either) - see the action elements&amp;rsquo; own docs.&lt;/p></description></item></channel></rss>
