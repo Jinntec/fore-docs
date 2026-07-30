@@ -394,30 +394,7 @@ becomes effective.&lt;/p></description></item><item><title>&lt;fx-message></titl
 &lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/randomizer.html">Randomizer&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/while.html">the while attribute&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>&lt;fx-replace></title><link>https://jinntec.github.io/fore-docs/elements/actions/replace/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/replace/</guid><description>&lt;h3 id="description">Description&lt;/h3>
-&lt;p>Replaces a node with another.&lt;/p>
-&lt;h3 id="attributes">Attributes&lt;/h3>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>Name&lt;/th>
- &lt;th>Description&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>&lt;em>&lt;strong>ref&lt;/strong>&lt;/em>&lt;/td>
- &lt;td>XPath reference pointing to the bound node&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>with&lt;/td>
- &lt;td>XPath expression to point to a node for replacement&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;h3 id="examples">Examples&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fx-replace.html">Replace Action&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>&lt;fx-reset></title><link>https://jinntec.github.io/fore-docs/elements/actions/reset/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/reset/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>Replaces a node with another, structurally - the target node is entirely swapped out for (a clone of) the replacement node, including its tag name, attributes and children. Use this whenever the &lt;em>node itself&lt;/em>, not just its string value, needs to be replaced (e.g. round-tripping structured XML from an external editor widget). If you only need to set a string value while keeping the bound node&amp;rsquo;s own identity intact, use &lt;a href="https://jinntec.github.io/fore-docs/elements/actions/setvalue/">&lt;code>fx-setvalue&lt;/code>&lt;/a> instead.&lt;/p></description></item><item><title>&lt;fx-reset></title><link>https://jinntec.github.io/fore-docs/elements/actions/reset/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/reset/</guid><description>&lt;h3 id="description">Description&lt;/h3>
 &lt;p>Replaces a node with another.&lt;/p>
 &lt;h3 id="attributes">Attributes&lt;/h3>
 &lt;table>
@@ -494,7 +471,7 @@ and search that for the control.&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/todo2.html">todo&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>&lt;fx-setvalue></title><link>https://jinntec.github.io/fore-docs/elements/actions/setvalue/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/setvalue/</guid><description>&lt;h3 id="description">Description&lt;/h3>
-&lt;p>Sets a value to a bound node.&lt;/p>
+&lt;p>Sets a value to a bound node. &lt;code>fx-setvalue&lt;/code> always assigns a &lt;strong>string value&lt;/strong> - if &lt;code>value&lt;/code> evaluates to a node, its string value (&lt;code>textContent&lt;/code>) is used, never the node itself. This preserves the identity (tag name, attributes, structure) of the bound node. To replace a node&amp;rsquo;s structure with another node wholesale, use &lt;a href="https://jinntec.github.io/fore-docs/elements/actions/replace/">&lt;code>fx-replace&lt;/code>&lt;/a> instead.&lt;/p>
 &lt;h3 id="attributes">Attributes&lt;/h3>
 &lt;table>
  &lt;thead>
@@ -515,17 +492,7 @@ and search that for the control.&lt;/p>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p>
-&lt;h3 id="examples">Examples&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/actions.html">Action&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/auth.html">auth&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/binding.html">binding&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/delay.html">the delay attribute&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/events.html">events&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/events2.html">events 2&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fun-with-actions.html">hello&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>&lt;fx-show></title><link>https://jinntec.github.io/fore-docs/elements/actions/show/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/show/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>none&lt;/p></description></item><item><title>&lt;fx-show></title><link>https://jinntec.github.io/fore-docs/elements/actions/show/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/actions/show/</guid><description>&lt;h3 id="description">Description&lt;/h3>
 &lt;p>Action to display a &lt;code>fx-dialog&lt;/code>.&lt;/p>
 &lt;h3 id="attributes">Attributes&lt;/h3>
 &lt;table>
