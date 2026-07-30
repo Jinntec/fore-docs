@@ -7,7 +7,7 @@ weight: 100
 
 ### Description
 
-Replaces a node with another.
+Replaces a node with another, structurally - the target node is entirely swapped out for (a clone of) the replacement node, including its tag name, attributes and children. Use this whenever the *node itself*, not just its string value, needs to be replaced (e.g. round-tripping structured XML from an external editor widget). If you only need to set a string value while keeping the bound node's own identity intact, use [`fx-setvalue`]({{% ref "/elements/actions/setvalue" %}}) instead.
 
 ### Attributes
 

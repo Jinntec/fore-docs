@@ -7,7 +7,7 @@ weight: 150
 
 ### Description
 
-Sets a value to a bound node.
+Sets a value to a bound node. `fx-setvalue` always assigns a **string value** - if `value` evaluates to a node, its string value (`textContent`) is used, never the node itself. This preserves the identity (tag name, attributes, structure) of the bound node. To replace a node's structure with another node wholesale, use [`fx-replace`]({{% ref "/elements/actions/replace" %}}) instead.
 
 ### Attributes
 
