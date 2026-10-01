@@ -22,6 +22,10 @@ is the currently selected item. By default after initialization the repeat index
 | Name         | Description                                                                        | 
 |--------------|------------------------------------------------------------------------------------| 
 | repeat-index | boolean attribute being present when the repeatitem is the currently selected one. |
+| aria-posinset | set by Fore: the 1-based position of the item in the whole nodeset. |
+| aria-setsize | set by Fore: the number of items in the whole nodeset (also when only part of them is rendered). |
+
+The item itself has `role="listitem"`. See [Accessibility](../repeat/#accessibility) of `fx-repeat`.
 
 ## Events
 

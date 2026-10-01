@@ -110,6 +110,34 @@ the one real `id` on the outermost `fx-repeat` - so every node in the tree
 resolves to that same scope, making the whole tree one drop target, which is
 exactly the file-browser behavior wanted here.
 
+## Accessibility
+
+Each `fx-repeatitem` is exposed as a list item (`role="listitem"`) of a list. It also gets `aria-posinset` (its
+position) and `aria-setsize` (the number of items in the whole nodeset). These are kept up to date on inserts and
+deletes. With `size` or `virtual` only part of the rows are in the DOM, so a screen reader relies on these two
+attributes to report "3 of 200".
+
+**Ids in templates.** The template is stamped out once per row, so an `id` written in the template exists once per
+row. This is intended: Fore resolves such ids relative to the row (`fx-trigger`/action targets, `index()` and the
+like), and nothing renumbers them when rows are inserted or deleted. Do not try to make them unique.
+The one exception is an `fx-control` with a `<label for="...">` whose target is its own widget: the browser would resolve
+`for` to the *first* matching id in the document, so every label would point at the first row's input. In a
+repeat row Fore therefore gives that label/widget pair a row-unique id automatically. Ids on Fore elements
+(`fx-control`, `fx-trigger`, ...) are never touched.
+
+**Naming repeated buttons.** A "delete" button is repeated in every row. Give it a name that identifies its row with a
+template expression, which is evaluated per row:
+
+```html
+<fx-trigger>
+  <button aria-label="Delete {name}">🗑</button>
+  <fx-delete ref="."></fx-delete>
+</fx-trigger>
+```
+
+To name a whole row, wrap the template content in your own element, e.g.
+`<div role="group" aria-label="{name}">...</div>`.
+
 ## Events
 
 | Name | Description | Details

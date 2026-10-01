@@ -83,6 +83,23 @@ exist.
 Hiding a control is just one side of the medal - with `<fx-control-menu>` on-demand control can be made
 visible by the user. See on-demand example
 
+### required marker
+
+A control bound to a `required` node shows a red `*` after its label (`fx-control[required] label::after` in
+`fore.css`). The marker has a text alternative, so assistive technology announces "required" instead of "star".
+Marker and text can be changed per project or per language with custom properties on `:root` (or any ancestor):
+
+```css
+:root {
+  --fore-required-marker: "(!)";          /* default "*" */
+  --fore-required-text: "obligatoire";    /* default "required" */
+}
+```
+
+Browsers without support for alt text in `content` keep showing the plain `*`.
+The widget additionally carries `aria-required="true"`. If your form needs it, add a short legend such as
+"* = required" at the top of the form.
+
 ### loading lookup-lists with `data-src`
 
 A widget can load an additional XML (or JSON) document as a lookup-list without
