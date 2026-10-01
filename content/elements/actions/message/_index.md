@@ -17,7 +17,24 @@ Display a message to the user.
 | | 'modal' - modal dialog window | |
 | | 'sticky' - sticky popup message  | |
 | | 'ephemeral' - auto-closing popup message  | default |
+| appearance | how the message looks, e.g. 'toast' or 'banner'. Adds the CSS class `appearance-<name>` | toast |
+| | 'toast' - small box in the corner (default look) | |
+| | 'banner' - full-width bar at the top with a close button | |
 | value | XPath expression which resolves to message | |
+
+### Appearances
+
+`level` says how important a message is, `appearance` how it is presented; both can be combined,
+e.g. `<fx-message level="error" appearance="banner">`. Every shown message gets the class
+`appearance-<name>`, so it can be styled from the page's CSS (`.toastify.appearance-banner { … }`).
+
+Custom appearances can be registered in JavaScript and styled via their class:
+
+```js
+FxFore.registerMessageAppearance('corner-note', { gravity: 'bottom', position: 'right', duration: 8000 });
+```
+
+An unknown appearance logs a warning and falls back to the default look.
 
 
 ## Events
