@@ -31,24 +31,28 @@
  &lt;td>default&lt;/td>
  &lt;/tr>
  &lt;tr>
+ &lt;td>appearance&lt;/td>
+ &lt;td>how the message looks, e.g. &amp;rsquo;toast&amp;rsquo; or &amp;lsquo;banner&amp;rsquo;. Adds the CSS class &lt;code>appearance-&amp;lt;name&amp;gt;&lt;/code>&lt;/td>
+ &lt;td>toast&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;rsquo;toast&amp;rsquo; - small box in the corner (default look)&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;/td>
+ &lt;td>&amp;lsquo;banner&amp;rsquo; - full-width bar at the top with a close button&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
  &lt;td>value&lt;/td>
  &lt;td>XPath expression which resolves to message&lt;/td>
  &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p>
-&lt;h2 id="examples">Examples&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fx-message.html">fx-message&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/actions.html">actions&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/binding.html">Binding&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/delay.html">the delay attribute&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/fx-control.html">fx-control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/hello-fonto.html">Hello World&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/if.html">the if attribute&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/instances.html">instances&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/lazy.html">lazy modelItem creation during UI init&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/while.html">the while attribute&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;h3 id="appearances">Appearances&lt;/h3>
+&lt;p>&lt;code>level&lt;/code> says how important a message is, &lt;code>appearance&lt;/code> how it is presented; both can be combined,
+e.g. &lt;code>&amp;lt;fx-message level=&amp;quot;error&amp;quot; appearance=&amp;quot;banner&amp;quot;&amp;gt;&lt;/code>. Every shown message gets the class
+&lt;code>appearance-&amp;lt;name&amp;gt;&lt;/code>, so it can be styled from the page&amp;rsquo;s CSS (&lt;code>.toastify.appearance-banner { … }&lt;/code>).&lt;/p></description></item></channel></rss>
