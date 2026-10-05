@@ -402,6 +402,7 @@ with a &lt;code>class=&amp;quot;widget&amp;quot;&lt;/code>.&lt;/p></description>
 &lt;ul>
 &lt;li>&lt;a href="https://jinntec.github.io/Fore/demo/include.html">The fx-include element&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>&lt;fx-inspector></title><link>https://jinntec.github.io/fore-docs/elements/ui/inspector/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/inspector/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>&lt;em>&lt;strong>deprecated in favor of fx-debugger + fx-lenses&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>Instance Inspector is a helper element for development which
 displays all used instances at the bottom of the viewport.&lt;/p>
 &lt;p>It uses the &lt;code>log()&lt;/code> function under the hood and renders
@@ -629,7 +630,7 @@ necessary.&lt;/p>
  &lt;/tr>
  &lt;tr>
  &lt;td>type&lt;/td>
- &lt;td>&amp;lsquo;xml&amp;rsquo; or &amp;lsquo;json&amp;rsquo; or &amp;lsquo;html&amp;rsquo; are supported by now&lt;/td>
+ &lt;td>&amp;lsquo;xml&amp;rsquo;, &amp;lsquo;json&amp;rsquo;, &amp;lsquo;html&amp;rsquo; or &amp;rsquo;text&amp;rsquo;. Inline data requires &lt;code>html&lt;/code> (or &lt;code>json&lt;/code>/&lt;code>text&lt;/code>); &lt;code>xml&lt;/code> instances must be loaded via &lt;code>src&lt;/code>&lt;/td>
  &lt;td>xml&lt;/td>
  &lt;/tr>
  &lt;tr>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fx-Inspector on Fore Documentation</title><link>https://jinntec.github.io/fore-docs/tags/fx-inspector/</link><description>Recent content in Fx-Inspector on Fore Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Dec 2021 17:41:11 +0100</lastBuildDate><atom:link href="https://jinntec.github.io/fore-docs/tags/fx-inspector/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;fx-inspector></title><link>https://jinntec.github.io/fore-docs/elements/ui/inspector/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/inspector/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>&lt;em>&lt;strong>deprecated in favor of fx-debugger + fx-lenses&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>Instance Inspector is a helper element for development which
 displays all used instances at the bottom of the viewport.&lt;/p>
 &lt;p>It uses the &lt;code>log()&lt;/code> function under the hood and renders

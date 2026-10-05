@@ -179,7 +179,7 @@ necessary.&lt;/p>
  &lt;/tr>
  &lt;tr>
  &lt;td>type&lt;/td>
- &lt;td>&amp;lsquo;xml&amp;rsquo; or &amp;lsquo;json&amp;rsquo; or &amp;lsquo;html&amp;rsquo; are supported by now&lt;/td>
+ &lt;td>&amp;lsquo;xml&amp;rsquo;, &amp;lsquo;json&amp;rsquo;, &amp;lsquo;html&amp;rsquo; or &amp;rsquo;text&amp;rsquo;. Inline data requires &lt;code>html&lt;/code> (or &lt;code>json&lt;/code>/&lt;code>text&lt;/code>); &lt;code>xml&lt;/code> instances must be loaded via &lt;code>src&lt;/code>&lt;/td>
  &lt;td>xml&lt;/td>
  &lt;/tr>
  &lt;tr>
