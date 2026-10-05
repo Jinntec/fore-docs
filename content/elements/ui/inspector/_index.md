@@ -6,6 +6,8 @@ weight: 30
 ---
 ## Description
 
+***deprecated in favor of fx-debugger + fx-lenses***
+
 Instance Inspector is a helper element for development which
 displays all used instances at the bottom of the viewport.
 

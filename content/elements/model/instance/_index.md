@@ -19,7 +19,7 @@ necessary.
 | id | id of the instance for addressing in refs | default |
 | shared | boolean attribute to signal that the instance is shared with nested Fore elements | |
 | src | url to load instance from via http get. This may have static params but cannot use dynamic parameters. See fx-submission for if required. | |
-| type | 'xml' or 'json' or 'html' are supported by now | xml |
+| type | 'xml', 'json', 'html' or 'text'. Inline data requires `html` (or `json`/`text`); `xml` instances must be loaded via `src` | xml |
 | xpath-default-namespace | namespace to be used with unprefixed XPathes | emtpy |
 
 ## Using multiple instances
@@ -30,11 +30,38 @@ You can still however add an id (e.g. 'myCustomId') if you like and `instance()`
 
 ## Inline versus external data
 
-A data structure can be given inline or be loaded via the `src` attribute. However there are important limitations of inline instances to be mentioned:
-* tagnames are not context-sensitive
-* There are no self-closing elements as in XML
+A data structure can be given inline or be loaded via the `src` attribute.
 
-If your require these features you have to create an external XML file and load it with the `src` attribute. This gives you a proper XML document.
+**Since version 5.0.0 inline data is no longer supported for `type="xml"`** (the default). The browser's HTML parser
+processes everything inside `<fx-instance>` before Fore sees it: names are lowercased, namespaces do not work and
+self-closing elements are expanded. Fore therefore ignores inline content of an xml instance, logs an error and
+fires a `message` event with level `error`.
+
+Choose one of:
+
+* `type="html"` for inline data. Write it as HTML: lowercase names, explicit closing tags (never `/>`).
+  The elements are in the XHTML namespace.
+
+```html
+<fx-instance type="html">
+  <data>
+    <item></item>
+  </data>
+</fx-instance>
+```
+
+* `src` to load a proper XML document from an external file, which keeps case, namespaces and self-closing elements.
+
+```html
+<fx-instance src="countries.xml"></fx-instance>
+```
+
+`type="json"` and `type="text"` can also be given inline without limitations.
+
+### Migrating from 4.x
+
+Add `type="html"` to every `<fx-instance>` that has inline content and no `type`, or move the data to an external
+file loaded with `src`.
 
 
 ## The `src` attribute
