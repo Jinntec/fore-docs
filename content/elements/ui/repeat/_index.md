@@ -138,6 +138,44 @@ template expression, which is evaluated per row:
 To name a whole row, wrap the template content in your own element, e.g.
 `<div role="group" aria-label="{name}">...</div>`.
 
+## Adding rows with `create-nodes` (`origin="#<repeat id>"`)
+
+With `create-nodes` on the `<fx-fore>`, an `<fx-insert origin="#r-lines" ref="...">` that points at a repeat by id
+inserts a new row whose data nodes come from that repeat's own **`<template>`**:
+
+```html
+<fx-fore create-nodes>
+  <fx-repeat id="r-lines" ref="cac:InvoiceLine">
+    <template>
+      <fx-control ref="cbc:ID"><input type="text"></fx-control>
+      <fx-control ref="cac:Item/cbc:Name"><input type="text"></fx-control>
+    </template>
+  </fx-repeat>
+  <fx-trigger>
+    <button>add</button>
+    <fx-insert ref="cac:InvoiceLine" origin="#r-lines"></fx-insert>
+  </fx-trigger>
+</fx-fore>
+```
+
+* The row is built from the template and the repeat's `ref`, **not from the loaded data**: Fore creates a blank row
+  element for `ref` and lets every bound control of the template create its nodes in it (the same step that completes
+  the rows of loaded data). A new row therefore has the same shape for every document. It also works for a repeat that
+  has **no rows** (yet, or any more) and when the loaded rows are incomplete.
+* It is built once, on first use, and without text values. Values that the repeat's own `ref` depends on stay: for
+  `ref="cac:AllowanceCharge[cbc:ChargeIndicator = 'true']"` a new row gets `ChargeIndicator` = `true`, else the repeat
+  would not select it.
+* The build leaves no trace: no temporary row stays in the repeat, no ModelItems are kept and the instance is not
+  touched.
+* **Multi-step refs** (`ref="cac:TaxTotal/cac:TaxSubtotal"`): the row is the last step. If the repeat is empty,
+  `fx-insert` also creates the missing parent steps (`cac:TaxTotal`) so that the new row is selected by `ref`.
+* Give `fx-insert` the **same `ref` as the repeat** (relative to the same context). Inside another repeat or a group
+  that is the repeat's relative `ref`; an absolute path from the document root does not select the rows of a nested
+  repeat.
+* Namespace prefixes of the `ref`s are resolved from the `xmlns:` declarations in the page, as everywhere in Fore.
+* If no blank row can be created for the `ref` (no context node, `instance()` refs), Fore falls back to a copy of the
+  last existing row.
+
 ## Events
 
 | Name | Description | Details
