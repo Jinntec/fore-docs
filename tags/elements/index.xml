@@ -60,6 +60,11 @@ from view.&lt;/p>
  &lt;td>-&lt;/td>
  &lt;/tr>
  &lt;tr>
+ &lt;td>initial&lt;/td>
+ &lt;td>XPath expression evaluated once during model initialization, before any &lt;code>calculate&lt;/code>. Overwrites the existing value of node(s) referenced by &lt;code>ref&lt;/code>; does not make the node readonly. Nodes added later (e.g. inserted rows) get their initial value once when they first enter the model. If evaluation fails the value becomes the empty string.&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
  &lt;td>constraint&lt;/td>
  &lt;td>boolean XPath expression to determine validity of node(s)&lt;/td>
  &lt;td>true&lt;/td>
@@ -86,8 +91,10 @@ from view.&lt;/p>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h2 id="events">Events&lt;/h2>
-&lt;p>none&lt;/p></description></item><item><title>&lt;fx-case></title><link>https://jinntec.github.io/fore-docs/elements/ui/case/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/case/</guid><description>&lt;h2 id="description">Description&lt;/h2>
+&lt;h3 id="the-initial-property">The &lt;code>initial&lt;/code> property&lt;/h3>
+&lt;p>&lt;code>initial&lt;/code> follows &lt;a href="https://www.w3.org/community/xformsusers/wiki/XForms_2.0#The_initial_Property">XForms 2.0&lt;/a>: it is a
+one-time calculation that runs while the model is initialized, before any &lt;code>calculate&lt;/code>. Unlike &lt;code>calculate&lt;/code> it
+overwrites the value only once and leaves the node editable.&lt;/p></description></item><item><title>&lt;fx-case></title><link>https://jinntec.github.io/fore-docs/elements/ui/case/</link><pubDate>Tue, 14 Dec 2021 17:41:11 +0100</pubDate><guid>https://jinntec.github.io/fore-docs/elements/ui/case/</guid><description>&lt;h2 id="description">Description&lt;/h2>
 &lt;p>Defines one &amp;lsquo;page&amp;rsquo; of a &lt;code>fx-switch&lt;/code> element.&lt;/p>
 &lt;h2 id="attributes">Attributes&lt;/h2>
 &lt;table>
