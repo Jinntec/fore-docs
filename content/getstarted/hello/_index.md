@@ -34,7 +34,7 @@ Not very exciting so far, so add some data:
 ```
 <fx-fore>
     <fx-model>
-        <fx-instance>
+        <fx-instance type="html">
             <data>
                 <greeting>hello world!</greeting>
             </data>
@@ -58,7 +58,7 @@ The final step is to add some UI to bind to our data.
 ```
 <fx-fore>
     <fx-model>
-        <fx-instance>
+        <fx-instance type="html">
             <data>
                 <greeting>hello world!</greeting>
             </data>
@@ -88,7 +88,7 @@ We use live example throughout this documentation.
 
 <fx-fore>
     <fx-model>
-        <fx-instance>
+        <fx-instance type="html">
             <data>
                 <greeting>hello world!</greeting>
             </data>
