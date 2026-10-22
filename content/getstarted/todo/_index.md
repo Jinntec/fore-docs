@@ -39,7 +39,7 @@ Lets put that into Fore and add some dummy data to play with.
 ```
 <fx-fore>
     <fx-model id="record">
-        <fx-instance>
+        <fx-instance type="html">
             <data>
                 <task complete="false" due="2022-06-05">Make tutorial part 1</task>
                 <task complete="false" due="2022-06-15">Pick up Milk</task>
@@ -59,7 +59,7 @@ We add the repeat alongside the model in our markup.
 ```
 <fx-fore>
     <fx-model id="record">
-        <fx-instance>
+        <fx-instance type="html">
             <data>
                 <task complete="false" due="2022-06-05">Make tutorial part 1</task>
                 <task complete="false" due="2022-06-15">Pick up Milk</task>
@@ -86,7 +86,7 @@ in our data.
 ```
 <fx-fore>
     <fx-model id="record">
-        <fx-instance>
+        <fx-instance type="html">
             <data>
                 <task complete="false" due="2022-06-05">Make tutorial part 1</task>
                 <task complete="false" due="2022-06-15">Pick up Milk</task>
@@ -106,7 +106,7 @@ Result so far
 
 <fx-fore>
     <fx-model id="record">
-        <fx-instance>
+        <fx-instance type="html">
             <data>
                 <task complete="false" due="2022-06-05">Make tutorial part 1</task>
                 <task complete="false" due="2022-06-15">Pick up Milk</task>
@@ -149,7 +149,7 @@ In this example simple native browser input controls are used.
 ```
 <fx-fore>
     <fx-model id="record">
-        <fx-instance>
+        <fx-instance type="html">
             <data>
                 <task complete="false" due="2022-06-05">Make tutorial part 1</task>
                 <task complete="false" due="2022-06-15">Pick up Milk</task>
@@ -198,7 +198,7 @@ will result in the binding expression 'task[1]/@complete' for the first todo.
 ```
 <fx-fore>
     <fx-model id="record">
-        <fx-instance>
+        <fx-instance type="html">
             <data>
                 <task complete="false" due="2022-06-05">Make tutorial part 1</task>
                 <task complete="false" due="2022-06-15">Pick up Milk</task>
@@ -241,7 +241,7 @@ with the `<fx-delete>` action.
 
 <fx-fore id="todo">
     <fx-model id="record">
-        <fx-instance>
+        <fx-instance type="html">
             <data>
                 <task complete="false" due="2022-06-05">Make tutorial part 1</task>
                 <task complete="false" due="2022-06-15">Pick up Milk</task>
