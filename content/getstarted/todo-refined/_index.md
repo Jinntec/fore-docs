@@ -64,7 +64,7 @@ offers a big library of functions.
 
 <fx-fore id="todo">
     <fx-model id="record">
-        <fx-instance>
+        <fx-instance type="html">
             <data>
                 <task complete="false" due="2022-06-05">Make tutorial part 1</task>
                 <task complete="false" due="2022-06-15">Pick up Milk</task>
@@ -147,7 +147,7 @@ a todo will now be `complete="false"` and 'new task' as task by default.
 
 <fx-fore id="todo">
     <fx-model id="record">
-        <fx-instance>
+        <fx-instance type="html">
             <data>
                 <task complete="false" due="2022-06-05">Make tutorial part 1</task>
                 <task complete="false" due="2022-06-15">Pick up Milk</task>
@@ -222,7 +222,7 @@ overview when things get more complex.
 ```
 <fx-fore>
     <fx-model id="record">
-        <fx-instance>
+        <fx-instance type="html">
             <data>
                 <task complete="false" due="2022-06-05">Make tutorial part 1</task>
                 <task complete="false" due="2022-06-15">Pick up Milk</task>
@@ -270,7 +270,7 @@ Empty a task field to trigger the alert - once you leave the field the alert is 
 
 <fx-fore id="todo">
     <fx-model id="record">
-        <fx-instance>
+        <fx-instance type="html">
             <data>
                 <task complete="false" due="2022-06-05">Make tutorial part 1</task>
                 <task complete="false" due="2022-06-15">Pick up Milk</task>
